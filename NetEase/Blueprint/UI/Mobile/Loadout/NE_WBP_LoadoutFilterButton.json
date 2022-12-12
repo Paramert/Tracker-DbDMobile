@@ -1,0 +1,1251 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_NE_WBP_LoadoutFilterButton",
+    "Outer": "NE_WBP_LoadoutFilterButton_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_isSelected",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "K2Node_Event_icon",
+        "Flags": 1,
+        "ElementSize": 48,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class Texture2D",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValidSoftObjectReference_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "SetIsSelected",
+    "Outer": "NE_WBP_LoadoutFilterButton_C",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "isSelected",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "SetIcon",
+    "Outer": "NE_WBP_LoadoutFilterButton_C",
+    "ChildProperties": [
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "icon",
+        "Flags": 1,
+        "ElementSize": 48,
+        "PropertyFlags": 134218134,
+        "PropertyClass": {
+          "ObjectName": "Class Texture2D",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 205520896
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateIsSelected",
+    "Outer": "NE_WBP_LoadoutFilterButton_C",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsSelected",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "SetIconFromPaperSprite",
+    "Outer": "NE_WBP_LoadoutFilterButton_C",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "PaperSprite",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class PaperSprite",
+          "ObjectPath": "/Script/Paper2D"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput",
+        "Flags": 1,
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class SlateTextureAtlasInterface",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_LoadoutFilterButton_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_LoadoutFilterButton_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.42"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.WidgetArchetype",
+        "SubPathString": ""
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function NE_WBP_LoadoutFilterButton_C:ExecuteUbergraph_NE_WBP_LoadoutFilterButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_WBP_LoadoutFilterButton_C:SetIconFromPaperSprite",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.4"
+      },
+      {
+        "ObjectName": "Function NE_WBP_LoadoutFilterButton_C:UpdateIsSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.3"
+      },
+      {
+        "ObjectName": "Function NE_WBP_LoadoutFilterButton_C:SetIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.2"
+      },
+      {
+        "ObjectName": "Function NE_WBP_LoadoutFilterButton_C:SetIsSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.1"
+      },
+      {
+        "ObjectName": "Function NE_WBP_LoadoutFilterButton_C:ExecuteUbergraph_NE_WBP_LoadoutFilterButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ActionButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CanvasSelected",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageIcon",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_NE_WBP_LoadoutFilterButton": {
+        "ObjectName": "Function NE_WBP_LoadoutFilterButton_C:ExecuteUbergraph_NE_WBP_LoadoutFilterButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.0"
+      },
+      "SetIsSelected": {
+        "ObjectName": "Function NE_WBP_LoadoutFilterButton_C:SetIsSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.1"
+      },
+      "SetIcon": {
+        "ObjectName": "Function NE_WBP_LoadoutFilterButton_C:SetIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.2"
+      },
+      "UpdateIsSelected": {
+        "ObjectName": "Function NE_WBP_LoadoutFilterButton_C:UpdateIsSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.3"
+      },
+      "SetIconFromPaperSprite": {
+        "ObjectName": "Function NE_WBP_LoadoutFilterButton_C:SetIconFromPaperSprite",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.4"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_LoadoutFilterButton_C Default__NE_WBP_LoadoutFilterButton_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.6"
+    }
+  },
+  {
+    "Type": "NE_WBP_LoadoutFilterButton_C",
+    "Name": "Default__NE_WBP_LoadoutFilterButton_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Padding": {
+        "Left": 4.0,
+        "Top": 4.0,
+        "Right": 4.0,
+        "Bottom": 4.0
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "ActionButton",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 107.0,
+            "Y": 106.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Filters_Box",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Filters_Box.0"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 107.0,
+            "Y": 106.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Filters_Box",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Filters_Box.0"
+          }
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 107.0,
+            "Y": 106.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Filters_Box",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Filters_Box.0"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.18"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "ActionButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 107.0,
+            "Y": 106.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Filters_Box",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Filters_Box.0"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 107.0,
+            "Y": 106.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Filters_Box",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Filters_Box.0"
+          }
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 107.0,
+            "Y": 106.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Filters_Box",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Filters_Box.0"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasSelected",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.22"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.17"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.23"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasSelected",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasSelected.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasSelected.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasSelected.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasSelected.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.30"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.25"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 120.0,
+          "Bottom": 120.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.10"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_LoadoutFilterButton_C:WidgetTree.ImageIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.10"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.10"
+      },
+      "Content": {
+        "ObjectName": "Button NE_WBP_LoadoutFilterButton_C:WidgetTree.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasSelected",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.11"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_LoadoutFilterButton_C:WidgetTree.ImageTopLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasSelected",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.11"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_LoadoutFilterButton_C:WidgetTree.ImageBottomLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasSelected",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.11"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_LoadoutFilterButton_C:WidgetTree.ImageTopRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasSelected",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.11"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_LoadoutFilterButton_C:WidgetTree.ImageBottomRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 120.0,
+          "Bottom": 120.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.12"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.13"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.13"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasSelected",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageTopLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasSelected",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageBottomLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasSelected",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageTopRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasSelected",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageBottomRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.37"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageBottomLeft",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.20"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageBottomRight",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.22"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": -1.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageIcon",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D iconItems_flashlight",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/items/iconItems_flashlight.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.16"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.5
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageTopLeft",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.19"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageTopRight",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasSelected.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.21"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageBottomLeft",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasSelected.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.28"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageBottomRight",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasSelected.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.30"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": -1.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D iconItems_flashlight",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/items/iconItems_flashlight.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.24"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.5
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageTopLeft",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasSelected.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.27"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageTopRight",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasSelected.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.29"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "NE_WBP_LoadoutFilterButton_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_LoadoutFilterButton_C",
+    "Properties": {
+      "ActionButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.8"
+      },
+      "CanvasSelected": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasSelected",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.14"
+      },
+      "ImageIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.38"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.43"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_LoadoutFilterButton_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_LoadoutFilterButton_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_LoadoutFilterButton.12"
+      }
+    }
+  }
+]

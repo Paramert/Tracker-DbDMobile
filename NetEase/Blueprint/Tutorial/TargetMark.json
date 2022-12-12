@@ -1,0 +1,164 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "TargetMark_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript TargetMark_C:SimpleConstructionScript_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Tutorial/TargetMark.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "NE_P_Warning",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class ParticleSystemComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class SceneComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FootprintMaterial",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 5,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInterface",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "TargetMark_C Default__TargetMark_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Tutorial/TargetMark.1"
+    }
+  },
+  {
+    "Type": "TargetMark_C",
+    "Name": "Default__TargetMark_C",
+    "Properties": {
+      "FootprintMaterial": {
+        "ObjectName": "MaterialInstanceConstant NE_Mi_footstep_White",
+        "ObjectPath": "DeadByDaylight/Content/Effects/Materials/Decals/NE_Mi_footstep_White.0"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "NE_P_Warning_GEN_VARIABLE",
+    "Outer": "TargetMark_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem NE_P_Warning",
+        "ObjectPath": "DeadByDaylight/Content/Effects/ParticleSystems/NE_P_Warning.141"
+      },
+      "DetailLevelBeforeCastShadows": "DM_MAX",
+      "RelativeScale3D": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 1.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "TargetMark_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent TargetMark_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Tutorial/TargetMark.3"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node TargetMark_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Tutorial/TargetMark.5"
+        }
+      ],
+      "VariableGuid": "14DA1416-436F7C49-31D78C98-8B7ACC5F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ParticleSystemComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent TargetMark_C:NE_P_Warning_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Tutorial/TargetMark.2"
+      },
+      "VariableGuid": "547CACFB-48826F1B-9558649D-2634709A",
+      "InternalVariableName": "NE_P_Warning"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "TargetMark_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node TargetMark_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Tutorial/TargetMark.4"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node TargetMark_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Tutorial/TargetMark.4"
+        },
+        {
+          "ObjectName": "SCS_Node TargetMark_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Tutorial/TargetMark.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node TargetMark_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Tutorial/TargetMark.4"
+      }
+    }
+  }
+]

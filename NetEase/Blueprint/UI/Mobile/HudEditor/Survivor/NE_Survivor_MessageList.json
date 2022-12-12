@@ -1,0 +1,1059 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetColor",
+    "Outer": "NE_Survivor_MessageList_C",
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetColor",
+    "Outer": "NE_Survivor_MessageList_C",
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_Survivor_MessageList_C",
+    "Super": "NE_Py_Drag_Widget_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_Survivor_MessageList_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.41"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "WidgetBlueprintGeneratedClass NE_Py_Drag_Widget_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/DragWidget/NE_Py_Drag_Widget.15"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_Survivor_MessageList_C:ResetColor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.1"
+      },
+      {
+        "ObjectName": "Function NE_Survivor_MessageList_C:SetColor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BG",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MessageItem",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass Survivor_MessageItem_NE_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_MessageItem_NE.6"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Noneitem",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass NE_Common_PyWBP_Noneitem_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PyWBP_Noneitem.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UnderSizeBox",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class SizeBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Id",
+        "Flags": 2097153,
+        "ElementSize": 12,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct GameplayTag",
+          "ObjectPath": "/Script/GameplayTags"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetColor": {
+        "ObjectName": "Function NE_Survivor_MessageList_C:SetColor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.0"
+      },
+      "ResetColor": {
+        "ObjectName": "Function NE_Survivor_MessageList_C:ResetColor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.1"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_Survivor_MessageList_C Default__NE_Survivor_MessageList_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.3"
+    }
+  },
+  {
+    "Type": "NE_Survivor_MessageList_C",
+    "Name": "Default__NE_Survivor_MessageList_C",
+    "Template": "Default__NE_Py_Drag_Widget_C",
+    "Properties": {
+      "Id": {
+        "TagName": "AtlantaCustomizedHud.Survivor.MessageList"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "MessageButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Hovered": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Pressed": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_37",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37.CanvasPanelSlot_17",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37.CanvasPanelSlot_13",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_37",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_17",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_13",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.14"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_133",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.19"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.21"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_37",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.5"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Survivor_MessageList_C:WidgetTree.BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_37",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 66.435356,
+          "Bottom": 47.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.5"
+      },
+      "Content": {
+        "ObjectName": "SizeBox NE_Survivor_MessageList_C:WidgetTree.UnderSizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "CanvasPanel_37",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.5"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox NE_Survivor_MessageList_C:WidgetTree.VerticalBox_134",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_17",
+    "Outer": "CanvasPanel_37",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.044130147,
+            "Y": 0.2
+          },
+          "Maximum": {
+            "X": 0.9695803,
+            "Y": 0.6618123
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.5"
+      },
+      "Content": {
+        "ObjectName": "NE_Common_PyWBP_Noneitem_C NE_Survivor_MessageList_C:WidgetTree.Noneitem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_37",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.6"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_37",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 66.435356,
+          "Bottom": 47.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.6"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.UnderSizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "CanvasPanel_37",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.6"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_134",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_17",
+    "Outer": "CanvasPanel_37",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.044130147,
+            "Y": 0.2
+          },
+          "Maximum": {
+            "X": 0.9695803,
+            "Y": 0.6618123
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.6"
+      },
+      "Content": {
+        "ObjectName": "NE_Common_PyWBP_Noneitem_C WidgetArchetype:WidgetTree_0.Noneitem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_133",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.7"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.SizeBox_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_133",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 304.2,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_133",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 104.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.7"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.MessageButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.8"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0.Logo",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 532.0,
+          "Bottom": 46.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "ZOrder": 1,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.8"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0.NoneitemText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.36"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 392.0,
+          "Y": 624.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Survivor_QuickPop_NE",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/HUDEditor/Frames/Survivor_QuickPop_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.9"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 392.0,
+          "Y": 624.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Survivor_QuickPop_NE",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/HUDEditor/Frames/Survivor_QuickPop_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.13"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 676.0,
+          "Y": 2.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.18"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Logo",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 488.0,
+          "Y": 340.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D LobbyChat_NoneLogo_NE1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/LobbyChat_NoneLogo_NE1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.20"
+      }
+    }
+  },
+  {
+    "Type": "NE_Common_PyWBP_Noneitem_C",
+    "Name": "Noneitem",
+    "Outer": "WidgetTree",
+    "Template": "Default__NE_Common_PyWBP_Noneitem_C",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37.CanvasPanelSlot_17",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.12"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "NE_Common_PyWBP_Noneitem_C",
+    "Name": "Noneitem",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__NE_Common_PyWBP_Noneitem_C",
+    "Properties": {
+      "Logo": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0.Logo",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.25"
+      },
+      "NoneitemText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0.NoneitemText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.36"
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.2,
+        "Hex": "33FFFFFF"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.44"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_17",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.16"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "NE_Survivor_MessageList_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_Survivor_MessageList_C",
+    "Properties": {
+      "BG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.23"
+      },
+      "MessageItem": {
+        "ObjectName": "Survivor_MessageItem_NE_C WidgetArchetype:WidgetTree_0.MessageItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.34"
+      },
+      "Noneitem": {
+        "ObjectName": "NE_Common_PyWBP_Noneitem_C WidgetArchetype:WidgetTree_0.Noneitem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.27"
+      },
+      "UnderSizeBox": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.UnderSizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.31"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.42"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "UnderSizeBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.10"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_133",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "MaxDesiredWidth": 400.0,
+      "MaxDesiredHeight": 62.0,
+      "bOverride_MaxDesiredWidth": true,
+      "bOverride_MaxDesiredHeight": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.SizeBox_133.SizeBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.32"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.17"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "UnderSizeBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.14"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_1",
+    "Outer": "SizeBox_133",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.SizeBox_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.30"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.MessageText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.35"
+      }
+    }
+  },
+  {
+    "Type": "Survivor_MessageItem_NE_C",
+    "Name": "MessageItem",
+    "Outer": "WidgetTree",
+    "Template": "Default__Survivor_MessageItem_NE_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_Survivor_MessageList_C:WidgetTree.VerticalBox_134.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.39"
+      }
+    }
+  },
+  {
+    "Type": "Survivor_MessageItem_NE_C",
+    "Name": "MessageItem",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__Survivor_MessageItem_NE_C",
+    "Properties": {
+      "Line": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.24"
+      },
+      "MessageButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.MessageButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.4"
+      },
+      "MessageText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.MessageText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.35"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.43"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_134.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.40"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "MessageText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "7C10C1BA46C59D2C5EE56E96FE0D7273",
+        "SourceString": "STOP THE REPAIRS,ILL SAVE PEOPLE!"
+      },
+      "Font": {
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Center",
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 380.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.SizeBox_133.SizeBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.32"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NoneitemText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "0C53921E494D6C955AD8F5AC14D859F3",
+        "SourceString": "No chat history."
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.65,
+          "Hex": "A6FFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular"
+      },
+      "Justification": "ETextJustify::Center",
+      "WrapTextAt": 360.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.21"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_134",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot NE_Survivor_MessageList_C:WidgetTree.VerticalBox_134.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37.CanvasPanelSlot_13",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.11"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_134",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_134.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.40"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_13",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.15"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_134",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox NE_Survivor_MessageList_C:WidgetTree.VerticalBox_134",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.37"
+      },
+      "Content": {
+        "ObjectName": "Survivor_MessageItem_NE_C NE_Survivor_MessageList_C:WidgetTree.MessageItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.33"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_134",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_134",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.38"
+      },
+      "Content": {
+        "ObjectName": "Survivor_MessageItem_NE_C WidgetArchetype:WidgetTree_0.MessageItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.34"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_Survivor_MessageList_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_Survivor_MessageList_C:WidgetTree.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "MessageItem",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "Noneitem",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/NE_Survivor_MessageList.8"
+      }
+    }
+  }
+]

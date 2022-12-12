@@ -1,0 +1,2479 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_PlayerProfile_PyWBP_Sacrifice_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.80"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyListEntry",
+      "ObjectPath": "/Script/DBDPython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OfferDivider",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OfferingButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_OfferActionButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/PanelScreen/WBP_OfferActionButton.6"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PerkDivider",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_PlayerProfile_PyWBP_Sacrifice_C Default__NE_PlayerProfile_PyWBP_Sacrifice_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.1"
+    }
+  },
+  {
+    "Type": "NE_PlayerProfile_PyWBP_Sacrifice_C",
+    "Name": "Default__NE_PlayerProfile_PyWBP_Sacrifice_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "ActionButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 262.0,
+            "Y": 291.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Offering_Interactable",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Offering_Interactable.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 262.0,
+            "Y": 291.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Offering_Pressed",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Offering_Pressed.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 152.0,
+            "Y": 147.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Blood_Shelves_Halo_Hexa",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Bloodmarket/Atl_Blood_Shelves_Halo_Hexa.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.21"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "EmptyButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 159.0,
+            "Y": 175.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Offering_Full",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Offering_Full.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 159.0,
+            "Y": 175.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Offering_Full",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Offering_Full.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 159.0,
+            "Y": 175.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Offering_Full",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Offering_Full.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 159.0,
+            "Y": 175.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Offering_Full",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Offering_Full.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.36"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "canvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.canvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.canvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.canvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "canvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.canvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.canvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.canvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.18"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ActionCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.20"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.32"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasItem",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.28"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.19"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.34"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "EmptyCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.36"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.37"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.38"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.31"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "HighlightWidget",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightWidget.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightWidget.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.35"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LoadoutSelectedImage",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.42"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.43"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.44"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.33"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Tooltip_btn_anim",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.46"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.34"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "canvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 47.5
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.canvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.4"
+      },
+      "Content": {
+        "ObjectName": "Image NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.OfferDivider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "canvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 92.0,
+          "Bottom": 92.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.canvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.4"
+      },
+      "Content": {
+        "ObjectName": "WBP_OfferActionButton_C NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.OfferingButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.78"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "canvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -47.5
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.canvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.4"
+      },
+      "Content": {
+        "ObjectName": "Image NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.PerkDivider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "canvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 47.5
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.canvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.5"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferDivider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "canvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 92.0,
+          "Bottom": 92.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.canvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.5"
+      },
+      "Content": {
+        "ObjectName": "WBP_OfferActionButton_C WidgetArchetype:WidgetTree_0.OfferingButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.79"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "canvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -47.5
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.canvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.5"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkDivider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.68"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -1.3333334,
+          "Right": -1.7777778,
+          "Bottom": 6.2222223
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.TextStackCount",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.72"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -6.0,
+          "Top": -12.0,
+          "Right": -8.0,
+          "Bottom": -12.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.6"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 24.30853,
+          "Top": 10.255096,
+          "Right": 15.087504,
+          "Bottom": 14.24583
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.6"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageShadow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.65"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 15.666666,
+          "Top": -17.0,
+          "Right": 183.93732,
+          "Bottom": 177.49905
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.6"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageItemBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.57"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImagePaintTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.62"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageGradient",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.55"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 18.967125,
+          "Top": 12.836114,
+          "Right": 22.212954,
+          "Bottom": 26.901375
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImagePaint",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.60"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImagePaintBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.61"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0,
+          "Right": 10.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.56"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": -2.16391
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.9879783
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageRarityBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 13.555555,
+          "Top": 5.3333335,
+          "Right": 15.333334,
+          "Bottom": 1.7777778
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageEventBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.54"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0,
+          "Right": 10.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0,
+          "Right": 10.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0,
+          "Right": 10.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.LoadoutSelectedImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 4.2222223,
+          "Right": 201.85715,
+          "Bottom": 214.61905
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -0.888889,
+          "Top": -1.555556,
+          "Right": 101.77778,
+          "Bottom": 96.888885
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "EmptyCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 5.0,
+          "Right": 10.0,
+          "Bottom": 5.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.9"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "EmptyCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 50.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageEmptyIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "EmptyCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -4.0,
+          "Right": 50.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageLockIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.59"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "EmptyCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -1.0,
+          "Top": -3.0,
+          "Right": 103.0,
+          "Bottom": 70.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.9"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.75"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "HighlightWidget",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightOffering",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "HighlightWidget",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightOffering_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "LoadoutSelectedImage",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.LoadoutSelectedImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.66"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "LoadoutSelectedImage",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -20.526695,
+          "Top": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.LoadoutSelectedImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "LoadoutSelectedImage",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 18.0,
+          "Top": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.LoadoutSelectedImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.64"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Tooltip_btn_anim",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -164.77565,
+          "Top": -165.41869,
+          "Right": 330.0,
+          "Bottom": 330.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.12"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.Item_Highlighted",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.70"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "Tooltip_btn_anim",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1.2222219,
+          "Top": -4.4285707,
+          "Right": 243.93652,
+          "Bottom": 257.0476
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.smoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.67"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "OfferDivider",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 2.0,
+          "Y": 117.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tally_Scoreboard_SmallSeparator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/Atl_Tally_Scoreboard_SmallSeparator.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.canvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.13"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PerkDivider",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 2.0,
+          "Y": 117.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tally_Scoreboard_SmallSeparator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/Atl_Tally_Scoreboard_SmallSeparator.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.canvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.15"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "OfferDivider",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 2.0,
+          "Y": 117.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tally_Scoreboard_SmallSeparator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/Atl_Tally_Scoreboard_SmallSeparator.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.canvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.16"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "border",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 237.07532,
+          "Y": 253.0
+        },
+        "Margin": {
+          "Left": 0.92,
+          "Top": 0.92,
+          "Right": 0.92,
+          "Bottom": 0.92
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Offering_HoldPressedOutline",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Offering_HoldPressedOutline.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.Item_Highlighted.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.71"
+      },
+      "RenderTransform": {
+        "Angle": -45.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HighlightOffering",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 253.0,
+          "Y": 254.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D ATL_OB_Highlight_Offering",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/OnBoarding/ATL_OB_Highlight_Offering.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightWidget.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.40"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HighlightOffering_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 253.0,
+          "Y": 254.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D ATL_OB_Highlight_Offering",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/OnBoarding/ATL_OB_Highlight_Offering.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightWidget.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.41"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageEmptyIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 94.0,
+          "Y": 94.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Ico_Plus",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Ico_Plus.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.6,
+        "Hex": "99000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.37"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageEventBorder",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 220.0,
+          "Y": 250.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D favors_eventBorder",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/favors_eventBorder.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.30"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageGradient",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D favors_dark",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/favors_dark.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.25"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D iconFavors_ardentRavenWreath",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Favors/iconFavors_ardentRavenWreath.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.28"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageItemBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D favors_background",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/favors_background.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.23"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": -15.0,
+          "Y": 15.0
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageLeft",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 82.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Offering",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Offering.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.43"
+      },
+      "RenderTransform": {
+        "Angle": -120.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageLockIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 103.0,
+          "Y": 109.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Ico_Lock",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Ico_Lock.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.6,
+        "Hex": "99000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.38"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePaint",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 197.0,
+          "Y": 198.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D favors_paintTint",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/favors_paintTint.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.26"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePaintBottom",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D favors_paintTint_bottom",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/favors_paintTint_bottom.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.27"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePaintTop",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D favors_paintTint_top",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/favors_paintTint_top.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.24"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRarityBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D favors_tint",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/favors_tint.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasItem.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.29"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRight",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 82.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Offering",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Offering.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.44"
+      },
+      "RenderTransform": {
+        "Angle": 120.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageShadow",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 159.0,
+          "Y": 175.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Offering_Empty",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Offering_Empty.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.22"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": -15.0,
+          "Y": 15.0
+        }
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageTop",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 82.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Offering",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Offering.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.42"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "smoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 326.0,
+          "Y": 363.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Offering_HoldPressedSmoke",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Offering_HoldPressedSmoke.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.46"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PerkDivider",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 2.0,
+          "Y": 117.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tally_Scoreboard_SmallSeparator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/Atl_Tally_Scoreboard_SmallSeparator.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.canvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.18"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "NE_PlayerProfile_PyWBP_Sacrifice_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_PlayerProfile_PyWBP_Sacrifice_C",
+    "Properties": {
+      "OfferDivider": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferDivider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.49"
+      },
+      "OfferingButton": {
+        "ObjectName": "WBP_OfferActionButton_C WidgetArchetype:WidgetTree_0.OfferingButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.79"
+      },
+      "PerkDivider": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkDivider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.68"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.81"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "Item_Highlighted",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Stretch": "EStretch::None",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.Item_Highlighted.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.71"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.45"
+      },
+      "RenderTransform": {
+        "Angle": 45.0
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "Item_Highlighted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.Item_Highlighted",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.70"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.border",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.50"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextStackCount",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "E"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 3
+        },
+        "Size": 30
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.20"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextUnlockLevel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "986AB8BE4A0C7686D74C98A2F9B3388B",
+        "SourceString": "15"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 0.6,
+          "Hex": "99000000"
+        }
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.6,
+            "Hex": "99000000"
+          }
+        },
+        "Size": 23
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasUnLock.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.77"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextUnlockLevelTitle",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "Messages",
+        "Key": "Level",
+        "SourceString": "LEVEL"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 0.6,
+          "Hex": "99000000"
+        }
+      },
+      "Font": {
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasUnLock.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.76"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "CanvasUnLock",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasUnLock.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.76"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasUnLock.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.77"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.39"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "CanvasUnLock",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.75"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.TextUnlockLevelTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.74"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "CanvasUnLock",
+    "Properties": {
+      "Padding": {
+        "Top": -7.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.75"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.TextUnlockLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.73"
+      }
+    }
+  },
+  {
+    "Type": "WBP_OfferActionButton_C",
+    "Name": "OfferingButton",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_OfferActionButton_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.canvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.14"
+      }
+    }
+  },
+  {
+    "Type": "WBP_OfferActionButton_C",
+    "Name": "OfferingButton",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_OfferActionButton_C",
+    "Properties": {
+      "border": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.border",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.50"
+      },
+      "HighlightOffering": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightOffering",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.51"
+      },
+      "HighlightOffering_2": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightOffering_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.52"
+      },
+      "ImageEmptyIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageEmptyIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.53"
+      },
+      "ImageItemBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageItemBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.57"
+      },
+      "ImageLeft": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.58"
+      },
+      "ImageLockIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageLockIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.59"
+      },
+      "ImageRight": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.64"
+      },
+      "ImageTop": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.66"
+      },
+      "LoadoutSelectedImage": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.LoadoutSelectedImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.11"
+      },
+      "smoke": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.smoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.67"
+      },
+      "TextUnlockLevelTitle": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.TextUnlockLevelTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.74"
+      },
+      "TextStackCount": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.TextStackCount",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.72"
+      },
+      "EmptyCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.9"
+      },
+      "EmptyButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.EmptyButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.3"
+      },
+      "ActionCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.6"
+      },
+      "ImageRarityBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageRarityBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.63"
+      },
+      "ImageGradient": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageGradient",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.55"
+      },
+      "ImagePaint": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImagePaint",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.60"
+      },
+      "ImageEventBorder": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageEventBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.54"
+      },
+      "ImagePaintTop": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImagePaintTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.62"
+      },
+      "ImagePaintBottom": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImagePaintBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.61"
+      },
+      "ImageIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.56"
+      },
+      "ImageShadow": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ImageShadow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.65"
+      },
+      "ActionButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.2"
+      },
+      "CanvasUnlock": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.75"
+      },
+      "TextUnlockLevel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.TextUnlockLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.73"
+      },
+      "HighlightWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.10"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.82"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.canvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.17"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_PlayerProfile_PyWBP_Sacrifice_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_PlayerProfile_PyWBP_Sacrifice_C:WidgetTree.canvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.canvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "OfferingButton",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OfferingButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_Sacrifice.8"
+      }
+    }
+  }
+]

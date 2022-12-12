@@ -1,0 +1,717 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_NE_WBP_StreamVideoWidget",
+    "Outer": "NE_WBP_StreamVideoWidget_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "NE_WBP_StreamVideoWidget_C",
+    "SuperStruct": {
+      "ObjectName": "Function UserWidget:Construct",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": 134350856
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_StreamVideoWidget_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_StreamVideoWidget_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.28"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.WidgetArchetype",
+        "SubPathString": ""
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function NE_WBP_StreamVideoWidget_C:ExecuteUbergraph_NE_WBP_StreamVideoWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_WBP_StreamVideoWidget_C:Construct",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.1"
+      },
+      {
+        "ObjectName": "Function NE_WBP_StreamVideoWidget_C:ExecuteUbergraph_NE_WBP_StreamVideoWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CloseBtn",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NE_VideoComponent",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass NE_VideoComponent_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_VideoComponent.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "videoCanvas",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MyPlayer",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 5,
+        "PropertyClass": {
+          "ObjectName": "Class MediaPlayer",
+          "ObjectPath": "/Script/MediaAssets"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_NE_WBP_StreamVideoWidget": {
+        "ObjectName": "Function NE_WBP_StreamVideoWidget_C:ExecuteUbergraph_NE_WBP_StreamVideoWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.0"
+      },
+      "Construct": {
+        "ObjectName": "Function NE_WBP_StreamVideoWidget_C:Construct",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.1"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_StreamVideoWidget_C Default__NE_WBP_StreamVideoWidget_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.3"
+    }
+  },
+  {
+    "Type": "NE_WBP_StreamVideoWidget_C",
+    "Name": "Default__NE_WBP_StreamVideoWidget_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false,
+      "bIsVolatile": true,
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "CloseBtn",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_StreamVideoWidget_C:WidgetTree.videoCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.12"
+      },
+      "ToolTipText": {
+        "Namespace": "",
+        "Key": "79B7DBBC4BE441F1CCDC16BFE7DBF241",
+        "SourceString": "close"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "CloseBtn",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.videoCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.18"
+      },
+      "ToolTipText": {
+        "Namespace": "",
+        "Key": "79B7DBBC4BE441F1CCDC16BFE7DBF241",
+        "SourceString": "close"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "TapButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.SafeZone.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.13"
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "videoCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_StreamVideoWidget_C:WidgetTree.videoCanvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_StreamVideoWidget_C:WidgetTree.videoCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.12"
+        }
+      ],
+      "bIsVariable": true,
+      "bIsVolatile": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SafeZone",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.SafeZone.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SafeZoneSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.SafeZoneContainer.SafeZoneSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "videoCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.videoCanvas.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.videoCanvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.videoCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.15"
+        }
+      ],
+      "bIsVariable": true,
+      "bIsVolatile": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "videoCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.videoCanvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.videoCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.18"
+        }
+      ],
+      "bIsVariable": true,
+      "bIsVolatile": true
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "videoCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_StreamVideoWidget_C:WidgetTree.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.7"
+      },
+      "Content": {
+        "ObjectName": "NE_VideoComponent_C NE_WBP_StreamVideoWidget_C:WidgetTree.NE_VideoComponent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "videoCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -136.0,
+          "Top": 28.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_StreamVideoWidget_C:WidgetTree.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.7"
+      },
+      "Content": {
+        "ObjectName": "Button NE_WBP_StreamVideoWidget_C:WidgetTree.CloseBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "SafeZone",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.SafeZone",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.8"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.TapButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "videoCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.9"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "videoCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "ZOrder": 7,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.9"
+      },
+      "Content": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.SafeZoneContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "videoCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.BackgroundOverlay_Image",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "videoCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.10"
+      },
+      "Content": {
+        "ObjectName": "NE_VideoComponent_C WidgetArchetype:WidgetTree_0.NE_VideoComponent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "videoCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -136.0,
+          "Top": 28.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.10"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CloseBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.5"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BackgroundOverlay_Image",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.videoCanvas.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.16"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_202",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Material NEMediaPlayer_VideoMat",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NEMediaPlayer_VideoMat.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.27"
+      }
+    }
+  },
+  {
+    "Type": "NE_VideoComponent_C",
+    "Name": "NE_VideoComponent",
+    "Outer": "WidgetTree",
+    "Template": "Default__NE_VideoComponent_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_StreamVideoWidget_C:WidgetTree.videoCanvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.11"
+      }
+    }
+  },
+  {
+    "Type": "NE_VideoComponent_C",
+    "Name": "NE_VideoComponent",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__NE_VideoComponent_C",
+    "Properties": {
+      "Image_202": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.Image_202",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.20"
+      },
+      "SafeZoneContainer": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.SafeZoneContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.24"
+      },
+      "TapButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.TapButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.6"
+      },
+      "videoCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.9"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.30"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.videoCanvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.17"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_StreamVideoWidget_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_StreamVideoWidget_C",
+    "Properties": {
+      "CloseBtn": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CloseBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.5"
+      },
+      "NE_VideoComponent": {
+        "ObjectName": "NE_VideoComponent_C WidgetArchetype:WidgetTree_0.NE_VideoComponent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.22"
+      },
+      "videoCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.10"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.29"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "SafeZone",
+    "Name": "SafeZoneContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SafeZoneSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.SafeZoneContainer.SafeZoneSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.videoCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.15"
+      }
+    }
+  },
+  {
+    "Type": "SafeZoneSlot",
+    "Name": "SafeZoneSlot_1",
+    "Outer": "SafeZoneContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.SafeZoneContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.24"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.SafeZone",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.8"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.27"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.videoCanvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.14"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_1",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 4.0,
+        "Top": 2.0,
+        "Right": 4.0,
+        "Bottom": 2.0
+      },
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.26"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.Image_202",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.20"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_StreamVideoWidget_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_StreamVideoWidget_C:WidgetTree.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.10"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "NE_VideoComponent",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.NE_VideoComponent.WidgetTree_0.videoCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/video/NE_WBP_StreamVideoWidget.9"
+      }
+    }
+  }
+]

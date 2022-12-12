@@ -1,0 +1,1269 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_NE_WBP_CharacterPrice",
+    "Outer": "NE_WBP_CharacterPrice_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_IsDesignTime",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "PreConstruct",
+    "Outer": "NE_WBP_CharacterPrice_C",
+    "SuperStruct": {
+      "ObjectName": "Function UserWidget:PreConstruct",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsDesignTime",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 134350856
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPrice",
+    "Outer": "NE_WBP_CharacterPrice_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "price",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": 1,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct FormatArgumentData",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134217728,
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": 1,
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct FormatArgumentData",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_CharacterPrice_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_CharacterPrice_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.44"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.WidgetArchetype",
+        "SubPathString": ""
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function NE_WBP_CharacterPrice_C:ExecuteUbergraph_NE_WBP_CharacterPrice",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_WBP_CharacterPrice_C:SetPrice",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.2"
+      },
+      {
+        "ObjectName": "Function NE_WBP_CharacterPrice_C:PreConstruct",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.1"
+      },
+      {
+        "ObjectName": "Function NE_WBP_CharacterPrice_C:ExecuteUbergraph_NE_WBP_CharacterPrice",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Background",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CurrencyIcon",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DiscountPercentage",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PriceTextBlock",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CurrencyTexture",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 5,
+        "PropertyClass": {
+          "ObjectName": "Class Texture2D",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_NE_WBP_CharacterPrice": {
+        "ObjectName": "Function NE_WBP_CharacterPrice_C:ExecuteUbergraph_NE_WBP_CharacterPrice",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.0"
+      },
+      "PreConstruct": {
+        "ObjectName": "Function NE_WBP_CharacterPrice_C:PreConstruct",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.1"
+      },
+      "SetPrice": {
+        "ObjectName": "Function NE_WBP_CharacterPrice_C:SetPrice",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.2"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_CharacterPrice_C Default__NE_WBP_CharacterPrice_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.4"
+    }
+  },
+  {
+    "Type": "NE_WBP_CharacterPrice_C",
+    "Name": "Default__NE_WBP_CharacterPrice_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CurrencyTexture": {
+        "ObjectName": "Texture2D Atl_Main_TRA_Curr_Shard",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/TopRightAnchor/Atl_Main_TRA_Curr_Shard.0"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.DiscountPercentageContainer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.16"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "DiscountPercentageContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.DiscountPercentageContainer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_CharacterPrice_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "PricePanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.PricePanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.PricePanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.PricePanel.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_CharacterPrice_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DiscountPercentageContainer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.23"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "DiscountPercentageContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DiscountPercentageContainer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_1.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "PricePanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PricePanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PricePanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PricePanel.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.26"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_1.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_CharacterPrice_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.5"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox NE_WBP_CharacterPrice_C:WidgetTree.VerticalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -5.0,
+          "Top": 12.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_CharacterPrice_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_CharacterPrice_C:WidgetTree.DiscountPercentage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Bottom": 35.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_CharacterPrice_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_CharacterPrice_C:WidgetTree.DiscountPercentageBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "DiscountPercentageContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -43.0,
+          "Top": -2.0,
+          "Bottom": 22.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_CharacterPrice_C:WidgetTree.DiscountPercentageContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_CharacterPrice_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "PricePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 142.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_CharacterPrice_C:WidgetTree.PricePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_CharacterPrice_C:WidgetTree.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "PricePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 4.5,
+          "Right": 40.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_CharacterPrice_C:WidgetTree.PricePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_CharacterPrice_C:WidgetTree.CurrencyIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.28"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "PricePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -36.0,
+          "Top": -1.0,
+          "Right": 77.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_CharacterPrice_C:WidgetTree.PricePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.8"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_CharacterPrice_C:WidgetTree.PriceTextBlock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.9"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -5.0,
+          "Top": 12.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.10"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.DiscountPercentage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Bottom": 35.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.DiscountPercentageBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "DiscountPercentageContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -43.0,
+          "Top": -2.0,
+          "Bottom": 22.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DiscountPercentageContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.11"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "PricePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 142.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PricePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "PricePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 4.5,
+          "Right": 40.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PricePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.CurrencyIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "PricePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -36.0,
+          "Top": -1.0,
+          "Right": 77.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PricePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.12"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PriceTextBlock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.37"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 142.0,
+          "Y": 30.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_CharSelect_priceBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/CharacterSelect/OutputPaper2D/Frames/Atl_CharSelect_priceBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.PricePanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.17"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CurrencyIcon",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 142.0,
+          "Y": 155.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_TRA_Curr_Shard",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/TopRightAnchor/Atl_Main_TRA_Curr_Shard.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.PricePanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.18"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "DiscountPercentageBackground",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 131.0,
+          "Y": 50.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_SFPromopacks_DiscountBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/CharacterSelect/OutputPaper2D/Frames/Atl_SFPromopacks_DiscountBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.15"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 142.0,
+          "Y": 30.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_CharSelect_priceBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/CharacterSelect/OutputPaper2D/Frames/Atl_CharSelect_priceBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PricePanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.24"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CurrencyIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 142.0,
+          "Y": 155.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_TRA_Curr_Shard",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/TopRightAnchor/Atl_Main_TRA_Curr_Shard.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PricePanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.25"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "DiscountPercentageBackground",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 131.0,
+          "Y": 50.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_SFPromopacks_DiscountBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/CharacterSelect/OutputPaper2D/Frames/Atl_SFPromopacks_DiscountBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.22"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "NE_WBP_CharacterPrice_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_CharacterPrice_C",
+    "Properties": {
+      "Background": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.30"
+      },
+      "CurrencyIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.CurrencyIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.31"
+      },
+      "DiscountPercentage": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.DiscountPercentage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.36"
+      },
+      "PriceTextBlock": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PriceTextBlock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.37"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.45"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "DiscountPercentage",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "-10%"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Bold_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Bold_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.14"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PriceTextBlock",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "0"
+      },
+      "Font": {
+        "Size": 22
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.PricePanel.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.19"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "DiscountPercentage",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "-10%"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Bold_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Bold_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.21"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PriceTextBlock",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "0"
+      },
+      "Font": {
+        "Size": 22
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PricePanel.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.26"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_CharacterPrice_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.41"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_CharacterPrice_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.40"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_CharacterPrice_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.13"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_1.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.43"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_1.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.42"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.20"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_1",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_CharacterPrice_C:WidgetTree.VerticalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.38"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_CharacterPrice_C:WidgetTree.PricePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.8"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_1",
+    "Properties": {
+      "Padding": {
+        "Top": 20.0,
+        "Bottom": -30.0
+      },
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_CharacterPrice_C:WidgetTree.VerticalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.38"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_CharacterPrice_C:WidgetTree.DiscountPercentageContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.7"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_1",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.39"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PricePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.12"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_1",
+    "Properties": {
+      "Padding": {
+        "Top": 20.0,
+        "Bottom": -30.0
+      },
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.39"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DiscountPercentageContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_CharacterPrice_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_CharacterPrice_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/NE_WBP_CharacterPrice.9"
+      }
+    }
+  }
+]

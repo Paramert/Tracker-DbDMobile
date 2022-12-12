@@ -1,0 +1,1290 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_TallyRankBannerPip02_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_TallyRankBannerPip02_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.37"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation NE_WBP_TallyRankBannerPip02_C:Pip_In_INST",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.35"
+        },
+        {
+          "ObjectName": "WidgetAnimation NE_WBP_TallyRankBannerPip02_C:Pip_New_in_INST",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.36"
+        }
+      ],
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Pip_New_in",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2147491860,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Pip_In",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2147491860,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Filling",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MarkerBackground",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Background",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 5,
+        "PropertyClass": {
+          "ObjectName": "Class PaperSprite",
+          "ObjectPath": "/Script/Paper2D"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Icon",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 5,
+        "PropertyClass": {
+          "ObjectName": "Class PaperSprite",
+          "ObjectPath": "/Script/Paper2D"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_TallyRankBannerPip02_C Default__NE_WBP_TallyRankBannerPip02_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.1"
+    }
+  },
+  {
+    "Type": "NE_WBP_TallyRankBannerPip02_C",
+    "Name": "Default__NE_WBP_TallyRankBannerPip02_C",
+    "Properties": {
+      "Background": {
+        "ObjectName": "PaperSprite rankMarker_empty2",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/rankMarker_empty2.1"
+      },
+      "Icon": {
+        "ObjectName": "PaperSprite rankMarker_fill2",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/rankMarker_fill2.1"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_TallyRankBannerPip02_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_TallyRankBannerPip02_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.4"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_TallyRankBannerPip02_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -2.0,
+          "Right": 44.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_TallyRankBannerPip02_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.2"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_TallyRankBannerPip02_C:WidgetTree.Filling",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 44.0,
+          "Bottom": 60.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_TallyRankBannerPip02_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.2"
+      },
+      "Content": {
+        "ObjectName": "SizeBox NE_WBP_TallyRankBannerPip02_C:WidgetTree.SizeBox_81",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 42.0,
+          "Bottom": 42.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_TallyRankBannerPip02_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.2"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_TallyRankBannerPip02_C:WidgetTree.MarkerBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -2.0,
+          "Right": 44.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.3"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Filling",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 44.0,
+          "Bottom": 60.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.3"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_81",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 42.0,
+          "Bottom": 42.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.3"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MarkerBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.13"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Filling",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 30.0,
+          "Y": 52.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite rankMarker_fill2",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/rankMarker_fill2.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_TallyRankBannerPip02_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.4"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "MarkerBackground",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 36.0,
+          "Y": 37.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite rankMarker_empty2",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/rankMarker_empty2.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_TallyRankBannerPip02_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.6"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Filling",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 30.0,
+          "Y": 52.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite rankMarker_fill2",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/rankMarker_fill2.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.7"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "MarkerBackground",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 36.0,
+          "Y": 37.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite rankMarker_empty2",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/rankMarker_empty2.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.9"
+      }
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Pip_In",
+    "Outer": "Pip_In_INST",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "665AEDC5-40411AB1-F5E8C5B9-E3E93736",
+          "Name": "Filling",
+          "PossessedObjectClass": {
+            "ObjectName": "Class Image",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "665AEDC5-40411AB1-F5E8C5B9-E3E93736",
+          "BindingName": "Filling",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack NE_WBP_TallyRankBannerPip02_C:Pip_In_INST.Pip_In.MovieScene2DTransformTrack_1",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.18"
+            },
+            {
+              "ObjectName": "MovieSceneColorTrack NE_WBP_TallyRankBannerPip02_C:Pip_In_INST.Pip_In.MovieSceneColorTrack_1",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.30"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 12001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "53E7E3ED-485AD1D7-8A198C89-672D9EDD"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Pip_New_in",
+    "Outer": "Pip_New_in_INST",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "B75061C2-4E59ECBD-B2F2D587-5E5D3D41",
+          "Name": "Filling",
+          "PossessedObjectClass": {
+            "ObjectName": "Class Image",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "B75061C2-4E59ECBD-B2F2D587-5E5D3D41",
+          "BindingName": "Filling",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneColorTrack NE_WBP_TallyRankBannerPip02_C:Pip_New_in_INST.Pip_New_in.MovieSceneColorTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.31"
+            },
+            {
+              "ObjectName": "MovieScene2DTransformTrack NE_WBP_TallyRankBannerPip02_C:Pip_New_in_INST.Pip_New_in.MovieScene2DTransformTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.19"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 18001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "AD729E76-4C86E723-EB31BE90-27984AF2"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_1",
+    "Properties": {
+      "Translation": null,
+      "EvalOptions": {
+        "CompletionMode": "EMovieSceneCompletionMode::KeepState"
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_TallyRankBannerPip02_C:Pip_In_INST.Pip_In.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.20"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_TallyRankBannerPip02_C:Pip_In_INST.Pip_In.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.21"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 12001
+            }
+          }
+        }
+      },
+      "Signature": "1795C413-4EE5DE37-FA8630A7-CDC9F5AB"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Properties": {
+      "Scale": null,
+      "Scale": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_TallyRankBannerPip02_C:Pip_New_in_INST.Pip_New_in.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.24"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_TallyRankBannerPip02_C:Pip_New_in_INST.Pip_New_in.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.25"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 18001
+            }
+          }
+        }
+      },
+      "Signature": "C3ED1139-4B4D2B9E-1E91DFAC-511825F4"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_1",
+    "Outer": "Pip_In",
+    "Properties": {
+      "PropertyName": "RenderTransform",
+      "PropertyPath": "RenderTransform",
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection NE_WBP_TallyRankBannerPip02_C:Pip_In_INST.Pip_In.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.16"
+        }
+      ],
+      "Signature": "3014FCD7-4DC5DCF2-E669E8AE-7C9E4B8C"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "Pip_New_in",
+    "Properties": {
+      "PropertyName": "RenderTransform",
+      "PropertyPath": "RenderTransform",
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection NE_WBP_TallyRankBannerPip02_C:Pip_New_in_INST.Pip_New_in.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.17"
+        }
+      ],
+      "Signature": "E08C3094-4B92506E-B0995DBA-F6175370"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneColorSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneColorSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneColorSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneColorSection_0"
+  },
+  {
+    "Type": "MovieSceneColorSection",
+    "Name": "MovieSceneColorSection_0",
+    "Outer": "MovieSceneColorTrack_1",
+    "Properties": {
+      "RedCurve": null,
+      "GreenCurve": null,
+      "BlueCurve": null,
+      "AlphaCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_TallyRankBannerPip02_C:Pip_In_INST.Pip_In.MovieSceneColorTrack_1.MovieSceneColorSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.22"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_TallyRankBannerPip02_C:Pip_In_INST.Pip_In.MovieSceneColorTrack_1.MovieSceneColorSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.23"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 12000
+            }
+          }
+        }
+      },
+      "Signature": "84C16781-4FDE162E-C658B2BA-E1066773"
+    }
+  },
+  {
+    "Type": "MovieSceneColorSection",
+    "Name": "MovieSceneColorSection_0",
+    "Outer": "MovieSceneColorTrack_0",
+    "Properties": {
+      "RedCurve": null,
+      "GreenCurve": null,
+      "BlueCurve": null,
+      "AlphaCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_TallyRankBannerPip02_C:Pip_New_in_INST.Pip_New_in.MovieSceneColorTrack_0.MovieSceneColorSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.26"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_TallyRankBannerPip02_C:Pip_New_in_INST.Pip_New_in.MovieSceneColorTrack_0.MovieSceneColorSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.27"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 18001
+            }
+          }
+        }
+      },
+      "Signature": "CE931B3C-46E600CE-5AB9A0B6-476C49D1"
+    }
+  },
+  {
+    "Type": "MovieSceneColorTrack",
+    "Name": "MovieSceneColorTrack_1",
+    "Outer": "Pip_In",
+    "Properties": {
+      "PropertyName": "ColorAndOpacity",
+      "PropertyPath": "ColorAndOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneColorSection NE_WBP_TallyRankBannerPip02_C:Pip_In_INST.Pip_In.MovieSceneColorTrack_1.MovieSceneColorSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.28"
+        }
+      ],
+      "Signature": "1864E67E-406F372A-96C5FBB6-978A5F02"
+    }
+  },
+  {
+    "Type": "MovieSceneColorTrack",
+    "Name": "MovieSceneColorTrack_0",
+    "Outer": "Pip_New_in",
+    "Properties": {
+      "PropertyName": "ColorAndOpacity",
+      "PropertyPath": "ColorAndOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneColorSection NE_WBP_TallyRankBannerPip02_C:Pip_New_in_INST.Pip_New_in.MovieSceneColorTrack_0.MovieSceneColorSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.29"
+        }
+      ],
+      "Signature": "1956FD27-46FD7610-8F15EF8C-D9226F7A"
+    }
+  },
+  {
+    "Type": "NE_WBP_TallyRankBannerPip02_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_TallyRankBannerPip02_C",
+    "Properties": {
+      "Filling": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Filling",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.12"
+      },
+      "MarkerBackground": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MarkerBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.13"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.38"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_81",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_TallyRankBannerPip02_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.5"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_81",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.8"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Pip_In_INST",
+    "Outer": "NE_WBP_TallyRankBannerPip02_C",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene NE_WBP_TallyRankBannerPip02_C:Pip_In_INST.Pip_In",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.14"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Filling",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "665AEDC5-40411AB1-F5E8C5B9-E3E93736",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Pip_In",
+      "PrecompiledEvaluationTemplate": {
+        "Tracks": null,
+        "EvaluationField": {
+          "Ranges": [
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 12001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 12001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            }
+          ],
+          "Groups": [
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 2
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            }
+          ],
+          "MetaData": [
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            }
+          ]
+        },
+        "SequenceSignature": "0293EDA8-47D0887B-D0A70F95-E65DECC5",
+        "TemplateSerialNumber": {
+          "Value": 1
+        },
+        "TemplateLedger": {
+          "LastTrackIdentifier": {
+            "Value": 1
+          },
+          "TrackSignatureToTrackIdentifier": null
+        },
+        "TrackFieldData": null
+      },
+      "Signature": "0293EDA8-47D0887B-D0A70F95-E65DECC5"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Pip_New_in_INST",
+    "Outer": "NE_WBP_TallyRankBannerPip02_C",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene NE_WBP_TallyRankBannerPip02_C:Pip_New_in_INST.Pip_New_in",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.15"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Filling",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "B75061C2-4E59ECBD-B2F2D587-5E5D3D41",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Pip_New_in",
+      "PrecompiledEvaluationTemplate": {
+        "Tracks": null,
+        "EvaluationField": {
+          "Ranges": [
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 18001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 18001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            }
+          ],
+          "Groups": [
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 2
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            }
+          ],
+          "MetaData": [
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            }
+          ]
+        },
+        "SequenceSignature": "D188CD3A-407FC5CC-F88E15AE-85E5E9DC",
+        "TemplateSerialNumber": {
+          "Value": 1
+        },
+        "TemplateLedger": {
+          "LastTrackIdentifier": {
+            "Value": 1
+          },
+          "TrackSignatureToTrackIdentifier": null
+        },
+        "TrackFieldData": null
+      },
+      "Signature": "D188CD3A-407FC5CC-F88E15AE-85E5E9DC"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_TallyRankBannerPip02_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_TallyRankBannerPip02_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.2"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyRankBannerPip02.3"
+      }
+    }
+  }
+]

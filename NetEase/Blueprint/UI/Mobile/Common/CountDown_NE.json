@@ -1,0 +1,3473 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "CountDown_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree CountDown_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.134"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ChangeTimeBG",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetSwitcher",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OnLeftStyle",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SubmenuButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_SubmenuButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/PanelScreen/WBP_SubmenuButton.10"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_BothSides_CountDown",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_BothSides_EndTitle",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_BothSides_StartTime",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_BothSides_Title",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_OnLeft_Time",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_OnLeft_Title",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TimerSwitcher",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetSwitcher",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "CountDown_NE_C Default__CountDown_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.1"
+    }
+  },
+  {
+    "Type": "CountDown_NE_C",
+    "Name": "Default__CountDown_NE_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "BackgroundColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LinPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.LinPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.18"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.64"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "OnLeftStyle",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot CountDown_NE_C:WidgetTree.TimerSwitcher.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.128"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "P1_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.P1_1.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.P1_1.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.22"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.62"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "P2_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.P2_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.P2_1.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Panel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.Panel.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.Panel.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.27"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Timer_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.Timer_1.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.28"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LinPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LinPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.29"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.73"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "OnLeftStyle",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.32"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.TimerSwitcher.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.132"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "P1_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P1_1.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P1_1.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.33"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.71"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "P2_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P2_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P2_1.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.36"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.72"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Panel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Panel.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.37"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Panel.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.38"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.43"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.41"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.39"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.42"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.44"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "NotificationPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationPanel.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.39"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SelectedCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.46"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.47"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.48"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.49"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.41"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Timer_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer_1.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.50"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "LinPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 5.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.LinPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.3"
+      },
+      "Content": {
+        "ObjectName": "Image CountDown_NE_C:WidgetTree.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.76"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -33.0,
+          "Right": 0.0,
+          "Bottom": 66.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.Timer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -33.0,
+          "Right": 450.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.4"
+      },
+      "Content": {
+        "ObjectName": "Image CountDown_NE_C:WidgetTree.top_divider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.79"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 27.0,
+          "Right": 600.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.4"
+      },
+      "Content": {
+        "ObjectName": "Image CountDown_NE_C:WidgetTree.divider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.75"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "P1_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 15.0,
+          "Right": 0.0,
+          "Bottom": 15.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.P1_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.5"
+      },
+      "Content": {
+        "ObjectName": "SizeBox CountDown_NE_C:WidgetTree.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.96"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "P1_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -125.0,
+          "Top": -30.0,
+          "Right": 0.0,
+          "Bottom": 85.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.P1_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.5"
+      },
+      "Content": {
+        "ObjectName": "Image CountDown_NE_C:WidgetTree.TimeLeftBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.78"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "P2_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -30.0,
+          "Right": -200.0,
+          "Bottom": 85.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.P2_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.6"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher CountDown_NE_C:WidgetTree.ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.122"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "P2_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 15.0,
+          "Right": 0.0,
+          "Bottom": 15.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.P2_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.6"
+      },
+      "Content": {
+        "ObjectName": "SizeBox CountDown_NE_C:WidgetTree.SizeBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.97"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Panel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.Panel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.7"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher CountDown_NE_C:WidgetTree.TimerSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.123"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "Panel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Right": 125.0,
+          "Bottom": 125.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.Panel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.7"
+      },
+      "Content": {
+        "ObjectName": "WBP_SubmenuButton_C CountDown_NE_C:WidgetTree.SubmenuButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.120"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "Timer_1",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.Timer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.8"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox CountDown_NE_C:WidgetTree.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "LinPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 5.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LinPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.82"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -33.0,
+          "Right": 0.0,
+          "Bottom": 66.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.10"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Timer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -33.0,
+          "Right": 450.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.top_divider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.93"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 27.0,
+          "Right": 600.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.divider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.81"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "P1_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 15.0,
+          "Right": 0.0,
+          "Bottom": 15.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P1_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.11"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.98"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "P1_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -125.0,
+          "Top": -30.0,
+          "Right": 0.0,
+          "Bottom": 85.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P1_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TimeLeftBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.92"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "P2_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -30.0,
+          "Right": -200.0,
+          "Bottom": 85.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P2_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.12"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.124"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "P2_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 15.0,
+          "Right": 0.0,
+          "Bottom": 15.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P2_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.12"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.99"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Panel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Panel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.13"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.TimerSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.125"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "Panel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Right": 125.0,
+          "Bottom": 125.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Panel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.13"
+      },
+      "Content": {
+        "ObjectName": "WBP_SubmenuButton_C WidgetArchetype:WidgetTree_0.SubmenuButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.121"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 50.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.14"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 107.0,
+          "Bottom": 106.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.84"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 107.0,
+          "Bottom": 106.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.14"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -50.0,
+          "Top": -50.0,
+          "Right": -50.0,
+          "Bottom": -50.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.14"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Top": 11.5,
+          "Right": 12.0,
+          "Bottom": 11.5
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.14"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.94"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -3.0,
+          "Top": -3.0,
+          "Right": -3.0,
+          "Bottom": -3.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.IMG_RoundBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.90"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "NotificationPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationBadge",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.91"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "SelectedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 35.0,
+          "Bottom": 34.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Image_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.86"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "SelectedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 35.0,
+          "Bottom": 34.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Image_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.87"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "SelectedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 35.0,
+          "Bottom": 34.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Image_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.88"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "SelectedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 35.0,
+          "Bottom": 34.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Image_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.89"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "Timer_1",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Timer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.17"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.55"
+      }
+    }
+  },
+  {
+    "Type": "CountDown_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__CountDown_NE_C",
+    "Properties": {
+      "ChangeTimeBG": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.124"
+      },
+      "OnLeftStyle": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.10"
+      },
+      "SubmenuButton": {
+        "ObjectName": "WBP_SubmenuButton_C WidgetArchetype:WidgetTree_0.SubmenuButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.121"
+      },
+      "Text_BothSides_CountDown": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_CountDown",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.113"
+      },
+      "Text_BothSides_EndTitle": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_EndTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.114"
+      },
+      "Text_BothSides_StartTime": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_StartTime",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.115"
+      },
+      "Text_BothSides_Title": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.116"
+      },
+      "Text_OnLeft_Time": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_OnLeft_Time",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.117"
+      },
+      "Text_OnLeft_Title": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_OnLeft_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.118"
+      },
+      "TimerSwitcher": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.TimerSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.125"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.135"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "BothSidesStyle",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.61"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.60"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.56"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.59"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.57"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.58"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot CountDown_NE_C:WidgetTree.TimerSwitcher.WidgetSwitcherSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.129"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_198",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.62"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.64"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.63"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.Timer_1.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.28"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "BothSidesStyle",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.70"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.69"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.65"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.68"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.66"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.67"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.TimerSwitcher.WidgetSwitcherSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.133"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_198",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.71"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.73"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.72"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer_1.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.50"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox CountDown_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.52"
+      },
+      "Content": {
+        "ObjectName": "TextBlock CountDown_NE_C:WidgetTree.Text_BothSides_CountDown",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.106"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox CountDown_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.52"
+      },
+      "Content": {
+        "ObjectName": "TextBlock CountDown_NE_C:WidgetTree.TextBlock_44",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.112"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "Padding": {
+        "Right": 100.0
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox CountDown_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.52"
+      },
+      "Content": {
+        "ObjectName": "TextBlock CountDown_NE_C:WidgetTree.Text_BothSides_EndTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.107"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox CountDown_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.52"
+      },
+      "Content": {
+        "ObjectName": "TextBlock CountDown_NE_C:WidgetTree.Text_BothSides_StartTime",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.108"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_8",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox CountDown_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.52"
+      },
+      "Content": {
+        "ObjectName": "Spacer CountDown_NE_C:WidgetTree.Spacer_473",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.104"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_9",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox CountDown_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.52"
+      },
+      "Content": {
+        "ObjectName": "TextBlock CountDown_NE_C:WidgetTree.Text_BothSides_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.109"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox CountDown_NE_C:WidgetTree.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.53"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.P1_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.5"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox CountDown_NE_C:WidgetTree.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.53"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.P2_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.6"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox CountDown_NE_C:WidgetTree.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.53"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.LinPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.3"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.54"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_CountDown",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.113"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.54"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_44",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.119"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "Padding": {
+        "Right": 100.0
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.54"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_EndTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.114"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.54"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_StartTime",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.115"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_8",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.54"
+      },
+      "Content": {
+        "ObjectName": "Spacer WidgetArchetype:WidgetTree_0.Spacer_473",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.105"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_9",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.54"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.116"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.55"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P1_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.11"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.55"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P2_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.12"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.55"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LinPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.9"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BlueBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.017642,
+            "G": 0.057805,
+            "B": 0.082283,
+            "A": 1.0,
+            "Hex": "FF244451"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot CountDown_NE_C:WidgetTree.ChangeTimeBG.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.127"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "divider",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.21"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.LinPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.18"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RedBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.270833,
+            "G": 0.0,
+            "B": 0.002249,
+            "A": 1.0,
+            "Hex": "FF8E0007"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot CountDown_NE_C:WidgetTree.ChangeTimeBG.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.126"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TimeLeftBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.P1_1.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.23"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "top_divider",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.20"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BlueBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.017642,
+            "G": 0.057805,
+            "B": 0.082283,
+            "A": 1.0,
+            "Hex": "FF244451"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.ChangeTimeBG.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.131"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "divider",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.32"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LinPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.29"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RedBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.270833,
+            "G": 0.0,
+            "B": 0.002249,
+            "A": 1.0,
+            "Hex": "FF8E0007"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.ChangeTimeBG.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.130"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 107.0,
+          "Y": 106.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Filters_Box",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Filters_Box.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.75,
+        "Hex": "BFFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.40"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Icon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 89.0,
+          "Y": 89.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_CharSelect_info_icon",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/CharacterSelect/Atl_CharSelect_info_icon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.95"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.46"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_6",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.47"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": -1.0
+        },
+        "Angle": -90.0
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_7",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.48"
+      },
+      "RenderTransform": {
+        "Angle": -90.0
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_8",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.49"
+      },
+      "RenderTransform": {
+        "Angle": 180.0
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IMG_RoundBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D highlightOutline_item",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Items/highlightOutline_item.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.44"
+      },
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "NotificationBadge",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 99.0,
+          "Y": 110.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_Notification",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/Atl_Main_Notification.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationPanel.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.45"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TimeLeftBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P1_1.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.34"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "top_divider",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.31"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.95"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.43"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.94"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Icon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.85"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot CountDown_NE_C:WidgetTree.SizeBox_1.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.100"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.P1_1.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.22"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_3",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot CountDown_NE_C:WidgetTree.SizeBox_3.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.101"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.P2_1.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.25"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_1.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.102"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P1_1.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.33"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_3",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_3.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.103"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P2_1.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.36"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Right": 20.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox CountDown_NE_C:WidgetTree.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.96"
+      },
+      "Content": {
+        "ObjectName": "TextBlock CountDown_NE_C:WidgetTree.Text_OnLeft_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.111"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_3",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Right": 20.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox CountDown_NE_C:WidgetTree.SizeBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.97"
+      },
+      "Content": {
+        "ObjectName": "TextBlock CountDown_NE_C:WidgetTree.Text_OnLeft_Time",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.110"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Right": 20.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.98"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_OnLeft_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.118"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_3",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Right": 20.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.99"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_OnLeft_Time",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.117"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_473",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.60"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_473",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.69"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_CountDown",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "TIME PERIOD: "
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 0.7,
+          "Hex": "B3D9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.56"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_EndTitle",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "4/18 17:00 UTC"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.58"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_StartTime",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "4/6 17:00 UTC"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.59"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_Title",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "923B00654287A9D37EDA049C56358146",
+        "SourceString": "BLOODHUNT+"
+      },
+      "Font": {
+        "Size": 35
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.61"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_OnLeft_Time",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "AF7F671B4AE1490F132FB99FE3AF392E",
+        "SourceString": "6D 21H 23M"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot CountDown_NE_C:WidgetTree.SizeBox_3.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.101"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_OnLeft_Title",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "061E8C7248259E470CBC83A4C250E292",
+        "SourceString": "TIME LEFT"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot CountDown_NE_C:WidgetTree.SizeBox_1.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.100"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_44",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": " - "
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot CountDown_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.57"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_CountDown",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "TIME PERIOD: "
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 0.7,
+          "Hex": "B3D9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.65"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_EndTitle",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "4/18 17:00 UTC"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.67"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_StartTime",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "4/6 17:00 UTC"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.68"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_Title",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "923B00654287A9D37EDA049C56358146",
+        "SourceString": "BLOODHUNT+"
+      },
+      "Font": {
+        "Size": 35
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.70"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_OnLeft_Time",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "AF7F671B4AE1490F132FB99FE3AF392E",
+        "SourceString": "6D 21H 23M"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_3.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.103"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_OnLeft_Title",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "061E8C7248259E470CBC83A4C250E292",
+        "SourceString": "TIME LEFT"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_1.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.102"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_44",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": " - "
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.66"
+      }
+    }
+  },
+  {
+    "Type": "WBP_SubmenuButton_C",
+    "Name": "SubmenuButton",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_SubmenuButton_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.Panel.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.27"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "WBP_SubmenuButton_C",
+    "Name": "SubmenuButton",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_SubmenuButton_C",
+    "Properties": {
+      "Icon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Icon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.85"
+      },
+      "IMG_RoundBox": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.IMG_RoundBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.90"
+      },
+      "NotificationBadge": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationBadge",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.91"
+      },
+      "SelectedCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.16"
+      },
+      "NotificationPanel": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.15"
+      },
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.2"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.136"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Panel.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.38"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "ChangeTimeBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot CountDown_NE_C:WidgetTree.ChangeTimeBG.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.126"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot CountDown_NE_C:WidgetTree.ChangeTimeBG.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.127"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.P2_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.24"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "TimerSwitcher",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot CountDown_NE_C:WidgetTree.TimerSwitcher.WidgetSwitcherSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.129"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot CountDown_NE_C:WidgetTree.TimerSwitcher.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.128"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot CountDown_NE_C:WidgetTree.Panel.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.26"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "ChangeTimeBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.ChangeTimeBG.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.130"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.ChangeTimeBG.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.131"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P2_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.35"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "TimerSwitcher",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.TimerSwitcher.WidgetSwitcherSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.133"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.TimerSwitcher.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.132"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Panel.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.37"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "ChangeTimeBG",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher CountDown_NE_C:WidgetTree.ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.122"
+      },
+      "Content": {
+        "ObjectName": "Image CountDown_NE_C:WidgetTree.RedBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.77"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "ChangeTimeBG",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher CountDown_NE_C:WidgetTree.ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.122"
+      },
+      "Content": {
+        "ObjectName": "Image CountDown_NE_C:WidgetTree.BlueBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.74"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "TimerSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher CountDown_NE_C:WidgetTree.TimerSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.123"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "TimerSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher CountDown_NE_C:WidgetTree.TimerSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.123"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox CountDown_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.52"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "ChangeTimeBG",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.124"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RedBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.83"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "ChangeTimeBG",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.124"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BlueBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.80"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "TimerSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.TimerSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.125"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.10"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "TimerSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.TimerSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.125"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.54"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "CountDown_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel CountDown_NE_C:WidgetTree.Panel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Panel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "SubmenuButton",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/CountDown_NE.14"
+      }
+    }
+  }
+]

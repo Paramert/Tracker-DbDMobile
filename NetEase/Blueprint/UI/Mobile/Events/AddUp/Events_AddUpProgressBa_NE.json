@@ -1,0 +1,732 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Events_AddUpProgressBa_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree Events_AddUpProgressBa_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.25"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "IMG_BarHead",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ProgressBarHeadLeftCanvas",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ProgressBarHeadRightCanvas",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RitualProgressBar",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ProgressBar",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Events_AddUpProgressBa_NE_C Default__Events_AddUpProgressBa_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.1"
+    }
+  },
+  {
+    "Type": "Events_AddUpProgressBa_NE_C",
+    "Name": "Default__Events_AddUpProgressBa_NE_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarCanvas.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarCanvas.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.9"
+        }
+      ],
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarHeadLeftCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadLeftCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.10"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadCanvas.VerticalBoxSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.21"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarHeadRightCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadCanvas.VerticalBoxSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.22"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.12"
+        }
+      ],
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarHeadLeftCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadLeftCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas.VerticalBoxSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.23"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarHeadRightCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas.VerticalBoxSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.24"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -25.0,
+          "Right": 50.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.2"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar Events_AddUpProgressBa_NE_C:WidgetTree.RitualProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -25.0,
+          "Right": 50.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.2"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ProgressBarHeadLeftCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.0,
+          "Right": 21.0,
+          "Bottom": 103.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.3"
+      },
+      "Content": {
+        "ObjectName": "Image Events_AddUpProgressBa_NE_C:WidgetTree.IMG_BarHead",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -25.0,
+          "Right": 50.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.5"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.RitualProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -25.0,
+          "Right": 50.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.5"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ProgressBarHeadLeftCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.0,
+          "Right": 21.0,
+          "Bottom": 103.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.6"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.IMG_BarHead",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.16"
+      }
+    }
+  },
+  {
+    "Type": "Events_AddUpProgressBa_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__Events_AddUpProgressBa_NE_C",
+    "Properties": {
+      "IMG_BarHead": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.IMG_BarHead",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.16"
+      },
+      "ProgressBarHeadLeftCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.6"
+      },
+      "ProgressBarHeadRightCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarHeadRightCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.7"
+      },
+      "RitualProgressBar": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.RitualProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.18"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.26"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IMG_BarHead",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 21.0,
+          "Y": 103.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Rituals_ProgBarEdge",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/AddUp/Atl_Rituals_ProgBarEdge.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadLeftCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.10"
+      },
+      "RenderTransformPivot": {
+        "X": 1.0,
+        "Y": 0.5
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IMG_BarHead",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 21.0,
+          "Y": 103.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Rituals_ProgBarEdge",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/AddUp/Atl_Rituals_ProgBarEdge.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadLeftCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.13"
+      },
+      "RenderTransformPivot": {
+        "X": 1.0,
+        "Y": 0.5
+      }
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "RitualProgressBar",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 29.0,
+            "Y": 610.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.052083,
+              "G": 0.052083,
+              "B": 0.052083,
+              "A": 1.0,
+              "Hex": "FF404040"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/AddUp/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 29.0,
+            "Y": 610.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF0000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/AddUp/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "MarqueeImage": {
+          "ImageSize": {
+            "X": 610.0,
+            "Y": 29.0
+          }
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::TopToBottom",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarCanvas.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.8"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "RitualProgressBar",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 29.0,
+            "Y": 610.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.052083,
+              "G": 0.052083,
+              "B": 0.052083,
+              "A": 1.0,
+              "Hex": "FF404040"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/AddUp/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 29.0,
+            "Y": 610.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF0000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/AddUp/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "MarqueeImage": {
+          "ImageSize": {
+            "X": 610.0,
+            "Y": 29.0
+          }
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::TopToBottom",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.11"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "ProgressBarHeadCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadCanvas.VerticalBoxSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.21"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadCanvas.VerticalBoxSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.22"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarCanvas.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.9"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "ProgressBarHeadCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas.VerticalBoxSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.23"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas.VerticalBoxSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.24"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.12"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_6",
+    "Outer": "ProgressBarHeadCanvas",
+    "Properties": {
+      "Size": {
+        "Value": 0.5,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.19"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.3"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_8",
+    "Outer": "ProgressBarHeadCanvas",
+    "Properties": {
+      "Size": {
+        "Value": 0.5,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.19"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarHeadRightCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.4"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_6",
+    "Outer": "ProgressBarHeadCanvas",
+    "Properties": {
+      "Size": {
+        "Value": 0.5,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.20"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.6"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_8",
+    "Outer": "ProgressBarHeadCanvas",
+    "Properties": {
+      "Size": {
+        "Value": 0.5,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.20"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarHeadRightCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Events_AddUpProgressBa_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel Events_AddUpProgressBa_NE_C:WidgetTree.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.2"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/AddUp/Events_AddUpProgressBa_NE.5"
+      }
+    }
+  }
+]

@@ -1,0 +1,4945 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_PerkSelectionSlot_Reincarnation_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.163"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DescriptionText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class UMGHtmlRichText",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HorizontalSeparator",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_0",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PerkActionButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass NE_WBP_PerkActionButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkActionButton.13"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PerkName",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PerksBG",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PerksInfoScrollBox",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ScrollBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_PerkSelectionSlot_Reincarnation_C Default__NE_WBP_PerkSelectionSlot_Reincarnation_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.1"
+    }
+  },
+  {
+    "Type": "NE_WBP_PerkSelectionSlot_Reincarnation_C",
+    "Name": "Default__NE_WBP_PerkSelectionSlot_Reincarnation_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "ActionButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 153.0,
+            "Y": 153.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Hud_BTN2_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Atl_Hud_BTN2_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 153.0,
+            "Y": 152.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Hud_BTN2_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Atl_Hud_BTN2_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 153.0,
+            "Y": 152.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Hud_BTN2_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Atl_Hud_BTN2_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 153.0,
+            "Y": 152.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Hud_BTN2_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Atl_Hud_BTN2_Up.0"
+          }
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.42"
+      },
+      "RenderTransform": {
+        "Angle": 45.0
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "EmptyButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 182.0,
+            "Y": 181.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Perk_Full",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Perk_Full.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 182.0,
+            "Y": 181.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Perk_Full",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Perk_Full.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 182.0,
+            "Y": 181.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Perk_Full",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Perk_Full.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 182.0,
+            "Y": 181.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Perk_Full",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Perk_Full.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.66"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "LockedButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 32.0,
+            "Y": 32.0
+          },
+          "Margin": {
+            "Left": 0.25,
+            "Top": 0.25,
+            "Right": 0.25,
+            "Bottom": 0.25
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png",
+          "DrawAs": "ESlateBrushDrawType::Box",
+          "ImageType": "ESlateBrushImageType::FullColor"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.75"
+      },
+      "RenderTransform": {
+        "Angle": 45.0
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.31"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.30"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Perks",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.Perks.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.32"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksContainer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "PerksContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksContainer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksContainer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.33"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.95"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ReverseScale",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.ReverseScale.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.35"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksInfoScrollBox.ScrollBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.142"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TextContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.TextContainer.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.36"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.93"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Top",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.Top.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.37"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.155"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.38"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.39"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.38"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ActionCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.47"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_20",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.43"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_21",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.44"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.41"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.42"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.45"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.46"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.48"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_15",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.51"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.95,
+          "Y": 0.95
+        }
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_30",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.54"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_15",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.51"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.55"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.49"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.50"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.52"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.53"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPerk",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.58"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_15",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.61"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.60"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.59"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.56"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.57"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.62"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.63"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.64"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_21",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.44"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "EmptyCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.66"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.65"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_30",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.54"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "HighlightWidget",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightWidget.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.68"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightWidget.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.67"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.50"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LoadoutSelectedImage",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.69"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.70"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.71"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.72"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.49"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LockedCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedCanvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.73"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedCanvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.74"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.75"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "PerkLevel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkLevel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.76"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkLevel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.77"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.48"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.78"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.79"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.80"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "PrivateCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateCanvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.81"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.82"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.55"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.95,
+          "Y": 0.95
+        }
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Tooltip_btn_anim",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.84"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.83"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.53"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.75,
+          "Y": 0.75
+        },
+        "Angle": 45.0
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Perks",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Perks.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.85"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerksContainer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.86"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "PerksContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerksContainer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.87"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerksContainer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.86"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.98"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ReverseScale",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ReverseScale.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.88"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.PerksInfoScrollBox.ScrollBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.143"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TextContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TextContainer.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.89"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.96"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Top",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Top.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.90"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.160"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1030.0,
+          "Bottom": 880.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -606.5,
+          "Top": -297.5,
+          "Right": 1213.0,
+          "Bottom": 585.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.5"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.91"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Perks",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 54.0,
+          "Top": 51.0,
+          "Right": 54.0,
+          "Bottom": 51.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.Perks",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.7"
+      },
+      "Content": {
+        "ObjectName": "NE_WBP_PerkActionButton_C NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerkActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.134"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "PerksContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 308.0,
+          "Bottom": 302.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.Perks",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "PerksContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -9.333334,
+          "Right": 309.33334,
+          "Bottom": 295.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.101"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ReverseScale",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": -5.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.ReverseScale",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.9"
+      },
+      "Content": {
+        "ObjectName": "UMGHtmlRichText NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.DescriptionText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.150"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "TextContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -5.0,
+          "Right": 119.58148,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.TextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.10"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.152"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Top",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 30.0,
+          "Top": 16.0,
+          "Right": 693.0,
+          "Bottom": 59.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.Top",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.11"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerkName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.144"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1030.0,
+          "Bottom": 880.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.12"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -606.5,
+          "Top": -297.5,
+          "Right": 1213.0,
+          "Bottom": 585.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.12"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.92"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.14"
+      },
+      "Content": {
+        "ObjectName": "NE_WBP_PerkProgressBar_C WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.136"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 36.883976,
+          "Top": 41.57037,
+          "Right": 73.42857,
+          "Bottom": 37.262093
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.14"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.TextStackCount",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.146"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 11.0,
+          "Top": 15.0,
+          "Right": 13.0,
+          "Bottom": 11.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.14"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_20",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePerkBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.121"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_21",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.14"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 11.0,
+          "Top": 15.0,
+          "Right": 13.0,
+          "Bottom": 11.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "ZOrder": 1,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageCanBeClickable",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.108"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 0.8,
+          "Top": 4.4000006,
+          "Right": 2.4,
+          "Bottom": 0.8
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "ZOrder": 1,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.114"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 20.0,
+          "Top": 4.0,
+          "Right": -10.0,
+          "Bottom": 6.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.135343,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageShadow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.126"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "ActionCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.14"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_15",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -0.495238,
+          "Top": 1.766315,
+          "Right": 201.85715,
+          "Bottom": 221.28572
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_30",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.EmptyCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageEventBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.110"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 90.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageExtraIndicator2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.111"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageRarityBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.124"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePainttop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.120"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePaintBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.119"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_15",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 15.0,
+          "Top": 13.857143,
+          "Right": 20.714287,
+          "Bottom": 35.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePaint",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.118"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 90.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageExtraIndicator3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.112"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageGradient",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.113"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0,
+          "Right": 10.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.115"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "EmptyCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -2.3076923,
+          "Right": 54.615387,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.EmptyCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.17"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageEmptyIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.109"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "EmptyCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 200.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.EmptyCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.17"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.EmptyButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "HighlightWidget",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.18"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightPicture_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.106"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "HighlightWidget",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.18"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.105"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "LoadoutSelectedImage",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 14.533846,
+          "Top": 0.647619,
+          "Right": 55.0,
+          "Bottom": 55.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.116"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "LoadoutSelectedImage",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.478182,
+          "Top": 0.885714,
+          "Right": 55.0,
+          "Bottom": 55.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.125"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "LoadoutSelectedImage",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -2.0,
+          "Top": 14.0,
+          "Right": 55.0,
+          "Bottom": 55.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.127"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "LoadoutSelectedImage",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -14.0,
+          "Right": 55.0,
+          "Bottom": 55.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.107"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "LockedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -2.5,
+          "Top": -4.0,
+          "Right": 117.0,
+          "Bottom": 110.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.20"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.153"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "LockedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -2.788283,
+          "Top": -3.0,
+          "Right": 103.0,
+          "Bottom": 109.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.20"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageLockIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.117"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "LockedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 25.0,
+          "Top": 40.0,
+          "Right": 33.0,
+          "Bottom": 34.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.20"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "PerkLevel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 74.0,
+          "Top": -84.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePerkLevelBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.123"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "PerkLevel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 34.5,
+          "Top": -51.0,
+          "Right": 10.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePerkLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.122"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.22"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.ImageRed",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.129"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.22"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.ImageBlack",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.128"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.22"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.TextDebug",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.145"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "PrivateCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.23"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateShadow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.131"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "PrivateCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.23"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.130"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Tooltip_btn_anim",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -160.0,
+          "Top": -167.0,
+          "Right": 320.4,
+          "Bottom": 333.2
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.24"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.Item_Highlighted",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.138"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Tooltip_btn_anim",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1.0,
+          "Top": -2.428571,
+          "Right": 281.7143,
+          "Bottom": 255.71428
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.24"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.smoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.132"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Perks",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 54.0,
+          "Top": 51.0,
+          "Right": 54.0,
+          "Bottom": 51.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Perks",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.25"
+      },
+      "Content": {
+        "ObjectName": "NE_WBP_PerkActionButton_C WidgetArchetype:WidgetTree_0.PerkActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.135"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "PerksContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 308.0,
+          "Bottom": 302.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerksContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.26"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Perks",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "PerksContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -9.333334,
+          "Right": 309.33334,
+          "Bottom": 295.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerksContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.26"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerksBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.133"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ReverseScale",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": -5.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ReverseScale",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.27"
+      },
+      "Content": {
+        "ObjectName": "UMGHtmlRichText WidgetArchetype:WidgetTree_0.DescriptionText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.151"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "TextContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -5.0,
+          "Right": 119.58148,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.28"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.154"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Top",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 30.0,
+          "Top": 16.0,
+          "Right": 693.0,
+          "Bottom": 59.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Top",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.29"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PerkName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.149"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.95"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.94"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.93"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.31"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.98"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.97"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.96"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.39"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.91"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.TextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.10"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": -30.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.91"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.Image_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.100"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.91"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.8"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.92"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.28"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": -30.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.92"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.103"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.92"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerksContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.26"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HorizontalSeparator",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 676.0,
+          "Y": 1.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.157"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": 2.3
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 10.0,
+          "Y": 121.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Tally_Scoreboard_SmallSeparator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/Scoreboard/Atl_Tally_Scoreboard_SmallSeparator.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.94"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PerksBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 340.0,
+          "Y": 320.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Tally_Chara_PerkBG",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/CharaProgression/Atl_Tally_Chara_PerkBG.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksContainer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.34"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HorizontalSeparator",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 676.0,
+          "Y": 1.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.162"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": 2.3
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 10.0,
+          "Y": 121.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Tally_Scoreboard_SmallSeparator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/Scoreboard/Atl_Tally_Scoreboard_SmallSeparator.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.97"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "border",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 180.0,
+          "Y": 178.0
+        },
+        "Margin": {
+          "Left": 0.92,
+          "Top": 0.92,
+          "Right": 0.92,
+          "Bottom": 0.92
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D highlightOutline_item",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Items/highlightOutline_item.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Border"
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.Item_Highlighted.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.139"
+      },
+      "RenderTransform": {
+        "Angle": 45.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HighlightPicture",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 253.0,
+          "Y": 254.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D ATL_OB_Highlight_Perk",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/OnBoarding/ATL_OB_Highlight_Perk.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightWidget.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.68"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HighlightPicture_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 253.0,
+          "Y": 254.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D ATL_OB_Highlight_Perk",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/OnBoarding/ATL_OB_Highlight_Perk.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightWidget.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.67"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageBottom",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.72"
+      },
+      "RenderTransform": {
+        "Angle": -135.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageCanBeClickable",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 153.0,
+          "Y": 153.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Hud_BTN2_Up",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Atl_Hud_BTN2_Up.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.45"
+      },
+      "RenderTransform": {
+        "Angle": 45.0
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageEmptyIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 94.0,
+          "Y": 94.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.6,
+            "Hex": "99FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Ico_Plus",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Ico_Plus.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.EmptyCanvas.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.65"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.45,
+          "Y": 0.45
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageEventBorder",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 249.0,
+          "Y": 251.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_eventBorder",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_eventBorder.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.56"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageExtraIndicator2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D hud_buffDebuffIndicator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/hud_buffDebuffIndicator.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.57"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageExtraIndicator3",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D hud_buffDebuffIndicator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/hud_buffDebuffIndicator.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.62"
+      },
+      "RenderTransform": {
+        "Angle": 180.0
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageGradient",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_dark",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_dark.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.63"
+      },
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageHighlight",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 153.0,
+          "Y": 152.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Hud_BTN2_FX01",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Atl_Hud_BTN2_FX01.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.46"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        },
+        "Angle": 45.0
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D iconPerks_adrenaline",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Perks/iconPerks_adrenaline.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.64"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageLeft",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.69"
+      },
+      "RenderTransform": {
+        "Angle": -45.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageLockIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 103.0,
+          "Y": 109.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Ico_Lock",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Ico_Lock.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.6,
+        "Hex": "99000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedCanvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.74"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.4,
+          "Y": 0.4
+        }
+      },
+      "RenderTransformPivot": {
+        "X": 0.5,
+        "Y": 1.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePaint",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 210.0,
+          "Y": 191.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_paintTint",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_paintTint.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_15",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.61"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePaintBottom",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_paintTint_bottom",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_paintTint_bottom.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.60"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePainttop",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_paintTint_top",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_paintTint_top.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.59"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePerkBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_background",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_background.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_20",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.43"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePerkLevel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 61.0,
+          "Y": 90.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perk_boost3",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perk_boost3.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkLevel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.77"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePerkLevelBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 70.0,
+          "Y": 70.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perk_boostBg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perk_boostBg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkLevel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.76"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.6,
+          "Y": 0.6
+        },
+        "Angle": 45.0
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRarityBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_tint",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_tint.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.58"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRight",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.70"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        },
+        "Angle": 45.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageShadow",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 182.0,
+          "Y": 181.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Perk_Empty",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Perk_Empty.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.47"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": -20.0,
+          "Y": 15.0
+        }
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageTop",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.71"
+      },
+      "RenderTransform": {
+        "Angle": 45.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageBlack",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant MI_PerkProgressbar",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/MI_PerkProgressbar.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.79"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRed",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFF0000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant MI_PerkProgressbar",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/MI_PerkProgressbar.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.78"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PrivateIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_OnMM_PerksPrivate",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/Atl_OnMM_PerksPrivate.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.82"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PrivateShadow",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 182.0,
+          "Y": 181.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Perk_Empty",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Perk_Empty.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateCanvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.81"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": -8.0,
+          "Y": 8.0
+        }
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "smoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 323.0,
+          "Y": 342.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Alt_Tooltip_StoreItemSelected",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tooltips/Customization/Alt_Tooltip_StoreItemSelected.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.84"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PerksBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 340.0,
+          "Y": 320.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Tally_Chara_PerkBG",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/CharaProgression/Atl_Tally_Chara_PerkBG.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerksContainer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.87"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_PerkActionButton_C",
+    "Name": "PerkActionButton",
+    "Outer": "WidgetTree",
+    "Template": "Default__NE_WBP_PerkActionButton_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.Perks.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.32"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_PerkActionButton_C",
+    "Name": "PerkActionButton",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__NE_WBP_PerkActionButton_C",
+    "Properties": {
+      "ActionButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.2"
+      },
+      "ActionCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.14"
+      },
+      "border": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.border",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.104"
+      },
+      "CanvasPerk": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.16"
+      },
+      "CanvasUnLock": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.153"
+      },
+      "EmptyButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.EmptyButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.3"
+      },
+      "EmptyCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.EmptyCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.17"
+      },
+      "HighlightPicture": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.105"
+      },
+      "HighlightPicture_2": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightPicture_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.106"
+      },
+      "HighlightWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.18"
+      },
+      "ImageBottom": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.107"
+      },
+      "ImageCanBeClickable": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageCanBeClickable",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.108"
+      },
+      "ImageEmptyIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageEmptyIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.109"
+      },
+      "ImageEventBorder": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageEventBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.110"
+      },
+      "ImageExtraIndicator2": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageExtraIndicator2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.111"
+      },
+      "ImageExtraIndicator3": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageExtraIndicator3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.112"
+      },
+      "ImageGradient": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageGradient",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.113"
+      },
+      "ImageHighlight": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.114"
+      },
+      "ImageIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.115"
+      },
+      "ImageLeft": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.116"
+      },
+      "ImageLockIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageLockIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.117"
+      },
+      "ImagePaint": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePaint",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.118"
+      },
+      "ImagePaintBottom": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePaintBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.119"
+      },
+      "ImagePainttop": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePainttop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.120"
+      },
+      "ImagePerkBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePerkBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.121"
+      },
+      "ImagePerkLevel": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePerkLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.122"
+      },
+      "ImagePerkLevelBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImagePerkLevelBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.123"
+      },
+      "ImageRarityBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageRarityBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.124"
+      },
+      "ImageRight": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.125"
+      },
+      "ImageShadow": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageShadow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.126"
+      },
+      "ImageTop": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ImageTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.127"
+      },
+      "LoadoutSelectedImage": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LoadoutSelectedImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.19"
+      },
+      "LockedButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.4"
+      },
+      "LockedCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.20"
+      },
+      "PerkLevel": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.21"
+      },
+      "PerkProgressBar": {
+        "ObjectName": "NE_WBP_PerkProgressBar_C WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.136"
+      },
+      "PrivateCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.23"
+      },
+      "PrivateIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.130"
+      },
+      "PrivateShadow": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PrivateShadow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.131"
+      },
+      "smoke": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.smoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.132"
+      },
+      "TextStackCount": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.TextStackCount",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.146"
+      },
+      "TextUnlockLevel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.TextUnlockLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.147"
+      },
+      "TextUnlockLevelTitle": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.TextUnlockLevelTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.148"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.165"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Perks.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.85"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_PerkProgressBar_C",
+    "Name": "PerkProgressBar",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__NE_WBP_PerkProgressBar_C",
+    "Properties": {
+      "ImageBlack": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.ImageBlack",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.128"
+      },
+      "ImageRed": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.ImageRed",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.129"
+      },
+      "TextDebug": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.TextDebug",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.145"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.166"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.40"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_PerkSelectionSlot_Reincarnation_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_PerkSelectionSlot_Reincarnation_C",
+    "Properties": {
+      "DescriptionText": {
+        "ObjectName": "UMGHtmlRichText WidgetArchetype:WidgetTree_0.DescriptionText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.151"
+      },
+      "HorizontalSeparator": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.HorizontalSeparator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.102"
+      },
+      "Image_0": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.103"
+      },
+      "PerkActionButton": {
+        "ObjectName": "NE_WBP_PerkActionButton_C WidgetArchetype:WidgetTree_0.PerkActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.135"
+      },
+      "PerkName": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PerkName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.149"
+      },
+      "PerksBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerksBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.133"
+      },
+      "PerksInfoScrollBox": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.PerksInfoScrollBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.141"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.164"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "Item_Highlighted",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Stretch": "EStretch::None",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.Item_Highlighted.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.139"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.83"
+      },
+      "RenderTransform": {
+        "Angle": 45.0
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "Item_Highlighted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.Item_Highlighted",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.138"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.border",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.104"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBox",
+    "Name": "PerksInfoScrollBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "TopShadowBrush": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "BottomShadowBrush": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "LeftShadowBrush": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "RightShadowBrush": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "WidgetBarStyle": {
+        "NormalThumbImage": {
+          "ImageSize": {
+            "X": 13.0,
+            "Y": 13.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.340826,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF9E00"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Tooltip_ScrollHandle",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/ScrollBar/Atl_Tooltip_ScrollHandle.0"
+          }
+        },
+        "HoveredThumbImage": {
+          "ImageSize": {
+            "X": 13.0,
+            "Y": 13.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.340826,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF9E00"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Tooltip_ScrollHandle",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/ScrollBar/Atl_Tooltip_ScrollHandle.0"
+          }
+        },
+        "DraggedThumbImage": {
+          "ImageSize": {
+            "X": 13.0,
+            "Y": 13.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.340826,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF9E00"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Tooltip_ScrollHandle",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/ScrollBar/Atl_Tooltip_ScrollHandle.0"
+          }
+        }
+      },
+      "ScrollbarThickness": {
+        "X": 14.0,
+        "Y": 5.0
+      },
+      "Slots": [
+        {
+          "ObjectName": "ScrollBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksInfoScrollBox.ScrollBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.142"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.156"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "ScrollBox",
+    "Name": "PerksInfoScrollBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "TopShadowBrush": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "BottomShadowBrush": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "LeftShadowBrush": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "RightShadowBrush": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "WidgetBarStyle": {
+        "NormalThumbImage": {
+          "ImageSize": {
+            "X": 13.0,
+            "Y": 13.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.340826,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF9E00"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Tooltip_ScrollHandle",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/ScrollBar/Atl_Tooltip_ScrollHandle.0"
+          }
+        },
+        "HoveredThumbImage": {
+          "ImageSize": {
+            "X": 13.0,
+            "Y": 13.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.340826,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF9E00"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Tooltip_ScrollHandle",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/ScrollBar/Atl_Tooltip_ScrollHandle.0"
+          }
+        },
+        "DraggedThumbImage": {
+          "ImageSize": {
+            "X": 13.0,
+            "Y": 13.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.340826,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF9E00"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Tooltip_ScrollHandle",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/ScrollBar/Atl_Tooltip_ScrollHandle.0"
+          }
+        }
+      },
+      "ScrollbarThickness": {
+        "X": 14.0,
+        "Y": 5.0
+      },
+      "Slots": [
+        {
+          "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.PerksInfoScrollBox.ScrollBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.143"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.161"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_5",
+    "Outer": "PerksInfoScrollBox",
+    "Properties": {
+      "Padding": {
+        "Right": 30.0
+      },
+      "Parent": {
+        "ObjectName": "ScrollBox NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksInfoScrollBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.140"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.ReverseScale",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.9"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_5",
+    "Outer": "PerksInfoScrollBox",
+    "Properties": {
+      "Padding": {
+        "Right": 30.0
+      },
+      "Parent": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.PerksInfoScrollBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.141"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ReverseScale",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.27"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PerkName",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "LOREM IPSUM DOLOR SIT AMET"
+      },
+      "Font": {
+        "Size": 28
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.Top.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.37"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextDebug",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "1111"
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.80"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextStackCount",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "20"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 3
+        },
+        "Size": 30
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.ActionCanvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.41"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextUnlockLevel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "6419171E4C5DD177B20B95B832A804ED",
+        "SourceString": "15"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF000000"
+        }
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1
+        },
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasUnLock.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.159"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextUnlockLevelTitle",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "Messages",
+        "Key": "83F34891485CD29A1ABCCBA23994B7B5",
+        "SourceString": "LEVEL"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF000000"
+        }
+      },
+      "Font": {
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasUnLock.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.158"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PerkName",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "LOREM IPSUM DOLOR SIT AMET"
+      },
+      "Font": {
+        "Size": 28
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Top.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.90"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UMGHtmlRichText",
+    "Name": "DescriptionText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "FC80C5B749072A2F919763A798E22CEC",
+        "SourceString": "母親の教えのせいか、父親が早々に見捨てたせいか、メグの成績は優秀だったが反抗的だった。幸いなことに、アスレチック トレーナーが彼女を激励し、トラックにエネルギーを注ぐように指導してくれました。彼女は高校の人物になるように自分自身を刺激し、大学の奨学金を獲得しました。母親が病気になった後、メグは彼女を育てるために一生懸命働いた母親の世話をするために勉強をあきらめることに決めました。ある夏、メグは森で長距離を走った後、行方不明になった。人々は捜索に行きましたが、彼女の体はまだ見つかりませんでした。\r\n\r\nメグは、制御不能なエネルギーに満ちたエネルギッシュな女の子です。彼女が子供の頃、このエネルギーは反抗と反抗から来ていました。手に負えなくなる前に、誰かが彼女をコントロールしなければなりません。幸いなことに、誰かがそれを達成し、彼女は走ることに夢中になりました.ランニングは彼女の人生の重要な部分になっています。しかし、彼女が何かに向かって走るのではなく、何かから逃げようとしたとき、彼女は何かを理解しました.大事なのは速さではなく、最下位でも無事にゴールすることだと理解した彼女は、無事に生還した。彼女は障害や恐怖を乗り越え、生き残るために最善を尽くします。"
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable PerkDescriptionStyle",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/FontStyleDataBases/PerkDescriptionStyle.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "Class UMGHtmlTextDecorator",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      ],
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "AutoWrapText": true,
+      "WrapTextAt": 798.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.ReverseScale.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.35"
+      }
+    }
+  },
+  {
+    "Type": "UMGHtmlRichText",
+    "Name": "DescriptionText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "FC80C5B749072A2F919763A798E22CEC",
+        "SourceString": "母親の教えのせいか、父親が早々に見捨てたせいか、メグの成績は優秀だったが反抗的だった。幸いなことに、アスレチック トレーナーが彼女を激励し、トラックにエネルギーを注ぐように指導してくれました。彼女は高校の人物になるように自分自身を刺激し、大学の奨学金を獲得しました。母親が病気になった後、メグは彼女を育てるために一生懸命働いた母親の世話をするために勉強をあきらめることに決めました。ある夏、メグは森で長距離を走った後、行方不明になった。人々は捜索に行きましたが、彼女の体はまだ見つかりませんでした。\r\n\r\nメグは、制御不能なエネルギーに満ちたエネルギッシュな女の子です。彼女が子供の頃、このエネルギーは反抗と反抗から来ていました。手に負えなくなる前に、誰かが彼女をコントロールしなければなりません。幸いなことに、誰かがそれを達成し、彼女は走ることに夢中になりました.ランニングは彼女の人生の重要な部分になっています。しかし、彼女が何かに向かって走るのではなく、何かから逃げようとしたとき、彼女は何かを理解しました.大事なのは速さではなく、最下位でも無事にゴールすることだと理解した彼女は、無事に生還した。彼女は障害や恐怖を乗り越え、生き残るために最善を尽くします。"
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable PerkDescriptionStyle",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/FontStyleDataBases/PerkDescriptionStyle.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "Class UMGHtmlTextDecorator",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      ],
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "AutoWrapText": true,
+      "WrapTextAt": 798.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ReverseScale.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.88"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.155"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.157"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.156"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.TextContainer.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.36"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "CanvasUnLock",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasUnLock.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.158"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasUnLock.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.159"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.LockedCanvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.73"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.6
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.160"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.162"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.161"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TextContainer.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.89"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "Value": 0.4
+      },
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.152"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.Top",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.11"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_5",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Padding": {
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.152"
+      },
+      "Content": {
+        "ObjectName": "ScrollBox NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.PerksInfoScrollBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.140"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_8",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": -65.0,
+        "Top": 10.0
+      },
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.152"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.HorizontalSeparator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.99"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "CanvasUnLock",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.153"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.TextUnlockLevelTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.148"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "CanvasUnLock",
+    "Properties": {
+      "Padding": {
+        "Top": -5.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.153"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.TextUnlockLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.147"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "Value": 0.4
+      },
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.154"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Top",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.29"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_5",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Padding": {
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.154"
+      },
+      "Content": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.PerksInfoScrollBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.141"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_8",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": -65.0,
+        "Top": 10.0
+      },
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.154"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.HorizontalSeparator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.102"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_PerkSelectionSlot_Reincarnation_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkSelectionSlot_Reincarnation_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "PerkActionButton",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.15"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "PerkProgressBar",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PerkActionButton.WidgetTree_0.PerkProgressBar.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/NE_WBP_PerkSelectionSlot_Reincarnation.22"
+      }
+    }
+  }
+]

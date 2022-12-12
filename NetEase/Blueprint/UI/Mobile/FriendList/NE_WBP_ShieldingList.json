@@ -1,0 +1,338 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_ShieldingList_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_ShieldingList_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.13"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ShieldingText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ShieldingWidget",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ListViewWidget",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_ShieldingList_C Default__NE_WBP_ShieldingList_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.1"
+    }
+  },
+  {
+    "Type": "NE_WBP_ShieldingList_C",
+    "Name": "Default__NE_WBP_ShieldingList_C",
+    "Properties": {
+      "PythonModule": "ui.friend.pending_expandable_list",
+      "PythonClass": "ExpandableListWidget",
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_ShieldingList_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.4"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_ShieldingList_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_ShieldingList_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.2"
+      },
+      "Content": {
+        "ObjectName": "ListViewWidget NE_WBP_ShieldingList_C:WidgetTree.ShieldingWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_ShieldingList_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.2"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_ShieldingList_C:WidgetTree.ShieldingText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.3"
+      },
+      "Content": {
+        "ObjectName": "ListViewWidget WidgetArchetype:WidgetTree_0.ShieldingWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.3"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ShieldingText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.12"
+      }
+    }
+  },
+  {
+    "Type": "ListViewWidget",
+    "Name": "ShieldingWidget",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "ConsumeMouseWheel": "EConsumeMouseWheel::Never",
+      "EntryWidgetClass": {
+        "ObjectName": "WidgetBlueprintGeneratedClass NE_WBP_ShieldItem_C",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldItem.10"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_ShieldingList_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.4"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "ListViewWidget",
+    "Name": "ShieldingWidget",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "ConsumeMouseWheel": "EConsumeMouseWheel::Never",
+      "EntryWidgetClass": {
+        "ObjectName": "WidgetBlueprintGeneratedClass NE_WBP_ShieldItem_C",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldItem.10"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.6"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "NE_WBP_ShieldingList_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_ShieldingList_C",
+    "Properties": {
+      "ShieldingText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ShieldingText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.12"
+      },
+      "ShieldingWidget": {
+        "ObjectName": "ListViewWidget WidgetArchetype:WidgetTree_0.ShieldingWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.9"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.14"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ShieldingText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "2DA2F13A427946207E1772899454FCCE",
+        "SourceString": "当前没有屏蔽的用户！"
+      },
+      "Justification": "ETextJustify::Center",
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 600.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_ShieldingList_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.5"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ShieldingText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "2DA2F13A427946207E1772899454FCCE",
+        "SourceString": "当前没有屏蔽的用户！"
+      },
+      "Justification": "ETextJustify::Center",
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 600.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.7"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_ShieldingList_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_ShieldingList_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.2"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/FriendList/NE_WBP_ShieldingList.3"
+      }
+    }
+  }
+]

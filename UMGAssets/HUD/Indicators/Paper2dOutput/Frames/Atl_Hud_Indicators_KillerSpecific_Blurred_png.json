@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "Atl_Hud_Indicators_KillerSpecific_Blurred_png",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.5,
+              "Y": 0.0,
+              "Z": 0.5
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 135.0,
+            "Y": 10.0,
+            "Z": 399.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "D74CEAD54AD7C92845BE338470B4714E"
+  },
+  {
+    "Type": "PaperSprite",
+    "Name": "Atl_Hud_Indicators_KillerSpecific_Blurred_png",
+    "Properties": {
+      "BakedSourceUV": {
+        "X": 138.0,
+        "Y": 1.0
+      },
+      "BakedSourceDimension": {
+        "X": 135.0,
+        "Y": 399.0
+      },
+      "BakedSourceTexture": {
+        "ObjectName": "Texture2D KillerSpecificOffscreenIndicator",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Indicators/Paper2dOutput/Textures/KillerSpecificOffscreenIndicator.0"
+      },
+      "DefaultMaterial": {
+        "ObjectName": "MaterialInstanceConstant TranslucentUnlitSpriteMaterial",
+        "ObjectPath": "Engine/Plugins/2D/Paper2D/Content/TranslucentUnlitSpriteMaterial.0"
+      },
+      "PixelsPerUnrealUnit": 1.0,
+      "BodySetup": {
+        "ObjectName": "BodySetup Atl_Hud_Indicators_KillerSpecific_Blurred_png:BodySetup_1",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Indicators/Paper2dOutput/Frames/Atl_Hud_Indicators_KillerSpecific_Blurred_png.0"
+      },
+      "BakedRenderData": [
+        {
+          "X": 67.0,
+          "Y": 200.0,
+          "Z": 0.5332031,
+          "W": 0.001953125
+        },
+        {
+          "X": -68.0,
+          "Y": 200.0,
+          "Z": 0.26953125,
+          "W": 0.001953125
+        },
+        {
+          "X": -68.0,
+          "Y": -199.0,
+          "Z": 0.26953125,
+          "W": 0.78125
+        },
+        {
+          "X": 67.0,
+          "Y": -199.0,
+          "Z": 0.5332031,
+          "W": 0.78125
+        },
+        {
+          "X": 67.0,
+          "Y": 200.0,
+          "Z": 0.5332031,
+          "W": 0.001953125
+        },
+        {
+          "X": -68.0,
+          "Y": -199.0,
+          "Z": 0.26953125,
+          "W": 0.78125
+        }
+      ]
+    }
+  }
+]

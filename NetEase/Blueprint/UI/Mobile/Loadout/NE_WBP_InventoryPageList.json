@@ -1,0 +1,405 @@
+[
+  {
+    "Type": "Function",
+    "Name": "OnSelectedEvent__DelegateSignature",
+    "Outer": "NE_WBP_InventoryPageList_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "selectedIndex",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 202506240
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUnselectedEvent__DelegateSignature",
+    "Outer": "NE_WBP_InventoryPageList_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "unselectedIndex",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 202506240
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_InventoryPageList_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_InventoryPageList_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.15"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_WBP_InventoryPageList_C:OnUnselectedEvent__DelegateSignature",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.1"
+      },
+      {
+        "ObjectName": "Function NE_WBP_InventoryPageList_C:OnSelectedEvent__DelegateSignature",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ButtonsPanel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class HorizontalBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ContainerPanel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnSelectedEvent",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 17592454545413,
+        "SignatureFunction": {
+          "ObjectName": "Function NE_WBP_InventoryPageList_C:OnSelectedEvent__DelegateSignature",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.0"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnUnselectedEvent",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 17592454545413,
+        "SignatureFunction": {
+          "ObjectName": "Function NE_WBP_InventoryPageList_C:OnUnselectedEvent__DelegateSignature",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.1"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnSelectedEvent__DelegateSignature": {
+        "ObjectName": "Function NE_WBP_InventoryPageList_C:OnSelectedEvent__DelegateSignature",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.0"
+      },
+      "OnUnselectedEvent__DelegateSignature": {
+        "ObjectName": "Function NE_WBP_InventoryPageList_C:OnUnselectedEvent__DelegateSignature",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.1"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_InventoryPageList_C Default__NE_WBP_InventoryPageList_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.3"
+    }
+  },
+  {
+    "Type": "NE_WBP_InventoryPageList_C",
+    "Name": "Default__NE_WBP_InventoryPageList_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false,
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_InventoryPageList_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_InventoryPageList_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ContainerPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_InventoryPageList_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.8"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ContainerPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.10"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1105.0,
+          "Bottom": 365.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_InventoryPageList_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_InventoryPageList_C:WidgetTree.ContainerPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 60.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_InventoryPageList_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.4"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_WBP_InventoryPageList_C:WidgetTree.ButtonsPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1105.0,
+          "Bottom": 365.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContainerPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 60.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.6"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.ButtonsPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.13"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "ButtonsPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_InventoryPageList_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.9"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "ButtonsPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.11"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "NE_WBP_InventoryPageList_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_InventoryPageList_C",
+    "Properties": {
+      "ButtonsPanel": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.ButtonsPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.13"
+      },
+      "ContainerPanel": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContainerPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.7"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.16"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_InventoryPageList_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_InventoryPageList_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Loadout/NE_WBP_InventoryPageList.6"
+      }
+    }
+  }
+]

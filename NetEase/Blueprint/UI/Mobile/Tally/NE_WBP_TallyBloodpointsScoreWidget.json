@@ -1,0 +1,705 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_NE_WBP_TallyBloodpointsScoreWidget",
+    "Outer": "NE_WBP_TallyBloodpointsScoreWidget_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "K2Node_Event_title",
+        "Flags": 1,
+        "ElementSize": 24,
+        "PropertyFlags": 2
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_asset",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class PaperSprite",
+          "ObjectPath": "/Script/Paper2D"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_scoreValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 24
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput",
+        "Flags": 1,
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class SlateTextureAtlasInterface",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateWidgetByScoreData",
+    "Outer": "NE_WBP_TallyBloodpointsScoreWidget_C",
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "title",
+        "Flags": 1,
+        "ElementSize": 24,
+        "PropertyFlags": 134218134
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "asset",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class PaperSprite",
+          "ObjectPath": "/Script/Paper2D"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "scoreValue",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 205520896
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_TallyBloodpointsScoreWidget_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.23"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.WidgetArchetype",
+        "SubPathString": ""
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function NE_WBP_TallyBloodpointsScoreWidget_C:ExecuteUbergraph_NE_WBP_TallyBloodpointsScoreWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_WBP_TallyBloodpointsScoreWidget_C:UpdateWidgetByScoreData",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.1"
+      },
+      {
+        "ObjectName": "Function NE_WBP_TallyBloodpointsScoreWidget_C:ExecuteUbergraph_NE_WBP_TallyBloodpointsScoreWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ScoreImage",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ScoreTitleText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ScoreValueText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_NE_WBP_TallyBloodpointsScoreWidget": {
+        "ObjectName": "Function NE_WBP_TallyBloodpointsScoreWidget_C:ExecuteUbergraph_NE_WBP_TallyBloodpointsScoreWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.0"
+      },
+      "UpdateWidgetByScoreData": {
+        "ObjectName": "Function NE_WBP_TallyBloodpointsScoreWidget_C:UpdateWidgetByScoreData",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.1"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_TallyBloodpointsScoreWidget_C Default__NE_WBP_TallyBloodpointsScoreWidget_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.3"
+    }
+  },
+  {
+    "Type": "NE_WBP_TallyBloodpointsScoreWidget_C",
+    "Name": "Default__NE_WBP_TallyBloodpointsScoreWidget_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.18055557
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.4"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 236.0,
+          "Bottom": 240.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.4"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.ScoreImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 160.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.4"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.ScoreValueText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.18055557
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.5"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 236.0,
+          "Bottom": 240.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.5"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ScoreImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 160.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.5"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ScoreValueText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.22"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ScoreImage",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 115.0,
+          "Y": 234.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tally_Blood_Ico_Survival",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/Atl_Tally_Blood_Ico_Survival.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.7"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ScoreImage",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 115.0,
+          "Y": 234.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tally_Blood_Ico_Survival",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/TallyPaper2D/Frames/Atl_Tally_Blood_Ico_Survival.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.10"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_TallyBloodpointsScoreWidget_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_TallyBloodpointsScoreWidget_C",
+    "Properties": {
+      "ScoreImage": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ScoreImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.13"
+      },
+      "ScoreTitleText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ScoreTitleText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.21"
+      },
+      "ScoreValueText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ScoreValueText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.22"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.24"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.6"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.18"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.9"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_1",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "ScaleBox NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.15"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.ScoreTitleText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.19"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_1",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.16"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ScoreTitleText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.21"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ScoreTitleText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "Hunter"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.250158,
+          "G": 0.313989,
+          "B": 0.366253,
+          "A": 1.0,
+          "Hex": "FF8998A3"
+        }
+      },
+      "Font": {
+        "Size": 26
+      },
+      "MinDesiredWidth": 250.0,
+      "Justification": "ETextJustify::Center",
+      "AutoWrapText": true,
+      "LineHeightPercentage": 0.8,
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.17"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ScoreValueText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "000000"
+      },
+      "Font": {
+        "Size": 30
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.8"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ScoreTitleText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "Hunter"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.250158,
+          "G": 0.313989,
+          "B": 0.366253,
+          "A": 1.0,
+          "Hex": "FF8998A3"
+        }
+      },
+      "Font": {
+        "Size": 26
+      },
+      "MinDesiredWidth": 250.0,
+      "Justification": "ETextJustify::Center",
+      "AutoWrapText": true,
+      "LineHeightPercentage": 0.8,
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.18"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ScoreValueText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "000000"
+      },
+      "Font": {
+        "Size": 30
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.11"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_TallyBloodpointsScoreWidget_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_TallyBloodpointsScoreWidget_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_TallyBloodpointsScoreWidget.5"
+      }
+    }
+  }
+]

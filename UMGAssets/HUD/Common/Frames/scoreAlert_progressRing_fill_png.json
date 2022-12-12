@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "scoreAlert_progressRing_fill_png",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -1.5,
+              "Y": 0.0,
+              "Z": 0.5
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 81.0,
+            "Y": 10.0,
+            "Z": 77.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "55DA743C4A6AAD304004C5B1C3CEF3CA"
+  },
+  {
+    "Type": "PaperSprite",
+    "Name": "scoreAlert_progressRing_fill_png",
+    "Properties": {
+      "BakedSourceUV": {
+        "X": 267.0,
+        "Y": 411.0
+      },
+      "BakedSourceDimension": {
+        "X": 82.0,
+        "Y": 79.0
+      },
+      "BakedSourceTexture": {
+        "ObjectName": "Texture2D Hud_Commons",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Common/Textures/Hud_Commons.0"
+      },
+      "DefaultMaterial": {
+        "ObjectName": "MaterialInstanceConstant TranslucentUnlitSpriteMaterial",
+        "ObjectPath": "Engine/Plugins/2D/Paper2D/Content/TranslucentUnlitSpriteMaterial.0"
+      },
+      "PixelsPerUnrealUnit": 1.0,
+      "BodySetup": {
+        "ObjectName": "BodySetup scoreAlert_progressRing_fill_png:BodySetup_2",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Common/Frames/scoreAlert_progressRing_fill_png.0"
+      },
+      "BakedRenderData": [
+        {
+          "X": 39.0,
+          "Y": 39.0,
+          "Z": 0.33984375,
+          "W": 0.40234375
+        },
+        {
+          "X": -42.0,
+          "Y": 39.0,
+          "Z": 0.2607422,
+          "W": 0.40234375
+        },
+        {
+          "X": -42.0,
+          "Y": -38.0,
+          "Z": 0.2607422,
+          "W": 0.47753906
+        },
+        {
+          "X": 39.0,
+          "Y": -38.0,
+          "Z": 0.33984375,
+          "W": 0.47753906
+        },
+        {
+          "X": 39.0,
+          "Y": 39.0,
+          "Z": 0.33984375,
+          "W": 0.40234375
+        },
+        {
+          "X": -42.0,
+          "Y": -38.0,
+          "Z": 0.2607422,
+          "W": 0.47753906
+        }
+      ]
+    }
+  }
+]

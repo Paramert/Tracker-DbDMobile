@@ -1,0 +1,425 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CharCombine2_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BP_CharCombine2_C:SimpleConstructionScript_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.14"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Character",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CharShadow",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class DecalComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "R_FootShadow",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class DecalComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "L_FootShadow",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class DecalComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NE_DF_Head001_02_REF",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class SkeletalMeshComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NE_DF_Torso001_02_REF",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class SkeletalMeshComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CharCombine2_C Default__BP_CharCombine2_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.1"
+    }
+  },
+  {
+    "Type": "BP_CharCombine2_C",
+    "Name": "Default__BP_CharCombine2_C",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent Default__BP_CharCombine2_C:CharacterMesh0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.17"
+      },
+      "CharacterMovement": {
+        "ObjectName": "CharacterMovementComponent Default__BP_CharCombine2_C:CharMoveComp",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.3"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__BP_CharCombine2_C:CollisionCylinder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.2"
+      },
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent Default__BP_CharCombine2_C:CollisionCylinder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.2"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_CharCombine2_C",
+    "Properties": {
+      "AreaClass": {
+        "ObjectName": "Class NavArea_Obstacle",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "DetailLevelBeforeCastShadows": "DM_MAX"
+    }
+  },
+  {
+    "Type": "CharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_CharCombine2_C"
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "CharShadow_GEN_VARIABLE",
+    "Outer": "BP_CharCombine2_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "Material M_CharShadow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Material/FootShadow/Master/M_CharShadow.0"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.015,
+        "Y": 0.2,
+        "Z": 0.2
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "L_FootShadow_GEN_VARIABLE",
+    "Outer": "BP_CharCombine2_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant MI_FootShadow_Dwight_L",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Material/FootShadow/MI_FootShadow_Dwight_L.0"
+      },
+      "RelativeScale3D": {
+        "X": 0.015,
+        "Y": 0.2,
+        "Z": 0.19999999
+      }
+    }
+  },
+  {
+    "Type": "DecalComponent",
+    "Name": "R_FootShadow_GEN_VARIABLE",
+    "Outer": "BP_CharCombine2_C",
+    "Properties": {
+      "DecalMaterial": {
+        "ObjectName": "MaterialInstanceConstant MI_FootShadow_Dwight_L",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Material/FootShadow/MI_FootShadow_Dwight_L.0"
+      },
+      "RelativeScale3D": {
+        "X": 0.015,
+        "Y": 0.2,
+        "Z": 0.2
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_CharCombine2_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BP_CharCombine2_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.7"
+      },
+      "VariableGuid": "8ADF2145-4C162FEB-8BC43289-4721D91D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BP_CharCombine2_C:NE_DF_Torso001_02_REF_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.16"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "ED5906BF-45692144-EED774BD-09E21D44",
+      "InternalVariableName": "NE_DF_Torso001_02_REF"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SkeletalMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent BP_CharCombine2_C:NE_DF_Head001_02_REF_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.15"
+      },
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9AE35836-4863B599-D3C7EA83-0FDBFCA3",
+      "InternalVariableName": "NE_DF_Head001_02_REF"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BP_CharCombine2_C:L_FootShadow_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.5"
+      },
+      "AttachToName": "FX_FootLT_Decal_Drag",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "20E2E070-4962655F-67262CBE-A94B8AAC",
+      "InternalVariableName": "L_FootShadow"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BP_CharCombine2_C:CharShadow_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.4"
+      },
+      "AttachToName": "joint_Char",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9DFB8967-444C2E2E-B10A7080-72BC37E0",
+      "InternalVariableName": "CharShadow"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class DecalComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DecalComponent BP_CharCombine2_C:R_FootShadow_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.6"
+      },
+      "AttachToName": "FX_FootRT_Decal_Drag",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "B0432B1E-461934B4-8CA9E795-73FAF244",
+      "InternalVariableName": "R_FootShadow"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_CharCombine2_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BP_CharCombine2_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.9"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CharCombine2_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.10"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CharCombine2_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.11"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CharCombine2_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.13"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CharCombine2_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.12"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BP_CharCombine2_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.9"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CharCombine2_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.10"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CharCombine2_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.11"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CharCombine2_C:SimpleConstructionScript_0.SCS_Node_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.13"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CharCombine2_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.12"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BP_CharCombine2_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.8"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "NE_DF_Head001_02_REF_GEN_VARIABLE",
+    "Outer": "BP_CharCombine2_C",
+    "Properties": {
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence Dwight_AnxiousJumpy",
+          "ObjectPath": "/Game/Characters/Campers/Animations/Gestures/Dwight/Dwight_AnxiousJumpy"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "DetailLevelBeforeCastShadows": "DM_MAX"
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "NE_DF_Torso001_02_REF_GEN_VARIABLE",
+    "Outer": "BP_CharCombine2_C",
+    "Properties": {
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence Dwight_AnxiousJumpy",
+          "ObjectPath": "/Game/Characters/Campers/Animations/Gestures/Dwight/Dwight_AnxiousJumpy"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh NE_DF_Torso001_REF",
+        "ObjectPath": "DeadByDaylight/Content/Characters/Campers/Dwight/Models/Torsos/NE_DF_Torso001_REF.0"
+      },
+      "DetailLevelBeforeCastShadows": "DM_MAX"
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_CharCombine2_C",
+    "Properties": {
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence Dwight_AnxiousJumpy",
+          "ObjectPath": "/Game/Characters/Campers/Animations/Gestures/Dwight/Dwight_AnxiousJumpy"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class ClothingSimulationFactoryNv",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh NE_DF_Legs001_REF",
+        "ObjectPath": "DeadByDaylight/Content/Characters/Campers/Dwight/Models/Legs/NE_DF_Legs001_REF.0"
+      },
+      "DetailLevelBeforeCastShadows": "DM_MAX",
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent Default__BP_CharCombine2_C:CollisionCylinder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_CharCombine2.2"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -90.0
+      }
+    }
+  }
+]

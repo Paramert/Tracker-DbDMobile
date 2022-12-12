@@ -1,0 +1,130 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "Atl_Main_EventDefaultBanner_png",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.5,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 495.0,
+            "Y": 10.0,
+            "Z": 150.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "F7E1A1C4440F6D0687DF06B49364109F"
+  },
+  {
+    "Type": "PaperSprite",
+    "Name": "Atl_Main_EventDefaultBanner_png",
+    "Properties": {
+      "BakedSourceUV": {
+        "X": 328.0,
+        "Y": 746.0
+      },
+      "BakedSourceDimension": {
+        "X": 495.0,
+        "Y": 150.0
+      },
+      "BakedSourceTexture": {
+        "ObjectName": "Texture2D Atl_MainMenuAndLoadoutAssets",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Textures/Atl_MainMenuAndLoadoutAssets.0"
+      },
+      "PixelsPerUnrealUnit": 1.0,
+      "BodySetup": {
+        "ObjectName": "BodySetup Atl_Main_EventDefaultBanner_png:BodySetup_2",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Main_EventDefaultBanner_png.0"
+      },
+      "BakedRenderData": [
+        {
+          "X": 247.0,
+          "Y": 75.0,
+          "Z": 0.40185547,
+          "W": 0.3642578
+        },
+        {
+          "X": -248.0,
+          "Y": 75.0,
+          "Z": 0.16015625,
+          "W": 0.3642578
+        },
+        {
+          "X": -248.0,
+          "Y": -75.0,
+          "Z": 0.16015625,
+          "W": 0.4375
+        },
+        {
+          "X": 247.0,
+          "Y": -75.0,
+          "Z": 0.40185547,
+          "W": 0.4375
+        },
+        {
+          "X": 247.0,
+          "Y": 75.0,
+          "Z": 0.40185547,
+          "W": 0.3642578
+        },
+        {
+          "X": -248.0,
+          "Y": -75.0,
+          "Z": 0.16015625,
+          "W": 0.4375
+        }
+      ]
+    }
+  }
+]

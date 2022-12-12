@@ -1,0 +1,2829 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_NE_WBP_LevelBanner",
+    "Outer": "NE_WBP_LevelBanner_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_playerLevel",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 2
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_playerPrestige",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 2
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_currentExperience",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 2
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_nextLevelExperience",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 2
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_isExperienceVisible",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 2,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_isBig",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 2,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_2",
+        "Flags": 1,
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_3",
+        "Flags": 1,
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "SetExperienceVisibilityBP",
+    "Outer": "NE_WBP_LevelBanner_C",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "isExperienceVisible",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 150,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "isBig",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 150,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "SetInfoBP",
+    "Outer": "NE_WBP_LevelBanner_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "playerLevel",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 150
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "playerPrestige",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 150
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "currentExperience",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 150
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "nextLevelExperience",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 150
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "SetXPLabelsVisibility",
+    "Outer": "NE_WBP_LevelBanner_C",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Visible",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "UseBig",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 201588736
+  },
+  {
+    "Type": "Function",
+    "Name": "SetProgressBarFillImage",
+    "Outer": "NE_WBP_LevelBanner_C",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsGrowing",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "HasPrestigeIncreased",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "___bool_Variable",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "___object_Variable",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Object",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "___bool_Variable_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "___object_Variable_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Object",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "___object_Variable_2",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Object",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SlateBrush",
+        "Flags": 1,
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "ScriptStruct SlateBrush",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Object",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Object",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SlateBrush_1",
+        "Flags": 1,
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "ScriptStruct SlateBrush",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_ProgressBarStyle",
+        "Flags": 1,
+        "ElementSize": 488,
+        "Struct": {
+          "ObjectName": "ScriptStruct ProgressBarStyle",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_LevelBanner_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_LevelBanner_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.86"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.WidgetArchetype",
+        "SubPathString": ""
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function NE_WBP_LevelBanner_C:ExecuteUbergraph_NE_WBP_LevelBanner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_WBP_LevelBanner_C:SetProgressBarFillImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.4"
+      },
+      {
+        "ObjectName": "Function NE_WBP_LevelBanner_C:SetXPLabelsVisibility",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.3"
+      },
+      {
+        "ObjectName": "Function NE_WBP_LevelBanner_C:SetInfoBP",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.2"
+      },
+      {
+        "ObjectName": "Function NE_WBP_LevelBanner_C:SetExperienceVisibilityBP",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.1"
+      },
+      {
+        "ObjectName": "Function NE_WBP_LevelBanner_C:ExecuteUbergraph_NE_WBP_LevelBanner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Background",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_32",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerCurrentExperienceText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerCurrentExperienceTextBig",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerDevotionText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerLevelText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerLevelText2",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerNextLevelExperienceText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerNextLevelExperienceTextBig",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TooltipButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WidgetSwitcher",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetSwitcher",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "XPProgressBar",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ProgressBar",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "XPTextContainer",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class HorizontalBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "XPTextContainerBig",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class HorizontalBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_NE_WBP_LevelBanner": {
+        "ObjectName": "Function NE_WBP_LevelBanner_C:ExecuteUbergraph_NE_WBP_LevelBanner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.0"
+      },
+      "SetExperienceVisibilityBP": {
+        "ObjectName": "Function NE_WBP_LevelBanner_C:SetExperienceVisibilityBP",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.1"
+      },
+      "SetInfoBP": {
+        "ObjectName": "Function NE_WBP_LevelBanner_C:SetInfoBP",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.2"
+      },
+      "SetXPLabelsVisibility": {
+        "ObjectName": "Function NE_WBP_LevelBanner_C:SetXPLabelsVisibility",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.3"
+      },
+      "SetProgressBarFillImage": {
+        "ObjectName": "Function NE_WBP_LevelBanner_C:SetProgressBarFillImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.4"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_LevelBanner_C Default__NE_WBP_LevelBanner_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.6"
+    }
+  },
+  {
+    "Type": "NE_WBP_LevelBanner_C",
+    "Name": "Default__NE_WBP_LevelBanner_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "TooltipButton",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.0,
+              "B": 0.006452,
+              "A": 0.0,
+              "Hex": "FF0012"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.903633,
+              "B": 0.106228,
+              "A": 0.0,
+              "Hex": "FFF45C"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.254805,
+              "G": 0.119745,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "8A61FF"
+            }
+          }
+        },
+        "Disabled": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FF000000"
+            }
+          }
+        }
+      },
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.ProgressBarContainer.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.27"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "TooltipButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.0,
+              "B": 0.006452,
+              "A": 0.0,
+              "Hex": "FF0012"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.903633,
+              "B": 0.106228,
+              "A": 0.0,
+              "Hex": "FFF45C"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.254805,
+              "G": 0.119745,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "8A61FF"
+            }
+          }
+        },
+        "Disabled": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FF000000"
+            }
+          }
+        }
+      },
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarContainer.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.38"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.17"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_WBP_LevelBanner_C:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.82"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.ProgressBarContainer.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.ProgressBarContainer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.26"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.20"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.3,
+          "Y": 1.3
+        }
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.28"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.32"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.28"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.36"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.WidgetSwitcher.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.84"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarContainer.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.38"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarContainer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.37"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.31"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.3,
+          "Y": 1.3
+        }
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 800.0,
+          "Bottom": 800.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -55.08617,
+          "Right": 538.0,
+          "Bottom": 525.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.10"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_LevelBanner_C:WidgetTree.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.55"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 11.75,
+          "Top": 305.2989
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.10"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_WBP_LevelBanner_C:WidgetTree.XPTextContainerBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -54.033012,
+          "Right": 800.0,
+          "Bottom": 800.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.10"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 28.0,
+          "Top": -40.0,
+          "Right": 464.0,
+          "Bottom": 325.99997
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.10"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher NE_WBP_LevelBanner_C:WidgetTree.WidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.80"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 11.751541,
+          "Top": 297.14417
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.10"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_WBP_LevelBanner_C:WidgetTree.XPTextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -4.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.11"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_LevelBanner_C:WidgetTree.PlayerLevelText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.65"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 20.0,
+          "Right": 300.0,
+          "Bottom": 4.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.11"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_LevelBanner_C:WidgetTree.Image_32",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.56"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 104.0,
+          "Right": 58.0,
+          "Bottom": 118.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.11"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_LevelBanner_C:WidgetTree.PlayerDevotionText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.64"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ProgressBarContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 18.0,
+          "Top": 3.0,
+          "Right": 446.0,
+          "Bottom": 465.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.12"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar NE_WBP_LevelBanner_C:WidgetTree.XPProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.60"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "ProgressBarContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.12"
+      },
+      "Content": {
+        "ObjectName": "Button NE_WBP_LevelBanner_C:WidgetTree.TooltipButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 800.0,
+          "Bottom": 800.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.13"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -55.08617,
+          "Right": 538.0,
+          "Bottom": 525.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.57"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 11.75,
+          "Top": 305.2989
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.14"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.XPTextContainerBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -54.033012,
+          "Right": 800.0,
+          "Bottom": 800.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.14"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 28.0,
+          "Top": -40.0,
+          "Right": 464.0,
+          "Bottom": 325.99997
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.14"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.WidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.81"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 11.751541,
+          "Top": 297.14417
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.14"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.XPTextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -4.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.15"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerLevelText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.74"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 20.0,
+          "Right": 300.0,
+          "Bottom": 4.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_32",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 104.0,
+          "Right": 58.0,
+          "Bottom": 118.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.15"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerDevotionText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.73"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ProgressBarContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 18.0,
+          "Top": 3.0,
+          "Right": 446.0,
+          "Bottom": 465.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.16"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.XPProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.61"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "ProgressBarContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.16"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.TooltipButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.8"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "XPTextContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainer.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.43"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainer.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.44"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainer.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.22"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "XPTextContainerBig",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainerBig.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.46"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainerBig.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.47"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainerBig.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.48"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.19"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "XPTextContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainer.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.49"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainer.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.50"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainer.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.51"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.33"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "XPTextContainerBig",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainerBig.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.52"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainerBig.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.53"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainerBig.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.54"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.30"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "XPTextContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_LevelBanner_C:WidgetTree.XPTextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.39"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_LevelBanner_C:WidgetTree.PlayerCurrentExperienceText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.62"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "XPTextContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_LevelBanner_C:WidgetTree.XPTextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.39"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_LevelBanner_C:WidgetTree.Separator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.69"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "XPTextContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_LevelBanner_C:WidgetTree.XPTextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.39"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_LevelBanner_C:WidgetTree.PlayerNextLevelExperienceText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.67"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "XPTextContainerBig",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_LevelBanner_C:WidgetTree.XPTextContainerBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.40"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_LevelBanner_C:WidgetTree.PlayerCurrentExperienceTextBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.63"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "XPTextContainerBig",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_LevelBanner_C:WidgetTree.XPTextContainerBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.40"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_LevelBanner_C:WidgetTree.SeparatorBIg",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.70"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "XPTextContainerBig",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_LevelBanner_C:WidgetTree.XPTextContainerBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.40"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_LevelBanner_C:WidgetTree.PlayerNextLevelExperienceTextBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.68"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "XPTextContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.XPTextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.41"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerCurrentExperienceText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.71"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "XPTextContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.XPTextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.41"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Separator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.78"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "XPTextContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.XPTextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.41"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerNextLevelExperienceText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.76"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "XPTextContainerBig",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.XPTextContainerBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.42"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerCurrentExperienceTextBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.72"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "XPTextContainerBig",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.XPTextContainerBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.42"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.SeparatorBIg",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.79"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "XPTextContainerBig",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.XPTextContainerBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.42"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerNextLevelExperienceTextBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.77"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 538.0,
+          "Y": 525.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Tally_Level_Body",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/Level/Atl_Tally_Level_Body.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.18"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.3,
+          "Y": 1.3
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_32",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 140.0,
+          "Y": 2.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Upgrade_Line2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Popups/Upgrade/Upgrade_Line2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.24"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 538.0,
+          "Y": 525.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Tally_Level_Body",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/Level/Atl_Tally_Level_Body.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.29"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.3,
+          "Y": 1.3
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_32",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 140.0,
+          "Y": 2.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Upgrade_Line2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Popups/Upgrade/Upgrade_Line2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.35"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_LevelBanner_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_LevelBanner_C",
+    "Properties": {
+      "Background": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.57"
+      },
+      "Image_32": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_32",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.58"
+      },
+      "PlayerCurrentExperienceText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerCurrentExperienceText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.71"
+      },
+      "PlayerCurrentExperienceTextBig": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerCurrentExperienceTextBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.72"
+      },
+      "PlayerDevotionText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerDevotionText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.73"
+      },
+      "PlayerLevelText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerLevelText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.74"
+      },
+      "PlayerLevelText2": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerLevelText2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.75"
+      },
+      "PlayerNextLevelExperienceText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerNextLevelExperienceText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.76"
+      },
+      "PlayerNextLevelExperienceTextBig": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerNextLevelExperienceTextBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.77"
+      },
+      "TooltipButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.TooltipButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.8"
+      },
+      "WidgetSwitcher": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.WidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.81"
+      },
+      "XPProgressBar": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.XPProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.61"
+      },
+      "XPTextContainer": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.XPTextContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.41"
+      },
+      "XPTextContainerBig": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.XPTextContainerBig",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.42"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.87"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "XPProgressBar",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 446.0,
+            "Y": 465.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Tally_Level_Growing",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/Level/Atl_Tally_Level_Growing.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "MarqueeImage": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::BottomToTop",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.ProgressBarContainer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.26"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "XPProgressBar",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 446.0,
+            "Y": 465.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Tally_Level_Growing",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/Level/Atl_Tally_Level_Growing.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "MarqueeImage": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::BottomToTop",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarContainer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.37"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerCurrentExperienceText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "0"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-BoldItalic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-BoldItalic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 46
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainer.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.43"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerCurrentExperienceTextBig",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "0"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-BoldItalic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-BoldItalic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 80
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainerBig.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.46"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerDevotionText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "3"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.168269,
+          "G": 0.40724,
+          "B": 0.03434,
+          "A": 1.0,
+          "Hex": "FF72AB34"
+        }
+      },
+      "Font": {
+        "Size": 90
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.25"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerLevelText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "165"
+      },
+      "Font": {
+        "Size": 110
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.23"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerLevelText2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "73541BA24E4E5A16E5CE36A70A338C68",
+        "SourceString": "99"
+      },
+      "Font": {
+        "Size": 120
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_WBP_LevelBanner_C:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.83"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerNextLevelExperienceText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "000 000"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.341914,
+          "G": 0.318547,
+          "B": 0.258183,
+          "A": 1.0,
+          "Hex": "FF9E998B"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Italic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Italic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 46
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainer.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.45"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerNextLevelExperienceTextBig",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "000 000"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.341914,
+          "G": 0.318547,
+          "B": 0.258183,
+          "A": 1.0,
+          "Hex": "FF9E998B"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Italic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Italic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 80
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainerBig.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.48"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Separator",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "/"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.341914,
+          "G": 0.318547,
+          "B": 0.258183,
+          "A": 1.0,
+          "Hex": "FF9E998B"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Italic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Italic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 46
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainer.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.44"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SeparatorBIg",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "/"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.341914,
+          "G": 0.318547,
+          "B": 0.258183,
+          "A": 1.0,
+          "Hex": "FF9E998B"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Italic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Italic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 80
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_LevelBanner_C:WidgetTree.XPTextContainerBig.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.47"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerCurrentExperienceText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "0"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-BoldItalic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-BoldItalic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 46
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainer.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.49"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerCurrentExperienceTextBig",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "0"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-BoldItalic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-BoldItalic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 80
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainerBig.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.52"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerDevotionText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "3"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.168269,
+          "G": 0.40724,
+          "B": 0.03434,
+          "A": 1.0,
+          "Hex": "FF72AB34"
+        }
+      },
+      "Font": {
+        "Size": 90
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.36"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerLevelText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "165"
+      },
+      "Font": {
+        "Size": 110
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.34"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerLevelText2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "73541BA24E4E5A16E5CE36A70A338C68",
+        "SourceString": "99"
+      },
+      "Font": {
+        "Size": 120
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.WidgetSwitcher.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.85"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerNextLevelExperienceText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "000 000"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.341914,
+          "G": 0.318547,
+          "B": 0.258183,
+          "A": 1.0,
+          "Hex": "FF9E998B"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Italic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Italic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 46
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainer.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.51"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerNextLevelExperienceTextBig",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "000 000"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.341914,
+          "G": 0.318547,
+          "B": 0.258183,
+          "A": 1.0,
+          "Hex": "FF9E998B"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Italic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Italic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 80
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainerBig.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.54"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Separator",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "/"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.341914,
+          "G": 0.318547,
+          "B": 0.258183,
+          "A": 1.0,
+          "Hex": "FF9E998B"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Italic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Italic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 46
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainer.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.50"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SeparatorBIg",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "/"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.341914,
+          "G": 0.318547,
+          "B": 0.258183,
+          "A": 1.0,
+          "Hex": "FF9E998B"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Italic_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Italic_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 80
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.XPTextContainerBig.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.53"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WidgetSwitcher",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_WBP_LevelBanner_C:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.82"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_WBP_LevelBanner_C:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.83"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.21"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WidgetSwitcher",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.WidgetSwitcher.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.84"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.WidgetSwitcher.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.85"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.32"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "WidgetSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_WBP_LevelBanner_C:WidgetTree.WidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.80"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "WidgetSwitcher",
+    "Properties": {
+      "Padding": {
+        "Bottom": 10.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_WBP_LevelBanner_C:WidgetTree.WidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.80"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_LevelBanner_C:WidgetTree.PlayerLevelText2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.66"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "WidgetSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.WidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.81"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.15"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "WidgetSwitcher",
+    "Properties": {
+      "Padding": {
+        "Bottom": 10.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.WidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.81"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerLevelText2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.75"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_LevelBanner_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_LevelBanner_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Tally/NE_WBP_LevelBanner.13"
+      }
+    }
+  }
+]

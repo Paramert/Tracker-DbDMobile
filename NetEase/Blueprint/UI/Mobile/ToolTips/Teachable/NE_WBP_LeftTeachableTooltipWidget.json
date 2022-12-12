@@ -1,0 +1,2303 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_LeftTeachableTooltipWidget_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.79"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation NE_WBP_LeftTeachableTooltipWidget_C:Transition_In_INST",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.78"
+        }
+      ],
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Transition_In",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2147491860,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AvailabilityText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class UMGHtmlRichText",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Background",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CloseButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DescriptionLabel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class UMGHtmlRichText",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EffectText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class UMGHtmlRichText",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HeaderBackground",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HeaderSmoke",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TooltipContainer",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TitleLabel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 589829,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SubTitleLabel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 589829,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_LeftTeachableTooltipWidget_C Default__NE_WBP_LeftTeachableTooltipWidget_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.1"
+    }
+  },
+  {
+    "Type": "NE_WBP_LeftTeachableTooltipWidget_C",
+    "Name": "Default__NE_WBP_LeftTeachableTooltipWidget_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "CloseButton",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Disabled": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "BackgroundColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CloseButtonContainer_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.14"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "CloseButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Disabled": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "BackgroundColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CloseButtonContainer_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CloseButtonContainer_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CloseButtonContainer_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Header",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.Header.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.Header.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.Header.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.TooltipContainer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.19"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TooltipContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.TooltipContainer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.TooltipContainer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.TooltipContainer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.20"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.13"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.22"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CloseButtonContainer_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CloseButtonContainer_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Header",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Header.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Header.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Header.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TooltipContainer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.28"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TooltipContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TooltipContainer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TooltipContainer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TooltipContainer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.29"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.22"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CloseButtonContainer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 990.70667,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.TooltipContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CloseButtonContainer_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CloseButtonContainer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.5"
+      },
+      "Content": {
+        "ObjectName": "Button NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CloseButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Header",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 208.42322,
+          "Top": -27.5,
+          "Right": 625.0,
+          "Bottom": 425.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.Header",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.HeaderSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Header",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.30357084
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.86479735
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.Header",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.6"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.72"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Header",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.Header",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.HeaderBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "TooltipContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.TooltipContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.7"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "TooltipContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 78.0,
+          "Bottom": 185.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.TooltipContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.Header",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "TooltipContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 95.0,
+          "Top": 220.0,
+          "Right": 140.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.TooltipContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.7"
+      },
+      "Content": {
+        "ObjectName": "ScrollBox NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScrollBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.54"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CloseButtonContainer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 990.70667,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TooltipContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CloseButtonContainer_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CloseButtonContainer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.9"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CloseButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Header",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 208.42322,
+          "Top": -27.5,
+          "Right": 625.0,
+          "Bottom": 425.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Header",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.HeaderSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Header",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.30357084
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.86479735
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Header",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.10"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.73"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Header",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Header",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.HeaderBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "TooltipContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TooltipContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "TooltipContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 78.0,
+          "Bottom": 185.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TooltipContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.11"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Header",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "TooltipContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 95.0,
+          "Top": 220.0,
+          "Right": 140.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TooltipContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.11"
+      },
+      "Content": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.55"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 210.0,
+          "Y": 1013.0
+        },
+        "Margin": {
+          "Right": 0.697248
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tooltip_bg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tooltips/OutputPaper2D/Frames/Atl_Tooltip_bg_png.1"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.TooltipContainer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.18"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HeaderBackground",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 750.0,
+          "Y": 173.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tooltip_HeadBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tooltips/OutputPaper2D/Frames/Atl_Tooltip_HeadBg_png.1"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.027321,
+        "G": 0.027321,
+        "B": 0.027321,
+        "A": 1.0,
+        "Hex": "FF2E2E2E"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.Header.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.17"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HeaderSmoke",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 586.0,
+          "Y": 398.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Alt_Tooltip_Smoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tooltips/OutputPaper2D/Frames/Alt_Tooltip_Smoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.Header.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.15"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 210.0,
+          "Y": 1013.0
+        },
+        "Margin": {
+          "Right": 0.697248
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tooltip_bg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tooltips/OutputPaper2D/Frames/Atl_Tooltip_bg_png.1"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TooltipContainer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.27"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HeaderBackground",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 750.0,
+          "Y": 173.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tooltip_HeadBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tooltips/OutputPaper2D/Frames/Atl_Tooltip_HeadBg_png.1"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.027321,
+        "G": 0.027321,
+        "B": 0.027321,
+        "A": 1.0,
+        "Hex": "FF2E2E2E"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Header.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.26"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HeaderSmoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 586.0,
+          "Y": 398.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Alt_Tooltip_Smoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tooltips/OutputPaper2D/Frames/Alt_Tooltip_Smoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Header.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.24"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Transition_In",
+    "Outer": "Transition_In_INST",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "7DA18461-444D73EE-1B35849F-97410AF8",
+          "Name": "CanvasPanel_0",
+          "PossessedObjectClass": {
+            "ObjectName": "Class CanvasPanel",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "7DA18461-444D73EE-1B35849F-97410AF8",
+          "BindingName": "CanvasPanel_0",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack NE_WBP_LeftTeachableTooltipWidget_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.38"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_WBP_LeftTeachableTooltipWidget_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.44"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 15001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "960A12DE-4274EAA2-F18E198E-B795D3B8"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Properties": {
+      "TransformMask": {
+        "Mask": 3
+      },
+      "Translation": null,
+      "EvalOptions": {
+        "CompletionMode": "EMovieSceneCompletionMode::KeepState"
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_LeftTeachableTooltipWidget_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.39"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_LeftTeachableTooltipWidget_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.40"
+        }
+      },
+      "Signature": "0D996ED0-41DF17F1-33CED99C-95EAB682"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "Transition_In",
+    "Properties": {
+      "PropertyName": "RenderTransform",
+      "PropertyPath": "RenderTransform",
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection NE_WBP_LeftTeachableTooltipWidget_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.37"
+        }
+      ],
+      "Signature": "9F808243-4C1105E6-9EFFD699-6351C5E3"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Properties": {
+      "FloatCurve": null,
+      "EvalOptions": {
+        "CompletionMode": "EMovieSceneCompletionMode::KeepState"
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_LeftTeachableTooltipWidget_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.41"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_LeftTeachableTooltipWidget_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.42"
+        }
+      },
+      "Signature": "DBF8B17D-43A3EDDC-AEC12F9A-4C372365"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Transition_In",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_WBP_LeftTeachableTooltipWidget_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.43"
+        }
+      ],
+      "Signature": "617B6603-4B87814A-1D2389B1-4462F3E1"
+    }
+  },
+  {
+    "Type": "NE_WBP_LeftTeachableTooltipWidget_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_LeftTeachableTooltipWidget_C",
+    "Properties": {
+      "AvailabilityText": {
+        "ObjectName": "UMGHtmlRichText WidgetArchetype:WidgetTree_0.AvailabilityText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.69"
+      },
+      "Background": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.33"
+      },
+      "CloseButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CloseButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.3"
+      },
+      "DescriptionLabel": {
+        "ObjectName": "UMGHtmlRichText WidgetArchetype:WidgetTree_0.DescriptionLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.70"
+      },
+      "EffectText": {
+        "ObjectName": "UMGHtmlRichText WidgetArchetype:WidgetTree_0.EffectText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.71"
+      },
+      "HeaderBackground": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.HeaderBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.34"
+      },
+      "HeaderSmoke": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.HeaderSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.35"
+      },
+      "TooltipContainer": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TooltipContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.11"
+      },
+      "TitleLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TitleLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.65"
+      },
+      "SubTitleLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.SubTitleLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.64"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.80"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.50"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.74"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.51"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.75"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.52"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.76"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_1.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.53"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.77"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.46"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.TitleLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.63"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_1",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScaleBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.47"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.SubTitleLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.62"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.48"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TitleLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.65"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_1",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.49"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.SubTitleLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.64"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBox",
+    "Name": "ScrollBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScrollBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScrollBox_0.ScrollBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.58"
+        },
+        {
+          "ObjectName": "ScrollBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScrollBox_0.ScrollBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.57"
+        },
+        {
+          "ObjectName": "ScrollBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScrollBox_0.ScrollBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.56"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.TooltipContainer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.20"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBox",
+    "Name": "ScrollBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.ScrollBox_0.ScrollBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.61"
+        },
+        {
+          "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.ScrollBox_0.ScrollBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.60"
+        },
+        {
+          "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.ScrollBox_0.ScrollBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.59"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TooltipContainer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.29"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_0",
+    "Outer": "ScrollBox_0",
+    "Properties": {
+      "Padding": {
+        "Top": 50.0
+      },
+      "Parent": {
+        "ObjectName": "ScrollBox NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScrollBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.54"
+      },
+      "Content": {
+        "ObjectName": "UMGHtmlRichText NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.AvailabilityText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.66"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_1",
+    "Outer": "ScrollBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScrollBox NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScrollBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.54"
+      },
+      "Content": {
+        "ObjectName": "UMGHtmlRichText NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.DescriptionLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.67"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_3",
+    "Outer": "ScrollBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScrollBox NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScrollBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.54"
+      },
+      "Content": {
+        "ObjectName": "UMGHtmlRichText NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.EffectText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.68"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_0",
+    "Outer": "ScrollBox_0",
+    "Properties": {
+      "Padding": {
+        "Top": 50.0
+      },
+      "Parent": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.55"
+      },
+      "Content": {
+        "ObjectName": "UMGHtmlRichText WidgetArchetype:WidgetTree_0.AvailabilityText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.69"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_1",
+    "Outer": "ScrollBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.55"
+      },
+      "Content": {
+        "ObjectName": "UMGHtmlRichText WidgetArchetype:WidgetTree_0.DescriptionLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.70"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_3",
+    "Outer": "ScrollBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.55"
+      },
+      "Content": {
+        "ObjectName": "UMGHtmlRichText WidgetArchetype:WidgetTree_0.EffectText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.71"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SubTitleLabel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "Teachable"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.5,
+          "Hex": "7FFFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 800.0,
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.51"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TitleLabel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "Hex: Huntress Lullaby"
+      },
+      "Font": {
+        "Size": 32
+      },
+      "AutoWrapText": true,
+      "LineHeightPercentage": 0.9,
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.50"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SubTitleLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "Teachable"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.5,
+          "Hex": "7FFFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 800.0,
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_1.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.53"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TitleLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "Hex: Huntress Lullaby"
+      },
+      "Font": {
+        "Size": 32
+      },
+      "AutoWrapText": true,
+      "LineHeightPercentage": 0.9,
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.52"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "UMGHtmlRichText",
+    "Name": "AvailabilityText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "This perk will unlock at level <b>{0}</b> for <b>{1}</b>."
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable AtlantaPerkAvailabilityHtmlTextDB",
+        "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/AtlantaPerkAvailabilityHtmlTextDB.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "Class UMGHtmlTextDecorator",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      ],
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "AutoWrapText": true,
+      "WrapTextAt": 700.0,
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScrollBox_0.ScrollBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.56"
+      }
+    }
+  },
+  {
+    "Type": "UMGHtmlRichText",
+    "Name": "DescriptionLabel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "A Hex rooting its power in despair. Your hunt is an irresistible song of dread which muddles your prey's attention. Survivors receive a <span class=\\\"Highlight1\\\">{0}%</span> regression penalty when missing any Skill Check.<br>Each time a Survivor is hooked, Huntress Lullaby grows in power:<br><li><b>1 to 4 Tokens:</b> Time between the Skill Check warning sound and the Skill Check becomes shorter.</li><li><b>5 Tokens:</b> No Skill Check warning.</li><br><i>The Hex effects persist as long as the related Hex Totem is standing.</i>"
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable HtmlTextStyleDB",
+        "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/HtmlTextStyleDB.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "Class UMGHtmlTextDecorator",
+          "ObjectPath": "/Script/DeadByDaylight"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass DescriptionImg_C",
+          "ObjectPath": "DeadByDaylight/Content/Data/DescriptionImg/DescriptionImg.0"
+        }
+      ],
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "AutoWrapText": true,
+      "WrapTextAt": 700.0,
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScrollBox_0.ScrollBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.57"
+      }
+    }
+  },
+  {
+    "Type": "UMGHtmlRichText",
+    "Name": "EffectText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "TextStyleSet": {
+        "ObjectName": "DataTable HtmlTextStyleDB",
+        "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/HtmlTextStyleDB.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "Class UMGHtmlTextDecorator",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      ],
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "AutoWrapText": true,
+      "WrapTextAt": 700.0,
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScrollBox_0.ScrollBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.58"
+      }
+    }
+  },
+  {
+    "Type": "UMGHtmlRichText",
+    "Name": "AvailabilityText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "This perk will unlock at level <b>{0}</b> for <b>{1}</b>."
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable AtlantaPerkAvailabilityHtmlTextDB",
+        "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/AtlantaPerkAvailabilityHtmlTextDB.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "Class UMGHtmlTextDecorator",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      ],
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "AutoWrapText": true,
+      "WrapTextAt": 700.0,
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.ScrollBox_0.ScrollBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.59"
+      }
+    }
+  },
+  {
+    "Type": "UMGHtmlRichText",
+    "Name": "DescriptionLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "A Hex rooting its power in despair. Your hunt is an irresistible song of dread which muddles your prey's attention. Survivors receive a <span class=\\\"Highlight1\\\">{0}%</span> regression penalty when missing any Skill Check.<br>Each time a Survivor is hooked, Huntress Lullaby grows in power:<br><li><b>1 to 4 Tokens:</b> Time between the Skill Check warning sound and the Skill Check becomes shorter.</li><li><b>5 Tokens:</b> No Skill Check warning.</li><br><i>The Hex effects persist as long as the related Hex Totem is standing.</i>"
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable HtmlTextStyleDB",
+        "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/HtmlTextStyleDB.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "Class UMGHtmlTextDecorator",
+          "ObjectPath": "/Script/DeadByDaylight"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass DescriptionImg_C",
+          "ObjectPath": "DeadByDaylight/Content/Data/DescriptionImg/DescriptionImg.0"
+        }
+      ],
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "AutoWrapText": true,
+      "WrapTextAt": 700.0,
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.ScrollBox_0.ScrollBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.60"
+      }
+    }
+  },
+  {
+    "Type": "UMGHtmlRichText",
+    "Name": "EffectText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "TextStyleSet": {
+        "ObjectName": "DataTable HtmlTextStyleDB",
+        "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/HtmlTextStyleDB.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "Class UMGHtmlTextDecorator",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      ],
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "AutoWrapText": true,
+      "WrapTextAt": 700.0,
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.ScrollBox_0.ScrollBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.61"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.74"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.75"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.Header.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.16"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.76"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.77"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Header.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.25"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 95.0,
+        "Bottom": 5.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.72"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.46"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 95.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.72"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.ScaleBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.47"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 95.0,
+        "Bottom": 5.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.73"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.48"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 95.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.73"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.49"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Transition_In_INST",
+    "Outer": "NE_WBP_LeftTeachableTooltipWidget_C",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene NE_WBP_LeftTeachableTooltipWidget_C:Transition_In_INST.Transition_In",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.36"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "CanvasPanel_0",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "7DA18461-444D73EE-1B35849F-97410AF8",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Transition_In",
+      "PrecompiledEvaluationTemplate": {
+        "Tracks": null,
+        "EvaluationField": {
+          "Ranges": [
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 1
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 1
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            }
+          ],
+          "Groups": [
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 2
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            }
+          ],
+          "MetaData": [
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            }
+          ]
+        },
+        "SequenceSignature": "9543E61E-49CE07B4-9CA7D5B5-C918580C",
+        "TemplateSerialNumber": {
+          "Value": 1
+        },
+        "TemplateLedger": {
+          "LastTrackIdentifier": {
+            "Value": 1
+          },
+          "TrackSignatureToTrackIdentifier": null
+        },
+        "TrackFieldData": null
+      },
+      "Signature": "9543E61E-49CE07B4-9CA7D5B5-C918580C"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_LeftTeachableTooltipWidget_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_LeftTeachableTooltipWidget_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ToolTips/Teachable/NE_WBP_LeftTeachableTooltipWidget.8"
+      }
+    }
+  }
+]

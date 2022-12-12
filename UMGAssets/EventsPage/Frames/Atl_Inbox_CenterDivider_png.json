@@ -1,0 +1,96 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_3",
+    "Outer": "Atl_Inbox_CenterDivider_png",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.5,
+              "Y": 0.0,
+              "Z": 0.5
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 3.0,
+            "Y": 10.0,
+            "Z": 771.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "3372AD854CC628EC234829ABE8742C1B"
+  },
+  {
+    "Type": "PaperSprite",
+    "Name": "Atl_Inbox_CenterDivider_png",
+    "Properties": {
+      "BakedSourceUV": {
+        "X": 2023.0,
+        "Y": 1.0
+      },
+      "BakedSourceDimension": {
+        "X": 3.0,
+        "Y": 771.0
+      },
+      "BakedSourceTexture": {
+        "ObjectName": "Texture2D EventsPage",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EventsPage/Textures/EventsPage.0"
+      },
+      "DefaultMaterial": {
+        "ObjectName": "MaterialInstanceConstant TranslucentUnlitSpriteMaterial",
+        "ObjectPath": "Engine/Plugins/2D/Paper2D/Content/TranslucentUnlitSpriteMaterial.0"
+      },
+      "PixelsPerUnrealUnit": 1.0,
+      "BodySetup": {
+        "ObjectName": "BodySetup Atl_Inbox_CenterDivider_png:BodySetup_3",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EventsPage/Frames/Atl_Inbox_CenterDivider_png.0"
+      }
+    }
+  }
+]

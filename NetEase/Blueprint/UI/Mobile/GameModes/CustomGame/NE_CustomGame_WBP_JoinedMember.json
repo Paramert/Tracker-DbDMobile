@@ -1,0 +1,1564 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_NE_CustomGame_WBP_JoinedMember",
+    "Outer": "NE_CustomGame_WBP_JoinedMember_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_CustomGame_WBP_JoinedMember_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_CustomGame_WBP_JoinedMember_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.54"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.WidgetArchetype",
+        "SubPathString": ""
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function NE_CustomGame_WBP_JoinedMember_C:ExecuteUbergraph_NE_CustomGame_WBP_JoinedMember",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_CustomGame_WBP_JoinedMember_C:ExecuteUbergraph_NE_CustomGame_WBP_JoinedMember",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ActionButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "IconHost",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "IconReadyCheck",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageBG",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageDefault",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Name",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ScrollBox_60",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ScrollBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Spectator",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsHost",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsMemberReady",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsSpectator",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_NE_CustomGame_WBP_JoinedMember": {
+        "ObjectName": "Function NE_CustomGame_WBP_JoinedMember_C:ExecuteUbergraph_NE_CustomGame_WBP_JoinedMember",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.0"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_CustomGame_WBP_JoinedMember_C Default__NE_CustomGame_WBP_JoinedMember_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.2"
+    }
+  },
+  {
+    "Type": "NE_CustomGame_WBP_JoinedMember_C",
+    "Name": "Default__NE_CustomGame_WBP_JoinedMember_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "ActionButton",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 226.0,
+            "Y": 263.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Portrait_Frame_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/Atl_Portrait_Frame_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 226.0,
+            "Y": 263.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Portrait_Frame_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/Atl_Portrait_Frame_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 226.0,
+            "Y": 263.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Portrait_Frame_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/Atl_Portrait_Frame_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.18"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "ActionButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 226.0,
+            "Y": 263.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Portrait_Frame_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/Atl_Portrait_Frame_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 226.0,
+            "Y": 263.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Portrait_Frame_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/Atl_Portrait_Frame_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 226.0,
+            "Y": 263.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Portrait_Frame_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/Atl_Portrait_Frame_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_14",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Member",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_13",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "MemberName",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.MemberName.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.MemberName.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Spectator.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Spectator",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Spectator.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Spectator.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.15"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_14",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.24"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Member",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_13",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.26"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "MemberName",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MemberName.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MemberName.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.32"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Spectator.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Spectator",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Spectator.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Spectator.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.34"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.26"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -50.0,
+          "Top": -60.0,
+          "Bottom": 116.666664
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -40.0,
+          "Top": -48.666664,
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_CustomGame_WBP_JoinedMember_C:WidgetTree.IconReadyCheck",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Bottom": 116.4
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Spectator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0,
+          "Right": 4.3076925,
+          "Bottom": 3.6730769
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_CustomGame_WBP_JoinedMember_C:WidgetTree.ImageDefault",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_CustomGame_WBP_JoinedMember_C:WidgetTree.ImageBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.6"
+      },
+      "Content": {
+        "ObjectName": "Button NE_CustomGame_WBP_JoinedMember_C:WidgetTree.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -16.0,
+          "Top": -48.0,
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_CustomGame_WBP_JoinedMember_C:WidgetTree.IconHost",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "MemberName",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 99.333336
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.MemberName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.7"
+      },
+      "Content": {
+        "ObjectName": "Image NE_CustomGame_WBP_JoinedMember_C:WidgetTree.BgNameTag",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "MemberName",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 31.2,
+          "Right": 62.4,
+          "Bottom": 29.2
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.MemberName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.7"
+      },
+      "Content": {
+        "ObjectName": "ScrollBox NE_CustomGame_WBP_JoinedMember_C:WidgetTree.ScrollBox_60",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Spectator",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -16.0,
+          "Top": -48.0,
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Spectator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_CustomGame_WBP_JoinedMember_C:WidgetTree.IconGuest",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Spectator",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 116.666664
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Spectator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.MemberName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -50.0,
+          "Top": -60.0,
+          "Bottom": 116.666664
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -40.0,
+          "Top": -48.666664,
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.IconReadyCheck",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Bottom": 116.4
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.10"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Spectator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0,
+          "Right": 4.3076925,
+          "Bottom": 3.6730769
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageDefault",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.10"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "Member",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -16.0,
+          "Top": -48.0,
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Member",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.IconHost",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "MemberName",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 99.333336
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MemberName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BgNameTag",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "MemberName",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 31.2,
+          "Right": 62.4,
+          "Bottom": 29.2
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MemberName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.11"
+      },
+      "Content": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_60",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Spectator",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -16.0,
+          "Top": -48.0,
+          "Right": 64.0,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Spectator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.IconGuest",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Spectator",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 116.666664
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Spectator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.12"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MemberName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.11"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BgNameTag",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_CustomGame_Bg_NameTag",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/GameModes/CustomGame/NE_CustomGame_Bg_NameTag.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.MemberName.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.20"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconGuest",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Spectator.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.22"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconHost",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_CustomGame_Icon_Host",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/GameModes/CustomGame/NE_CustomGame_Icon_Host.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.19"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconReadyCheck",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 100.0,
+          "Y": 94.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Check_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Rituals/Frames/Atl_Check_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_13",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.14"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.6,
+          "Y": 0.6
+        }
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 208.0,
+          "Y": 249.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Portrait_BG_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/Atl_Portrait_BG_png.1"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.132868,
+        "G": 0.223228,
+        "B": 0.283149,
+        "A": 1.0,
+        "Hex": "FF668291"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.17"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageDefault",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 277.0,
+          "Y": 354.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Portrait_Generic_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/Atl_Portrait_Generic_png.1"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Member.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.16"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BgNameTag",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_CustomGame_Bg_NameTag",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/GameModes/CustomGame/NE_CustomGame_Bg_NameTag.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MemberName.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.31"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconGuest",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Spectator.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.33"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconHost",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_CustomGame_Icon_Host",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/GameModes/CustomGame/NE_CustomGame_Icon_Host.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.30"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconReadyCheck",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 100.0,
+          "Y": 94.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Check_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Rituals/Frames/Atl_Check_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_13",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.25"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.6,
+          "Y": 0.6
+        }
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 208.0,
+          "Y": 249.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Portrait_BG_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/Atl_Portrait_BG_png.1"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.132868,
+        "G": 0.223228,
+        "B": 0.283149,
+        "A": 1.0,
+        "Hex": "FF668291"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.28"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageDefault",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 277.0,
+          "Y": 354.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Portrait_Generic_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/Atl_Portrait_Generic_png.1"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Member.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.27"
+      }
+    }
+  },
+  {
+    "Type": "NE_CustomGame_WBP_JoinedMember_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_CustomGame_WBP_JoinedMember_C",
+    "Properties": {
+      "ActionButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.4"
+      },
+      "IconHost": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.IconHost",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.43"
+      },
+      "IconReadyCheck": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.IconReadyCheck",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.44"
+      },
+      "ImageBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.45"
+      },
+      "ImageDefault": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageDefault",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.46"
+      },
+      "Name": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Name",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.53"
+      },
+      "ScrollBox_60": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_60",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.49"
+      },
+      "Spectator": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Spectator",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.12"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.55"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ScrollBox",
+    "Name": "ScrollBox_60",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "ScrollBarVisibility": "ESlateVisibility::Collapsed",
+      "Slots": [
+        {
+          "ObjectName": "ScrollBoxSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.ScrollBox_60.ScrollBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.50"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.MemberName.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.21"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "ScrollBox",
+    "Name": "ScrollBox_60",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "ScrollBarVisibility": "ESlateVisibility::Collapsed",
+      "Slots": [
+        {
+          "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.ScrollBox_60.ScrollBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.51"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MemberName.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.32"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_0",
+    "Outer": "ScrollBox_60",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScrollBox NE_CustomGame_WBP_JoinedMember_C:WidgetTree.ScrollBox_60",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.48"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_CustomGame_WBP_JoinedMember_C:WidgetTree.Name",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.52"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_0",
+    "Outer": "ScrollBox_60",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_60",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.49"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Name",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.53"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Name",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "5351ECA54C643BCB4CF4D39429A8D76C",
+        "SourceString": "SPECTATOR_NAME"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot NE_CustomGame_WBP_JoinedMember_C:WidgetTree.ScrollBox_60.ScrollBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.50"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Name",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "5351ECA54C643BCB4CF4D39429A8D76C",
+        "SourceString": "SPECTATOR_NAME"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.ScrollBox_60.ScrollBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.51"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_CustomGame_WBP_JoinedMember_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_CustomGame_WBP_JoinedMember_C:WidgetTree.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GameModes/CustomGame/NE_CustomGame_WBP_JoinedMember.9"
+      }
+    }
+  }
+]

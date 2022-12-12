@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "timerBar_alertGlow_bottom_png",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 0.0,
+              "Z": 0.5
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 168.0,
+            "Y": 10.0,
+            "Z": 49.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "1B2975A442368C3ABE8AB88C57D333DB"
+  },
+  {
+    "Type": "PaperSprite",
+    "Name": "timerBar_alertGlow_bottom_png",
+    "Properties": {
+      "BakedSourceUV": {
+        "X": 292.0,
+        "Y": 164.0
+      },
+      "BakedSourceDimension": {
+        "X": 169.0,
+        "Y": 50.0
+      },
+      "BakedSourceTexture": {
+        "ObjectName": "Texture2D EGCProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/EndGameCollapse/Textures/EGCProgressBar.0"
+      },
+      "DefaultMaterial": {
+        "ObjectName": "MaterialInstanceConstant TranslucentUnlitSpriteMaterial",
+        "ObjectPath": "Engine/Plugins/2D/Paper2D/Content/TranslucentUnlitSpriteMaterial.0"
+      },
+      "PixelsPerUnrealUnit": 1.0,
+      "BodySetup": {
+        "ObjectName": "BodySetup timerBar_alertGlow_bottom_png:BodySetup_1",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/EndGameCollapse/Frames/timerBar_alertGlow_bottom_png.0"
+      },
+      "BakedRenderData": [
+        {
+          "X": 85.0,
+          "Y": 25.0,
+          "Z": 0.4501953,
+          "W": 0.16015625
+        },
+        {
+          "X": -83.0,
+          "Y": 25.0,
+          "Z": 0.2861328,
+          "W": 0.16015625
+        },
+        {
+          "X": -83.0,
+          "Y": -24.0,
+          "Z": 0.2861328,
+          "W": 0.20800781
+        },
+        {
+          "X": 85.0,
+          "Y": -24.0,
+          "Z": 0.4501953,
+          "W": 0.20800781
+        },
+        {
+          "X": 85.0,
+          "Y": 25.0,
+          "Z": 0.4501953,
+          "W": 0.16015625
+        },
+        {
+          "X": -83.0,
+          "Y": -24.0,
+          "Z": 0.2861328,
+          "W": 0.20800781
+        }
+      ]
+    }
+  }
+]

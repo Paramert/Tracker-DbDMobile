@@ -1,0 +1,159 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "tv_old_Blueprint_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript tv_old_Blueprint_C:SimpleConstructionScript_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/tv_old_Blueprint.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class StaticMeshActor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpotLight",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class SpotLightComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "tv_old_Blueprint_C Default__tv_old_Blueprint_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/tv_old_Blueprint.1"
+    }
+  },
+  {
+    "Type": "tv_old_Blueprint_C",
+    "Name": "Default__tv_old_Blueprint_C",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__tv_old_Blueprint_C:StaticMeshComponent0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/tv_old_Blueprint.7"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent Default__tv_old_Blueprint_C:StaticMeshComponent0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/tv_old_Blueprint.7"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_6",
+    "Outer": "tv_old_Blueprint_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_13",
+    "Outer": "SimpleConstructionScript_6",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent tv_old_Blueprint_C:SceneComponent_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/tv_old_Blueprint.2"
+      },
+      "VariableGuid": "3BAD5905-4EEB9151-7AF1038F-26BAF10E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_15",
+    "Outer": "SimpleConstructionScript_6",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpotLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpotLightComponent tv_old_Blueprint_C:SpotLightComponent_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/tv_old_Blueprint.6"
+      },
+      "ParentComponentOrVariableName": "StaticMeshComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "48C5AA3B-45D5358C-47760796-86734625",
+      "InternalVariableName": "SpotLight"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_6",
+    "Outer": "tv_old_Blueprint_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node tv_old_Blueprint_C:SimpleConstructionScript_6.SCS_Node_15",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/tv_old_Blueprint.4"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node tv_old_Blueprint_C:SimpleConstructionScript_6.SCS_Node_15",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/tv_old_Blueprint.4"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node tv_old_Blueprint_C:SimpleConstructionScript_6.SCS_Node_13",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/tv_old_Blueprint.3"
+      }
+    }
+  },
+  {
+    "Type": "SpotLightComponent",
+    "Name": "SpotLightComponent_0",
+    "Outer": "tv_old_Blueprint_C",
+    "Properties": {
+      "InnerConeAngle": 57.0,
+      "OuterConeAngle": 80.0,
+      "SourceRadius": 1.4,
+      "MaxDrawDistance": 0.0,
+      "MaxDistanceFadeRange": 0.0,
+      "LightFunctionMaterial": {
+        "ObjectName": "Material tv_light_function",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Material/Tv/tv_light_function.0"
+      },
+      "Intensity": 111.0,
+      "DetailLevelBeforeCastShadows": "DM_MAX",
+      "RelativeLocation": {
+        "X": -5.0361595,
+        "Y": 15.085521,
+        "Z": 20.51472
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 89.99995,
+        "Roll": -0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "Default__tv_old_Blueprint_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh tv_old",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Models/tv_old.2"
+      },
+      "bUseDefaultCollision": false,
+      "DetailLevelBeforeCastShadows": "DM_MAX"
+    }
+  }
+]

@@ -1,0 +1,2096 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_GachaGemstone_WBP_Card_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_GachaGemstone_WBP_Card_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.61"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BottomLeftSelectedCorner",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BottomRightSelectedCorner",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Icon",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageGift",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageOK",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ItemSelectedBorder",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RarityBackground",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RarityFrame",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SelectionButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TopLeftSelectedCorner",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TopRightSelectedCorner",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "EmptySlotTexture",
+        "Flags": 2097153,
+        "ElementSize": 32,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct SoftObjectPath",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "EmptySlotBackgroundColor",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct LinearColor",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "EmptySlotOverlayColor",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct LinearColor",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "EmptySlotIconColor",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct LinearColor",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "FilledSlotIconColor",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct LinearColor",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "index",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 5,
+        "Enum": {
+          "ObjectName": "Enum ESlateVisibility",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": 1,
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_GachaGemstone_WBP_Card_C Default__NE_GachaGemstone_WBP_Card_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.1"
+    }
+  },
+  {
+    "Type": "NE_GachaGemstone_WBP_Card_C",
+    "Name": "Default__NE_GachaGemstone_WBP_Card_C",
+    "Properties": {
+      "EmptySlotTexture": {
+        "AssetPathName": "/Game/UI/UMGAssets/Customization/Atl_Custo_Ico_Outfit_Huge.Atl_Custo_Ico_Outfit_Huge",
+        "SubPathString": ""
+      },
+      "EmptySlotBackgroundColor": {
+        "R": 0.054902,
+        "G": 0.086275,
+        "B": 0.101961,
+        "A": 1.0,
+        "Hex": "FF42535A"
+      },
+      "EmptySlotOverlayColor": {
+        "R": 0.262745,
+        "G": 0.270588,
+        "B": 0.27451,
+        "A": 1.0,
+        "Hex": "FF8C8E8F"
+      },
+      "EmptySlotIconColor": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.0,
+        "Hex": "000000"
+      },
+      "FilledSlotIconColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFFFF"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "SelectionButton",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 32.0,
+            "Y": 32.0
+          },
+          "Margin": {
+            "Left": 0.25,
+            "Top": 0.25,
+            "Right": 0.25,
+            "Bottom": 0.25
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png",
+          "DrawAs": "ESlateBrushDrawType::Box",
+          "ImageType": "ESlateBrushImageType::FullColor"
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.17"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "SelectionButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 32.0,
+            "Y": 32.0
+          },
+          "Margin": {
+            "Left": 0.25,
+            "Top": 0.25,
+            "Right": 0.25,
+            "Bottom": 0.25
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png",
+          "DrawAs": "ESlateBrushDrawType::Box",
+          "ImageType": "ESlateBrushImageType::FullColor"
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.14"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_14",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_82",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "IconBounds",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.IconBounds.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.19"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ItemSelectedBorder",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.27"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.14"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.28"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_14",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.36"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.31"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_82",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "IconBounds",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.IconBounds.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.37"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.33"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ItemSelectedBorder",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemSelectedBorder.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.38"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemSelectedBorder.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.39"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemSelectedBorder.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemSelectedBorder.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.28"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": 3.2,
+          "Right": 1.1999979,
+          "Bottom": 9.200005
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 5.0,
+          "Top": 2.0,
+          "Right": 8.0,
+          "Bottom": -0.733333
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -106.1,
+          "Top": -140.5,
+          "Right": 213.6,
+          "Bottom": 295.6
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_82",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Right": -4.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.5"
+      },
+      "Content": {
+        "ObjectName": "Button NE_GachaGemstone_WBP_Card_C:WidgetTree.SelectionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -56.0,
+          "Top": -19.0,
+          "Right": -64.0,
+          "Bottom": -19.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.5"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Card_C:WidgetTree.RarityBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 34.0,
+          "Top": 24.0,
+          "Right": 31.666666,
+          "Bottom": 27.333332
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.IconBounds",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -56.0,
+          "Top": -19.0,
+          "Right": -64.0,
+          "Bottom": -19.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.5"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Card_C:WidgetTree.RarityFrame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 140.0,
+          "Top": 20.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.5"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Card_C:WidgetTree.ImageOK",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Top": -168.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.5"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Card_C:WidgetTree.ImageGift",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "IconBounds",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 4.0,
+          "Right": 350.0,
+          "Bottom": 350.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.IconBounds",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.7"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Card_C:WidgetTree.Icon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ItemSelectedBorder",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -4.0,
+          "Top": -4.0,
+          "Right": 82.0,
+          "Bottom": 82.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Card_C:WidgetTree.TopLeftSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ItemSelectedBorder",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": -5.0,
+          "Right": 82.0,
+          "Bottom": 82.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Card_C:WidgetTree.TopRightSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ItemSelectedBorder",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -4.0,
+          "Top": 6.0,
+          "Right": 82.0,
+          "Bottom": 82.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Card_C:WidgetTree.BottomLeftSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ItemSelectedBorder",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": 5.0,
+          "Right": 82.0,
+          "Bottom": 82.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Card_C:WidgetTree.BottomRightSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": 3.2,
+          "Right": 1.1999979,
+          "Bottom": 9.200005
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemSelectedBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 5.0,
+          "Top": 2.0,
+          "Right": 8.0,
+          "Bottom": -0.733333
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -106.1,
+          "Top": -140.5,
+          "Right": 213.6,
+          "Bottom": 295.6
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_82",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Right": -4.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.10"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.SelectionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -56.0,
+          "Top": -19.0,
+          "Right": -64.0,
+          "Bottom": -19.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RarityBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.56"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 34.0,
+          "Top": 24.0,
+          "Right": 31.666666,
+          "Bottom": 27.333332
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.10"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.IconBounds",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -56.0,
+          "Top": -19.0,
+          "Right": -64.0,
+          "Bottom": -19.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RarityFrame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.57"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 140.0,
+          "Top": 20.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageOK",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.55"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Top": -168.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageGift",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.54"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "IconBounds",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 4.0,
+          "Right": 350.0,
+          "Bottom": 350.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.IconBounds",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Icon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ItemSelectedBorder",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -4.0,
+          "Top": -4.0,
+          "Right": 82.0,
+          "Bottom": 82.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemSelectedBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TopLeftSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ItemSelectedBorder",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": -5.0,
+          "Right": 82.0,
+          "Bottom": 82.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemSelectedBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TopRightSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.59"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ItemSelectedBorder",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -4.0,
+          "Top": 6.0,
+          "Right": 82.0,
+          "Bottom": 82.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemSelectedBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BottomLeftSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ItemSelectedBorder",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": 5.0,
+          "Right": 82.0,
+          "Bottom": 82.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemSelectedBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BottomRightSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.52"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BottomLeftSelectedCorner",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.26"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        },
+        "Angle": -90.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BottomRightSelectedCorner",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.27"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        },
+        "Angle": 180.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Icon",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 512.0,
+          "Y": 512.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_Huntress_Outfit_Gold_001",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Customization/NE_Huntress_Outfit_Gold_001.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.IconBounds.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.23"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.65,
+          "Y": 0.65
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageGift",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 128.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Rarities_MB_2",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/RaritiesExclusives/Atl_Rarities_MB_2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.22"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.4,
+          "Y": 0.4
+        }
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageOK",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 46.0,
+          "Y": 42.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D IconOK",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Gacha/IconOK.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.21"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RarityBackground",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 512.0,
+          "Y": 512.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_Common_Card_Platinum",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Common/Cards/NE_Common_Card_Platinum.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.18"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RarityFrame",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 512.0,
+          "Y": 512.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_Common_Frame_Blood",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Common/Cards/NE_Common_Frame_Blood.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.20"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TopLeftSelectedCorner",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.24"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TopRightSelectedCorner",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Card_C:WidgetTree.ItemSelectedBorder.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.25"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        },
+        "Angle": 90.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BottomLeftSelectedCorner",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemSelectedBorder.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.40"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        },
+        "Angle": -90.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BottomRightSelectedCorner",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemSelectedBorder.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.41"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        },
+        "Angle": 180.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Icon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 512.0,
+          "Y": 512.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_Huntress_Outfit_Gold_001",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Customization/NE_Huntress_Outfit_Gold_001.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.IconBounds.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.37"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.65,
+          "Y": 0.65
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageGift",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 128.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Rarities_MB_2",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/RaritiesExclusives/Atl_Rarities_MB_2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.36"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.4,
+          "Y": 0.4
+        }
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageOK",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 46.0,
+          "Y": 42.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D IconOK",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Gacha/IconOK.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.35"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RarityBackground",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 512.0,
+          "Y": 512.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_Common_Card_Platinum",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Common/Cards/NE_Common_Card_Platinum.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.32"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RarityFrame",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 512.0,
+          "Y": 512.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_Common_Frame_Blood",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Common/Cards/NE_Common_Frame_Blood.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.34"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TopLeftSelectedCorner",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemSelectedBorder.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.38"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TopRightSelectedCorner",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemSelectedBorder.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.39"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        },
+        "Angle": 90.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "NE_GachaGemstone_WBP_Card_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_GachaGemstone_WBP_Card_C",
+    "Properties": {
+      "BottomLeftSelectedCorner": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BottomLeftSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.51"
+      },
+      "BottomRightSelectedCorner": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BottomRightSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.52"
+      },
+      "Icon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Icon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.53"
+      },
+      "ImageGift": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageGift",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.54"
+      },
+      "ImageOK": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageOK",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.55"
+      },
+      "ItemSelectedBorder": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemSelectedBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.13"
+      },
+      "RarityBackground": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RarityBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.56"
+      },
+      "RarityFrame": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RarityFrame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.57"
+      },
+      "SelectionButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.SelectionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.3"
+      },
+      "TopLeftSelectedCorner": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TopLeftSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.58"
+      },
+      "TopRightSelectedCorner": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TopRightSelectedCorner",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.59"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.62"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_GachaGemstone_WBP_Card_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Card_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Card.9"
+      }
+    }
+  }
+]

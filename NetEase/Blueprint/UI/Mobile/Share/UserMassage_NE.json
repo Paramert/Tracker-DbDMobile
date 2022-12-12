@@ -1,0 +1,2313 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "UserMassage_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree UserMassage_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.90"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "IDTitle",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerIcon",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass NE_PlayerProfile_PyWBP_PlayerPortrait_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_PlayerPortrait.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerID",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerName",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerServer",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SERVERTitle",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "UserMassage_NE_C Default__UserMassage_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.1"
+    }
+  },
+  {
+    "Type": "UserMassage_NE_C",
+    "Name": "Default__UserMassage_NE_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "ActionButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Disabled": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "NormalPadding": {
+          "Left": 0.0,
+          "Top": 0.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "PressedPadding": {
+          "Left": 0.9,
+          "Top": 0.9,
+          "Right": 0.9,
+          "Bottom": 0.9
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "PressMethod": "EButtonPressMethod::ButtonPress",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_52",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot UserMassage_NE_C:WidgetTree.CanvasPanel_52.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot UserMassage_NE_C:WidgetTree.CanvasPanel_52.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot UserMassage_NE_C:WidgetTree.CanvasPanel_52.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot UserMassage_NE_C:WidgetTree.CanvasPanel_52.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.13"
+        }
+      ],
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_52",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_52.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_52.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_52.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_52.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.17"
+        }
+      ],
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "AudiPanelt",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudiPanelt.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudiPanelt.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.18"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.26"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_47",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.22"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ScaleBox_92.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.57"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ImagePortraitFrame",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrame.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrame.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrame.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.29"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.24"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Lock",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Lock.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Lock.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.31"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.25"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_52",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 25.0,
+          "Right": 110.0,
+          "Bottom": 110.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel UserMassage_NE_C:WidgetTree.CanvasPanel_52",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.3"
+      },
+      "Content": {
+        "ObjectName": "NE_PlayerProfile_PyWBP_PlayerPortrait_C UserMassage_NE_C:WidgetTree.PlayerIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_52",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 160.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel UserMassage_NE_C:WidgetTree.CanvasPanel_52",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.3"
+      },
+      "Content": {
+        "ObjectName": "SizeBox UserMassage_NE_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_52",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 160.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel UserMassage_NE_C:WidgetTree.CanvasPanel_52",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.3"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox UserMassage_NE_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_52",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 160.0,
+          "Top": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel UserMassage_NE_C:WidgetTree.CanvasPanel_52",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.3"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox UserMassage_NE_C:WidgetTree.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_52",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 25.0,
+          "Right": 110.0,
+          "Bottom": 110.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_52",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.4"
+      },
+      "Content": {
+        "ObjectName": "NE_PlayerProfile_PyWBP_PlayerPortrait_C WidgetArchetype:WidgetTree_0.PlayerIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_52",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 160.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_52",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.4"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_52",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 160.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_52",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.4"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_52",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 160.0,
+          "Top": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_52",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.4"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "AudiPanelt",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 16.0,
+          "Right": 16.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudiPanelt",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.5"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudioBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.54"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "AudiPanelt",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudiPanelt",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.5"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Image_115",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.6"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ScaleBox_92",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.55"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_47",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortrait",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_47",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -128.0,
+          "Top": -128.0,
+          "Right": 256.0,
+          "Bottom": 256.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.7"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_47",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrameBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_47",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_47",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Lock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_47",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudiPanelt",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ImagePortraitFrame",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.0,
+          "Top": 2.0,
+          "Right": 2.0,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.8"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Black1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ImagePortraitFrame",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -1.0,
+          "Top": -1.0,
+          "Right": -1.0,
+          "Bottom": -1.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.8"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Black2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ImagePortraitFrame",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": -1.0,
+          "Bottom": -1.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.8"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.PortraitFrame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Lock",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Lock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.LockBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Lock",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.2,
+            "Y": 0.2
+          },
+          "Maximum": {
+            "X": 0.8,
+            "Y": 0.8
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Lock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Lockicon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.50"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot UserMassage_NE_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.36"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot UserMassage_NE_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.37"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot UserMassage_NE_C:WidgetTree.CanvasPanel_52.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.12"
+      },
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot UserMassage_NE_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.38"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot UserMassage_NE_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot UserMassage_NE_C:WidgetTree.CanvasPanel_52.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.13"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.40"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_52.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.16"
+      },
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_1.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.42"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_1.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.43"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_52.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.17"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox UserMassage_NE_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.32"
+      },
+      "Content": {
+        "ObjectName": "SizeBox UserMassage_NE_C:WidgetTree.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.59"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox UserMassage_NE_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.32"
+      },
+      "Content": {
+        "ObjectName": "SizeBox UserMassage_NE_C:WidgetTree.SizeBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.60"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_1",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox UserMassage_NE_C:WidgetTree.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.33"
+      },
+      "Content": {
+        "ObjectName": "SizeBox UserMassage_NE_C:WidgetTree.SizeBox_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.61"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_1",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox UserMassage_NE_C:WidgetTree.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.33"
+      },
+      "Content": {
+        "ObjectName": "SizeBox UserMassage_NE_C:WidgetTree.SizeBox_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.62"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.34"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.64"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.34"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.65"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_1",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.35"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.66"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_1",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.35"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.67"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Black1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_PortraitFrame_Ordinary_00001",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/PlayerProfile/PortraitFrames/NE_PortraitFrame_Ordinary_00001.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrame.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.27"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 2.0,
+          "Y": 2.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Black2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_PortraitFrame_Ordinary_00001",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/PlayerProfile/PortraitFrames/NE_PortraitFrame_Ordinary_00001.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrame.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.28"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 2.0,
+          "Y": 2.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_115",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.6,
+            "Hex": "99000000"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudiPanelt.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.19"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePortrait",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_Portrait_Camper_001",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/PlayerProfile/Portraits/NE_Portrait_Camper_001.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.21"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePortraitFrameBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_PortraitFrame_Special_BP_00001_BG",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/PlayerProfile/PortraitFrames/NE_PortraitFrame_Special_BP_00001_BG.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.23"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 2.0,
+          "Y": 2.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "LockBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Lock.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.30"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Lockicon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 150.0,
+          "Y": 147.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite marker_locked_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/CharacterSelect/OutputPaper2D/Frames/marker_locked_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Lock.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.31"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PortraitFrame",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_PortraitFrame_Ordinary_00001",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/PlayerProfile/PortraitFrames/NE_PortraitFrame_Ordinary_00001.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrame.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.29"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 2.0,
+          "Y": 2.0
+        }
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "NE_PlayerProfile_PyWBP_PlayerPortrait_C",
+    "Name": "PlayerIcon",
+    "Outer": "WidgetTree",
+    "Template": "Default__NE_PlayerProfile_PyWBP_PlayerPortrait_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot UserMassage_NE_C:WidgetTree.CanvasPanel_52.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.10"
+      }
+    }
+  },
+  {
+    "Type": "NE_PlayerProfile_PyWBP_PlayerPortrait_C",
+    "Name": "PlayerIcon",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__NE_PlayerProfile_PyWBP_PlayerPortrait_C",
+    "Properties": {
+      "ActionButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ActionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.2"
+      },
+      "AudioBox": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudioBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.54"
+      },
+      "AudiPanelt": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudiPanelt",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.5"
+      },
+      "Audit": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Audit",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.84"
+      },
+      "ImagePortrait": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortrait",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.47"
+      },
+      "ImagePortraitFrame": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.8"
+      },
+      "ImagePortraitFrameBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ImagePortraitFrameBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.48"
+      },
+      "Lock": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Lock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.9"
+      },
+      "LockBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.LockBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.49"
+      },
+      "Lockicon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Lockicon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.50"
+      },
+      "PortraitFrame": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.PortraitFrame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.51"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.92"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_52.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.14"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "AudioBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudioBox.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.56"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudiPanelt.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.18"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_92",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ScaleBox_92.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.57"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.20"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "AudioBox",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudioBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.54"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.Audit",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.84"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_92",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.ScaleBox_92",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.55"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_47",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.7"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot UserMassage_NE_C:WidgetTree.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.68"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot UserMassage_NE_C:WidgetTree.CanvasPanel_52.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.11"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot UserMassage_NE_C:WidgetTree.SizeBox_1.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.69"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot UserMassage_NE_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.36"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_3",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot UserMassage_NE_C:WidgetTree.SizeBox_3.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.70"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot UserMassage_NE_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.37"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_4",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot UserMassage_NE_C:WidgetTree.SizeBox_4.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.71"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot UserMassage_NE_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.38"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_5",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot UserMassage_NE_C:WidgetTree.SizeBox_5.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.72"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot UserMassage_NE_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.39"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.73"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_52.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.15"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_1.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.74"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.40"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_3",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_3.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.75"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.41"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_4",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_4.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.76"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_1.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.42"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_5",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_5.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.77"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_1.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.43"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox UserMassage_NE_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.58"
+      },
+      "Content": {
+        "ObjectName": "TextBlock UserMassage_NE_C:WidgetTree.PlayerName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.80"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox UserMassage_NE_C:WidgetTree.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.59"
+      },
+      "Content": {
+        "ObjectName": "TextBlock UserMassage_NE_C:WidgetTree.IDTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.78"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_3",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox UserMassage_NE_C:WidgetTree.SizeBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.60"
+      },
+      "Content": {
+        "ObjectName": "TextBlock UserMassage_NE_C:WidgetTree.PlayerID",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.79"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_4",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox UserMassage_NE_C:WidgetTree.SizeBox_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.61"
+      },
+      "Content": {
+        "ObjectName": "TextBlock UserMassage_NE_C:WidgetTree.SERVERTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.82"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_5",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox UserMassage_NE_C:WidgetTree.SizeBox_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.62"
+      },
+      "Content": {
+        "ObjectName": "TextBlock UserMassage_NE_C:WidgetTree.PlayerServer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.81"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.63"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.86"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.64"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.IDTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.83"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_3",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.65"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerID",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.85"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_4",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.66"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.SERVERTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.88"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_5",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.67"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerServer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.87"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "IDTitle",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "EF2773D7411DB76ECD0211A4550047D0",
+        "SourceString": "ID :"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot UserMassage_NE_C:WidgetTree.SizeBox_1.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.69"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerID",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "1FD97E3A49E458FE49CE009A93D365BB",
+        "SourceString": "12345"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot UserMassage_NE_C:WidgetTree.SizeBox_3.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.70"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerName",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "8283F7094A98E58F2E41A397E4218AC7",
+        "SourceString": "THE SHAPE"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot UserMassage_NE_C:WidgetTree.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.68"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerServer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C389EC654C25DCA08DCF8E95D8CE2C27",
+        "SourceString": "CITY OF THE FUTURE"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot UserMassage_NE_C:WidgetTree.SizeBox_5.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.72"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SERVERTitle",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "0261205F4073B488943687807141E4EA",
+        "SourceString": "SERVER:"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot UserMassage_NE_C:WidgetTree.SizeBox_4.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.71"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "IDTitle",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "EF2773D7411DB76ECD0211A4550047D0",
+        "SourceString": "ID :"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_1.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.74"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Audit",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "1C308F0C47AC582BABA12283FEE35627",
+        "SourceString": "审核中"
+      },
+      "Font": {
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.AudioBox.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.56"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerID",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "1FD97E3A49E458FE49CE009A93D365BB",
+        "SourceString": "12345"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_3.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.75"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerName",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "8283F7094A98E58F2E41A397E4218AC7",
+        "SourceString": "THE SHAPE"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.73"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerServer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C389EC654C25DCA08DCF8E95D8CE2C27",
+        "SourceString": "CITY OF THE FUTURE"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_5.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.77"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SERVERTitle",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "0261205F4073B488943687807141E4EA",
+        "SourceString": "SERVER:"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_4.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.76"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UserMassage_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__UserMassage_NE_C",
+    "Properties": {
+      "IDTitle": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.IDTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.83"
+      },
+      "PlayerIcon": {
+        "ObjectName": "NE_PlayerProfile_PyWBP_PlayerPortrait_C WidgetArchetype:WidgetTree_0.PlayerIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.53"
+      },
+      "PlayerID": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerID",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.85"
+      },
+      "PlayerName": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.86"
+      },
+      "PlayerServer": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerServer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.87"
+      },
+      "SERVERTitle": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.SERVERTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.88"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.91"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "UserMassage_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel UserMassage_NE_C:WidgetTree.CanvasPanel_52",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.3"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_52",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "PlayerIcon",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PlayerIcon.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Share/UserMassage_NE.6"
+      }
+    }
+  }
+]

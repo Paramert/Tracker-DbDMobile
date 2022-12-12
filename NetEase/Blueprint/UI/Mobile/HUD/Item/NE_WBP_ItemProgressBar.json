@@ -1,0 +1,856 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_ItemProgressBar_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_ItemProgressBar_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.29"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "FillPowerChargeProgression",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ProgressBar",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageRed",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageWhite",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ItemProgress",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PowerCharge",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TextDebug",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "GPTag_IsInTantrum",
+        "Flags": 2097153,
+        "ElementSize": 12,
+        "PropertyFlags": 5,
+        "Struct": {
+          "ObjectName": "ScriptStruct GameplayTag",
+          "ObjectPath": "/Script/GameplayTags"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_ItemProgressBar_C Default__NE_WBP_ItemProgressBar_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.1"
+    }
+  },
+  {
+    "Type": "NE_WBP_ItemProgressBar_C",
+    "Name": "Default__NE_WBP_ItemProgressBar_C",
+    "Properties": {
+      "GPTag_IsInTantrum": {
+        "TagName": "State.Cannibal.IsInTantrum"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ItemProgress",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.ItemProgress.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.ItemProgress.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.ItemProgress.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.8"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "PowerCharge",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.PowerCharge.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.9"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ItemProgress",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemProgress.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemProgress.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemProgress.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.18"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.14"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "PowerCharge",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PowerCharge.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.15"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_ItemProgressBar_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_ItemProgressBar_C:WidgetTree.ItemProgress",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_ItemProgressBar_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_ItemProgressBar_C:WidgetTree.PowerCharge",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ItemProgress",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_ItemProgressBar_C:WidgetTree.ItemProgress",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.3"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_ItemProgressBar_C:WidgetTree.ImageRed",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ItemProgress",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_ItemProgressBar_C:WidgetTree.ItemProgress",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.3"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_ItemProgressBar_C:WidgetTree.ImageWhite",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ItemProgress",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_ItemProgressBar_C:WidgetTree.ItemProgress",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.3"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_ItemProgressBar_C:WidgetTree.TextDebug",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "PowerCharge",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_ItemProgressBar_C:WidgetTree.PowerCharge",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.4"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar NE_WBP_ItemProgressBar_C:WidgetTree.FillPowerChargeProgression",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemProgress",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PowerCharge",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ItemProgress",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemProgress",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.6"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageRed",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ItemProgress",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemProgress",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.6"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageWhite",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ItemProgress",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemProgress",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextDebug",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.28"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "PowerCharge",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PowerCharge",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.7"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.FillPowerChargeProgression",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.26"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRed",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFF0000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant MI_PerkProgressbar_Regular",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/MI_PerkProgressbar_Regular.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.ItemProgress.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.10"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageWhite",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant MI_PerkProgressbar_Regular",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/MI_PerkProgressbar_Regular.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.ItemProgress.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.11"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRed",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFF0000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant MI_PerkProgressbar_Regular",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/MI_PerkProgressbar_Regular.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemProgress.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.16"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageWhite",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant MI_PerkProgressbar_Regular",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/MI_PerkProgressbar_Regular.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemProgress.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.17"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "NE_WBP_ItemProgressBar_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_ItemProgressBar_C",
+    "Properties": {
+      "FillPowerChargeProgression": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.FillPowerChargeProgression",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.26"
+      },
+      "ImageRed": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageRed",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.22"
+      },
+      "ImageWhite": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageWhite",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.23"
+      },
+      "ItemProgress": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemProgress",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.6"
+      },
+      "PowerCharge": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.PowerCharge",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.7"
+      },
+      "TextDebug": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextDebug",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.28"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.30"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "FillPowerChargeProgression",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 256.0,
+            "Y": 256.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.637681,
+              "B": 0.173728,
+              "A": 1.0,
+              "Hex": "FFFFD174"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D items_tint",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Items/items_tint.0"
+          }
+        }
+      },
+      "Percent": 0.5,
+      "BarFillType": "EProgressBarFillType::BottomToTop",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.PowerCharge.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.13"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "FillPowerChargeProgression",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 256.0,
+            "Y": 256.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.637681,
+              "B": 0.173728,
+              "A": 1.0,
+              "Hex": "FFFFD174"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D items_tint",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Items/items_tint.0"
+          }
+        }
+      },
+      "Percent": 0.5,
+      "BarFillType": "EProgressBarFillType::BottomToTop",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.PowerCharge.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.19"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextDebug",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "1111"
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_ItemProgressBar_C:WidgetTree.ItemProgress.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.12"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextDebug",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "1111"
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ItemProgress.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.18"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_ItemProgressBar_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_ItemProgressBar_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.2"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Item/NE_WBP_ItemProgressBar.5"
+      }
+    }
+  }
+]

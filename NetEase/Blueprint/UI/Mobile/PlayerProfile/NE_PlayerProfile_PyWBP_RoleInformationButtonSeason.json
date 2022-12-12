@@ -1,0 +1,1166 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.31"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:Btn_Press_INST",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.30"
+        }
+      ],
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Btn_Press",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2147491860,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ButtonSeason",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GameSeasonText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Press",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C Default__NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.1"
+    }
+  },
+  {
+    "Type": "NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C",
+    "Name": "Default__NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "ButtonSeason",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 932.0,
+            "Y": 248.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FF000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Loadout_Carousel_Box_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Carousel_Box_png.1"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 932.0,
+            "Y": 248.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FF000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Loadout_Carousel_Box_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Carousel_Box_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 932.0,
+            "Y": 248.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FF000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Loadout_Carousel_Box_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Carousel_Box_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 932.0,
+            "Y": 248.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 0.5,
+              "Hex": "7F000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Loadout_Carousel_Box_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Carousel_Box_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Box"
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.ButtonSeason.ButtonSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.4"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.8"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "ButtonSeason",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 932.0,
+            "Y": 248.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FF000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Loadout_Carousel_Box_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Carousel_Box_png.1"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 932.0,
+            "Y": 248.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FF000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Loadout_Carousel_Box_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Carousel_Box_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 932.0,
+            "Y": 248.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FF000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Loadout_Carousel_Box_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Carousel_Box_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 932.0,
+            "Y": 248.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 0.5,
+              "Hex": "7F000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Loadout_Carousel_Box_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Carousel_Box_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Box"
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.ButtonSeason.ButtonSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.5"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.10"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "ButtonSeason",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Right": 20.0
+      },
+      "HorizontalAlignment": "HAlign_Fill",
+      "Parent": {
+        "ObjectName": "Button NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.ButtonSeason",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.2"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.ScaleBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.24"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "ButtonSeason",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Right": 20.0
+      },
+      "HorizontalAlignment": "HAlign_Fill",
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.ButtonSeason",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.3"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.6"
+      },
+      "Content": {
+        "ObjectName": "Button NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.ButtonSeason",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -5.0,
+          "Top": -5.0,
+          "Right": -5.0,
+          "Bottom": -5.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.Press",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.7"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.ButtonSeason",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -5.0,
+          "Top": -5.0,
+          "Right": -5.0,
+          "Bottom": -5.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Press",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.13"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Press",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_gacha_frame_banner_select",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/GachaHeart/gacha/NE_gacha_frame_banner_select.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.9"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Press",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "Margin": {
+          "Left": 0.5,
+          "Top": 0.5,
+          "Right": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_gacha_frame_banner_select",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/GachaHeart/gacha/NE_gacha_frame_banner_select.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.11"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Btn_Press",
+    "Outer": "Btn_Press_INST",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "551AC67F-448048FF-3CF664A0-B788E966",
+          "Name": "Press",
+          "PossessedObjectClass": {
+            "ObjectName": "Class Image",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "551AC67F-448048FF-3CF664A0-B788E966",
+          "BindingName": "Press",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:Btn_Press_INST.Btn_Press.MovieSceneFloatTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.22"
+            },
+            {
+              "ObjectName": "MovieSceneByteTrack NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:Btn_Press_INST.Btn_Press.MovieSceneByteTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.20"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 21001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "0D4C63AA-47BBC894-678B1396-5E31CE52"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneByteSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneByteSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneByteSection",
+    "Name": "MovieSceneByteSection_0",
+    "Outer": "MovieSceneByteTrack_0",
+    "Properties": {
+      "ByteCurve": {
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          3
+        ],
+        "Enum": {
+          "ObjectName": "Enum ESlateVisibility",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:Btn_Press_INST.Btn_Press.MovieSceneByteTrack_0.MovieSceneByteSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.15"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:Btn_Press_INST.Btn_Press.MovieSceneByteTrack_0.MovieSceneByteSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.16"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 21000
+            }
+          }
+        }
+      },
+      "Signature": "467165C9-488B1278-18F87398-707CE73C"
+    }
+  },
+  {
+    "Type": "MovieSceneByteTrack",
+    "Name": "MovieSceneByteTrack_0",
+    "Outer": "Btn_Press",
+    "Properties": {
+      "Enum": {
+        "ObjectName": "Enum ESlateVisibility",
+        "ObjectPath": "/Script/UMG"
+      },
+      "PropertyName": "Visibility",
+      "PropertyPath": "Visibility",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneByteSection NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:Btn_Press_INST.Btn_Press.MovieSceneByteTrack_0.MovieSceneByteSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.19"
+        }
+      ],
+      "Signature": "03E16C79-4DE71E70-E1E23DA0-71998DEF"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Properties": {
+      "FloatCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:Btn_Press_INST.Btn_Press.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.17"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:Btn_Press_INST.Btn_Press.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.18"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 21001
+            }
+          }
+        }
+      },
+      "Signature": "6A1EB9BB-4BD3E9D9-C3B5D1BE-5130A7F7"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Btn_Press",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:Btn_Press_INST.Btn_Press.MovieSceneFloatTrack_0.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.21"
+        }
+      ],
+      "Signature": "DBF07EE6-4FE9586E-40F98ABA-8A5A523C"
+    }
+  },
+  {
+    "Type": "NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C",
+    "Properties": {
+      "ButtonSeason": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.ButtonSeason",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.3"
+      },
+      "GameSeasonText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.GameSeasonText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.29"
+      },
+      "Press": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Press",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.13"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.32"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.26"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ButtonSlot NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.ButtonSeason.ButtonSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.4"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_1.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.27"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.ButtonSeason.ButtonSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.5"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_1",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.ScaleBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.24"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.GameSeasonText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.28"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_1",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.25"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.GameSeasonText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.29"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "GameSeasonText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "ButtonLabels",
+        "Key": "B4253ACB4CD4FF03AFC529B21A906F42",
+        "SourceString": "Season Details"
+      },
+      "Font": {
+        "Size": 22
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.26"
+      },
+      "bIsVariable": true,
+      "RenderOpacity": 0.5
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "GameSeasonText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "ButtonLabels",
+        "Key": "B4253ACB4CD4FF03AFC529B21A906F42",
+        "SourceString": "Season Details"
+      },
+      "Font": {
+        "Size": 22
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_1.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.27"
+      },
+      "bIsVariable": true,
+      "RenderOpacity": 0.5
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Btn_Press_INST",
+    "Outer": "NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:Btn_Press_INST.Btn_Press",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.14"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Press",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "551AC67F-448048FF-3CF664A0-B788E966",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Btn_Press",
+      "PrecompiledEvaluationTemplate": {
+        "Tracks": null,
+        "EvaluationField": {
+          "Ranges": [
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 21000
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 21000
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 21001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 21001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            }
+          ],
+          "Groups": [
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 2
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 1
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            }
+          ],
+          "MetaData": [
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            }
+          ]
+        },
+        "SequenceSignature": "EECC497D-4615E7EF-30A1768D-2575E8CD",
+        "TemplateSerialNumber": {
+          "Value": 1
+        },
+        "TemplateLedger": {
+          "LastTrackIdentifier": {
+            "Value": 1
+          },
+          "TrackSignatureToTrackIdentifier": null
+        },
+        "TrackFieldData": null
+      },
+      "Signature": "EECC497D-4615E7EF-30A1768D-2575E8CD"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_PlayerProfile_PyWBP_RoleInformationButtonSeason_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/PlayerProfile/NE_PlayerProfile_PyWBP_RoleInformationButtonSeason.7"
+      }
+    }
+  }
+]

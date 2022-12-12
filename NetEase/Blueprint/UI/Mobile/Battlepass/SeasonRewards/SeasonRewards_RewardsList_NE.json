@@ -1,0 +1,1799 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "SeasonRewards_RewardsList_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree SeasonRewards_RewardsList_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.60"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ProgressBar",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass SeasonRewards_ProgressBar_NE_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_ProgressBar_NE.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RewardsItem",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass SeasonRewards_RewardsItem_NE_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsItem_NE.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "VerticalBox_68",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class VerticalBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "RedSlateColor",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct SlateColor",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NormalSlateColor",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct SlateColor",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SeasonRewards_RewardsList_NE_C Default__SeasonRewards_RewardsList_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.1"
+    }
+  },
+  {
+    "Type": "SeasonRewards_RewardsList_NE_C",
+    "Name": "Default__SeasonRewards_RewardsList_NE_C",
+    "Properties": {
+      "RedSlateColor": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFFF0000"
+        },
+        "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+      },
+      "NormalSlateColor": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        },
+        "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Checked",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Hovered": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Pressed": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_41",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot SeasonRewards_RewardsList_NE_C:WidgetTree.CanvasPanel_41.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot SeasonRewards_RewardsList_NE_C:WidgetTree.CanvasPanel_41.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_41",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_41.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_41.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.17"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "DownPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.DownPanel.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.18"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_15",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.20"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_15",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.22"
+        }
+      ],
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarHeadLeftCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadLeftCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadCanvas.VerticalBoxSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.58"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarHeadRightCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadCanvas.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.57"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "UpPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.UpPanel.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.24"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.19"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "AwardIcon_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.ScaleBox_130.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.45"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "AwardIcon_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.ScaleBox_1.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.44"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_80",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.30"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_510",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0.CanvasPanel_510.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0.CanvasPanel_510.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.33"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_41",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 134.0,
+          "Top": 80.0,
+          "Right": 50.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel SeasonRewards_RewardsList_NE_C:WidgetTree.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.3"
+      },
+      "Content": {
+        "ObjectName": "SeasonRewards_ProgressBar_NE_C SeasonRewards_RewardsList_NE_C:WidgetTree.ProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_41",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 452.0,
+          "Bottom": 160.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel SeasonRewards_RewardsList_NE_C:WidgetTree.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.3"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox SeasonRewards_RewardsList_NE_C:WidgetTree.VerticalBox_68",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_41",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 134.0,
+          "Top": 80.0,
+          "Right": 50.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.4"
+      },
+      "Content": {
+        "ObjectName": "SeasonRewards_ProgressBar_NE_C WidgetArchetype:WidgetTree_0.ProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_41",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 452.0,
+          "Bottom": 160.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.4"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_68",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.55"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "DownPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1.0,
+          "Right": 50.0,
+          "Bottom": 610.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.DownPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.5"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.Down",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1.0,
+          "Right": 50.0,
+          "Bottom": 46.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.UpPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_15",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 50.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.DownPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 50.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.6"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.RitualProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -25.0,
+          "Right": 50.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.6"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.54"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ProgressBarHeadLeftCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.0,
+          "Right": 21.0,
+          "Bottom": 103.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.IMG_BarHead",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "UpPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 50.0,
+          "Bottom": 610.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.UpPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.9"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.Up",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_80",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -28.0,
+          "Top": -8.0,
+          "Right": 596.0,
+          "Bottom": -6.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.PitchOn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_80",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 568.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.12"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.Checked",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_80",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 39.0,
+          "Top": 4.0,
+          "Right": 84.0,
+          "Bottom": 104.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.12"
+      },
+      "Content": {
+        "ObjectName": "SeasonRewards_RankIcon_NE_C WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_80",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 164.0,
+          "Top": 2.0,
+          "Right": 38.0,
+          "Bottom": 54.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.IMG_PlanPointer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_80",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 205.0,
+          "Right": 88.0,
+          "Bottom": 88.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.12"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.ScaleBox_130",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_80",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 313.0,
+          "Right": 88.0,
+          "Bottom": 88.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.12"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.ScaleBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_80",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 30.0,
+          "Top": 160.0,
+          "Right": 0.0,
+          "Bottom": 5.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.Image_136",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_510",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 84.0,
+          "Bottom": 104.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0.CanvasPanel_510",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0.Killer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_510",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -4.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0.CanvasPanel_510",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.13"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0.Label",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.52"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IMG_BarHead",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 21.0,
+          "Y": 103.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Rituals_ProgBarEdge",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/AddUp/Atl_Rituals_ProgBarEdge.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadLeftCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.23"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        }
+      },
+      "RenderTransformPivot": {
+        "X": 1.0,
+        "Y": 0.5
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_136",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 459.0,
+          "Y": 5.0
+        },
+        "Margin": {
+          "Left": 0.3,
+          "Top": 0.3,
+          "Right": 0.3,
+          "Bottom": 0.3
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D SeasonRewards_Line_NE",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/SeasonRewards/SeasonRewards_Line_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.31"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IMG_PlanPointer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 68.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D PlanPointer",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/NewActivities/PlanPointer.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.28"
+      },
+      "RenderTransform": {
+        "Angle": -90.0
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PitchOn",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 617.0,
+          "Y": 160.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D SeasonRewards_SelectOn_NE",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/SeasonRewards/SeasonRewards_SelectOn_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.25"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Killer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 240.0,
+          "Y": 300.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D rankBorder_killer_01",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/Rank/rankBorder_killer_01.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0.CanvasPanel_510.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.32"
+      }
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "Down",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 29.0,
+            "Y": 610.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.35,
+            "Right": 0.0,
+            "Bottom": 0.64
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.052083,
+              "G": 0.052083,
+              "B": 0.052083,
+              "A": 1.0,
+              "Hex": "FF404040"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/AddUp/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 29.0,
+            "Y": 610.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.35,
+            "Right": 0.0,
+            "Bottom": 0.64
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF0000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/AddUp/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "MarqueeImage": {
+          "ImageSize": {
+            "X": 610.0,
+            "Y": 29.0
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::BottomToTop",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.DownPanel.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.18"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "RitualProgressBar",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 208.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.35,
+            "Right": 0.0,
+            "Bottom": 0.64
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.052083,
+              "G": 0.052083,
+              "B": 0.052083,
+              "A": 1.0,
+              "Hex": "FF404040"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/SeasonRewards/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image",
+          "Tiling": "ESlateBrushTileType::Vertical"
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 28.0,
+            "Y": 208.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.35,
+            "Right": 0.0,
+            "Bottom": 0.64
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF0000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/SeasonRewards/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image",
+          "Tiling": "ESlateBrushTileType::Vertical"
+        },
+        "MarqueeImage": {
+          "ImageSize": {
+            "X": 610.0,
+            "Y": 29.0
+          }
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::BottomToTop",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.21"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "Up",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 29.0,
+            "Y": 610.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.35,
+            "Right": 0.0,
+            "Bottom": 0.64
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.052083,
+              "G": 0.052083,
+              "B": 0.052083,
+              "A": 1.0,
+              "Hex": "FF404040"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/AddUp/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 29.0,
+            "Y": 610.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.35,
+            "Right": 0.0,
+            "Bottom": 0.64
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF0000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/AddUp/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "MarqueeImage": {
+          "ImageSize": {
+            "X": 610.0,
+            "Y": 29.0
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::BottomToTop",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.UpPanel.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.24"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.ScaleBox_1.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.44"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.30"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_130",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.ScaleBox_130.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.29"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_1",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.ScaleBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.42"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.AwardIcon_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.11"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_130",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.ScaleBox_130",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.43"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.AwardIcon_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.10"
+      }
+    }
+  },
+  {
+    "Type": "SeasonRewards_ProgressBar_NE_C",
+    "Name": "ProgressBar",
+    "Outer": "WidgetTree",
+    "Template": "Default__SeasonRewards_ProgressBar_NE_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot SeasonRewards_RewardsList_NE_C:WidgetTree.CanvasPanel_41.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.14"
+      }
+    }
+  },
+  {
+    "Type": "SeasonRewards_ProgressBar_NE_C",
+    "Name": "ProgressBar",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__SeasonRewards_ProgressBar_NE_C",
+    "Properties": {
+      "Down": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.Down",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.39"
+      },
+      "IMG_BarHead": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.IMG_BarHead",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.34"
+      },
+      "ProgressBarHeadLeftCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.7"
+      },
+      "ProgressBarHeadRightCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadRightCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.8"
+      },
+      "RitualProgressBar": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.RitualProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.40"
+      },
+      "Up": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.Up",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.41"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.62"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_41.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.16"
+      }
+    }
+  },
+  {
+    "Type": "SeasonRewards_RankIcon_NE_C",
+    "Name": "RankIcon",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__SeasonRewards_RankIcon_NE_C",
+    "Properties": {
+      "Killer": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0.Killer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.38"
+      },
+      "Label": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0.Label",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.52"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.64"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.27"
+      }
+    }
+  },
+  {
+    "Type": "SeasonRewards_RewardsItem_NE_C",
+    "Name": "RewardsItem",
+    "Outer": "WidgetTree",
+    "Template": "Default__SeasonRewards_RewardsItem_NE_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot SeasonRewards_RewardsList_NE_C:WidgetTree.VerticalBox_68.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.56"
+      },
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "SeasonRewards_RewardsItem_NE_C",
+    "Name": "RewardsItem",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__SeasonRewards_RewardsItem_NE_C",
+    "Properties": {
+      "AwardIcon_1": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.AwardIcon_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.10"
+      },
+      "AwardIcon_2": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.AwardIcon_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.11"
+      },
+      "Checked": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.Checked",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.2"
+      },
+      "IMG_PlanPointer": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.IMG_PlanPointer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.36"
+      },
+      "PitchOn": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.PitchOn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.37"
+      },
+      "RankIcon": {
+        "ObjectName": "SeasonRewards_RankIcon_NE_C WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.48"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.63"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_68.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.59"
+      },
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "SeasonRewards_RewardsList_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__SeasonRewards_RewardsList_NE_C",
+    "Properties": {
+      "ProgressBar": {
+        "ObjectName": "SeasonRewards_ProgressBar_NE_C WidgetArchetype:WidgetTree_0.ProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.47"
+      },
+      "RewardsItem": {
+        "ObjectName": "SeasonRewards_RewardsItem_NE_C WidgetArchetype:WidgetTree_0.RewardsItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.50"
+      },
+      "VerticalBox_68": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_68",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.55"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.61"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Label",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "468FC4DF4CD735023AD7449194ADE610",
+        "SourceString": "@#4"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.651042,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFD30000"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular"
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0.CanvasPanel_510.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.33"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        }
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_68",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot SeasonRewards_RewardsList_NE_C:WidgetTree.VerticalBox_68.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.56"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot SeasonRewards_RewardsList_NE_C:WidgetTree.CanvasPanel_41.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.15"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "ProgressBarHeadCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadCanvas.VerticalBoxSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.58"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadCanvas.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.57"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.22"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_68",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_68.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.59"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_41.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.17"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_68",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox SeasonRewards_RewardsList_NE_C:WidgetTree.VerticalBox_68",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.53"
+      },
+      "Content": {
+        "ObjectName": "SeasonRewards_RewardsItem_NE_C SeasonRewards_RewardsList_NE_C:WidgetTree.RewardsItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.49"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "ProgressBarHeadCanvas",
+    "Properties": {
+      "Size": {
+        "Value": 0.0,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.54"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadRightCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.8"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_6",
+    "Outer": "ProgressBarHeadCanvas",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.54"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.7"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_68",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_68",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.55"
+      },
+      "Content": {
+        "ObjectName": "SeasonRewards_RewardsItem_NE_C WidgetArchetype:WidgetTree_0.RewardsItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.50"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "SeasonRewards_RewardsList_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel SeasonRewards_RewardsList_NE_C:WidgetTree.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.3"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "ProgressBar",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBar.WidgetTree_0.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "RewardsItem",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.CanvasPanel_80",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "RankIcon",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RewardsItem.WidgetTree_0.RankIcon.WidgetTree_0.CanvasPanel_510",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/SeasonRewards/SeasonRewards_RewardsList_NE.13"
+      }
+    }
+  }
+]

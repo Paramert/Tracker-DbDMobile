@@ -1,0 +1,2203 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "EventsPOP_EventScene_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree EventsPOP_EventScene_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.76"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BG",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ButtonLabel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CloseButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_CloseButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/MainMenu/WBP_CloseButton.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GoNowBtn",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_Desc",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_Title",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "EventsPOP_EventScene_NE_C Default__EventsPOP_EventScene_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.1"
+    }
+  },
+  {
+    "Type": "EventsPOP_EventScene_NE_C",
+    "Name": "Default__EventsPOP_EventScene_NE_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "GoNowBtn",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 524.0,
+            "Y": 207.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite ATL_PPopup_BtnBuy_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/ATL_PPopup_BtnBuy_png.1"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 524.0,
+            "Y": 207.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite ATL_PPopup_BtnBuy_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/ATL_PPopup_BtnBuy_png.1"
+          }
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 524.0,
+            "Y": 207.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite ATL_PPopup_BtnBuy_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/ATL_PPopup_BtnBuy_png.1"
+          }
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.18"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 78.0,
+            "Y": 75.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_BTN_Close_Body",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/Atl_BTN_Close_Body.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 78.0,
+            "Y": 75.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_BTN_Close_Body",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/Atl_BTN_Close_Body.0"
+          }
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 78.0,
+            "Y": 75.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_BTN_Close_Body",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/Atl_BTN_Close_Body.0"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.CanvasButtonIcon.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.29"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "GoNowBtn",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 524.0,
+            "Y": 207.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite ATL_PPopup_BtnBuy_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/ATL_PPopup_BtnBuy_png.1"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 524.0,
+            "Y": 207.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite ATL_PPopup_BtnBuy_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/ATL_PPopup_BtnBuy_png.1"
+          }
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 524.0,
+            "Y": 207.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite ATL_PPopup_BtnBuy_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/ATL_PPopup_BtnBuy_png.1"
+          }
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_123",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "GoNowBtnPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.22"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_123",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.23"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasButtonIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.CanvasButtonIcon.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.CanvasButtonIcon.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.CanvasButtonIcon.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.30"
+        }
+      ],
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "GoNowBtnPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.36"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.37"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 532.0,
+          "Bottom": 223.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.5"
+      },
+      "Content": {
+        "ObjectName": "Image EventsPOP_EventScene_NE_C:WidgetTree.BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -20.0,
+          "Top": -20.0,
+          "Right": -5.0,
+          "Bottom": -10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.5"
+      },
+      "Content": {
+        "ObjectName": "Image EventsPOP_EventScene_NE_C:WidgetTree.Image_RedBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1456.0,
+          "Top": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.5"
+      },
+      "Content": {
+        "ObjectName": "WBP_CloseButton_C EventsPOP_EventScene_NE_C:WidgetTree.CloseButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.74"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 485.0,
+          "Top": 231.0,
+          "Right": 750.0,
+          "Bottom": 150.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.5"
+      },
+      "Content": {
+        "ObjectName": "SizeBox EventsPOP_EventScene_NE_C:WidgetTree.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.56"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 485.0,
+          "Top": -331.0,
+          "Right": 600.0,
+          "Bottom": 150.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.5"
+      },
+      "Content": {
+        "ObjectName": "SizeBox EventsPOP_EventScene_NE_C:WidgetTree.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.57"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 234.0,
+          "Bottom": 154.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.6"
+      },
+      "Content": {
+        "ObjectName": "Image EventsPOP_EventScene_NE_C:WidgetTree.Smoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 234.0,
+          "Bottom": 154.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.6"
+      },
+      "Content": {
+        "ObjectName": "Image EventsPOP_EventScene_NE_C:WidgetTree.Smoke02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.6"
+      },
+      "Content": {
+        "ObjectName": "Button EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 45.0,
+          "Top": 50.0,
+          "Right": 45.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.6"
+      },
+      "Content": {
+        "ObjectName": "SizeBox EventsPOP_EventScene_NE_C:WidgetTree.SizeBox_258",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 28.0,
+          "Top": 18.0,
+          "Right": 25.0,
+          "Bottom": 25.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.6"
+      },
+      "Content": {
+        "ObjectName": "Image EventsPOP_EventScene_NE_C:WidgetTree.border",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -182.0,
+          "Top": -100.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.6"
+      },
+      "Content": {
+        "ObjectName": "Image EventsPOP_EventScene_NE_C:WidgetTree.smokeFX03Top",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 212.0,
+          "Top": 76.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.6"
+      },
+      "Content": {
+        "ObjectName": "Image EventsPOP_EventScene_NE_C:WidgetTree.smokeFX03Bottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 532.0,
+          "Bottom": 223.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -20.0,
+          "Top": -20.0,
+          "Right": -5.0,
+          "Bottom": -10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_RedBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1456.0,
+          "Top": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.7"
+      },
+      "Content": {
+        "ObjectName": "WBP_CloseButton_C WidgetArchetype:WidgetTree_0.CloseButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.75"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 485.0,
+          "Top": 231.0,
+          "Right": 750.0,
+          "Bottom": 150.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.7"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.59"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_123",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 485.0,
+          "Top": -331.0,
+          "Right": 600.0,
+          "Bottom": 150.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.7"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.60"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasButtonIcon",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 20.0,
+          "Right": 78.0,
+          "Bottom": 75.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.CanvasButtonIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.8"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasButtonIcon",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 47.0,
+          "Right": 23.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.CanvasButtonIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.8"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.ImageCross",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasButtonIcon",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -26.0,
+          "Top": -15.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.CanvasButtonIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.8"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.IconPress",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 234.0,
+          "Bottom": 154.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Smoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 234.0,
+          "Bottom": 154.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Smoke02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.GoNowBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 45.0,
+          "Top": 50.0,
+          "Right": 45.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.9"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_258",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.61"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 28.0,
+          "Top": 18.0,
+          "Right": 25.0,
+          "Bottom": 25.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.border",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -182.0,
+          "Top": -100.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.smokeFX03Top",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.55"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "GoNowBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 212.0,
+          "Top": 76.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.GoNowBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.smokeFX03Bottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.54"
+      }
+    }
+  },
+  {
+    "Type": "EventsPOP_EventScene_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__EventsPOP_EventScene_NE_C",
+    "Properties": {
+      "BG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.47"
+      },
+      "ButtonLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.71"
+      },
+      "CloseButton": {
+        "ObjectName": "WBP_CloseButton_C WidgetArchetype:WidgetTree_0.CloseButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.75"
+      },
+      "GoNowBtn": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.GoNowBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.4"
+      },
+      "Text_Desc": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_Desc",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.72"
+      },
+      "Text_Title": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.73"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.77"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1570.0,
+          "Y": 712.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D bgimage",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/EventsPOP/bgimage.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.11"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "border",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 485.0,
+          "Y": 103.0
+        },
+        "Margin": {
+          "Left": 0.8,
+          "Top": 0.15,
+          "Right": 0.95,
+          "Bottom": 0.2
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Options_AboutBtnDown_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_Options_AboutBtnDown_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.20"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_RedBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1594.0,
+          "Y": 738.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Red_Box",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/EventsPOP/Red_Box.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.12"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Smoke",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 234.0,
+          "Y": 154.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Rituals_BtnSmoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_Rituals_BtnSmoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.16"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Smoke02",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 234.0,
+          "Y": 154.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Rituals_BtnSmoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_Rituals_BtnSmoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.17"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "smokeFX03Bottom",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 193.0,
+          "Y": 86.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_GlowTop_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_DailyRewCal_GlowTop_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.22"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "smokeFX03Top",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 193.0,
+          "Y": 86.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_GlowTop_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_DailyRewCal_GlowTop_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.21"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1570.0,
+          "Y": 712.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D bgimage",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/EventsPOP/bgimage.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.24"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "border",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 485.0,
+          "Y": 103.0
+        },
+        "Margin": {
+          "Left": 0.8,
+          "Top": 0.15,
+          "Right": 0.95,
+          "Bottom": 0.2
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Options_AboutBtnDown_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_Options_AboutBtnDown_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.36"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconPress",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 192.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Fx",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Fx.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.CanvasButtonIcon.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.31"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.6,
+          "Y": 0.6
+        }
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageCross",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_BTN_Close_Cross",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/Atl_BTN_Close_Cross.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.CanvasButtonIcon.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.30"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_RedBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1594.0,
+          "Y": 738.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Red_Box",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Events/EventsPOP/Red_Box.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.25"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Smoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 234.0,
+          "Y": 154.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Rituals_BtnSmoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_Rituals_BtnSmoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.32"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Smoke02",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 234.0,
+          "Y": 154.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Rituals_BtnSmoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_Rituals_BtnSmoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.33"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "smokeFX03Bottom",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 193.0,
+          "Y": 86.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_GlowTop_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_DailyRewCal_GlowTop_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.38"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "smokeFX03Top",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 193.0,
+          "Y": 86.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_GlowTop_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_DailyRewCal_GlowTop_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.37"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot EventsPOP_EventScene_NE_C:WidgetTree.SizeBox.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.62"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.14"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot EventsPOP_EventScene_NE_C:WidgetTree.SizeBox_1.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.63"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.15"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_258",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot EventsPOP_EventScene_NE_C:WidgetTree.SizeBox_258.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.64"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.GoNowBtnPanel.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.19"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.65"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.27"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_1.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.66"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.28"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_258",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_258.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.67"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GoNowBtnPanel.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.35"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox EventsPOP_EventScene_NE_C:WidgetTree.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.56"
+      },
+      "Content": {
+        "ObjectName": "TextBlock EventsPOP_EventScene_NE_C:WidgetTree.Text_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.70"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox EventsPOP_EventScene_NE_C:WidgetTree.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.57"
+      },
+      "Content": {
+        "ObjectName": "TextBlock EventsPOP_EventScene_NE_C:WidgetTree.Text_Desc",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.69"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_258",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox EventsPOP_EventScene_NE_C:WidgetTree.SizeBox_258",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.58"
+      },
+      "Content": {
+        "ObjectName": "TextBlock EventsPOP_EventScene_NE_C:WidgetTree.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.68"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.59"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.73"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.60"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_Desc",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.72"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_258",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_258",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.61"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.71"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "GO NOW"
+      },
+      "Font": {
+        "Size": 50
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot EventsPOP_EventScene_NE_C:WidgetTree.SizeBox_258.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.64"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_Desc",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "Here are the details of the event"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.8,
+          "Hex": "CCFFFFFF"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Regular_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Regular_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 35
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 600.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot EventsPOP_EventScene_NE_C:WidgetTree.SizeBox_1.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.63"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_Title",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "ACTIVITY TITLE"
+      },
+      "Font": {
+        "Size": 50
+      },
+      "Justification": "ETextJustify::Center",
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot EventsPOP_EventScene_NE_C:WidgetTree.SizeBox.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.62"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "GO NOW"
+      },
+      "Font": {
+        "Size": 50
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_258.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.67"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_Desc",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "Here are the details of the event"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.8,
+          "Hex": "CCFFFFFF"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font RobotoCondensed-Regular_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/RobotoCondensed-Regular_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 35
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 600.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_1.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.66"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_Title",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "ACTIVITY TITLE"
+      },
+      "Font": {
+        "Size": 50
+      },
+      "Justification": "ETextJustify::Center",
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.65"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WBP_CloseButton_C",
+    "Name": "CloseButton",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_CloseButton_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.13"
+      }
+    }
+  },
+  {
+    "Type": "WBP_CloseButton_C",
+    "Name": "CloseButton",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_CloseButton_C",
+    "Properties": {
+      "CanvasButtonIcon": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.CanvasButtonIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.8"
+      },
+      "IconPress": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.IconPress",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.49"
+      },
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.3"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.78"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_123.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.26"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "EventsPOP_EventScene_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel EventsPOP_EventScene_NE_C:WidgetTree.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_123",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "CloseButton",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CloseButton.WidgetTree_0.CanvasButtonIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/EventsPOP/EventsPOP_EventScene_NE.8"
+      }
+    }
+  }
+]

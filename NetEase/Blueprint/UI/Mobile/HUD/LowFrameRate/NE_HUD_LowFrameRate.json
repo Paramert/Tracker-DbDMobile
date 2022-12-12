@@ -1,0 +1,4604 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_HUD_LowFrameRate_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_HUD_LowFrameRate_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.170"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BGSwitcher",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetSwitcher",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ContenxtText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ErrorBtn",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Ico_01",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Ico_02",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_59",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_91",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "IMG_BarHead",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Img_Frame_Glow",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Img_Smoke_Glow",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Img_Smoke_Glow_02",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LoadingName",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LoadingPanel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NotyfyText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ProgressBarHeadCanvas",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class HorizontalBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ProgressBarHeadLeftCanvas",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ProgressBarHeadRightCanvas",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RightBtn",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RitualProgressBar",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ProgressBar",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SecondsText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SelectionHighlight",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_LoadingLogo",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_LoadingLogo_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/MainMenu/WBP_LoadingLogo.2"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_HUD_LowFrameRate_C Default__NE_HUD_LowFrameRate_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.1"
+    }
+  },
+  {
+    "Type": "NE_HUD_LowFrameRate_C",
+    "Name": "Default__NE_HUD_LowFrameRate_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "ErrorBtn",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "BackgroundColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer_02.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.42"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "RightBtn",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "BackgroundColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.39"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "ErrorBtn",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "BackgroundColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer_02.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.68"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "RightBtn",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "BackgroundColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.65"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "BtnPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.BtnPanel.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.37"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.BtnPanel.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.36"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ButtonContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.38"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.BtnPanel.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ButtonContainer_02",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer_02.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.43"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer_02.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.41"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer_02.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.42"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.BtnPanel.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.44"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_HUD_LowFrameRate_C:WidgetTree.BGSwitcher.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.166"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.46"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.47"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_HUD_LowFrameRate_C:WidgetTree.BGSwitcher.WidgetSwitcherSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.167"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.48"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.49"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.50"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.51"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.52"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.53"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LoadingPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.LoadingPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.54"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.LoadingPanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.55"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.45"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarCanvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.56"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarCanvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.57"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.50"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.97,
+          "Y": 1.0
+        }
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarHeadLeftCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadLeftCanvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.58"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadCanvas.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.101"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarHeadRightCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadCanvas.HorizontalBoxSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.102"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SelectionHighlight",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.SelectionHighlight.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.60"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.SelectionHighlight.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.59"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.40"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SelectionHighlight02",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.SelectionHighlight02.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.61"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer_02.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.43"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "BtnPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.BtnPanel.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.63"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.BtnPanel.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.62"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.73"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ButtonContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.66"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.64"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.65"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.BtnPanel.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.62"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ButtonContainer_02",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer_02.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.69"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer_02.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.67"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer_02.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.68"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.BtnPanel.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.70"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.71"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.BGSwitcher.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.168"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.72"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.73"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.BGSwitcher.WidgetSwitcherSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.169"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.74"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.75"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.76"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.77"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.78"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.79"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LoadingPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LoadingPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.80"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LoadingPanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.81"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.71"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.82"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.83"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.76"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.97,
+          "Y": 1.0
+        }
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarHeadLeftCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadLeftCanvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.84"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.103"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarHeadRightCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas.HorizontalBoxSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.104"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SelectionHighlight",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectionHighlight.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.86"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectionHighlight.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.85"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.66"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SelectionHighlight02",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectionHighlight02.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.87"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer_02.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.69"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.92"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.93"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_31",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.91"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_26",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.88"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_27",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.89"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_28",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.90"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.94"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_31",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.91"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_3",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_3.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.95"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_26",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.88"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_4",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_4.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.96"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_27",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.89"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_5",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_5.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.97"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_28",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.90"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_6",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_6.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.98"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.93"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "BtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 96.0,
+          "Top": 4.0,
+          "Right": 120.57143,
+          "Bottom": 102.57143
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.BtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "BtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 90.85714,
+          "Bottom": 106.57143
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.BtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ButtonContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -28.0,
+          "Right": 80.0,
+          "Bottom": 80.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.7"
+      },
+      "Content": {
+        "ObjectName": "Image NE_HUD_LowFrameRate_C:WidgetTree.Ico_01",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.105"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ButtonContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Right": -0.10000038,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.7"
+      },
+      "Content": {
+        "ObjectName": "Button NE_HUD_LowFrameRate_C:WidgetTree.RightBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ButtonContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 22.4,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.SelectionHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ButtonContainer_02",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -4.0,
+          "Right": 80.0,
+          "Bottom": 80.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_HUD_LowFrameRate_C:WidgetTree.Ico_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.106"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ButtonContainer_02",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 2.5714283,
+          "Right": 3.52381,
+          "Bottom": -0.8571434
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.8"
+      },
+      "Content": {
+        "ObjectName": "Button NE_HUD_LowFrameRate_C:WidgetTree.ErrorBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ButtonContainer_02",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -0.6285715,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.SelectionHighlight02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.9"
+      },
+      "Content": {
+        "ObjectName": "Image NE_HUD_LowFrameRate_C:WidgetTree.Image_59",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.108"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 568.0,
+          "Top": 19.2,
+          "Right": 15.599998,
+          "Bottom": 86.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.LoadingPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.10"
+      },
+      "Content": {
+        "ObjectName": "Image NE_HUD_LowFrameRate_C:WidgetTree.Image",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.107"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 569.7778,
+          "Top": 17.777779,
+          "Right": 25.0,
+          "Bottom": 82.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.10"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.BtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.11"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher NE_HUD_LowFrameRate_C:WidgetTree.BGSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.164"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.11"
+      },
+      "Content": {
+        "ObjectName": "Image NE_HUD_LowFrameRate_C:WidgetTree.Image_91",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.109"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 16.0,
+          "Top": 28.0,
+          "Right": 810.2,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.11"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -36.0,
+          "Top": -8.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.11"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_HUD_LowFrameRate_C:WidgetTree.SecondsText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.157"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 116.0,
+          "Top": 12.0,
+          "Right": 442.0,
+          "Bottom": 55.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.11"
+      },
+      "Content": {
+        "ObjectName": "SizeBox NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.143"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 116.0,
+          "Top": 72.0,
+          "Right": 442.0,
+          "Bottom": 45.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.11"
+      },
+      "Content": {
+        "ObjectName": "SizeBox NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.144"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "LoadingPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -12.0,
+          "Top": -4.0,
+          "Right": 12.0,
+          "Bottom": 4.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.LoadingPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.12"
+      },
+      "Content": {
+        "ObjectName": "WBP_LoadingLogo_C NE_HUD_LowFrameRate_C:WidgetTree.WBP_LoadingLogo",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.162"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "LoadingPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 68.0,
+          "Right": 230.4
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.LoadingPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.12"
+      },
+      "Content": {
+        "ObjectName": "SizeBox NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.142"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -400.0,
+          "Top": -26.0,
+          "Right": 800.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.13"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar NE_HUD_LowFrameRate_C:WidgetTree.RitualProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.130"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 2.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.13"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.99"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ProgressBarHeadLeftCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -113.0,
+          "Top": -2.5,
+          "Bottom": 25.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.14"
+      },
+      "Content": {
+        "ObjectName": "Image NE_HUD_LowFrameRate_C:WidgetTree.IMG_BarHead",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.110"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "SelectionHighlight",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -366.45715,
+          "Top": -58.8,
+          "Right": 366.45715,
+          "Bottom": 115.5
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.SelectionHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.16"
+      },
+      "Content": {
+        "ObjectName": "Image NE_HUD_LowFrameRate_C:WidgetTree.Img_Frame_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.111"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "SelectionHighlight",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -122.93878,
+          "Top": -66.42857,
+          "Right": 142.36736,
+          "Bottom": 124.85715
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.SelectionHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.16"
+      },
+      "Content": {
+        "ObjectName": "Image NE_HUD_LowFrameRate_C:WidgetTree.Img_Smoke_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.112"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "SelectionHighlight02",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -106.6449,
+          "Top": -66.42857,
+          "Right": 126.07347,
+          "Bottom": 124.85715
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.SelectionHighlight02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.17"
+      },
+      "Content": {
+        "ObjectName": "Image NE_HUD_LowFrameRate_C:WidgetTree.Img_Smoke_Glow_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.113"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "BtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 96.0,
+          "Top": 4.0,
+          "Right": 120.57143,
+          "Bottom": 102.57143
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.BtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.18"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ButtonContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "BtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 90.85714,
+          "Bottom": 106.57143
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.BtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.18"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ButtonContainer_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ButtonContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -28.0,
+          "Right": 80.0,
+          "Bottom": 80.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ButtonContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Ico_01",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.114"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ButtonContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Right": -0.10000038,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ButtonContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.19"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RightBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ButtonContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 22.4,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ButtonContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.19"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectionHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.28"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ButtonContainer_02",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -4.0,
+          "Right": 80.0,
+          "Bottom": 80.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ButtonContainer_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.20"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Ico_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.115"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ButtonContainer_02",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 2.5714283,
+          "Right": 3.52381,
+          "Bottom": -0.8571434
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ButtonContainer_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.20"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.ErrorBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ButtonContainer_02",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -0.6285715,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ButtonContainer_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.20"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectionHighlight02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_59",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.117"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 568.0,
+          "Top": 19.2,
+          "Right": 15.599998,
+          "Bottom": 86.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.21"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LoadingPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.22"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.116"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 569.7778,
+          "Top": 17.777779,
+          "Right": 25.0,
+          "Bottom": 82.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.22"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.BtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.23"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.BGSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.165"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.23"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_91",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.118"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 16.0,
+          "Top": 28.0,
+          "Right": 810.2,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.23"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -36.0,
+          "Top": -8.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.23"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.SecondsText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.161"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 116.0,
+          "Top": 12.0,
+          "Right": 442.0,
+          "Bottom": 55.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.23"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.146"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 116.0,
+          "Top": 72.0,
+          "Right": 442.0,
+          "Bottom": 45.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.23"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.147"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "LoadingPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -12.0,
+          "Top": -4.0,
+          "Right": 12.0,
+          "Bottom": 4.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LoadingPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.24"
+      },
+      "Content": {
+        "ObjectName": "WBP_LoadingLogo_C WidgetArchetype:WidgetTree_0.WBP_LoadingLogo",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.163"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "LoadingPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 68.0,
+          "Right": 230.4
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LoadingPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.24"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.145"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -400.0,
+          "Top": -26.0,
+          "Right": 800.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.25"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.RitualProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.131"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ProgressBarCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 2.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.25"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.100"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ProgressBarHeadLeftCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -113.0,
+          "Top": -2.5,
+          "Bottom": 25.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.26"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.IMG_BarHead",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.119"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "SelectionHighlight",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -366.45715,
+          "Top": -58.8,
+          "Right": 366.45715,
+          "Bottom": 115.5
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectionHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.28"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Img_Frame_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.120"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "SelectionHighlight",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -122.93878,
+          "Top": -66.42857,
+          "Right": 142.36736,
+          "Bottom": 124.85715
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectionHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.28"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Img_Smoke_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.121"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "SelectionHighlight02",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -106.6449,
+          "Top": -66.42857,
+          "Right": 126.07347,
+          "Bottom": 124.85715
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectionHighlight02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.29"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Img_Smoke_Glow_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.122"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_26",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -112.0,
+          "Top": -298.0,
+          "Right": 129.0,
+          "Bottom": 512.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.30"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_27",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -12.0,
+          "Top": -298.0,
+          "Right": 128.0,
+          "Bottom": 512.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.30"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_28",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 80.0,
+          "Top": -298.0,
+          "Right": 128.0,
+          "Bottom": 512.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.30"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_31",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -214.0,
+          "Top": -298.0,
+          "Right": 128.0,
+          "Bottom": 512.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.30"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 9.948816,
+          "Top": -40.388916,
+          "Right": 687.0,
+          "Bottom": 477.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.30"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.LogoBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.128"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -520.0,
+          "Top": -169.0,
+          "Right": 1090.0,
+          "Bottom": 255.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.30"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -60.401432,
+          "Top": 74.22023,
+          "Right": 128.0,
+          "Bottom": 512.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.31"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.First",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.132"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_3",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -65.65707,
+          "Top": 19.563974,
+          "Right": 129.0,
+          "Bottom": 512.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.32"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Second",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.135"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_4",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -60.42335,
+          "Top": 31.96596,
+          "Right": 128.0,
+          "Bottom": 512.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.33"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Third",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.136"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_5",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -61.5,
+          "Top": 86.991196,
+          "Right": 128.0,
+          "Bottom": 512.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.34"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Fourth",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.133"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_6",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -358.0,
+          "Top": 10.143106,
+          "Right": 785.1852,
+          "Bottom": 255.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.35"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Killer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.134"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "ProgressBarHeadCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadCanvas.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.101"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadCanvas.HorizontalBoxSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.102"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarCanvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.57"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "ProgressBarHeadCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.103"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas.HorizontalBoxSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.104"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.83"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "ProgressBarHeadCanvas",
+    "Properties": {
+      "Size": {
+        "Value": 0.91,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.99"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.14"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "ProgressBarHeadCanvas",
+    "Properties": {
+      "Size": {
+        "Value": 0.11,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.99"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadRightCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.15"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "ProgressBarHeadCanvas",
+    "Properties": {
+      "Size": {
+        "Value": 0.91,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.100"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.26"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "ProgressBarHeadCanvas",
+    "Properties": {
+      "Size": {
+        "Value": 0.11,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.100"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarHeadRightCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.27"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Ico_01",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_Friendlist_Ok",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_Friendlist_Ok.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.38"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Ico_02",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_FriendList_Cancel",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Cancel.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ButtonContainer_02.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.41"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 814.0,
+          "Y": 208.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_LowFrameRate_BG2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/HUD/LowFrameRate/NE_LowFrameRate_BG2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.46"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_59",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 814.0,
+          "Y": 208.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_LowFrameRate_BG",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/HUD/LowFrameRate/NE_LowFrameRate_BG.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.44"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_91",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 124.0,
+          "Y": 155.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_LowFrameRate_Notify",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/HUD/LowFrameRate/NE_LowFrameRate_Notify.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.49"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IMG_BarHead",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 103.0,
+          "Y": 21.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Rituals_ProgBarEdge_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Rituals/Frames/Atl_Rituals_ProgBarEdge_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarHeadLeftCanvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.58"
+      },
+      "RenderTransformPivot": {
+        "X": 1.0,
+        "Y": 0.5
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Img_Frame_Glow",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 329.0,
+          "Y": 41.0
+        },
+        "Margin": {
+          "Left": 0.05,
+          "Top": 0.376972,
+          "Bottom": 0.311927
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.SelectionHighlight.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.59"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Img_Smoke_Glow",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 192.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Fx",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Fx.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.SelectionHighlight.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.60"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Img_Smoke_Glow_02",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 192.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Fx",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Fx.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.SelectionHighlight02.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.61"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Ico_01",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_Friendlist_Ok",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_Friendlist_Ok.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.64"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Ico_02",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_FriendList_Cancel",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Cancel.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ButtonContainer_02.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.67"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 814.0,
+          "Y": 208.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_LowFrameRate_BG2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/HUD/LowFrameRate/NE_LowFrameRate_BG2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.72"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_59",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 814.0,
+          "Y": 208.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_LowFrameRate_BG",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/HUD/LowFrameRate/NE_LowFrameRate_BG.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.70"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_91",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 124.0,
+          "Y": 155.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_LowFrameRate_Notify",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/HUD/LowFrameRate/NE_LowFrameRate_Notify.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.75"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IMG_BarHead",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 103.0,
+          "Y": 21.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Rituals_ProgBarEdge_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Rituals/Frames/Atl_Rituals_ProgBarEdge_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarHeadLeftCanvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.84"
+      },
+      "RenderTransformPivot": {
+        "X": 1.0,
+        "Y": 0.5
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Img_Frame_Glow",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 329.0,
+          "Y": 41.0
+        },
+        "Margin": {
+          "Left": 0.05,
+          "Top": 0.376972,
+          "Bottom": 0.311927
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectionHighlight.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.85"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Img_Smoke_Glow",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 192.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Fx",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Fx.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectionHighlight.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.86"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Img_Smoke_Glow_02",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 192.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Fx",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Fx.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectionHighlight02.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.87"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageFirst",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 65.0,
+          "Y": 413.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite logo_first_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/logo_first_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.First.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.137"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageFourth",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 56.0,
+          "Y": 384.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite logo_fourth_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/logo_fourth_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Fourth.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.138"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageKiller",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 687.0,
+          "Y": 193.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite logo_killer_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/logo_killer_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Killer.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.139"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageSecond",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 66.0,
+          "Y": 477.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite logo_second_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/logo_second_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Second.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.140"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageThird",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 56.0,
+          "Y": 424.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite logo_third_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/logo_third_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Third.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.141"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "LogoBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 687.0,
+          "Y": 477.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite logo_large_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/OutputPaper2D/Frames/logo_large_png.1"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.1,
+        "G": 0.1,
+        "B": 0.1,
+        "A": 0.5,
+        "Hex": "7F595959"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.92"
+      }
+    }
+  },
+  {
+    "Type": "NE_HUD_LowFrameRate_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_HUD_LowFrameRate_C",
+    "Properties": {
+      "BGSwitcher": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.BGSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.165"
+      },
+      "ContenxtText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ContenxtText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.158"
+      },
+      "ErrorBtn": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.ErrorBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.4"
+      },
+      "Ico_01": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Ico_01",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.114"
+      },
+      "Ico_02": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Ico_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.115"
+      },
+      "Image": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.116"
+      },
+      "Image_59": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_59",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.117"
+      },
+      "Image_91": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_91",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.118"
+      },
+      "IMG_BarHead": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.IMG_BarHead",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.119"
+      },
+      "Img_Frame_Glow": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Img_Frame_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.120"
+      },
+      "Img_Smoke_Glow": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Img_Smoke_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.121"
+      },
+      "Img_Smoke_Glow_02": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Img_Smoke_Glow_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.122"
+      },
+      "LoadingName": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.LoadingName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.159"
+      },
+      "LoadingPanel": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LoadingPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.24"
+      },
+      "NotyfyText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.NotyfyText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.160"
+      },
+      "ProgressBarHeadCanvas": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.ProgressBarHeadCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.100"
+      },
+      "ProgressBarHeadLeftCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarHeadLeftCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.26"
+      },
+      "ProgressBarHeadRightCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarHeadRightCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.27"
+      },
+      "RightBtn": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RightBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.5"
+      },
+      "RitualProgressBar": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.RitualProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.131"
+      },
+      "SecondsText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.SecondsText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.161"
+      },
+      "SelectionHighlight": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectionHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.28"
+      },
+      "WBP_LoadingLogo": {
+        "ObjectName": "WBP_LoadingLogo_C WidgetArchetype:WidgetTree_0.WBP_LoadingLogo",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.163"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.171"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "RitualProgressBar",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 610.0,
+            "Y": 29.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.052083,
+              "G": 0.052083,
+              "B": 0.052083,
+              "A": 0.5,
+              "Hex": "7F404040"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_SP_LoadingBar_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Rituals/Frames/Atl_SP_LoadingBar_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 610.0,
+            "Y": 29.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.031373,
+              "G": 0.745098,
+              "B": 0.070588,
+              "A": 1.0,
+              "Hex": "FF31E04B"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/SplashScreen/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "MarqueeImage": {
+          "ImageSize": {
+            "X": 610.0,
+            "Y": 29.0
+          }
+        }
+      },
+      "Percent": 0.638095,
+      "BarFillType": "EProgressBarFillType::RightToLeft",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.ProgressBarCanvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.56"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "RitualProgressBar",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 610.0,
+            "Y": 29.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.052083,
+              "G": 0.052083,
+              "B": 0.052083,
+              "A": 0.5,
+              "Hex": "7F404040"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_SP_LoadingBar_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Rituals/Frames/Atl_SP_LoadingBar_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 610.0,
+            "Y": 29.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.031373,
+              "G": 0.745098,
+              "B": 0.070588,
+              "A": 1.0,
+              "Hex": "FF31E04B"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_SP_LoadingBar",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/SplashScreen/Atl_SP_LoadingBar.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "MarqueeImage": {
+          "ImageSize": {
+            "X": 610.0,
+            "Y": 29.0
+          }
+        }
+      },
+      "Percent": 0.638095,
+      "BarFillType": "EProgressBarFillType::RightToLeft",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarCanvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.82"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "First",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Stretch": "EStretch::None",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.First.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.137"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.94"
+      },
+      "RenderTransformPivot": {
+        "X": 0.5,
+        "Y": 1.0
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "Fourth",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Stretch": "EStretch::None",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Fourth.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.138"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_5.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.97"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "Killer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Stretch": "EStretch::None",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Killer.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.139"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_6.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.98"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "Second",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Stretch": "EStretch::None",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Second.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.140"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_3.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.95"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "Third",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Stretch": "EStretch::None",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Third.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.141"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_4.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.96"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "First",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.First",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.132"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.ImageFirst",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.123"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "Fourth",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Fourth",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.133"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.ImageFourth",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.124"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "Killer",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Killer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.134"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.ImageKiller",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.125"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "Second",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Second",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.135"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.ImageSecond",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.126"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "Third",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.Third",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.136"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.ImageThird",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.127"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.148"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.LoadingPanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.55"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_1.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.149"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.52"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_2.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.150"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.53"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.151"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LoadingPanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.81"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_1.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.152"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.78"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_2.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.153"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.79"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.142"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_HUD_LowFrameRate_C:WidgetTree.LoadingName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.155"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.143"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_HUD_LowFrameRate_C:WidgetTree.ContenxtText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.154"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_2",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.144"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_HUD_LowFrameRate_C:WidgetTree.NotyfyText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.156"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.145"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.LoadingName",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.159"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.146"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ContenxtText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.158"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_2",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.147"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.NotyfyText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.160"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ContenxtText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "0157BE9448E1B84D319BD1A69E4A2BB6",
+        "SourceString": "Current frame rate is too low. Will you lower your graphics quality?"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFFF0000"
+        }
+      },
+      "Font": {
+        "Size": 17
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 450.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_1.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.149"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "LoadingName",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "8C27BB0C41173CC94DA69DA76745511C",
+        "SourceString": "構成中.."
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.5,
+          "Hex": "7FFFFFFF"
+        }
+      },
+      "Font": {
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.148"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NotyfyText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "85FEAAC8444FFD52C10C8495BF48C089",
+        "SourceString": "A number of settings will only activate after reset."
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.5,
+          "Hex": "7FFFFFFF"
+        }
+      },
+      "Font": {
+        "Size": 13
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 440.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot NE_HUD_LowFrameRate_C:WidgetTree.SizeBox_2.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.150"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SecondsText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "A251A2C24DD3B8A113ABC7B2A6232E81",
+        "SourceString": "14S"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.5,
+          "Hex": "7FFFFFFF"
+        }
+      },
+      "Font": {
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.51"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ContenxtText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "0157BE9448E1B84D319BD1A69E4A2BB6",
+        "SourceString": "Current frame rate is too low. Will you lower your graphics quality?"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFFF0000"
+        }
+      },
+      "Font": {
+        "Size": 17
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 450.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_1.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.152"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "LoadingName",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "8C27BB0C41173CC94DA69DA76745511C",
+        "SourceString": "構成中.."
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.5,
+          "Hex": "7FFFFFFF"
+        }
+      },
+      "Font": {
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.151"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NotyfyText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "85FEAAC8444FFD52C10C8495BF48C089",
+        "SourceString": "A number of settings will only activate after reset."
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.5,
+          "Hex": "7FFFFFFF"
+        }
+      },
+      "Font": {
+        "Size": 13
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 440.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_2.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.153"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SecondsText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "A251A2C24DD3B8A113ABC7B2A6232E81",
+        "SourceString": "14S"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.5,
+          "Hex": "7FFFFFFF"
+        }
+      },
+      "Font": {
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.77"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WBP_LoadingLogo_C",
+    "Name": "WBP_LoadingLogo",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_LoadingLogo_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.LoadingPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.54"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.17,
+          "Y": 0.17
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "WBP_LoadingLogo_C",
+    "Name": "WBP_LoadingLogo",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_LoadingLogo_C",
+    "Properties": {
+      "ImageFirst": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.ImageFirst",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.123"
+      },
+      "ImageFourth": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.ImageFourth",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.124"
+      },
+      "ImageKiller": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.ImageKiller",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.125"
+      },
+      "ImageSecond": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.ImageSecond",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.126"
+      },
+      "ImageThird": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.ImageThird",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.127"
+      },
+      "LogoBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.LogoBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.128"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.172"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LoadingPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.80"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.17,
+          "Y": 0.17
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "BGSwitcher",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "ActiveWidgetIndex": 1,
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_HUD_LowFrameRate_C:WidgetTree.BGSwitcher.WidgetSwitcherSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.167"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_HUD_LowFrameRate_C:WidgetTree.BGSwitcher.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.166"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.48"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "BGSwitcher",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "ActiveWidgetIndex": 1,
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.BGSwitcher.WidgetSwitcherSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.169"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.BGSwitcher.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.168"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.74"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "BGSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_HUD_LowFrameRate_C:WidgetTree.BGSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.164"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "BGSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_HUD_LowFrameRate_C:WidgetTree.BGSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.164"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.10"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "BGSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.BGSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.165"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.21"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "BGSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.BGSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.165"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.22"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_HUD_LowFrameRate_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_HUD_LowFrameRate_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.23"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WBP_LoadingLogo",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.WBP_LoadingLogo.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/LowFrameRate/NE_HUD_LowFrameRate.30"
+      }
+    }
+  }
+]

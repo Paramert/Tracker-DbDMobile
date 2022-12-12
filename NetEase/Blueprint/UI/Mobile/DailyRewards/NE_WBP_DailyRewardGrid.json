@@ -1,0 +1,1325 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_NE_WBP_DailyRewardGrid",
+    "Outer": "NE_WBP_DailyRewardGrid_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "InitializeLayouts_BP",
+    "Outer": "NE_WBP_DailyRewardGrid_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "InitializeLayouts",
+    "Outer": "NE_WBP_DailyRewardGrid_C",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SelectLayouts_gridPanelRef",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SelectLayouts_sidePanelRef",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "SelectLayouts",
+    "Outer": "NE_WBP_DailyRewardGrid_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "numberOfItems",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "gridPanelRef",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524672,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "sidePanelRef",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524672,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchInteger_CmpSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_2",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_3",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_4",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_5",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanelSlot",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": 205651968
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_DailyRewardGrid_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_DailyRewardGrid_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.41"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.WidgetArchetype",
+        "SubPathString": ""
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function NE_WBP_DailyRewardGrid_C:ExecuteUbergraph_NE_WBP_DailyRewardGrid",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_WBP_DailyRewardGrid_C:SelectLayouts",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.3"
+      },
+      {
+        "ObjectName": "Function NE_WBP_DailyRewardGrid_C:InitializeLayouts",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.2"
+      },
+      {
+        "ObjectName": "Function NE_WBP_DailyRewardGrid_C:InitializeLayouts_BP",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.1"
+      },
+      {
+        "ObjectName": "Function NE_WBP_DailyRewardGrid_C:ExecuteUbergraph_NE_WBP_DailyRewardGrid",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DailyRewardWidgetsGridPanel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class UniformGridPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Grid_Layout_13_ref",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class UniformGridPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Grid_Layout_7_ref",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class UniformGridPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Grid_Layout_9_ref",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class UniformGridPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Side_Layout_13_ref",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Side_Layout_7_ref",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Side_Layout_9_ref",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NumberOfItems",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 65541
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LastDailyRewardWidgetPanel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 589829,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_NE_WBP_DailyRewardGrid": {
+        "ObjectName": "Function NE_WBP_DailyRewardGrid_C:ExecuteUbergraph_NE_WBP_DailyRewardGrid",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.0"
+      },
+      "InitializeLayouts_BP": {
+        "ObjectName": "Function NE_WBP_DailyRewardGrid_C:InitializeLayouts_BP",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.1"
+      },
+      "InitializeLayouts": {
+        "ObjectName": "Function NE_WBP_DailyRewardGrid_C:InitializeLayouts",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.2"
+      },
+      "SelectLayouts": {
+        "ObjectName": "Function NE_WBP_DailyRewardGrid_C:SelectLayouts",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.3"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_DailyRewardGrid_C Default__NE_WBP_DailyRewardGrid_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.5"
+    }
+  },
+  {
+    "Type": "NE_WBP_DailyRewardGrid_C",
+    "Name": "Default__NE_WBP_DailyRewardGrid_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "PythonModule": "ui.daily_rewards.daily_rewards_grid",
+      "PythonClass": "DailyRewardsGrid",
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_18",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.23"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LastDailyRewardWidgetPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Side_Layout_13_ref",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.16"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Side_Layout_7_ref",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.20"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Side_Layout_9_ref",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.18"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_18",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.31"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LastDailyRewardWidgetPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Side_Layout_13_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.24"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Side_Layout_7_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.28"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Side_Layout_9_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.26"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 276.0,
+          "Top": -50.0,
+          "Right": 395.99182,
+          "Bottom": 584.98773
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.Side_Layout_13_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -696.0,
+          "Right": 970.0,
+          "Bottom": 685.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.6"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel NE_WBP_DailyRewardGrid_C:WidgetTree.Grid_Layout_13_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 400.0,
+          "Right": 405.0,
+          "Bottom": 607.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.Side_Layout_9_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -816.0,
+          "Right": 1221.0,
+          "Bottom": 583.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.6"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel NE_WBP_DailyRewardGrid_C:WidgetTree.Grid_Layout_9_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 236.0,
+          "Right": 405.0,
+          "Bottom": 580.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.Side_Layout_7_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -645.0,
+          "Right": 882.0,
+          "Bottom": 583.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.6"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel NE_WBP_DailyRewardGrid_C:WidgetTree.Grid_Layout_7_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 280.0,
+          "Right": 405.0,
+          "Bottom": 685.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.LastDailyRewardWidgetPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -696.0,
+          "Right": 960.0,
+          "Bottom": 685.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.6"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel NE_WBP_DailyRewardGrid_C:WidgetTree.DailyRewardWidgetsGridPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 276.0,
+          "Top": -50.0,
+          "Right": 395.99182,
+          "Bottom": 584.98773
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.11"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Side_Layout_13_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -696.0,
+          "Right": 970.0,
+          "Bottom": 685.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.11"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.Grid_Layout_13_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 400.0,
+          "Right": 405.0,
+          "Bottom": 607.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.11"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Side_Layout_9_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -816.0,
+          "Right": 1221.0,
+          "Bottom": 583.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.11"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.Grid_Layout_9_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 236.0,
+          "Right": 405.0,
+          "Bottom": 580.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.11"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Side_Layout_7_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -645.0,
+          "Right": 882.0,
+          "Bottom": 583.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.11"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.Grid_Layout_7_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 280.0,
+          "Right": 405.0,
+          "Bottom": 685.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.11"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LastDailyRewardWidgetPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -696.0,
+          "Right": 960.0,
+          "Bottom": 685.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.11"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGridPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.37"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_DailyRewardGrid_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_DailyRewardGrid_C",
+    "Properties": {
+      "DailyRewardWidgetsGridPanel": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGridPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.37"
+      },
+      "Grid_Layout_13_ref": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.Grid_Layout_13_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.38"
+      },
+      "Grid_Layout_7_ref": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.Grid_Layout_7_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.39"
+      },
+      "Grid_Layout_9_ref": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.Grid_Layout_9_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.40"
+      },
+      "Side_Layout_13_ref": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Side_Layout_13_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.13"
+      },
+      "Side_Layout_7_ref": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Side_Layout_7_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.14"
+      },
+      "Side_Layout_9_ref": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Side_Layout_9_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.15"
+      },
+      "LastDailyRewardWidgetPanel": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LastDailyRewardWidgetPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.12"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.42"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "DailyRewardWidgetsGridPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.23"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "Grid_Layout_13_ref",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.17"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "Grid_Layout_7_ref",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "SlotPadding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.21"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "Grid_Layout_9_ref",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.19"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "DailyRewardWidgetsGridPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.31"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "Grid_Layout_13_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.25"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "Grid_Layout_7_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "SlotPadding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.29"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "Grid_Layout_9_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.27"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_DailyRewardGrid_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardGrid_C:WidgetTree.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.11"
+      }
+    }
+  }
+]

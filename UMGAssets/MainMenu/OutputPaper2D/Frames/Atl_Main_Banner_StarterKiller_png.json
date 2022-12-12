@@ -1,0 +1,130 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "Atl_Main_Banner_StarterKiller_png",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.5,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 787.0,
+            "Y": 10.0,
+            "Z": 148.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "14B0587B496AF9AD25FA6DB7017AF036"
+  },
+  {
+    "Type": "PaperSprite",
+    "Name": "Atl_Main_Banner_StarterKiller_png",
+    "Properties": {
+      "BakedSourceUV": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "BakedSourceDimension": {
+        "X": 787.0,
+        "Y": 148.0
+      },
+      "DefaultMaterial": {
+        "ObjectName": "MaterialInstanceConstant TranslucentUnlitSpriteMaterial",
+        "ObjectPath": "Engine/Plugins/2D/Paper2D/Content/TranslucentUnlitSpriteMaterial.0"
+      },
+      "PixelsPerUnrealUnit": 1.0,
+      "BodySetup": {
+        "ObjectName": "BodySetup Atl_Main_Banner_StarterKiller_png:BodySetup_1",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Main_Banner_StarterKiller_png.0"
+      },
+      "BakedRenderData": [
+        {
+          "X": 393.0,
+          "Y": 74.0,
+          "Z": 0.76953125,
+          "W": 0.0009765625
+        },
+        {
+          "X": -394.0,
+          "Y": 74.0,
+          "Z": 0.0009765625,
+          "W": 0.0009765625
+        },
+        {
+          "X": -394.0,
+          "Y": -74.0,
+          "Z": 0.0009765625,
+          "W": 0.14550781
+        },
+        {
+          "X": 393.0,
+          "Y": -74.0,
+          "Z": 0.76953125,
+          "W": 0.14550781
+        },
+        {
+          "X": 393.0,
+          "Y": 74.0,
+          "Z": 0.76953125,
+          "W": 0.0009765625
+        },
+        {
+          "X": -394.0,
+          "Y": -74.0,
+          "Z": 0.0009765625,
+          "W": 0.14550781
+        }
+      ]
+    }
+  }
+]

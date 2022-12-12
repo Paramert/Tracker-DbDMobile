@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "Atl_Hud_Indicators_BlueCue_04_png",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -2.5,
+              "Y": -0.0,
+              "Z": -2.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 77.0,
+            "Y": 10.0,
+            "Z": 472.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "E3A43B3C46E6F41733AB32856FC3AE27"
+  },
+  {
+    "Type": "PaperSprite",
+    "Name": "Atl_Hud_Indicators_BlueCue_04_png",
+    "Properties": {
+      "BakedSourceUV": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "BakedSourceDimension": {
+        "X": 78.0,
+        "Y": 474.0
+      },
+      "BakedSourceTexture": {
+        "ObjectName": "Texture2D Atl_Atlas_BlueCueIndicator",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Indicators/Paper2dOutput/Textures/Atl_Atlas_BlueCueIndicator.0"
+      },
+      "DefaultMaterial": {
+        "ObjectName": "MaterialInstanceConstant TranslucentUnlitSpriteMaterial",
+        "ObjectPath": "Engine/Plugins/2D/Paper2D/Content/TranslucentUnlitSpriteMaterial.0"
+      },
+      "PixelsPerUnrealUnit": 1.0,
+      "BodySetup": {
+        "ObjectName": "BodySetup Atl_Hud_Indicators_BlueCue_04_png:BodySetup_1",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Indicators/Paper2dOutput/Frames/Atl_Hud_Indicators_BlueCue_04_png.0"
+      },
+      "BakedRenderData": [
+        {
+          "X": 36.0,
+          "Y": 234.0,
+          "Z": 0.15234375,
+          "W": 0.00390625
+        },
+        {
+          "X": -41.0,
+          "Y": 234.0,
+          "Z": 0.001953125,
+          "W": 0.00390625
+        },
+        {
+          "X": -41.0,
+          "Y": -238.0,
+          "Z": 0.001953125,
+          "W": 0.92578125
+        },
+        {
+          "X": 36.0,
+          "Y": -238.0,
+          "Z": 0.15234375,
+          "W": 0.92578125
+        },
+        {
+          "X": 36.0,
+          "Y": 234.0,
+          "Z": 0.15234375,
+          "W": 0.00390625
+        },
+        {
+          "X": -41.0,
+          "Y": -238.0,
+          "Z": 0.001953125,
+          "W": 0.92578125
+        }
+      ]
+    }
+  }
+]

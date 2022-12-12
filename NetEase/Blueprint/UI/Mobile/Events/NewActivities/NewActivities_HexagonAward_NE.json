@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NewActivities_HexagonAward_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NewActivities_HexagonAward_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/NewActivities/NewActivities_HexagonAward_NE.5"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Events/NewActivities/NewActivities_HexagonAward_NE.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Award",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NewActivities_HexagonAward_NE_C Default__NewActivities_HexagonAward_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/NewActivities/NewActivities_HexagonAward_NE.1"
+    }
+  },
+  {
+    "Type": "NewActivities_HexagonAward_NE_C",
+    "Name": "Default__NewActivities_HexagonAward_NE_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Award",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Award",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "NewActivities_HexagonAward_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NewActivities_HexagonAward_NE_C",
+    "Properties": {
+      "Award": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Award",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/NewActivities/NewActivities_HexagonAward_NE.3"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/NewActivities/NewActivities_HexagonAward_NE.6"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NewActivities_HexagonAward_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NewActivities_HexagonAward_NE_C:WidgetTree.Award",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/NewActivities/NewActivities_HexagonAward_NE.2"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Award",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/NewActivities/NewActivities_HexagonAward_NE.3"
+      }
+    }
+  }
+]

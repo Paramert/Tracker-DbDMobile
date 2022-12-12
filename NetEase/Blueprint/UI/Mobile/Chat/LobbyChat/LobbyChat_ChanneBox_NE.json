@@ -1,0 +1,1939 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "LobbyChat_ChanneBox_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree LobbyChat_ChanneBox_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.70"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CustomChannel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass LobbyChat_CustomChannel_NE_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_CustomChannel_NE.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RecommendedChannel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass LobbyChat_RecommendedChannel_NE_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_RecommendedChannel_NE.0"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "LobbyChat_ChanneBox_NE_C Default__LobbyChat_ChanneBox_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.1"
+    }
+  },
+  {
+    "Type": "LobbyChat_ChanneBox_NE_C",
+    "Name": "Default__LobbyChat_ChanneBox_NE_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "HeadFor",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 105.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Inbox_BtnOrange",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_BtnOrange.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 105.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Inbox_BtnOrange",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_BtnOrange.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 105.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Inbox_BtnOrangeDown",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_BtnOrangeDown.0"
+          }
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 567.0,
+            "Y": 211.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.5,
+              "Hex": "7FFFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::Box"
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.HeadFor.ButtonSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.6"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.21"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_HeadFor",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 96.0,
+            "Y": 96.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Icons_FriendList_Arrow_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Arrow_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 96.0,
+            "Y": 96.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Icons_FriendList_Arrow_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Arrow_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 96.0,
+            "Y": 96.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Icons_FriendList_Arrow_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Arrow_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.29"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_HeadFor",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 96.0,
+            "Y": 96.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Icons_FriendList_Arrow_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Arrow_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 96.0,
+            "Y": 96.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Icons_FriendList_Arrow_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Arrow_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 96.0,
+            "Y": 96.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Icons_FriendList_Arrow_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Arrow_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.32"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_HeadFor",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 96.0,
+            "Y": 96.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Icons_FriendList_Arrow_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Arrow_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 96.0,
+            "Y": 96.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Icons_FriendList_Arrow_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Arrow_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 96.0,
+            "Y": 96.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Icons_FriendList_Arrow_Up",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Arrow_Up.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.35"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "HeadFor",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.HeadFor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.2"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.LeaveFor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.64"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ChannelBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot LobbyChat_ChanneBox_NE_C:WidgetTree.ChannelBox.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot LobbyChat_ChanneBox_NE_C:WidgetTree.ChannelBox.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.16"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ChannelBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ChannelBox.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ChannelBox.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.18"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_18",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ChannelBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.24"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ChannelBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_27",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_28",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_26",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.25"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_16",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.29"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_16",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.32"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_16",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.36"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.35"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ChannelBox",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": 4.0,
+          "Right": 503.33334,
+          "Bottom": 372.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel LobbyChat_ChanneBox_NE_C:WidgetTree.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.7"
+      },
+      "Content": {
+        "ObjectName": "LobbyChat_RecommendedChannel_NE_C LobbyChat_ChanneBox_NE_C:WidgetTree.RecommendedChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "ChannelBox",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 261.0,
+          "Top": 392.0,
+          "Right": 424.0,
+          "Bottom": 260.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel LobbyChat_ChanneBox_NE_C:WidgetTree.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.7"
+      },
+      "Content": {
+        "ObjectName": "LobbyChat_CustomChannel_NE_C LobbyChat_ChanneBox_NE_C:WidgetTree.CustomChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ChannelBox",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": 4.0,
+          "Right": 503.33334,
+          "Bottom": 372.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.8"
+      },
+      "Content": {
+        "ObjectName": "LobbyChat_RecommendedChannel_NE_C WidgetArchetype:WidgetTree_0.RecommendedChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.54"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "ChannelBox",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 261.0,
+          "Top": 392.0,
+          "Right": 424.0,
+          "Bottom": 260.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.8"
+      },
+      "Content": {
+        "ObjectName": "LobbyChat_CustomChannel_NE_C WidgetArchetype:WidgetTree_0.CustomChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 37.0,
+          "Top": 46.0,
+          "Right": 34.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.9"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ScaleBox_524",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.61"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -9.0,
+          "Right": -3.0,
+          "Bottom": 93.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.DarkBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_18",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -14.5,
+          "Top": 189.0,
+          "Right": -18.0,
+          "Bottom": 104.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.HeadFor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "ChannelBox",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 28.0,
+          "Top": 6.0,
+          "Right": 22.0,
+          "Bottom": 22.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.Label",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "ChannelBox",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 62.0,
+          "Top": -3.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.10"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CustomChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "ChannelBox",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 21.0,
+          "Top": 47.0,
+          "Right": 23.0,
+          "Bottom": 186.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.10"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_26",
+    "Outer": "ChannelBox",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 46.0,
+          "Right": 0.0,
+          "Bottom": 204.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.11"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.SwitchChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.66"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_27",
+    "Outer": "ChannelBox",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 69.0,
+          "Top": 9.0,
+          "Right": 24.0,
+          "Bottom": 24.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.Label",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_28",
+    "Outer": "ChannelBox",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 103.0,
+          "Top": 3.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.11"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.65"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_16",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 96.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.Image_DarkBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_16",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -31.0,
+          "Top": 2.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.12"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.Button_HeadFor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_16",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -24.0,
+          "Right": 246.5,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.12"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.HorizontalBox_195",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_16",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 96.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.Image_DarkBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_16",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -31.0,
+          "Top": 2.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.13"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.Button_HeadFor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_16",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -24.0,
+          "Right": 246.5,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.13"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.HorizontalBox_195",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_16",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 96.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.Image_DarkBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_16",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -31.0,
+          "Top": 2.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.14"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.Button_HeadFor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_16",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -24.0,
+          "Right": 246.5,
+          "Bottom": 64.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.14"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.HorizontalBox_195",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.40"
+      }
+    }
+  },
+  {
+    "Type": "EditableText",
+    "Name": "InputBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Font": {
+          "Size": 20
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 0.630757,
+            "G": 0.630757,
+            "B": 0.630757,
+            "A": 1.0,
+            "Hex": "FFD0D0D0"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        }
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ScaleBox_524.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.62"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_195",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.HorizontalBox_195.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.30"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_195",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.HorizontalBox_195.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.42"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.33"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_195",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.HorizontalBox_195.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.43"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.36"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_195",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.HorizontalBox_195",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.38"
+      },
+      "Content": {
+        "ObjectName": "RichTextBlock WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.Channel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.58"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_195",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.HorizontalBox_195",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.39"
+      },
+      "Content": {
+        "ObjectName": "RichTextBlock WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.Channel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.59"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_195",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.HorizontalBox_195",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.40"
+      },
+      "Content": {
+        "ObjectName": "RichTextBlock WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.Channel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.60"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "DarkBottom",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 512.0,
+          "Y": 128.0
+        },
+        "Margin": {
+          "Left": 0.3,
+          "Top": 0.3,
+          "Right": 0.3,
+          "Bottom": 0.3
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_Chat_Lobby_Btn_Channel",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Btn_Channel.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.20"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Label",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 25.0,
+          "Y": 25.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0185,
+            "G": 0.0865,
+            "B": 0.147027,
+            "A": 1.0,
+            "Hex": "FF25536B"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Main_BRA_Status_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Main_BRA_Status_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.22"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Label",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 25.0,
+          "Y": 25.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0185,
+            "G": 0.0865,
+            "B": 0.147027,
+            "A": 1.0,
+            "Hex": "FF25536B"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Main_BRA_Status_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Main_BRA_Status_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_27",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.26"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_DarkBottom",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 512.0,
+          "Y": 90.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_Chat_Lobby_Channel",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Channel.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.28"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_DarkBottom",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 512.0,
+          "Y": 90.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_Chat_Lobby_Channel",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Channel.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.31"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_DarkBottom",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 512.0,
+          "Y": 90.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D NE_Chat_Lobby_Channel",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Channel.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.CanvasPanel_16.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.34"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "LobbyChat_ChanneBox_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__LobbyChat_ChanneBox_NE_C",
+    "Properties": {
+      "CustomChannel": {
+        "ObjectName": "LobbyChat_CustomChannel_NE_C WidgetArchetype:WidgetTree_0.CustomChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.52"
+      },
+      "RecommendedChannel": {
+        "ObjectName": "LobbyChat_RecommendedChannel_NE_C WidgetArchetype:WidgetTree_0.RecommendedChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.54"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.71"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "LobbyChat_CustomChannel_NE_C",
+    "Name": "CustomChannel",
+    "Outer": "WidgetTree",
+    "Template": "Default__LobbyChat_CustomChannel_NE_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot LobbyChat_ChanneBox_NE_C:WidgetTree.ChannelBox.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.16"
+      }
+    }
+  },
+  {
+    "Type": "LobbyChat_CustomChannel_NE_C",
+    "Name": "CustomChannel",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__LobbyChat_CustomChannel_NE_C",
+    "Properties": {
+      "CustomChannel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CustomChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.63"
+      },
+      "DarkBottom": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.DarkBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.44"
+      },
+      "HeadFor": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.HeadFor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.2"
+      },
+      "InputBox": {
+        "ObjectName": "EditableText WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.InputBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.37"
+      },
+      "Label": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.Label",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.45"
+      },
+      "LeaveFor": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.LeaveFor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.64"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.72"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ChannelBox.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.18"
+      }
+    }
+  },
+  {
+    "Type": "LobbyChat_RecommendedChannel_NE_C",
+    "Name": "RecommendedChannel",
+    "Outer": "WidgetTree",
+    "Template": "Default__LobbyChat_RecommendedChannel_NE_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot LobbyChat_ChanneBox_NE_C:WidgetTree.ChannelBox.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.15"
+      }
+    }
+  },
+  {
+    "Type": "LobbyChat_RecommendedChannel_NE_C",
+    "Name": "RecommendedChannel",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__LobbyChat_RecommendedChannel_NE_C",
+    "Properties": {
+      "RecommendChannel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.65"
+      },
+      "RecommendedChannel_01": {
+        "ObjectName": "NE_LobbyChat_PyWBP_RecommendedChannel_C WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.55"
+      },
+      "RecommendedChannel_02": {
+        "ObjectName": "NE_LobbyChat_PyWBP_RecommendedChannel_C WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.56"
+      },
+      "RecommendedChannel_03": {
+        "ObjectName": "NE_LobbyChat_PyWBP_RecommendedChannel_C WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.57"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.73"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ChannelBox.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.17"
+      }
+    }
+  },
+  {
+    "Type": "NE_LobbyChat_PyWBP_RecommendedChannel_C",
+    "Name": "RecommendedChannel_01",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__NE_LobbyChat_PyWBP_RecommendedChannel_C",
+    "Properties": {
+      "Button_HeadFor": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.Button_HeadFor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.3"
+      },
+      "Channel": {
+        "ObjectName": "RichTextBlock WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.Channel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.58"
+      },
+      "Image_DarkBottom": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.Image_DarkBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.47"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.74"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.SwitchChannel.VerticalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.67"
+      }
+    }
+  },
+  {
+    "Type": "NE_LobbyChat_PyWBP_RecommendedChannel_C",
+    "Name": "RecommendedChannel_02",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__NE_LobbyChat_PyWBP_RecommendedChannel_C",
+    "Properties": {
+      "Button_HeadFor": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.Button_HeadFor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.4"
+      },
+      "Channel": {
+        "ObjectName": "RichTextBlock WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.Channel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.59"
+      },
+      "Image_DarkBottom": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.Image_DarkBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.48"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.75"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.SwitchChannel.VerticalBoxSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.68"
+      }
+    }
+  },
+  {
+    "Type": "NE_LobbyChat_PyWBP_RecommendedChannel_C",
+    "Name": "RecommendedChannel_03",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__NE_LobbyChat_PyWBP_RecommendedChannel_C",
+    "Properties": {
+      "Button_HeadFor": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.Button_HeadFor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.5"
+      },
+      "Channel": {
+        "ObjectName": "RichTextBlock WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.Channel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.60"
+      },
+      "Image_DarkBottom": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.Image_DarkBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.49"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.76"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.SwitchChannel.VerticalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.69"
+      }
+    }
+  },
+  {
+    "Type": "RichTextBlock",
+    "Name": "Channel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "bOverrideDefaultStyle": true,
+      "DefaultTextStyleOverride": {
+        "Font": {
+          "FontObject": {
+            "ObjectName": "Font Roboto",
+            "ObjectPath": "Engine/Content/EngineFonts/Roboto.0"
+          },
+          "TypefaceFontName": "Bold",
+          "Size": 20
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 0.937255,
+            "G": 0.607843,
+            "B": 0.043137,
+            "A": 1.0,
+            "Hex": "FFF8CD3A"
+          }
+        }
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.HorizontalBox_195.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.41"
+      }
+    }
+  },
+  {
+    "Type": "RichTextBlock",
+    "Name": "Channel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "bOverrideDefaultStyle": true,
+      "DefaultTextStyleOverride": {
+        "Font": {
+          "FontObject": {
+            "ObjectName": "Font Roboto",
+            "ObjectPath": "Engine/Content/EngineFonts/Roboto.0"
+          },
+          "TypefaceFontName": "Bold",
+          "Size": 20
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 0.937255,
+            "G": 0.607843,
+            "B": 0.043137,
+            "A": 1.0,
+            "Hex": "FFF8CD3A"
+          }
+        }
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.HorizontalBox_195.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.42"
+      }
+    }
+  },
+  {
+    "Type": "RichTextBlock",
+    "Name": "Channel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "bOverrideDefaultStyle": true,
+      "DefaultTextStyleOverride": {
+        "Font": {
+          "FontObject": {
+            "ObjectName": "Font Roboto",
+            "ObjectPath": "Engine/Content/EngineFonts/Roboto.0"
+          },
+          "TypefaceFontName": "Bold",
+          "Size": 20
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 0.937255,
+            "G": 0.607843,
+            "B": 0.043137,
+            "A": 1.0,
+            "Hex": "FFF8CD3A"
+          }
+        }
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.HorizontalBox_195.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.43"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_524",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ScaleBox_524.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.62"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.19"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_524",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ScaleBox_524",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.61"
+      },
+      "Content": {
+        "ObjectName": "EditableText WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.InputBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.37"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "CustomChannel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "CUSTOM_CHANNEL",
+        "SourceString": "Designated Channel"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font NotoSansCJK-Regular_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/NotoSansCJK-Regular_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.23"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "LeaveFor",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "COMMON_GOTO",
+        "Key": "COMMON_GOTO",
+        "SourceString": "Go"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.755208,
+          "G": 0.755208,
+          "B": 0.755208,
+          "A": 1.0,
+          "Hex": "FFE2E2E2"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 28
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.HeadFor.ButtonSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.6"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "RecommendChannel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "RECOMMEND_CHANNEL",
+        "SourceString": "Recommended Channel"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font NotoSansCJK-Regular_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/NotoSansCJK-Regular_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_28",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.27"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "SwitchChannel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.SwitchChannel.VerticalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.67"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.SwitchChannel.VerticalBoxSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.68"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.SwitchChannel.VerticalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.69"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.ChannelBox.CanvasPanelSlot_26",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.25"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "SwitchChannel",
+    "Properties": {
+      "Padding": {
+        "Top": 4.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.SwitchChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.66"
+      },
+      "Content": {
+        "ObjectName": "NE_LobbyChat_PyWBP_RecommendedChannel_C WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.55"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_4",
+    "Outer": "SwitchChannel",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.SwitchChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.66"
+      },
+      "Content": {
+        "ObjectName": "NE_LobbyChat_PyWBP_RecommendedChannel_C WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.56"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_5",
+    "Outer": "SwitchChannel",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.SwitchChannel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.66"
+      },
+      "Content": {
+        "ObjectName": "NE_LobbyChat_PyWBP_RecommendedChannel_C WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.57"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "LobbyChat_ChanneBox_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel LobbyChat_ChanneBox_NE_C:WidgetTree.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.8"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "CustomChannel",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CustomChannel.WidgetTree_0.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.10"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "RecommendedChannel",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.ChannelBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "RecommendedChannel_01",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_01.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "RecommendedChannel_02",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_02.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "RecommendedChannel_03",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RecommendedChannel.WidgetTree_0.RecommendedChannel_03.WidgetTree_0.CanvasPanel_16",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/LobbyChat_ChanneBox_NE.14"
+      }
+    }
+  }
+]

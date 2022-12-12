@@ -1,0 +1,158 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Floor_lamp_Blueprint_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript Floor_lamp_Blueprint_C:SimpleConstructionScript_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Floor_lamp_Blueprint.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class StaticMeshActor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "PointLight",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class PointLightComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Floor_lamp_Blueprint_C Default__Floor_lamp_Blueprint_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Floor_lamp_Blueprint.1"
+    }
+  },
+  {
+    "Type": "Floor_lamp_Blueprint_C",
+    "Name": "Default__Floor_lamp_Blueprint_C",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__Floor_lamp_Blueprint_C:StaticMeshComponent0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Floor_lamp_Blueprint.7"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent Default__Floor_lamp_Blueprint_C:StaticMeshComponent0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Floor_lamp_Blueprint.7"
+      }
+    }
+  },
+  {
+    "Type": "PointLightComponent",
+    "Name": "PointLightComponent_25",
+    "Outer": "Floor_lamp_Blueprint_C",
+    "Properties": {
+      "SourceRadius": 5.487416,
+      "AttenuationRadius": 165.2679,
+      "MaxDrawDistance": 0.0,
+      "MaxDistanceFadeRange": 0.0,
+      "LightFunctionMaterial": {
+        "ObjectName": "MaterialInstanceConstant Lamp_light_mat_Inst22",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Material/Lights/Lamp_light_mat_Inst22.0"
+      },
+      "Intensity": 111.0,
+      "DetailLevelBeforeCastShadows": "DM_MAX",
+      "RelativeLocation": {
+        "X": -0.5960645,
+        "Y": -1.1478033,
+        "Z": -15.686072
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_4",
+    "Outer": "Floor_lamp_Blueprint_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_4",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent Floor_lamp_Blueprint_C:SceneComponent_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Floor_lamp_Blueprint.3"
+      },
+      "VariableGuid": "456A7EB8-4ED7E244-88364F8C-3EBAF0FA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_4",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class PointLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PointLightComponent Floor_lamp_Blueprint_C:PointLightComponent_25",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Floor_lamp_Blueprint.2"
+      },
+      "ParentComponentOrVariableName": "StaticMeshComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "8EA399AD-4C41C278-B2218EB5-6128E661",
+      "InternalVariableName": "PointLight"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_4",
+    "Outer": "Floor_lamp_Blueprint_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node Floor_lamp_Blueprint_C:SimpleConstructionScript_4.SCS_Node_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Floor_lamp_Blueprint.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node Floor_lamp_Blueprint_C:SimpleConstructionScript_4.SCS_Node_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Floor_lamp_Blueprint.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node Floor_lamp_Blueprint_C:SimpleConstructionScript_4.SCS_Node_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Floor_lamp_Blueprint.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "Default__Floor_lamp_Blueprint_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Floor_lamp",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Floor_lamp.2"
+      },
+      "bUseDefaultCollision": false,
+      "DetailLevelBeforeCastShadows": "DM_MAX",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionProfileName": "BlockAllDynamic"
+      },
+      "Mobility": "EComponentMobility::Movable"
+    }
+  }
+]

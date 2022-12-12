@@ -1,0 +1,583 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_BloodStoreTimer_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_BloodStoreTimer_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.21"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Img_BG",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RefreshImage",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RemainingTimeTextBlock",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NormalColor",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct SlateColor",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "WarningColor",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct SlateColor",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_BloodStoreTimer_C Default__NE_WBP_BloodStoreTimer_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.1"
+    }
+  },
+  {
+    "Type": "NE_WBP_BloodStoreTimer_C",
+    "Name": "Default__NE_WBP_BloodStoreTimer_C",
+    "Properties": {
+      "NormalColor": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        },
+        "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+      },
+      "WarningColor": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFFF0000"
+        },
+        "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_BloodStoreTimer_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.5"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_BloodStoreTimer_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 38.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.050000012
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.050000012
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_BloodStoreTimer_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.2"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_WBP_BloodStoreTimer_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 2.5,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_BloodStoreTimer_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.2"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_BloodStoreTimer_C:WidgetTree.Img_BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 38.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.050000012
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.050000012
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.3"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 2.5,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.3"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Img_BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.16"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_BloodStoreTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.10"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_BloodStoreTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_BloodStoreTimer_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.4"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.12"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.6"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 2.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_BloodStoreTimer_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_BloodStoreTimer_C:WidgetTree.RefreshImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.15"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 2.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_BloodStoreTimer_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.8"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_BloodStoreTimer_C:WidgetTree.RemainingTimeTextBlock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.19"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 2.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RefreshImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.17"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 2.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.9"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RemainingTimeTextBlock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.20"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Img_BG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 992.0,
+          "Y": 59.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.45,
+            "Hex": "73FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tally_Chara_ProgBarBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Bloodmarket/OutputPaper2D/Frames/Atl_Tally_Chara_ProgBarBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_BloodStoreTimer_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.5"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RefreshImage",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 29.0,
+          "Y": 25.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Blood_Timer_RefreshIcon_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Bloodmarket/OutputPaper2D/Frames/Atl_Blood_Timer_RefreshIcon_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_BloodStoreTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.10"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Img_BG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 992.0,
+          "Y": 59.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.45,
+            "Hex": "73FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tally_Chara_ProgBarBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Bloodmarket/OutputPaper2D/Frames/Atl_Tally_Chara_ProgBarBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.7"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RefreshImage",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 29.0,
+          "Y": 25.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Blood_Timer_RefreshIcon_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Bloodmarket/OutputPaper2D/Frames/Atl_Blood_Timer_RefreshIcon_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.12"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_BloodStoreTimer_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_BloodStoreTimer_C",
+    "Properties": {
+      "Img_BG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Img_BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.16"
+      },
+      "RefreshImage": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RefreshImage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.17"
+      },
+      "RemainingTimeTextBlock": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RemainingTimeTextBlock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.20"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.22"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "RemainingTimeTextBlock",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C30C1EB147F5093F6FA3E8BDCB5E7A06",
+        "SourceString": "00:00"
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_BloodStoreTimer_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.11"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "RemainingTimeTextBlock",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C30C1EB147F5093F6FA3E8BDCB5E7A06",
+        "SourceString": "00:00"
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.13"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_BloodStoreTimer_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_BloodStoreTimer_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.2"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Store/BloodStore/NE_WBP_BloodStoreTimer.3"
+      }
+    }
+  }
+]

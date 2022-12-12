@@ -1,0 +1,3425 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "ApplyForJoin_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree ApplyForJoin_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.115"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Application",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ApplicationContent",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class MultiLineEditableTextBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LeftBtn",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_RegressionPopupButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/Popups/WBP_RegressionPopupButton.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RightBtn",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_ProgressionPopupButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/Popups/WBP_ProgressionPopupButton.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SafeZone_103",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class SafeZone",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_Title",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ApplyForJoin_NE_C Default__ApplyForJoin_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.1"
+    }
+  },
+  {
+    "Type": "ApplyForJoin_NE_C",
+    "Name": "Default__ApplyForJoin_NE_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "ApplyForJoin_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__ApplyForJoin_NE_C",
+    "Properties": {
+      "Application": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Application",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.107"
+      },
+      "ApplicationContent": {
+        "ObjectName": "MultiLineEditableTextBox WidgetArchetype:WidgetTree_0.ApplicationContent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.76"
+      },
+      "LeftBtn": {
+        "ObjectName": "WBP_RegressionPopupButton_C WidgetArchetype:WidgetTree_0.LeftBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.114"
+      },
+      "RightBtn": {
+        "ObjectName": "WBP_ProgressionPopupButton_C WidgetArchetype:WidgetTree_0.RightBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.112"
+      },
+      "SafeZone_103": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.SafeZone_103",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.78"
+      },
+      "Text_Title": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.110"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.116"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.41"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.53"
+      },
+      "RenderTransform": {
+        "Angle": 180.0
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2142",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.CanvasPanel_2142.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.CanvasPanel_2142.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.CanvasPanel_2142.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.19"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "MainContent",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.MainContent.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.MainContent.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.MiddlePanel.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "MiddlePanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.MiddlePanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.MiddlePanel.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.MiddlePanel.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.26"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.ReportPanel.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ReportPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.ReportPanel.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.27"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot ApplyForJoin_NE_C:WidgetTree.SizeBox_85.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.100"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TitlePanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.TitlePanel.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.TitlePanel.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.TitlePanel.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.29"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.MiddlePanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "UnderBtnPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.UnderBtnPanel.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.UnderBtnPanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.31"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.MiddlePanel.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2142",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2142.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2142.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2142.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.33"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_13",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.37"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.41"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.38"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.39"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.36"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "MainContent",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MainContent.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.42"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MainContent.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.43"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MiddlePanel.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "MiddlePanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MiddlePanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.44"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MiddlePanel.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.45"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MiddlePanel.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.46"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ReportPanel.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ReportPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ReportPanel.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.47"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_85.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.104"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.52"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.49"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.53"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.50"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.51"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.48"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TitlePanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitlePanel.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.54"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitlePanel.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.56"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitlePanel.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.55"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MiddlePanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "UnderBtnPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.UnderBtnPanel.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.58"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.UnderBtnPanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.57"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MiddlePanel.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2142",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.CanvasPanel_2142",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.5"
+      },
+      "Content": {
+        "ObjectName": "SafeZone ApplyForJoin_NE_C:WidgetTree.SafeZone_103",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.77"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_2142",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.CanvasPanel_2142",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.5"
+      },
+      "Content": {
+        "ObjectName": "Image ApplyForJoin_NE_C:WidgetTree.BigBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.60"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_2142",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 955.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.CanvasPanel_2142",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.5"
+      },
+      "Content": {
+        "ObjectName": "Image ApplyForJoin_NE_C:WidgetTree.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.59"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "MainContent",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -280.0,
+          "Top": -180.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.MainContent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.6"
+      },
+      "Content": {
+        "ObjectName": "SizeBox ApplyForJoin_NE_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.91"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "MainContent",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1050.0,
+          "Bottom": 300.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.MainContent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.6"
+      },
+      "Content": {
+        "ObjectName": "MultiLineEditableTextBox ApplyForJoin_NE_C:WidgetTree.ApplicationContent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.75"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "MiddlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 120.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.MiddlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.TitlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "MiddlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 120.0,
+          "Right": 0.0,
+          "Bottom": 80.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.MiddlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.MainContent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "MiddlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -25.0,
+          "Right": 1920.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.MiddlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.UnderBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "ReportPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1920.0,
+          "Bottom": 700.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.ReportPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.MiddlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "TitlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.TitlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.9"
+      },
+      "Content": {
+        "ObjectName": "Image ApplyForJoin_NE_C:WidgetTree.TitleBackground_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.61"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "TitlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.TitlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.9"
+      },
+      "Content": {
+        "ObjectName": "SizeBox ApplyForJoin_NE_C:WidgetTree.SizeBox_707",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.92"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "TitlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.TitlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.9"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox ApplyForJoin_NE_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.81"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "UnderBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -316.0,
+          "Top": 5.0,
+          "Right": 300.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.UnderBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.10"
+      },
+      "Content": {
+        "ObjectName": "WBP_ProgressionPopupButton_C ApplyForJoin_NE_C:WidgetTree.RightBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.111"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "UnderBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 320.0,
+          "Top": 5.0,
+          "Right": 300.0,
+          "Bottom": 75.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.UnderBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.10"
+      },
+      "Content": {
+        "ObjectName": "WBP_RegressionPopupButton_C ApplyForJoin_NE_C:WidgetTree.LeftBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.113"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2142",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2142",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.11"
+      },
+      "Content": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.SafeZone_103",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.78"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_2142",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2142",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BigBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.64"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_2142",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 955.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2142",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 40.0,
+          "Right": 91.0056,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.12"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.108"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -22.757187,
+          "Top": -8.902112,
+          "Right": 86.95183,
+          "Bottom": -15.122031
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.014961,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.014961,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.66"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 15.0,
+          "Top": 0.25,
+          "Right": 6.0,
+          "Bottom": 0.25
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.2
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.8
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.67"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 5.7899904,
+          "Top": 0.12242031,
+          "Right": 20.518154,
+          "Bottom": 0.30274963
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.13657814
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.86619616
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.68"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -18.0,
+          "Top": -5.0,
+          "Right": 0.0,
+          "Bottom": -3.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.65"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.12"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "MainContent",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -280.0,
+          "Top": -180.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MainContent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.13"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.95"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "MainContent",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1050.0,
+          "Bottom": 300.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MainContent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.13"
+      },
+      "Content": {
+        "ObjectName": "MultiLineEditableTextBox WidgetArchetype:WidgetTree_0.ApplicationContent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.76"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "MiddlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 120.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MiddlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.14"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TitlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "MiddlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 120.0,
+          "Right": 0.0,
+          "Bottom": 80.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MiddlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.14"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MainContent",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "MiddlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -25.0,
+          "Right": 1920.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MiddlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.14"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.UnderBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "ReportPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1920.0,
+          "Bottom": 700.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ReportPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MiddlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -40.0,
+          "Right": 650.0,
+          "Bottom": 70.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.16"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.94"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -24.782562,
+          "Top": -16.0,
+          "Right": 107.3183,
+          "Bottom": -15.388023
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.968139,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.968139,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.70"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -16.49136,
+          "Top": 0.7404356,
+          "Right": 8.64475,
+          "Bottom": 0.25956726
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.16771784
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.83768505
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.71"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -11.866351,
+          "Top": 0.54318094,
+          "Right": 30.605194,
+          "Bottom": -4.0250382
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.16501635
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.76744646
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.72"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -7.9897337,
+          "Right": -18.642712,
+          "Bottom": -4.882615
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.69"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "TitlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TitlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.17"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TitleBackground_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.73"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "TitlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TitlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.17"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_707",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.96"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "TitlePanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TitlePanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.17"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.84"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "UnderBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -316.0,
+          "Top": 5.0,
+          "Right": 300.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.UnderBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.18"
+      },
+      "Content": {
+        "ObjectName": "WBP_ProgressionPopupButton_C WidgetArchetype:WidgetTree_0.RightBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.112"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "UnderBtnPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 320.0,
+          "Top": 5.0,
+          "Right": 300.0,
+          "Bottom": 75.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.UnderBtnPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.18"
+      },
+      "Content": {
+        "ObjectName": "WBP_RegressionPopupButton_C WidgetArchetype:WidgetTree_0.LeftBtn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.114"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1022.0,
+          "Y": 278.0
+        },
+        "Margin": {
+          "Top": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_bg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_bg_png.1"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.8,
+        "Hex": "CCFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.CanvasPanel_2142.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.21"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.9
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BigBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.CanvasPanel_2142.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.20"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TitleBackground_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 983.0,
+          "Y": 115.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Right": 0.6
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_TitleBg_png1",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_TitleBg_png1.1"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "ColorAndOpacity": {
+        "R": 0.008023,
+        "G": 0.012983,
+        "B": 0.017642,
+        "A": 1.0,
+        "Hex": "FF161E24"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.TitlePanel.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.28"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TitleSmoke_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1022.0,
+          "Y": 115.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.144128,
+            "G": 0.266356,
+            "B": 0.341915,
+            "A": 1.0,
+            "Hex": "FF6A8D9E"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_TitleSmoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_TitleSmoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot ApplyForJoin_NE_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.86"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.1,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1022.0,
+          "Y": 278.0
+        },
+        "Margin": {
+          "Top": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_bg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_bg_png.1"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.8,
+        "Hex": "CCFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2142.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.35"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.9
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BigBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.5,
+        "Hex": "7FFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2142.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.34"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 359.0,
+          "Y": 106.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_bg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_bg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.40"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "FXSmoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 192.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Fx",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Fx.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_13",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.37"
+      },
+      "RenderTransform": {
+        "Angle": 90.0
+      },
+      "RenderOpacity": 0.6
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 49.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_line",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_line.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.38"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VFXs",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 26.0,
+          "Y": 47.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_fx_orange",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_fx_orange.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.39"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 359.0,
+          "Y": 106.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_bg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_bg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.52"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "FXSmoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 192.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Fx",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Fx.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.49"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        },
+        "Angle": 90.0
+      },
+      "RenderOpacity": 0.6
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 49.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_line",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_line.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.50"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VFXs",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 26.0,
+          "Y": 47.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_fx_orange",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_fx_orange.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.51"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TitleBackground_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 983.0,
+          "Y": 115.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Right": 0.6
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_TitleBg_png1",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_TitleBg_png1.1"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "ColorAndOpacity": {
+        "R": 0.008023,
+        "G": 0.012983,
+        "B": 0.017642,
+        "A": 1.0,
+        "Hex": "FF161E24"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitlePanel.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.54"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TitleSmoke_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1022.0,
+          "Y": 115.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.144128,
+            "G": 0.266356,
+            "B": 0.341915,
+            "A": 1.0,
+            "Hex": "FF6A8D9E"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_TitleSmoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_TitleSmoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.89"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.1,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "MultiLineEditableTextBox",
+    "Name": "ApplicationContent",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "HintText": {
+        "Namespace": "",
+        "Key": "C93CE55C41EE7BFB44EFE596D8D60B8E",
+        "SourceString": "申请理由"
+      },
+      "WidgetStyle": {
+        "BackgroundImageNormal": {
+          "ImageSize": {
+            "X": 578.0,
+            "Y": 90.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.7,
+              "Hex": "B3FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Import_Bg_0",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Import_Bg_0.0"
+          }
+        },
+        "BackgroundImageHovered": {
+          "ImageSize": {
+            "X": 578.0,
+            "Y": 90.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.7,
+              "Hex": "B3FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Import_Bg_0",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Import_Bg_0.0"
+          }
+        },
+        "BackgroundImageFocused": {
+          "ImageSize": {
+            "X": 578.0,
+            "Y": 90.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.7,
+              "Hex": "B3FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Import_Bg_0",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Import_Bg_0.0"
+          }
+        },
+        "BackgroundImageReadOnly": {
+          "ImageSize": {
+            "X": 578.0,
+            "Y": 90.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.7,
+              "Hex": "B3FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Import_Bg_0",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Import_Bg_0.0"
+          }
+        },
+        "Padding": {
+          "Left": 25.0,
+          "Top": 16.0,
+          "Right": 25.0,
+          "Bottom": 8.0
+        },
+        "Font": {
+          "Size": 25
+        }
+      },
+      "TextStyle": {
+        "Font": {
+          "Size": 20
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "ShadowColorAndOpacity": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        }
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "Margin": {
+        "Left": 12.0,
+        "Top": 12.0,
+        "Right": 12.0,
+        "Bottom": 12.0
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.MainContent.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.23"
+      }
+    }
+  },
+  {
+    "Type": "MultiLineEditableTextBox",
+    "Name": "ApplicationContent",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "HintText": {
+        "Namespace": "",
+        "Key": "C93CE55C41EE7BFB44EFE596D8D60B8E",
+        "SourceString": "申请理由"
+      },
+      "WidgetStyle": {
+        "BackgroundImageNormal": {
+          "ImageSize": {
+            "X": 578.0,
+            "Y": 90.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.7,
+              "Hex": "B3FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Import_Bg_0",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Import_Bg_0.0"
+          }
+        },
+        "BackgroundImageHovered": {
+          "ImageSize": {
+            "X": 578.0,
+            "Y": 90.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.7,
+              "Hex": "B3FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Import_Bg_0",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Import_Bg_0.0"
+          }
+        },
+        "BackgroundImageFocused": {
+          "ImageSize": {
+            "X": 578.0,
+            "Y": 90.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.7,
+              "Hex": "B3FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Import_Bg_0",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Import_Bg_0.0"
+          }
+        },
+        "BackgroundImageReadOnly": {
+          "ImageSize": {
+            "X": 578.0,
+            "Y": 90.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.7,
+              "Hex": "B3FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Import_Bg_0",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Import_Bg_0.0"
+          }
+        },
+        "Padding": {
+          "Left": 25.0,
+          "Top": 16.0,
+          "Right": 25.0,
+          "Bottom": 8.0
+        },
+        "Font": {
+          "Size": 25
+        }
+      },
+      "TextStyle": {
+        "Font": {
+          "Size": 20
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "ShadowColorAndOpacity": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        }
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "Margin": {
+        "Left": 12.0,
+        "Top": 12.0,
+        "Right": 12.0,
+        "Bottom": 12.0
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MainContent.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.43"
+      }
+    }
+  },
+  {
+    "Type": "SafeZone",
+    "Name": "SafeZone_103",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SafeZoneSlot ApplyForJoin_NE_C:WidgetTree.SafeZone_103.SafeZoneSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.79"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.CanvasPanel_2142.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.19"
+      }
+    }
+  },
+  {
+    "Type": "SafeZone",
+    "Name": "SafeZone_103",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SafeZoneSlot WidgetArchetype:WidgetTree_0.SafeZone_103.SafeZoneSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.80"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2142.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.33"
+      }
+    }
+  },
+  {
+    "Type": "SafeZoneSlot",
+    "Name": "SafeZoneSlot_0",
+    "Outer": "SafeZone_103",
+    "Properties": {
+      "SafeAreaScale": {
+        "Top": 0.0,
+        "Bottom": 0.0
+      },
+      "Parent": {
+        "ObjectName": "SafeZone ApplyForJoin_NE_C:WidgetTree.SafeZone_103",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.77"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox ApplyForJoin_NE_C:WidgetTree.ScaleBox_152",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.82"
+      }
+    }
+  },
+  {
+    "Type": "SafeZoneSlot",
+    "Name": "SafeZoneSlot_0",
+    "Outer": "SafeZone_103",
+    "Properties": {
+      "SafeAreaScale": {
+        "Top": 0.0,
+        "Bottom": 0.0
+      },
+      "Parent": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.SafeZone_103",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.78"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_152",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.85"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot ApplyForJoin_NE_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.86"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.TitlePanel.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.30"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_152",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot ApplyForJoin_NE_C:WidgetTree.ScaleBox_152.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.87"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SafeZoneSlot ApplyForJoin_NE_C:WidgetTree.SafeZone_103.SafeZoneSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.79"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.88"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.101"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.89"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitlePanel.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.56"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_152",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_152.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.90"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SafeZoneSlot WidgetArchetype:WidgetTree_0.SafeZone_103.SafeZoneSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.80"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox ApplyForJoin_NE_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.81"
+      },
+      "Content": {
+        "ObjectName": "Image ApplyForJoin_NE_C:WidgetTree.TitleSmoke_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.62"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_152",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox ApplyForJoin_NE_C:WidgetTree.ScaleBox_152",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.82"
+      },
+      "Content": {
+        "ObjectName": "SizeBox ApplyForJoin_NE_C:WidgetTree.SizeBox_85",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.93"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.83"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.109"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.84"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TitleSmoke_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.74"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_152",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_152",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.85"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_85",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.97"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot ApplyForJoin_NE_C:WidgetTree.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.98"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.MainContent.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.22"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_707",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot ApplyForJoin_NE_C:WidgetTree.SizeBox_707.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.99"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.TitlePanel.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.29"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_85",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidthOverride": 1920.0,
+      "HeightOverride": 1080.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot ApplyForJoin_NE_C:WidgetTree.SizeBox_85.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.100"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot ApplyForJoin_NE_C:WidgetTree.ScaleBox_152.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.87"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.101"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.48"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.102"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MainContent.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.42"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_707",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_707.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.103"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitlePanel.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.55"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_85",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidthOverride": 1920.0,
+      "HeightOverride": 1080.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_85.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.104"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_152.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.90"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox ApplyForJoin_NE_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.91"
+      },
+      "Content": {
+        "ObjectName": "TextBlock ApplyForJoin_NE_C:WidgetTree.Application",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.105"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_707",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox ApplyForJoin_NE_C:WidgetTree.SizeBox_707",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.92"
+      },
+      "Content": {
+        "ObjectName": "TextBlock ApplyForJoin_NE_C:WidgetTree.Text_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.106"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_85",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox ApplyForJoin_NE_C:WidgetTree.SizeBox_85",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.93"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.ReportPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.8"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.94"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.83"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.95"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Application",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.107"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_707",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_707",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.96"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.110"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_85",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_85",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.97"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ReportPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.15"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Application",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "93CE12B94504F3FEED86FF915A93F9E8",
+        "SourceString": "APPLICATION"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "Size": 28
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot ApplyForJoin_NE_C:WidgetTree.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.98"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_Title",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "68A6223441E63070499E2EA84C76661E",
+        "SourceString": "ENROLLMENT  APPLICATION"
+      },
+      "Font": {
+        "Size": 35
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot ApplyForJoin_NE_C:WidgetTree.SizeBox_707.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.99"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Application",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "93CE12B94504F3FEED86FF915A93F9E8",
+        "SourceString": "APPLICATION"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.7,
+          "Hex": "B3FFFFFF"
+        }
+      },
+      "Font": {
+        "Size": 28
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.102"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "ButtonLabels",
+        "Key": "588F94A142DFB351564D2185D0E365FD",
+        "SourceString": "CANCEL"
+      },
+      "Font": {
+        "Size": 23
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.36"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "ButtonLabels",
+        "Key": "FDAA28B34DA3CC1D5FC206A9FA99BD36",
+        "SourceString": "ok"
+      },
+      "Font": {
+        "Size": 38
+      },
+      "MinDesiredWidth": 200.0,
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.88"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_Title",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "68A6223441E63070499E2EA84C76661E",
+        "SourceString": "ENROLLMENT  APPLICATION"
+      },
+      "Font": {
+        "Size": 35
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_707.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.103"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WBP_ProgressionPopupButton_C",
+    "Name": "RightBtn",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_ProgressionPopupButton_C",
+    "Properties": {
+      "ButtonText": {
+        "Namespace": "",
+        "Key": "0C76EB1146E12207EA25818EE2D65AB6",
+        "SourceString": "SUBMIT"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.UnderBtnPanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.31"
+      }
+    }
+  },
+  {
+    "Type": "WBP_ProgressionPopupButton_C",
+    "Name": "RightBtn",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_ProgressionPopupButton_C",
+    "Properties": {
+      "Background": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.69"
+      },
+      "VFXs": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.72"
+      },
+      "Line": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.71"
+      },
+      "FXSmoke": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.70"
+      },
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.4"
+      },
+      "ButtonLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.109"
+      },
+      "ButtonText": {
+        "Namespace": "",
+        "Key": "0C76EB1146E12207EA25818EE2D65AB6",
+        "SourceString": "SUBMIT"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.118"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.UnderBtnPanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.57"
+      }
+    }
+  },
+  {
+    "Type": "WBP_RegressionPopupButton_C",
+    "Name": "LeftBtn",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_RegressionPopupButton_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot ApplyForJoin_NE_C:WidgetTree.UnderBtnPanel.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.32"
+      }
+    }
+  },
+  {
+    "Type": "WBP_RegressionPopupButton_C",
+    "Name": "LeftBtn",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_RegressionPopupButton_C",
+    "Properties": {
+      "Background": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.65"
+      },
+      "VFXs": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.68"
+      },
+      "Line": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.67"
+      },
+      "FXSmoke": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.66"
+      },
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.3"
+      },
+      "ButtonLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.108"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.117"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.UnderBtnPanel.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.58"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "ApplyForJoin_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel ApplyForJoin_NE_C:WidgetTree.CanvasPanel_2142",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2142",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "LeftBtn",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "RightBtn",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightBtn.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/ClanSystem/PopUI/ApplyForJoin_NE.16"
+      }
+    }
+  }
+]

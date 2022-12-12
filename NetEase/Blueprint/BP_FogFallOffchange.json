@@ -1,0 +1,203 @@
+[
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BP_FogFallOffchange_C",
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_FogFallOffchange_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BP_FogFallOffchange_C:SimpleConstructionScript_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_FogFallOffchange.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function BP_FogFallOffchange_C:UserConstructionScript",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_FogFallOffchange.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Arrow",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class ArrowComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class SceneComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FogTarget",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2053,
+        "PropertyClass": {
+          "ObjectName": "Class ExponentialHeightFog",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Falloffvalue",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 5
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "FogDensity",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 5
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Tint",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 5,
+        "Struct": {
+          "ObjectName": "ScriptStruct LinearColor",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function BP_FogFallOffchange_C:UserConstructionScript",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_FogFallOffchange.0"
+      }
+    },
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_FogFallOffchange_C Default__BP_FogFallOffchange_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_FogFallOffchange.2"
+    }
+  },
+  {
+    "Type": "BP_FogFallOffchange_C",
+    "Name": "Default__BP_FogFallOffchange_C",
+    "Properties": {
+      "FogDensity": 0.02,
+      "Tint": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFFFF"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "Arrow_GEN_VARIABLE",
+    "Outer": "BP_FogFallOffchange_C",
+    "Properties": {
+      "DetailLevelBeforeCastShadows": "DM_MAX"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_FogFallOffchange_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BP_FogFallOffchange_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_FogFallOffchange.4"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BP_FogFallOffchange_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_FogFallOffchange.6"
+        }
+      ],
+      "VariableGuid": "140E8561-41EE889E-352567A6-32B6F837",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ArrowComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ArrowComponent BP_FogFallOffchange_C:Arrow_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_FogFallOffchange.3"
+      },
+      "VariableGuid": "4BE099C4-49002FE9-C885B79D-9177CC18",
+      "InternalVariableName": "Arrow"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_FogFallOffchange_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BP_FogFallOffchange_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_FogFallOffchange.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BP_FogFallOffchange_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_FogFallOffchange.5"
+        },
+        {
+          "ObjectName": "SCS_Node BP_FogFallOffchange_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_FogFallOffchange.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BP_FogFallOffchange_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/BP_FogFallOffchange.5"
+      }
+    }
+  }
+]

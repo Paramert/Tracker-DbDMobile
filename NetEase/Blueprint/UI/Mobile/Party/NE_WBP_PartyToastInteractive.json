@@ -1,0 +1,5101 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_PartyToastInteractive_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_PartyToastInteractive_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.139"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation NE_WBP_PartyToastInteractive_C:TransitionIn_INST",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.137"
+        },
+        {
+          "ObjectName": "WidgetAnimation NE_WBP_PartyToastInteractive_C:TransitionOut_INST",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.138"
+        }
+      ],
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "TransitionOut",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2147491860,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TransitionIn",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2147491860,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AcceptButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_PartyButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/Party/WBP_PartyButton.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BodyBg",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GlowDown",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ProgressBar",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GlowTop",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ProgressBar",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RejectButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_PartyButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/Party/WBP_PartyButton.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TimeToastProgression",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ProgressBar",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ToastIcon",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ToastText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class RichTextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_PartyToastInteractive_C Default__NE_WBP_PartyToastInteractive_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.1"
+    }
+  },
+  {
+    "Type": "NE_WBP_PartyToastInteractive_C",
+    "Name": "Default__NE_WBP_PartyToastInteractive_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 105.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Inbox_BtnBlue",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_BtnBlue.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 105.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Inbox_BtnBlue",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_BtnBlue.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 105.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Inbox_BtnBlueDown",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_BtnBlueDown.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 105.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.5,
+              "Hex": "7FFFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Inbox_BtnBlue",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_BtnBlue.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.32"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 105.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Inbox_BtnBlue",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_BtnBlue.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 105.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Inbox_BtnBlue",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_BtnBlue.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 105.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Inbox_BtnBlueDown",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_BtnBlueDown.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 105.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.5,
+              "Hex": "7FFFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Inbox_BtnBlue",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_BtnBlue.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ActionIco",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.ActionIco.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.22"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_159.HorizontalBoxSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.57"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.23"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.24"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_159.HorizontalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.56"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Content",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.Content.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.Content.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.Content.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.28"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "GlowEffects",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.GlowEffects.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.GlowEffects.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.30"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.Content.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.31"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.32"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.34"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ActionIco",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ActionIco.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.35"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_159.HorizontalBoxSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.36"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.37"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_159.HorizontalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.62"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Content",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Content.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Content.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.39"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Content.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "GlowEffects",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GlowEffects.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.42"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GlowEffects.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.43"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Content.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.44"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.46"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.47"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.64"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ActionIco",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": 8.0,
+          "Right": 38.73336,
+          "Bottom": 86.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.ActionIco",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.4"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_PartyToastInteractive_C:WidgetTree.ToastIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.67"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -690.0,
+          "Right": 689.8,
+          "Bottom": 328.21982
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -690.0,
+          "Top": -160.0,
+          "Right": 690.0,
+          "Bottom": 320.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.Content",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": -89.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.7"
+      },
+      "Content": {
+        "ObjectName": "RichTextBlock NE_WBP_PartyToastInteractive_C:WidgetTree.ToastText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.121"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Content",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -686.8571,
+          "Top": -141.71428,
+          "Right": 686.8571,
+          "Bottom": 281.14285
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.Content",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_PartyToastInteractive_C:WidgetTree.BodyBg",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.66"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Content",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 11.0,
+          "Right": 751.8,
+          "Bottom": 283.8
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.Content",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.GlowEffects",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Content",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 3.0,
+          "Top": 29.0,
+          "Right": 683.0,
+          "Bottom": 270.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.Content",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.8"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox NE_WBP_PartyToastInteractive_C:WidgetTree.VerticalBox_469",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.125"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "GlowEffects",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -55.644337,
+          "Right": 763.4285,
+          "Bottom": 66.857155
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.GlowEffects",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.9"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar NE_WBP_PartyToastInteractive_C:WidgetTree.GlowTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.116"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "GlowEffects",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 50.554234,
+          "Right": 763.4285,
+          "Bottom": 53.14286
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.GlowEffects",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.9"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar NE_WBP_PartyToastInteractive_C:WidgetTree.GlowDown",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.115"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 328.0,
+          "Bottom": 105.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.10"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.11"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 16.324627,
+          "Top": 14.365672,
+          "Right": 296.54852,
+          "Bottom": 75.70896
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.11"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 65.0,
+          "Bottom": 65.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.12"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.IconPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.68"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ActionIco",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": 8.0,
+          "Right": 38.73336,
+          "Bottom": 86.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ActionIco",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ToastIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.71"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -690.0,
+          "Right": 689.8,
+          "Bottom": 328.21982
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.14"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -690.0,
+          "Top": -160.0,
+          "Right": 690.0,
+          "Bottom": 320.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Content",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": -89.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.16"
+      },
+      "Content": {
+        "ObjectName": "RichTextBlock WidgetArchetype:WidgetTree_0.ToastText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.122"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Content",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -686.8571,
+          "Top": -141.71428,
+          "Right": 686.8571,
+          "Bottom": 281.14285
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Content",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.17"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BodyBg",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.69"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Content",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 11.0,
+          "Right": 751.8,
+          "Bottom": 283.8
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Content",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.17"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.GlowEffects",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Content",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 3.0,
+          "Top": 29.0,
+          "Right": 683.0,
+          "Bottom": 270.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Content",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.17"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_469",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.126"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "GlowEffects",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -55.644337,
+          "Right": 763.4285,
+          "Bottom": 66.857155
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.GlowEffects",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.18"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.GlowTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.119"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "GlowEffects",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 50.554234,
+          "Right": 763.4285,
+          "Bottom": 53.14286
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.GlowEffects",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.18"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.GlowDown",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.118"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 328.0,
+          "Bottom": 105.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.19"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.20"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 16.324627,
+          "Top": 14.365672,
+          "Right": 296.54852,
+          "Bottom": 75.70896
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.20"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 65.0,
+          "Bottom": 65.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.IconPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.70"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_115",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_115.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.54"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_115.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.55"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.VerticalBox_469.VerticalBoxSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.129"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9825,
+          "Y": 1.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_159",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_159.HorizontalBoxSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.57"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_159.HorizontalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.56"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.VerticalBox_469.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.127"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.58"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.59"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.33"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_115",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_115.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.60"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_115.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.61"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_469.VerticalBoxSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.132"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9825,
+          "Y": 1.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_159",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_159.HorizontalBoxSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.63"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_159.HorizontalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.62"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_469.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.130"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.64"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.65"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.46"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_115",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_115",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.48"
+      },
+      "Content": {
+        "ObjectName": "WBP_PartyButton_C NE_WBP_PartyToastInteractive_C:WidgetTree.AcceptButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.133"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_115",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_115",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.48"
+      },
+      "Content": {
+        "ObjectName": "WBP_PartyButton_C NE_WBP_PartyToastInteractive_C:WidgetTree.RejectButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.134"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_159",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_159",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.49"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.7"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_159",
+    "Properties": {
+      "Size": {
+        "Value": 0.1
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_159",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.49"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.ActionIco",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.4"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.50"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.12"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.50"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.123"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_115",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_115",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.51"
+      },
+      "Content": {
+        "ObjectName": "WBP_PartyButton_C WidgetArchetype:WidgetTree_0.AcceptButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.135"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_115",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_115",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.51"
+      },
+      "Content": {
+        "ObjectName": "WBP_PartyButton_C WidgetArchetype:WidgetTree_0.RejectButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.136"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_159",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_159",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.52"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.16"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_159",
+    "Properties": {
+      "Size": {
+        "Value": 0.1
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_159",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.52"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ActionIco",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.13"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.53"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.21"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.53"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.124"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BodyBg",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 760.0,
+          "Y": 280.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Party_Notif_Body",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Party/Atl_Party_Notif_Body.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.Content.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.26"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ToastIcon",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_FriendList_AddToParty",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_AddToParty.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.ActionIco.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.22"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconPicture",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_Friendlist_Ok",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_Friendlist_Ok.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.34"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BodyBg",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 760.0,
+          "Y": 280.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Party_Notif_Body",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Party/Atl_Party_Notif_Body.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Content.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.39"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconPicture",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_Friendlist_Ok",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_Friendlist_Ok.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.47"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ToastIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_FriendList_AddToParty",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_AddToParty.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ActionIco.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.35"
+      }
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "TransitionIn",
+    "Outer": "TransitionIn_INST",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "D0225260-43041C8A-CAE1E399-135838B2",
+          "Name": "GlowTop",
+          "PossessedObjectClass": {
+            "ObjectName": "Class ProgressBar",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "Tags": [],
+          "Guid": "AB3CBAFD-4835C594-478A66AD-24865683",
+          "Name": "GlowDown",
+          "PossessedObjectClass": {
+            "ObjectName": "Class ProgressBar",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "Tags": [],
+          "Guid": "5C895CE0-4F09D353-E1C21BAD-DEFFB87C",
+          "Name": "CanvasPanel_1",
+          "PossessedObjectClass": {
+            "ObjectName": "Class CanvasPanel",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "Tags": [],
+          "Guid": "B6026C43-45DC938B-92FB0796-E900C044",
+          "Name": "GlowEffects",
+          "PossessedObjectClass": {
+            "ObjectName": "Class CanvasPanel",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "D0225260-43041C8A-CAE1E399-135838B2",
+          "BindingName": "GLowTop",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_4",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.108"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_6",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.110"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "AB3CBAFD-4835C594-478A66AD-24865683",
+          "BindingName": "GlowDown",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_5",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.109"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_7",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.111"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "5C895CE0-4F09D353-E1C21BAD-DEFFB87C",
+          "BindingName": "CanvasPanel_1",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_9",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.112"
+            },
+            {
+              "ObjectName": "MovieScene2DTransformTrack NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieScene2DTransformTrack_6",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.76"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "B6026C43-45DC938B-92FB0796-E900C044",
+          "BindingName": "GlowEffects",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneByteTrack NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneByteTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.100"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 60001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "87A8AFEB-4BC847F8-7AE8E597-B270BEE1"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "TransitionOut",
+    "Outer": "TransitionOut_INST",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "8D65DED2-4B3857B1-06279BA0-F8F32FCC",
+          "Name": "CanvasPanel_1",
+          "PossessedObjectClass": {
+            "ObjectName": "Class CanvasPanel",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "Tags": [],
+          "Guid": "363BC468-4B19DFFF-10798CA9-BCC396A2",
+          "Name": "GlowEffects",
+          "PossessedObjectClass": {
+            "ObjectName": "Class CanvasPanel",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "8D65DED2-4B3857B1-06279BA0-F8F32FCC",
+          "BindingName": "CanvasPanel_1",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieSceneFloatTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.113"
+            },
+            {
+              "ObjectName": "MovieScene2DTransformTrack NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieScene2DTransformTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.77"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "363BC468-4B19DFFF-10798CA9-BCC396A2",
+          "BindingName": "GlowEffects",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneByteTrack NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieSceneByteTrack_1",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.101"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 21001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "6F8E649E-4E962D12-2B91D089-E8E4EED3"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_6",
+    "Properties": {
+      "TransformMask": {
+        "Mask": 3
+      },
+      "Translation": null,
+      "Translation": null,
+      "Rotation": null,
+      "Scale": null,
+      "Scale": null,
+      "Shear": null,
+      "Shear": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieScene2DTransformTrack_6.MovieScene2DTransformSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.78"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieScene2DTransformTrack_6.MovieScene2DTransformSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.79"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 6000
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 21000
+            }
+          }
+        }
+      },
+      "Signature": "957645DA-491E16D1-6DFC9889-2D11657B"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Properties": {
+      "TransformMask": {
+        "Mask": 3
+      },
+      "Translation": null,
+      "Translation": null,
+      "Rotation": null,
+      "Scale": null,
+      "Scale": null,
+      "Shear": null,
+      "Shear": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.92"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.93"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 6000
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 21000
+            }
+          }
+        }
+      },
+      "Signature": "D6A100EC-4E0249F9-C11F5B99-D65899C4"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_6",
+    "Outer": "TransitionIn",
+    "Properties": {
+      "PropertyName": "RenderTransform",
+      "PropertyPath": "RenderTransform",
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieScene2DTransformTrack_6.MovieScene2DTransformSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.74"
+        }
+      ],
+      "Signature": "ADD89B22-4F3E1339-5E94F9BF-C9BCB83F"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "TransitionOut",
+    "Properties": {
+      "PropertyName": "RenderTransform",
+      "PropertyPath": "RenderTransform",
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.75"
+        }
+      ],
+      "Signature": "02844A33-43616C71-8511069F-295B2A75"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneByteSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneByteSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneByteSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneByteSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneByteSection",
+    "Name": "MovieSceneByteSection_0",
+    "Outer": "MovieSceneByteTrack_0",
+    "Properties": {
+      "ByteCurve": {
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          4
+        ],
+        "Enum": {
+          "ObjectName": "Enum ESlateVisibility",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneByteTrack_0.MovieSceneByteSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.80"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneByteTrack_0.MovieSceneByteSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.81"
+        }
+      },
+      "Signature": "9040E27D-49FD93EC-DEB39D81-E7CAE527"
+    }
+  },
+  {
+    "Type": "MovieSceneByteSection",
+    "Name": "MovieSceneByteSection_0",
+    "Outer": "MovieSceneByteTrack_1",
+    "Properties": {
+      "ByteCurve": {
+        "Times": [
+          {
+            "Value": 21000
+          }
+        ],
+        "Values": [
+          2
+        ],
+        "Enum": {
+          "ObjectName": "Enum ESlateVisibility",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieSceneByteTrack_1.MovieSceneByteSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.94"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieSceneByteTrack_1.MovieSceneByteSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.95"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 21000
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 21000
+            }
+          }
+        }
+      },
+      "Signature": "FE69C087-4FEC14C1-2E314D95-7CDB6C68"
+    }
+  },
+  {
+    "Type": "MovieSceneByteTrack",
+    "Name": "MovieSceneByteTrack_0",
+    "Outer": "TransitionIn",
+    "Properties": {
+      "Enum": {
+        "ObjectName": "Enum ESlateVisibility",
+        "ObjectPath": "/Script/UMG"
+      },
+      "PropertyName": "Visibility",
+      "PropertyPath": "Visibility",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneByteSection NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneByteTrack_0.MovieSceneByteSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.98"
+        }
+      ],
+      "Signature": "D60D7174-4912C7DB-980B96B9-40DBB698"
+    }
+  },
+  {
+    "Type": "MovieSceneByteTrack",
+    "Name": "MovieSceneByteTrack_1",
+    "Outer": "TransitionOut",
+    "Properties": {
+      "Enum": {
+        "ObjectName": "Enum ESlateVisibility",
+        "ObjectPath": "/Script/UMG"
+      },
+      "PropertyName": "Visibility",
+      "PropertyPath": "Visibility",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneByteSection NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieSceneByteTrack_1.MovieSceneByteSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.99"
+        }
+      ],
+      "Signature": "DA9423F2-4EAA5439-22D1E589-1D6F12F0"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_4",
+    "Properties": {
+      "FloatCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_4.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.82"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_4.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.83"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 6000
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 33000
+            }
+          }
+        }
+      },
+      "Signature": "781B58B2-4F9FBADF-3FB1F0AD-CF5EFC0D"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_5",
+    "Properties": {
+      "FloatCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_5.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.84"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_5.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.85"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 6000
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "Signature": "A5092D62-44311BD3-966F4480-1B82FA53"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_6",
+    "Properties": {
+      "FloatCurve": null,
+      "EvalOptions": {
+        "CompletionMode": "EMovieSceneCompletionMode::KeepState"
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_6.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.86"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_6.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.87"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 60000
+            }
+          }
+        }
+      },
+      "Signature": "E833D8BE-41318F8A-E7FF6FA7-0F62EE79"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_7",
+    "Properties": {
+      "FloatCurve": null,
+      "EvalOptions": {
+        "CompletionMode": "EMovieSceneCompletionMode::KeepState"
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_7.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.88"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_7.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.89"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 60000
+            }
+          }
+        }
+      },
+      "Signature": "2DE0B599-44697EEF-08F7E08C-BFEDE2C9"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_9",
+    "Properties": {
+      "FloatCurve": null,
+      "EvalOptions": {
+        "CompletionMode": "EMovieSceneCompletionMode::KeepState"
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_9.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.90"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_9.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.91"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 21000
+            }
+          }
+        }
+      },
+      "Signature": "B7DBD484-49274F21-E9E29CB2-6DFF71C8"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Properties": {
+      "FloatCurve": null,
+      "EvalOptions": {
+        "CompletionMode": "EMovieSceneCompletionMode::KeepState"
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.96"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.97"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 21000
+            }
+          }
+        }
+      },
+      "Signature": "73D221EB-42D0940C-997791B3-6D0698C6"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_4",
+    "Outer": "TransitionIn",
+    "Properties": {
+      "PropertyName": "Percent",
+      "PropertyPath": "Percent",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_4.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.102"
+        }
+      ],
+      "Signature": "C66054CA-4CD29E70-9FE090B4-32411129"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_5",
+    "Outer": "TransitionIn",
+    "Properties": {
+      "PropertyName": "Percent",
+      "PropertyPath": "Percent",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_5.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.103"
+        }
+      ],
+      "Signature": "B1F40D35-481DAD3B-1315EEA2-FEE3D125"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_6",
+    "Outer": "TransitionIn",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_6.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.104"
+        }
+      ],
+      "Signature": "4800A6C7-4176858F-042B7FA3-3AFA8B85"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_7",
+    "Outer": "TransitionIn",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_7.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.105"
+        }
+      ],
+      "Signature": "88954BFC-4D8A28D5-D517FD8E-78A73E97"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_9",
+    "Outer": "TransitionIn",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn.MovieSceneFloatTrack_9.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.106"
+        }
+      ],
+      "Signature": "1BCD4001-4F67DF8B-52D68997-460001FC"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "TransitionOut",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut.MovieSceneFloatTrack_0.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.107"
+        }
+      ],
+      "Signature": "70F9D69C-4075CBC8-4EE79BBD-48B2E1A9"
+    }
+  },
+  {
+    "Type": "NE_WBP_PartyToastInteractive_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_PartyToastInteractive_C",
+    "Properties": {
+      "AcceptButton": {
+        "ObjectName": "WBP_PartyButton_C WidgetArchetype:WidgetTree_0.AcceptButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.135"
+      },
+      "BodyBg": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BodyBg",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.69"
+      },
+      "GlowDown": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.GlowDown",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.118"
+      },
+      "GlowTop": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.GlowTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.119"
+      },
+      "RejectButton": {
+        "ObjectName": "WBP_PartyButton_C WidgetArchetype:WidgetTree_0.RejectButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.136"
+      },
+      "TimeToastProgression": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.TimeToastProgression",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.120"
+      },
+      "ToastIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ToastIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.71"
+      },
+      "ToastText": {
+        "ObjectName": "RichTextBlock WidgetArchetype:WidgetTree_0.ToastText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.122"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.140"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "GlowDown",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 740.0,
+            "Y": 49.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Party_Notif_BGSmoke",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Party/Atl_Party_Notif_BGSmoke.0"
+          }
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::RightToLeft",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.GlowEffects.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.30"
+      }
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "GlowTop",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 740.0,
+            "Y": 49.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Party_Notif_BGSmoke",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Party/Atl_Party_Notif_BGSmoke.0"
+          }
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::RightToLeft",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.GlowEffects.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.29"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "TimeToastProgression",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 662.0,
+            "Y": 16.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Party_Notif_Progress_BG",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Party/Atl_Party_Notif_Progress_BG.0"
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 662.0,
+            "Y": 16.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Party_Notif_Progress_Content",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Party/Atl_Party_Notif_Progress_Content.0"
+          }
+        }
+      },
+      "Percent": 0.4,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.VerticalBox_469.VerticalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.128"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.5
+        }
+      }
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "GlowDown",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 740.0,
+            "Y": 49.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Party_Notif_BGSmoke",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Party/Atl_Party_Notif_BGSmoke.0"
+          }
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::RightToLeft",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GlowEffects.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.43"
+      }
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "GlowTop",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 740.0,
+            "Y": 49.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Party_Notif_BGSmoke",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Party/Atl_Party_Notif_BGSmoke.0"
+          }
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::RightToLeft",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.GlowEffects.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.42"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "TimeToastProgression",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "ImageSize": {
+            "X": 662.0,
+            "Y": 16.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Party_Notif_Progress_BG",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Party/Atl_Party_Notif_Progress_BG.0"
+          }
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 662.0,
+            "Y": 16.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Party_Notif_Progress_Content",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Party/Atl_Party_Notif_Progress_Content.0"
+          }
+        }
+      },
+      "Percent": 0.4,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_469.VerticalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.131"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.5
+        }
+      }
+    }
+  },
+  {
+    "Type": "RichTextBlock",
+    "Name": "ToastText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": null
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable PartyToastNotificationStyle",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/FontStyleDataBases/PartyToastNotificationStyle.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "BlueprintGeneratedClass AtlantaRichImageDecorator_C",
+          "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/AtlantaRichImageDecorator.0"
+        }
+      ],
+      "AutoWrapText": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.25"
+      }
+    }
+  },
+  {
+    "Type": "RichTextBlock",
+    "Name": "ToastText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": null
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable PartyToastNotificationStyle",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/FontStyleDataBases/PartyToastNotificationStyle.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "BlueprintGeneratedClass AtlantaRichImageDecorator_C",
+          "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/AtlantaRichImageDecorator.0"
+        }
+      ],
+      "AutoWrapText": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.38"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "Text Block"
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.59"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "Text Block"
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.65"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_469",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.VerticalBox_469.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.127"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.VerticalBox_469.VerticalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.128"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.VerticalBox_469.VerticalBoxSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.129"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PartyToastInteractive_C:WidgetTree.Content.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.28"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_469",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_469.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.130"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_469.VerticalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.131"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_469.VerticalBoxSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.132"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Content.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.41"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_469",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_PartyToastInteractive_C:WidgetTree.VerticalBox_469",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.125"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_159",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.49"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_469",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Top": 20.0,
+        "Right": 20.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_PartyToastInteractive_C:WidgetTree.VerticalBox_469",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.125"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar NE_WBP_PartyToastInteractive_C:WidgetTree.TimeToastProgression",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.117"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_4",
+    "Outer": "VerticalBox_469",
+    "Properties": {
+      "Size": {
+        "Value": 0.5
+      },
+      "Padding": {
+        "Left": 6.0,
+        "Top": 20.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_PartyToastInteractive_C:WidgetTree.VerticalBox_469",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.125"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_115",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.48"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_469",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_469",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.126"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_159",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.52"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_469",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Top": 20.0,
+        "Right": 20.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_469",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.126"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.TimeToastProgression",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.120"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_4",
+    "Outer": "VerticalBox_469",
+    "Properties": {
+      "Size": {
+        "Value": 0.5
+      },
+      "Padding": {
+        "Left": 6.0,
+        "Top": 20.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_469",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.126"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_115",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.51"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PartyButton_C",
+    "Name": "AcceptButton",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_PartyButton_C",
+    "Properties": {
+      "ButtonText_0": {
+        "Namespace": "",
+        "Key": "ACCEPT",
+        "SourceString": "Claim"
+      },
+      "IsOrangeButton": true,
+      "ButtonPictureBrush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_Friendlist_Ok",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_Friendlist_Ok.0"
+        }
+      },
+      "ButtonText": {
+        "Namespace": "",
+        "Key": "ACCEPT",
+        "SourceString": "Claim"
+      },
+      "OnPressSound": {
+        "ObjectName": "AkAudioEvent AudioEvent_UI_Select_Press",
+        "ObjectPath": "DeadByDaylight/Content/Audio/AudioEvents/Menu/AudioEvent_UI_Select_Press.0"
+      },
+      "OnClickSound": {
+        "ObjectName": "AkAudioEvent AudioEvent_UI_Select_Release",
+        "ObjectPath": "DeadByDaylight/Content/Audio/AudioEvents/Menu/AudioEvent_UI_Select_Release.0"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_115.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.54"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PartyButton_C",
+    "Name": "RejectButton",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_PartyButton_C",
+    "Properties": {
+      "ButtonText_0": {
+        "Namespace": "",
+        "Key": "DECLINE",
+        "SourceString": "REFUSE"
+      },
+      "ButtonPictureBrush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_FriendList_Cancel",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Cancel.0"
+        }
+      },
+      "ButtonText": {
+        "Namespace": "",
+        "Key": "DECLINE",
+        "SourceString": "REFUSE"
+      },
+      "OnPressSound": {
+        "ObjectName": "AkAudioEvent AudioEvent_UI_Select_Press",
+        "ObjectPath": "DeadByDaylight/Content/Audio/AudioEvents/Menu/AudioEvent_UI_Select_Press.0"
+      },
+      "OnClickSound": {
+        "ObjectName": "AkAudioEvent AudioEvent_UI_Select_Release",
+        "ObjectPath": "DeadByDaylight/Content/Audio/AudioEvents/Menu/AudioEvent_UI_Select_Release.0"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_PartyToastInteractive_C:WidgetTree.HorizontalBox_115.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.55"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PartyButton_C",
+    "Name": "AcceptButton",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_PartyButton_C",
+    "Properties": {
+      "ButtonText_0": {
+        "Namespace": "",
+        "Key": "ACCEPT",
+        "SourceString": "Claim"
+      },
+      "IsOrangeButton": true,
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.2"
+      },
+      "IconPicture": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.IconPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.68"
+      },
+      "ButtonLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.123"
+      },
+      "ButtonPictureBrush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_Friendlist_Ok",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_Friendlist_Ok.0"
+        }
+      },
+      "ButtonText": {
+        "Namespace": "",
+        "Key": "ACCEPT",
+        "SourceString": "Claim"
+      },
+      "OnPressSound": {
+        "ObjectName": "AkAudioEvent AudioEvent_UI_Select_Press",
+        "ObjectPath": "DeadByDaylight/Content/Audio/AudioEvents/Menu/AudioEvent_UI_Select_Press.0"
+      },
+      "OnClickSound": {
+        "ObjectName": "AkAudioEvent AudioEvent_UI_Select_Release",
+        "ObjectPath": "DeadByDaylight/Content/Audio/AudioEvents/Menu/AudioEvent_UI_Select_Release.0"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.141"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_115.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.60"
+      }
+    }
+  },
+  {
+    "Type": "WBP_PartyButton_C",
+    "Name": "RejectButton",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_PartyButton_C",
+    "Properties": {
+      "ButtonText_0": {
+        "Namespace": "",
+        "Key": "DECLINE",
+        "SourceString": "REFUSE"
+      },
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.3"
+      },
+      "IconPicture": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.IconPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.70"
+      },
+      "ButtonLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.124"
+      },
+      "ButtonPictureBrush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Icons_FriendList_Cancel",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Friendlist/Icons_FriendList_Cancel.0"
+        }
+      },
+      "ButtonText": {
+        "Namespace": "",
+        "Key": "DECLINE",
+        "SourceString": "REFUSE"
+      },
+      "OnPressSound": {
+        "ObjectName": "AkAudioEvent AudioEvent_UI_Select_Press",
+        "ObjectPath": "DeadByDaylight/Content/Audio/AudioEvents/Menu/AudioEvent_UI_Select_Press.0"
+      },
+      "OnClickSound": {
+        "ObjectName": "AkAudioEvent AudioEvent_UI_Select_Release",
+        "ObjectPath": "DeadByDaylight/Content/Audio/AudioEvents/Menu/AudioEvent_UI_Select_Release.0"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.142"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_115.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.61"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "TransitionIn_INST",
+    "Outer": "NE_WBP_PartyToastInteractive_C",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene NE_WBP_PartyToastInteractive_C:TransitionIn_INST.TransitionIn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.72"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "GlowTop",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "D0225260-43041C8A-CAE1E399-135838B2",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "GlowDown",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "AB3CBAFD-4835C594-478A66AD-24865683",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "CanvasPanel_1",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "5C895CE0-4F09D353-E1C21BAD-DEFFB87C",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "GlowEffects",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "B6026C43-45DC938B-92FB0796-E900C044",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "TransitionIn",
+      "PrecompiledEvaluationTemplate": {
+        "Tracks": null,
+        "EvaluationField": {
+          "Ranges": [
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 1
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 1
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 6000
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 6000
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 21001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 21001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 30001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 30001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 33001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 33001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 60001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 60001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            }
+          ],
+          "Groups": [
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 4
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 6
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 3
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 4
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 3
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 3
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 4
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 6
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 4
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 5
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 2
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 3
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 4
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 2
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 3
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 3
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 3
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 2
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 3
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            }
+          ],
+          "MetaData": [
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 5,
+                  "TearDownIndex": 65530
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 4,
+                  "TearDownIndex": 65531
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 4
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 7,
+                  "TearDownIndex": 65528
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 4
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 6,
+                  "TearDownIndex": 65529
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 6
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 6
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 4
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 5,
+                  "TearDownIndex": 65530
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 4
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 4,
+                  "TearDownIndex": 65531
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 7,
+                  "TearDownIndex": 65528
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 6,
+                  "TearDownIndex": 65529
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 9,
+                  "TearDownIndex": 65526
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 8,
+                  "TearDownIndex": 65527
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 2
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 5,
+                  "TearDownIndex": 65530
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 2
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 4,
+                  "TearDownIndex": 65531
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 11,
+                  "TearDownIndex": 65524
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 10,
+                  "TearDownIndex": 65525
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 4
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 4
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 5
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 5
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 5,
+                  "TearDownIndex": 65530
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 4,
+                  "TearDownIndex": 65531
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 2
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 2
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 7,
+                  "TearDownIndex": 65528
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 6,
+                  "TearDownIndex": 65529
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 5,
+                  "TearDownIndex": 65530
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 4,
+                  "TearDownIndex": 65531
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            }
+          ]
+        },
+        "SequenceSignature": "F239E88F-47934486-F7A7D897-2EBBA670",
+        "TemplateSerialNumber": {
+          "Value": 1
+        },
+        "TemplateLedger": {
+          "LastTrackIdentifier": {
+            "Value": 6
+          },
+          "TrackSignatureToTrackIdentifier": null
+        },
+        "TrackFieldData": null
+      },
+      "Signature": "F239E88F-47934486-F7A7D897-2EBBA670"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "TransitionOut_INST",
+    "Outer": "NE_WBP_PartyToastInteractive_C",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene NE_WBP_PartyToastInteractive_C:TransitionOut_INST.TransitionOut",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.73"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "CanvasPanel_1",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "8D65DED2-4B3857B1-06279BA0-F8F32FCC",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "GlowEffects",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "363BC468-4B19DFFF-10798CA9-BCC396A2",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "TransitionOut",
+      "PrecompiledEvaluationTemplate": {
+        "Tracks": null,
+        "EvaluationField": {
+          "Ranges": [
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 6000
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 6000
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 21000
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 21000
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 21001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 21001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            }
+          ],
+          "Groups": [
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 1
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 2
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 3
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 2
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            }
+          ],
+          "MetaData": [
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 5,
+                  "TearDownIndex": 65530
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 4,
+                  "TearDownIndex": 65531
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 2
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 2
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            }
+          ]
+        },
+        "SequenceSignature": "E5B63AD7-44CDCB4A-14420BB6-1FA71400",
+        "TemplateSerialNumber": {
+          "Value": 1
+        },
+        "TemplateLedger": {
+          "LastTrackIdentifier": {
+            "Value": 2
+          },
+          "TrackSignatureToTrackIdentifier": null
+        },
+        "TrackFieldData": null
+      },
+      "Signature": "E5B63AD7-44CDCB4A-14420BB6-1FA71400"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_PartyToastInteractive_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_PartyToastInteractive_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.14"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "AcceptButton",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.AcceptButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.10"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "RejectButton",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RejectButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Party/NE_WBP_PartyToastInteractive.19"
+      }
+    }
+  }
+]

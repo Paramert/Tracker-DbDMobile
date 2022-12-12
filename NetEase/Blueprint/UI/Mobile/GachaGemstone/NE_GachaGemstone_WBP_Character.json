@@ -1,0 +1,1242 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_GachaGemstone_WBP_Character_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_GachaGemstone_WBP_Character_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.33"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CharacterBackground",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ContentText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "grayBackground",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_70",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PortraitIcon",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SelectionButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SlasherColor",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct Color",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CamperColor",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "ScriptStruct Color",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_GachaGemstone_WBP_Character_C Default__NE_GachaGemstone_WBP_Character_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.1"
+    }
+  },
+  {
+    "Type": "NE_GachaGemstone_WBP_Character_C",
+    "Name": "Default__NE_GachaGemstone_WBP_Character_C",
+    "Properties": {
+      "SlasherColor": {
+        "B": 28,
+        "G": 21,
+        "R": 140,
+        "A": 255,
+        "Hex": "FF8C151C"
+      },
+      "CamperColor": {
+        "B": 131,
+        "G": 117,
+        "R": 90,
+        "A": 255,
+        "Hex": "FF5A7583"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "SelectionButton",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 32.0,
+            "Y": 32.0
+          },
+          "Margin": {
+            "Left": 0.25,
+            "Top": 0.25,
+            "Right": 0.25,
+            "Bottom": 0.25
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png",
+          "DrawAs": "ESlateBrushDrawType::Box",
+          "ImageType": "ESlateBrushImageType::FullColor"
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.ContentPanel.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.14"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "SelectionButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 32.0,
+            "Y": 32.0
+          },
+          "Margin": {
+            "Left": 0.25,
+            "Top": 0.25,
+            "Right": 0.25,
+            "Bottom": 0.25
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png",
+          "DrawAs": "ESlateBrushDrawType::Box",
+          "ImageType": "ESlateBrushImageType::FullColor"
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContentPanel.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_17",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ContentPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.ContentPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.ContentPanel.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_17",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.10"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_17",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ContentPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContentPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContentPanel.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_17",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.17"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 92.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.4"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_GachaGemstone_WBP_Character_C:WidgetTree.ContentText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 220.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.4"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Character_C:WidgetTree.CharacterBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_17",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 220.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Character_C:WidgetTree.ContentPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.6,
+          "Top": -4.0,
+          "Right": 168.8,
+          "Bottom": 200.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.4"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Character_C:WidgetTree.grayBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 104.0,
+          "Top": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.4"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Character_C:WidgetTree.Image_70",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ContentPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": -8.0,
+          "Right": 300.0,
+          "Bottom": 280.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Character_C:WidgetTree.ContentPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.5"
+      },
+      "Content": {
+        "ObjectName": "Image NE_GachaGemstone_WBP_Character_C:WidgetTree.PortraitIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "ContentPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Character_C:WidgetTree.ContentPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.5"
+      },
+      "Content": {
+        "ObjectName": "Button NE_GachaGemstone_WBP_Character_C:WidgetTree.SelectionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 92.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ContentText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 220.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.6"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.CharacterBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_17",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 220.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContentPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.6,
+          "Top": -4.0,
+          "Right": 168.8,
+          "Bottom": 200.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.6"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.grayBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 104.0,
+          "Top": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.6"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_70",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.28"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ContentPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": -8.0,
+          "Right": 300.0,
+          "Bottom": 280.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContentPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PortraitIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "ContentPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContentPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.7"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.SelectionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.3"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharacterBackground",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 214.0,
+          "Y": 297.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_CharSelect_char_btn_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/CharacterSelect/OutputPaper2D/Frames/Atl_CharSelect_char_btn_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.9"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "grayBackground",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 214.0,
+          "Y": 297.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.11"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      },
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_70",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 103.0,
+          "Y": 109.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Ico_Lock",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Ico_Lock.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.12"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.4,
+          "Y": 0.4
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PortraitIcon",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 350.0,
+          "Y": 350.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D DF_charSelect_portrait",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/CharPortraits/DF_charSelect_portrait.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.ContentPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.13"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CharacterBackground",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 214.0,
+          "Y": 297.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_CharSelect_char_btn_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/CharacterSelect/OutputPaper2D/Frames/Atl_CharSelect_char_btn_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.16"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "grayBackground",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 214.0,
+          "Y": 297.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.3,
+            "Hex": "4C000000"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.18"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      },
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_70",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 103.0,
+          "Y": 109.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Ico_Lock",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Ico_Lock.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.19"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.4,
+          "Y": 0.4
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PortraitIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 350.0,
+          "Y": 350.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D DF_charSelect_portrait",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/CharPortraits/DF_charSelect_portrait.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContentPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.20"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.8,
+          "Y": 0.8
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "NE_GachaGemstone_WBP_Character_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_GachaGemstone_WBP_Character_C",
+    "Properties": {
+      "CharacterBackground": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.CharacterBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.26"
+      },
+      "ContentText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ContentText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.32"
+      },
+      "grayBackground": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.grayBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.27"
+      },
+      "Image_70": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_70",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.28"
+      },
+      "PortraitIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.PortraitIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.29"
+      },
+      "SelectionButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.SelectionButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.3"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.34"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ContentText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C274D3524D484BF30E451E898A4FA301",
+        "SourceString": "提前解锁"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.478431,
+          "G": 0.180392,
+          "B": 0.011765,
+          "A": 1.0,
+          "Hex": "FFB8761C"
+        }
+      },
+      "Font": {
+        "Size": 26
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.8"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ContentText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C274D3524D484BF30E451E898A4FA301",
+        "SourceString": "提前解锁"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.478431,
+          "G": 0.180392,
+          "B": 0.011765,
+          "A": 1.0,
+          "Hex": "FFB8761C"
+        }
+      },
+      "Font": {
+        "Size": 26
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.15"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_GachaGemstone_WBP_Character_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_GachaGemstone_WBP_Character_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/GachaGemstone/NE_GachaGemstone_WBP_Character.6"
+      }
+    }
+  }
+]

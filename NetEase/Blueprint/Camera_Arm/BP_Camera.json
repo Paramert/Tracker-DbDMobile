@@ -1,0 +1,248 @@
+[
+  {
+    "Type": "Function",
+    "Name": "Arm",
+    "Outer": "BP_Camera_C",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "valueA",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Camera_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BP_Camera_C:SimpleConstructionScript_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function BP_Camera_C:Arm",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Camera",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class CameraComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpringArm",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class SpringArmComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Arrow",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class ArrowComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NewVar_0",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 67589,
+        "PropertyClass": {
+          "ObjectName": "Class Actor",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "valueppp",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 5
+      }
+    ],
+    "FuncMap": {
+      "Arm": {
+        "ObjectName": "Function BP_Camera_C:Arm",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.0"
+      }
+    },
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Camera_C Default__BP_Camera_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.2"
+    }
+  },
+  {
+    "Type": "BP_Camera_C",
+    "Name": "Default__BP_Camera_C"
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "Arrow_GEN_VARIABLE",
+    "Outer": "BP_Camera_C",
+    "Properties": {
+      "DetailLevelBeforeCastShadows": "DM_MAX"
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "Camera_GEN_VARIABLE",
+    "Outer": "BP_Camera_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_Camera_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BP_Camera_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.5"
+      },
+      "VariableGuid": "4D03939E-4636C4E1-3341F38D-3055ED92",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class ArrowComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ArrowComponent BP_Camera_C:Arrow_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.3"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BP_Camera_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.8"
+        }
+      ],
+      "VariableGuid": "A00F39B3-484B37D4-47F22090-2BEBF568",
+      "InternalVariableName": "Arrow"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpringArmComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpringArmComponent BP_Camera_C:SpringArm_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.11"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BP_Camera_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.9"
+        }
+      ],
+      "VariableGuid": "8ABF0B88-49D071EB-EB87F0AE-62DCFCFD",
+      "InternalVariableName": "SpringArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class CameraComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CameraComponent BP_Camera_C:Camera_GEN_VARIABLE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.4"
+      },
+      "VariableGuid": "0D6AE934-47DF0375-B95A1188-A38B0CAB",
+      "InternalVariableName": "Camera"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_Camera_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BP_Camera_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BP_Camera_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.7"
+        },
+        {
+          "ObjectName": "SCS_Node BP_Camera_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.8"
+        },
+        {
+          "ObjectName": "SCS_Node BP_Camera_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.9"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BP_Camera_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/Camera_Arm/BP_Camera.6"
+      }
+    }
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "SpringArm_GEN_VARIABLE",
+    "Outer": "BP_Camera_C",
+    "Properties": {
+      "bDoCollisionTest": false
+    }
+  }
+]

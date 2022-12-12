@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "Atl_Hud_Icon_Vault_png",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -5.0,
+              "Y": -0.0,
+              "Z": -1.5
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 164.0,
+            "Y": 10.0,
+            "Z": 145.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldDynamic",
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "4848F523478202E64FF866BEC20D0A2F"
+  },
+  {
+    "Type": "PaperSprite",
+    "Name": "Atl_Hud_Icon_Vault_png",
+    "Properties": {
+      "BakedSourceUV": {
+        "X": 144.0,
+        "Y": 333.0
+      },
+      "BakedSourceDimension": {
+        "X": 166.0,
+        "Y": 147.0
+      },
+      "BakedSourceTexture": {
+        "ObjectName": "Texture2D ActionIcons",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/OutputPaper2D/Textures/ActionIcons.0"
+      },
+      "DefaultMaterial": {
+        "ObjectName": "MaterialInstanceConstant TranslucentUnlitSpriteMaterial",
+        "ObjectPath": "Engine/Plugins/2D/Paper2D/Content/TranslucentUnlitSpriteMaterial.0"
+      },
+      "PixelsPerUnrealUnit": 1.0,
+      "BodySetup": {
+        "ObjectName": "BodySetup Atl_Hud_Icon_Vault_png:BodySetup_1",
+        "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/OutputPaper2D/Frames/Atl_Hud_Icon_Vault_png.0"
+      },
+      "BakedRenderData": [
+        {
+          "X": 77.0,
+          "Y": 71.0,
+          "Z": 0.6035156,
+          "W": 0.65234375
+        },
+        {
+          "X": -87.0,
+          "Y": 71.0,
+          "Z": 0.28320312,
+          "W": 0.65234375
+        },
+        {
+          "X": -87.0,
+          "Y": -74.0,
+          "Z": 0.28320312,
+          "W": 0.9355469
+        },
+        {
+          "X": 77.0,
+          "Y": -74.0,
+          "Z": 0.6035156,
+          "W": 0.9355469
+        },
+        {
+          "X": 77.0,
+          "Y": 71.0,
+          "Z": 0.6035156,
+          "W": 0.65234375
+        },
+        {
+          "X": -87.0,
+          "Y": -74.0,
+          "Z": 0.28320312,
+          "W": 0.9355469
+        }
+      ]
+    }
+  }
+]

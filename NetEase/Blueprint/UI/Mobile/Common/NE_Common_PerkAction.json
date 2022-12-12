@@ -1,0 +1,4851 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_Common_PerkAction_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_Common_PerkAction_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.157"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Button",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CanvasPerk",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CanvasUnLock",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class VerticalBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HighlightPicture",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HighlightPicture_2",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HighlightWidget",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "IconWidgetSwitcher",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetSwitcher",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageCanBeClickable",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageEventBorder",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageExtraIndicator2",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageExtraIndicator3",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageGradient",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageHighlight",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageIcon",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageLeft",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageLockIcon",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImagePaint",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImagePaintBottom",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImagePainttop",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImagePerkBG",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageRarityBG",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageRight",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageShadow",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageTop",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "itemBG1",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "itemBG1Switcher",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetSwitcher",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "itemBG2Frame",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetSwitcher",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "itemNum",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LockedButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MysteryBoxRarityBackground",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SelectedSquareCanvas",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TextUnlockLevel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TextUnlockLevelTitle",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_Common_PerkAction_C Default__NE_Common_PerkAction_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.1"
+    }
+  },
+  {
+    "Type": "NE_Common_PerkAction_C",
+    "Name": "Default__NE_Common_PerkAction_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 262.0,
+            "Y": 291.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 262.0,
+            "Y": 291.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 262.0,
+            "Y": 291.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Offering_Interactable",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Offering_Interactable.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.25"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "LockedButton",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 32.0,
+            "Y": 32.0
+          },
+          "Margin": {
+            "Left": 0.25,
+            "Top": 0.25,
+            "Right": 0.25,
+            "Bottom": 0.25
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png",
+          "DrawAs": "ESlateBrushDrawType::Box",
+          "ImageType": "ESlateBrushImageType::FullColor"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.LockedCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.44"
+      },
+      "RenderTransform": {
+        "Angle": 45.0
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 262.0,
+            "Y": 291.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 262.0,
+            "Y": 291.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 262.0,
+            "Y": 291.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Loadout_Offering_Interactable",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Offering_Interactable.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.53"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "LockedButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Disabled": {
+          "ImageSize": {
+            "X": 32.0,
+            "Y": 32.0
+          },
+          "Margin": {
+            "Left": 0.25,
+            "Top": 0.25,
+            "Right": 0.25,
+            "Bottom": 0.25
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png",
+          "DrawAs": "ESlateBrushDrawType::Box",
+          "ImageType": "ESlateBrushImageType::FullColor"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LockedCanvas.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.72"
+      },
+      "RenderTransform": {
+        "Angle": 45.0
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasItem",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasItem.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasItem.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasItem.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot NE_Common_PerkAction_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.123"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.25"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPerk",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_15",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.36"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.37"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasItem.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.22"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "HighlightWidget",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.HighlightWidget.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.HighlightWidget.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.149"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "itemBG1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.itemBG1.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.itemBG1Switcher.WidgetSwitcherSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.146"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LockedCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.LockedCanvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.42"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.LockedCanvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.43"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.LockedCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.44"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.150"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SelectedSquareCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.45"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.47"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.46"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.26"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasItem",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasItem.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.50"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasItem.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.48"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasItem.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.49"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.125"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.56"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.51"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.52"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.57"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.55"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.54"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.53"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPerk",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.60"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_15",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.63"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.62"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.61"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.58"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.59"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.64"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.65"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.66"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasItem.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.50"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "HighlightWidget",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.HighlightWidget.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.68"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.HighlightWidget.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.67"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.155"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "itemBG1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.69"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG1Switcher.WidgetSwitcherSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.152"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LockedCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LockedCanvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.70"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LockedCanvas.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.71"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LockedCanvas.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.72"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.156"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SelectedSquareCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.73"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.75"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.74"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.54"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 20.0,
+          "Top": 4.0,
+          "Right": -10.0,
+          "Bottom": 6.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.135343,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageShadow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.93"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImagePerkBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.90"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 200.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.7"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher NE_Common_PerkAction_C:WidgetTree.itemBG1Switcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.140"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0,
+          "Right": 10.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.7"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher NE_Common_PerkAction_C:WidgetTree.IconWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.139"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Top": 3.0,
+          "Right": 13.0,
+          "Bottom": -2.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.7"
+      },
+      "Content": {
+        "ObjectName": "Button NE_Common_PerkAction_C:WidgetTree.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 200.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.SelectedSquareCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -13.682533,
+          "Top": -20.539688,
+          "Right": 94.31747,
+          "Bottom": 27.460312
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "ZOrder": 5,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.7"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox NE_Common_PerkAction_C:WidgetTree.ScaleBox_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.120"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 200.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.7"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.MysteryBoxBackground3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.95"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": -1.5
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.7"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher NE_Common_PerkAction_C:WidgetTree.itemBG2Frame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.141"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageEventBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.79"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 90.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageExtraIndicator2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.80"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageRarityBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.91"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImagePainttop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.89"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImagePaintBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.88"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_15",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 15.0,
+          "Top": 13.857143,
+          "Right": 20.714287,
+          "Bottom": 35.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImagePaint",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.87"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 90.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageExtraIndicator3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.81"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageGradient",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.82"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0,
+          "Right": 10.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.84"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "HighlightWidget",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.9"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.HighlightPicture_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.77"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "HighlightWidget",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.9"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.HighlightPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.76"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "itemBG1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.itemBG1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.10"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.MysteryBoxRarityBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.96"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "LockedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -2.5,
+          "Top": -4.0,
+          "Right": 117.0,
+          "Bottom": 110.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.11"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox NE_Common_PerkAction_C:WidgetTree.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.133"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "LockedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -2.788283,
+          "Top": -3.0,
+          "Right": 103.0,
+          "Bottom": 109.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.11"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageLockIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.86"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "LockedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 25.0,
+          "Top": 40.0,
+          "Right": 33.0,
+          "Bottom": 34.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.11"
+      },
+      "Content": {
+        "ObjectName": "Button NE_Common_PerkAction_C:WidgetTree.LockedButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "SelectedSquareCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 4.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.SelectedSquareCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.12"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.94"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "SelectedSquareCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 18.0,
+          "Top": 48.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.SelectedSquareCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.12"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.92"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "SelectedSquareCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -19.222015,
+          "Top": 48.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.SelectedSquareCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.12"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.85"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 20.0,
+          "Top": 4.0,
+          "Right": -10.0,
+          "Bottom": 6.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.135343,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageShadow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.114"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePerkBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.111"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasItem",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.13"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 200.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.14"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG1Switcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.143"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0,
+          "Right": 10.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.14"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.IconWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.142"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Top": 3.0,
+          "Right": 13.0,
+          "Bottom": -2.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.14"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 200.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.14"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectedSquareCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -13.682533,
+          "Top": -20.539688,
+          "Right": 94.31747,
+          "Bottom": 27.460312
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "ZOrder": 5,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.14"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.122"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 200.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.14"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MysteryBoxBackground3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.116"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": -1.5
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.14"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.144"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageEventBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.100"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 90.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageExtraIndicator2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.101"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageRarityBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.112"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePainttop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.110"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePaintBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.109"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_15",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 15.0,
+          "Top": 13.857143,
+          "Right": 20.714287,
+          "Bottom": 35.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePaint",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.108"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 90.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageExtraIndicator3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.102"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageGradient",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.103"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPerk",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Top": 10.0,
+          "Right": 10.0,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.105"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "HighlightWidget",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.HighlightPicture_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.98"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "HighlightWidget",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.HighlightPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.97"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "itemBG1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.17"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MysteryBoxRarityBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.117"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "LockedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -2.5,
+          "Top": -4.0,
+          "Right": 117.0,
+          "Bottom": 110.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.18"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.134"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "LockedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -2.788283,
+          "Top": -3.0,
+          "Right": 103.0,
+          "Bottom": 109.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.18"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageLockIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.107"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "LockedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 25.0,
+          "Top": 40.0,
+          "Right": 33.0,
+          "Bottom": 34.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.18"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.LockedButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "SelectedSquareCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 4.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectedSquareCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.115"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "SelectedSquareCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 18.0,
+          "Top": 48.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectedSquareCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.113"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "SelectedSquareCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -19.222015,
+          "Top": 48.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectedSquareCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.106"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HighlightPicture",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 253.0,
+          "Y": 254.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D ATL_OB_Highlight_Perk",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/OnBoarding/ATL_OB_Highlight_Perk.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.HighlightWidget.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.40"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HighlightPicture_2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 253.0,
+          "Y": 254.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D ATL_OB_Highlight_Perk",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/OnBoarding/ATL_OB_Highlight_Perk.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.HighlightWidget.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.39"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageCanBeClickable",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 153.0,
+          "Y": 153.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Hud_BTN2_Up",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Atl_Hud_BTN2_Up.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.148"
+      },
+      "RenderTransform": {
+        "Angle": 45.0
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageEventBorder",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 249.0,
+          "Y": 251.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_eventBorder",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_eventBorder.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.30"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageExtraIndicator2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D hud_buffDebuffIndicator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/hud_buffDebuffIndicator.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.31"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageExtraIndicator3",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D hud_buffDebuffIndicator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/hud_buffDebuffIndicator.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.36"
+      },
+      "RenderTransform": {
+        "Angle": 180.0
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageGradient",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_dark",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_dark.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.37"
+      },
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageHighlight",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 153.0,
+          "Y": 152.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Hud_BTN2_FX01",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Atl_Hud_BTN2_FX01.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.147"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        },
+        "Angle": 45.0
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageIcon",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D iconPerks_adrenaline",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Perks/iconPerks_adrenaline.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.38"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageLeft",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 82.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Offering",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Offering.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.47"
+      },
+      "RenderTransform": {
+        "Angle": -120.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageLockIcon",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 103.0,
+          "Y": 109.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Ico_Lock",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Ico_Lock.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.6,
+        "Hex": "99000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.LockedCanvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.43"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.4,
+          "Y": 0.4
+        }
+      },
+      "RenderTransformPivot": {
+        "X": 0.5,
+        "Y": 1.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePaint",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 210.0,
+          "Y": 191.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_paintTint",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_paintTint.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_15",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.35"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePaintBottom",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_paintTint_bottom",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_paintTint_bottom.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.34"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePainttop",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_paintTint_top",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_paintTint_top.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.33"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePerkBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_background",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_background.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasItem.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.21"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRarityBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_tint",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_tint.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPerk.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.32"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRight",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 82.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Offering",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Offering.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.46"
+      },
+      "RenderTransform": {
+        "Angle": 120.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageShadow",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 182.0,
+          "Y": 181.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Perk_Empty",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Perk_Empty.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasItem.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.20"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": -20.0,
+          "Y": 15.0
+        }
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageTop",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 82.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Offering",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Offering.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.45"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "MysteryBoxBackground3",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_background",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_background.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.28"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "MysteryBoxRarityBackground",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 182.0,
+          "Y": 181.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Perk_Full",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Perk_Full.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.itemBG1.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.41"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HighlightPicture",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 253.0,
+          "Y": 254.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D ATL_OB_Highlight_Perk",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/OnBoarding/ATL_OB_Highlight_Perk.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.HighlightWidget.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.68"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HighlightPicture_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 253.0,
+          "Y": 254.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D ATL_OB_Highlight_Perk",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/OnBoarding/ATL_OB_Highlight_Perk.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.HighlightWidget.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.67"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageCanBeClickable",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 153.0,
+          "Y": 153.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Hud_BTN2_Up",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Atl_Hud_BTN2_Up.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.154"
+      },
+      "RenderTransform": {
+        "Angle": 45.0
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageEventBorder",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 249.0,
+          "Y": 251.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_eventBorder",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_eventBorder.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.58"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageExtraIndicator2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D hud_buffDebuffIndicator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/hud_buffDebuffIndicator.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.59"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageExtraIndicator3",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D hud_buffDebuffIndicator",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/hud_buffDebuffIndicator.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.64"
+      },
+      "RenderTransform": {
+        "Angle": 180.0
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageGradient",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_dark",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_dark.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.65"
+      },
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageHighlight",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 153.0,
+          "Y": 152.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Hud_BTN2_FX01",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Atl_Hud_BTN2_FX01.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.153"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.9,
+          "Y": 0.9
+        },
+        "Angle": 45.0
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D iconPerks_adrenaline",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/Perks/iconPerks_adrenaline.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.66"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageLeft",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 82.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Offering",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Offering.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.75"
+      },
+      "RenderTransform": {
+        "Angle": -120.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageLockIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 103.0,
+          "Y": 109.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Ico_Lock",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Ico_Lock.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.6,
+        "Hex": "99000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LockedCanvas.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.71"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.4,
+          "Y": 0.4
+        }
+      },
+      "RenderTransformPivot": {
+        "X": 0.5,
+        "Y": 1.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePaint",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 210.0,
+          "Y": 191.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_paintTint",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_paintTint.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_15",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.63"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePaintBottom",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_paintTint_bottom",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_paintTint_bottom.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.62"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePainttop",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_paintTint_top",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_paintTint_top.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.61"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImagePerkBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_background",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_background.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasItem.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.49"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRarityBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_tint",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_tint.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPerk.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.60"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRight",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 82.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Offering",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Offering.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.74"
+      },
+      "RenderTransform": {
+        "Angle": 120.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageShadow",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 182.0,
+          "Y": 181.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Perk_Empty",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Perk_Empty.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasItem.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.48"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": -20.0,
+          "Y": 15.0
+        }
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageTop",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 82.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Offering",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Offering.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.73"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "MysteryBoxBackground3",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D perks_background",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Perk/perks_background.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.56"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "MysteryBoxRarityBackground",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 182.0,
+          "Y": 181.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Perk_Full",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Perk_Full.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.69"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "NE_Common_PerkAction_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_Common_PerkAction_C",
+    "Properties": {
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.4"
+      },
+      "CanvasPerk": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPerk",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.15"
+      },
+      "CanvasUnLock": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.134"
+      },
+      "HighlightPicture": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.HighlightPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.97"
+      },
+      "HighlightPicture_2": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.HighlightPicture_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.98"
+      },
+      "HighlightWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.16"
+      },
+      "IconWidgetSwitcher": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.IconWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.142"
+      },
+      "ImageCanBeClickable": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageCanBeClickable",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.99"
+      },
+      "ImageEventBorder": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageEventBorder",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.100"
+      },
+      "ImageExtraIndicator2": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageExtraIndicator2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.101"
+      },
+      "ImageExtraIndicator3": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageExtraIndicator3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.102"
+      },
+      "ImageGradient": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageGradient",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.103"
+      },
+      "ImageHighlight": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.104"
+      },
+      "ImageIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.105"
+      },
+      "ImageLeft": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.106"
+      },
+      "ImageLockIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageLockIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.107"
+      },
+      "ImagePaint": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePaint",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.108"
+      },
+      "ImagePaintBottom": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePaintBottom",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.109"
+      },
+      "ImagePainttop": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePainttop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.110"
+      },
+      "ImagePerkBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePerkBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.111"
+      },
+      "ImageRarityBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageRarityBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.112"
+      },
+      "ImageRight": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.113"
+      },
+      "ImageShadow": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageShadow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.114"
+      },
+      "ImageTop": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageTop",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.115"
+      },
+      "itemBG1": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.17"
+      },
+      "itemBG1Switcher": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG1Switcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.143"
+      },
+      "itemBG2Frame": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.144"
+      },
+      "itemNum": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.itemNum",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.130"
+      },
+      "LockedButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.LockedButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.5"
+      },
+      "MysteryBoxRarityBackground": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MysteryBoxRarityBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.117"
+      },
+      "SelectedSquareCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectedSquareCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.19"
+      },
+      "TextUnlockLevel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextUnlockLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.131"
+      },
+      "TextUnlockLevelTitle": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextUnlockLevelTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.132"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.158"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Stretch": "EStretch::Fill",
+      "StretchDirection": "EStretchDirection::DownOnly",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot NE_Common_PerkAction_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.123"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.IconWidgetSwitcher.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.145"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Stretch": "EStretch::Fill",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot NE_Common_PerkAction_C:WidgetTree.ScaleBox_2.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.124"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.27"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Stretch": "EStretch::Fill",
+      "StretchDirection": "EStretchDirection::DownOnly",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.125"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.IconWidgetSwitcher.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.151"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Stretch": "EStretch::Fill",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_2.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.126"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.55"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_1",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox NE_Common_PerkAction_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.119"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.6"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_2",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox NE_Common_PerkAction_C:WidgetTree.ScaleBox_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.120"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_Common_PerkAction_C:WidgetTree.itemNum",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.127"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_1",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.121"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.13"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_2",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.122"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.itemNum",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.130"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "itemNum",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "1111"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 2
+        },
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot NE_Common_PerkAction_C:WidgetTree.ScaleBox_2.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.124"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextUnlockLevel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "77E440EA4174AEF59C5830A5FF8E9B18",
+        "SourceString": "15"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF000000"
+        }
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1
+        },
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_Common_PerkAction_C:WidgetTree.CanvasUnLock.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.136"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextUnlockLevelTitle",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "Messages",
+        "Key": "AED9FDA14A56C0B942374B9F71253921",
+        "SourceString": "LEVEL"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF000000"
+        }
+      },
+      "Font": {
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_Common_PerkAction_C:WidgetTree.CanvasUnLock.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.135"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "itemNum",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "1111"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 2
+        },
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_2.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.126"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextUnlockLevel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "77E440EA4174AEF59C5830A5FF8E9B18",
+        "SourceString": "15"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF000000"
+        }
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1
+        },
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.CanvasUnLock.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.138"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextUnlockLevelTitle",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "Messages",
+        "Key": "AED9FDA14A56C0B942374B9F71253921",
+        "SourceString": "LEVEL"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF000000"
+        }
+      },
+      "Font": {
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.CanvasUnLock.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.137"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "CanvasUnLock",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot NE_Common_PerkAction_C:WidgetTree.CanvasUnLock.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.135"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot NE_Common_PerkAction_C:WidgetTree.CanvasUnLock.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.136"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.LockedCanvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.42"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.6
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "CanvasUnLock",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.CanvasUnLock.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.137"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.CanvasUnLock.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.138"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LockedCanvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.70"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.6
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "CanvasUnLock",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox NE_Common_PerkAction_C:WidgetTree.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.133"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_Common_PerkAction_C:WidgetTree.TextUnlockLevelTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.129"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "CanvasUnLock",
+    "Properties": {
+      "Padding": {
+        "Top": -5.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox NE_Common_PerkAction_C:WidgetTree.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.133"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_Common_PerkAction_C:WidgetTree.TextUnlockLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.128"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "CanvasUnLock",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.134"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextUnlockLevelTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.132"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "CanvasUnLock",
+    "Properties": {
+      "Padding": {
+        "Top": -5.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.CanvasUnLock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.134"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextUnlockLevel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.131"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "IconWidgetSwitcher",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.IconWidgetSwitcher.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.145"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.24"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "itemBG1Switcher",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.itemBG1Switcher.WidgetSwitcherSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.146"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.23"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "itemBG2Frame",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.147"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.148"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.149"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_Common_PerkAction_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.150"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.29"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "IconWidgetSwitcher",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.IconWidgetSwitcher.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.151"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.52"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "itemBG1Switcher",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG1Switcher.WidgetSwitcherSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.152"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.51"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "itemBG2Frame",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.153"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.154"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.155"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.156"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.57"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "IconWidgetSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_Common_PerkAction_C:WidgetTree.IconWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.139"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox NE_Common_PerkAction_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.119"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "itemBG1Switcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_Common_PerkAction_C:WidgetTree.itemBG1Switcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.140"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.itemBG1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.10"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "itemBG2Frame",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_Common_PerkAction_C:WidgetTree.itemBG2Frame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.141"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.83"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "itemBG2Frame",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_Common_PerkAction_C:WidgetTree.itemBG2Frame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.141"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_PerkAction_C:WidgetTree.ImageCanBeClickable",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.78"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_4",
+    "Outer": "itemBG2Frame",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_Common_PerkAction_C:WidgetTree.itemBG2Frame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.141"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_5",
+    "Outer": "itemBG2Frame",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_Common_PerkAction_C:WidgetTree.itemBG2Frame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.141"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "IconWidgetSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.IconWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.142"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.121"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "itemBG1Switcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG1Switcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.143"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.17"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "itemBG2Frame",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.144"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.104"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "itemBG2Frame",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.144"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageCanBeClickable",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.99"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_4",
+    "Outer": "itemBG2Frame",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.144"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.HighlightWidget",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.16"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_5",
+    "Outer": "itemBG2Frame",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.144"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LockedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.18"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_Common_PerkAction_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_Common_PerkAction_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_PerkAction.14"
+      }
+    }
+  }
+]

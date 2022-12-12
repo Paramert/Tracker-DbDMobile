@@ -1,0 +1,2575 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SendQuickMsg__DelegateSignature",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "MsgId",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 202506240
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Survivor_QuickPop_NE",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": 1,
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function Survivor_QuickPopButton_NE_C:ShowQuickList__DelegateSignature",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPopButton_NE.0"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": 1,
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function Survivor_QuickPopButton_NE_C:HideQuickList__DelegateSignature",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPopButton_NE.1"
+        }
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "HideQuickMessageList",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "ShowQuickMessageList",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "SuperStruct": {
+      "ObjectName": "Function UserWidget:Construct",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": 134350856
+  },
+  {
+    "Type": "Function",
+    "Name": "ShowMessageList",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "isShow",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class UMGSequencePlayer",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class UMGSequencePlayer",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "RefreshQuickChatUI",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "IdList",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134218132,
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "IdList",
+          "Flags": 1,
+          "ElementSize": 16
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "MsgList",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134218132,
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "MsgList",
+          "Flags": 1,
+          "ElementSize": 16
+        }
+      }
+    ],
+    "FunctionFlags": 205651968
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayAnimAtEndTime",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Animation",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetEndTime_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class UMGSequencePlayer",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "On Send Quick Message",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "MsgId",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Survivor_QuickPop_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree Survivor_QuickPop_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.86"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation Survivor_QuickPop_NE_C:MessageBoxIn_INST",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.81"
+        },
+        {
+          "ObjectName": "WidgetAnimation Survivor_QuickPop_NE_C:MessageBoxOut_INST",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.82"
+        }
+      ],
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.WidgetArchetype",
+        "SubPathString": ""
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:ExecuteUbergraph_Survivor_QuickPop_NE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:On Send Quick Message",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.8"
+      },
+      {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:PlayAnimAtEndTime",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.7"
+      },
+      {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:RefreshQuickChatUI",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.6"
+      },
+      {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:ShowMessageList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.5"
+      },
+      {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:Construct",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.4"
+      },
+      {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:ShowQuickMessageList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.3"
+      },
+      {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:HideQuickMessageList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.2"
+      },
+      {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:ExecuteUbergraph_Survivor_QuickPop_NE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.1"
+      },
+      {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:SendQuickMsg__DelegateSignature",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MessageBoxOut",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2147491860,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MessageBoxIn",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2147491860,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MessageList",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass Survivor_MessageList_NE_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_MessageList_NE.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "QuickPopButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass Survivor_QuickPopButton_NE_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPopButton_NE.11"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "SendQuickMsg",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 17592454545413,
+        "SignatureFunction": {
+          "ObjectName": "Function Survivor_QuickPop_NE_C:SendQuickMsg__DelegateSignature",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SendQuickMsg__DelegateSignature": {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:SendQuickMsg__DelegateSignature",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.0"
+      },
+      "ExecuteUbergraph_Survivor_QuickPop_NE": {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:ExecuteUbergraph_Survivor_QuickPop_NE",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.1"
+      },
+      "HideQuickMessageList": {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:HideQuickMessageList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.2"
+      },
+      "ShowQuickMessageList": {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:ShowQuickMessageList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.3"
+      },
+      "Construct": {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:Construct",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.4"
+      },
+      "ShowMessageList": {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:ShowMessageList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.5"
+      },
+      "RefreshQuickChatUI": {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:RefreshQuickChatUI",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.6"
+      },
+      "PlayAnimAtEndTime": {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:PlayAnimAtEndTime",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.7"
+      },
+      "On Send Quick Message": {
+        "ObjectName": "Function Survivor_QuickPop_NE_C:On Send Quick Message",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.8"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Survivor_QuickPop_NE_C Default__Survivor_QuickPop_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.10"
+    }
+  },
+  {
+    "Type": "Survivor_QuickPop_NE_C",
+    "Name": "Default__Survivor_QuickPop_NE_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "MessageButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Hovered": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Pressed": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.29"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "QuckButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Hovered": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Pressed": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_39",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Survivor_QuickPop_NE_C:WidgetTree.CanvasPanel_39.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot Survivor_QuickPop_NE_C:WidgetTree.CanvasPanel_39.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_39",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_39.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_39.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.22"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_37",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_13",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.25"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_133",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.29"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.31"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_135",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.37"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.36"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "HightLight",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.HightLight.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.38"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.HightLight.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.33"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_39",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -10.0,
+          "Right": 392.0,
+          "Bottom": 624.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Survivor_QuickPop_NE_C:WidgetTree.CanvasPanel_39",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.13"
+      },
+      "Content": {
+        "ObjectName": "Survivor_MessageList_NE_C Survivor_QuickPop_NE_C:WidgetTree.MessageList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.70"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_39",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -6.0,
+          "Right": 126.0,
+          "Bottom": 125.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Survivor_QuickPop_NE_C:WidgetTree.CanvasPanel_39",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.13"
+      },
+      "Content": {
+        "ObjectName": "Survivor_QuickPopButton_NE_C Survivor_QuickPop_NE_C:WidgetTree.QuickPopButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.74"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_39",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -10.0,
+          "Right": 392.0,
+          "Bottom": 624.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_39",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.14"
+      },
+      "Content": {
+        "ObjectName": "Survivor_MessageList_NE_C WidgetArchetype:WidgetTree_0.MessageList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.71"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_39",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -6.0,
+          "Right": 126.0,
+          "Bottom": 125.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_39",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.14"
+      },
+      "Content": {
+        "ObjectName": "Survivor_QuickPopButton_NE_C WidgetArchetype:WidgetTree_0.QuickPopButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.75"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_37",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 392.0,
+          "Bottom": 624.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "CanvasPanel_37",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 392.0,
+          "Bottom": 624.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.15"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.79"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_37",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": -42.0,
+          "Right": 356.0,
+          "Bottom": 284.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.15"
+      },
+      "Content": {
+        "ObjectName": "Survivor_MessageList_NENoneitem_C WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.72"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_133",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.16"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.SizeBox_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.67"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_133",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 304.2,
+          "Bottom": 2.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_133",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 104.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.MessageButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.17"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0.Logo",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 532.0,
+          "Bottom": 46.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "ZOrder": 1,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.17"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0.NoneitemText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.77"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_135",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Top": 12.0,
+          "Bottom": 100.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.18"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CDMask",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_135",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 126.0,
+          "Bottom": 125.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.18"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.HightLight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_135",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.18"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CDTime",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.78"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_135",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Top": 12.0,
+          "Right": 98.0,
+          "Bottom": 97.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.18"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.QuickDefault",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_135",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.18"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.QuckButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_135",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 27.0,
+          "Top": 24.0,
+          "Right": 76.0,
+          "Bottom": 72.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.18"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.WidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.83"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "HightLight",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 126.0,
+          "Bottom": 125.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.HightLight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.QuickHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "HightLight",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 128.0,
+          "Bottom": 120.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.HightLight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.HightlightBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.44"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 392.0,
+          "Y": 624.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Survivor_QuickPop_NE",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/HUDEditor/Frames/Survivor_QuickPop_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.24"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 676.0,
+          "Y": 2.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.28"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Logo",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 488.0,
+          "Y": 340.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D LobbyChat_NoneLogo_NE1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/LobbyChat_NoneLogo_NE1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.30"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CDMask",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 90.0,
+          "Y": 90.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant MI_Survivor_QuickPopButton_NE",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Material/MI_Survivor_QuickPopButton_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.32"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HightlightBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 120.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Survivor_MessageButtonBG_NE",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/HUDEditor/Frames/Survivor_MessageButtonBG_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.HightLight.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.39"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "QucikClose",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 104.0,
+          "Y": 100.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Survivor_MessageClose_NE",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/HUDEditor/Frames/Survivor_MessageClose_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.WidgetSwitcher.WidgetSwitcherSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.84"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "QucikIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 44.0,
+          "Y": 44.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Survivor_MessageIcon_NE",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/HUDEditor/Frames/Survivor_MessageIcon_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.WidgetSwitcher.WidgetSwitcherSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.85"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "QuickDefault",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 190.0,
+          "Y": 194.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Hud_BTN_Small_Up",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/HUDEditor/Frames/Atl_Hud_BTN_Small_Up.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.35"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "QuickHighlight",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 209.0,
+          "Y": 208.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Hud_Pad_UP",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/HUDEditor/Frames/Atl_Hud_Pad_UP.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.HightLight.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.38"
+      }
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "MessageBoxIn",
+    "Outer": "MessageBoxIn_INST",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "7761835C-481CCE9C-DD396892-2E73BE9C",
+          "Name": "MessageList",
+          "PossessedObjectClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass Survivor_MessageList_NE_C",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_MessageList_NE.1"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "7761835C-481CCE9C-DD396892-2E73BE9C",
+          "BindingName": "MessageList",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack Survivor_QuickPop_NE_C:MessageBoxIn_INST.MessageBoxIn.MovieScene2DTransformTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.53"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack Survivor_QuickPop_NE_C:MessageBoxIn_INST.MessageBoxIn.MovieSceneFloatTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.65"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 18001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "91BDB864-4A0AF70C-8AC0F19A-F99A65F4"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "MessageBoxOut",
+    "Outer": "MessageBoxOut_INST",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "AE604626-42EFCC75-DC264FAE-78AE92D0",
+          "Name": "MessageList",
+          "PossessedObjectClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass Survivor_MessageList_NE_C",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_MessageList_NE.1"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "AE604626-42EFCC75-DC264FAE-78AE92D0",
+          "BindingName": "MessageList",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack Survivor_QuickPop_NE_C:MessageBoxOut_INST.MessageBoxOut.MovieScene2DTransformTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.54"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack Survivor_QuickPop_NE_C:MessageBoxOut_INST.MessageBoxOut.MovieSceneFloatTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.66"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 18001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "D61473F7-4E76DD5B-8C0BACB6-A365B252"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Properties": {
+      "Translation": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction Survivor_QuickPop_NE_C:MessageBoxIn_INST.MessageBoxIn.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.55"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction Survivor_QuickPop_NE_C:MessageBoxIn_INST.MessageBoxIn.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.56"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 18000
+            }
+          }
+        }
+      },
+      "Signature": "EE39C057-40A6CA9C-ACA2FD99-C73CC101"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Properties": {
+      "Translation": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction Survivor_QuickPop_NE_C:MessageBoxOut_INST.MessageBoxOut.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.59"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction Survivor_QuickPop_NE_C:MessageBoxOut_INST.MessageBoxOut.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.60"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 18000
+            }
+          }
+        }
+      },
+      "Signature": "62FFCC9F-4D18AFF5-3D725198-7594EBA7"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "MessageBoxIn",
+    "Properties": {
+      "PropertyName": "RenderTransform",
+      "PropertyPath": "RenderTransform",
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection Survivor_QuickPop_NE_C:MessageBoxIn_INST.MessageBoxIn.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.51"
+        }
+      ],
+      "Signature": "B568BF73-4BF5E6D4-50DA3890-340C6972"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "MessageBoxOut",
+    "Properties": {
+      "PropertyName": "RenderTransform",
+      "PropertyPath": "RenderTransform",
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection Survivor_QuickPop_NE_C:MessageBoxOut_INST.MessageBoxOut.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.52"
+        }
+      ],
+      "Signature": "D120FACC-445FB858-6BF717B4-26658AAF"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Properties": {
+      "FloatCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction Survivor_QuickPop_NE_C:MessageBoxIn_INST.MessageBoxIn.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.57"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction Survivor_QuickPop_NE_C:MessageBoxIn_INST.MessageBoxIn.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.58"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 18000
+            }
+          }
+        }
+      },
+      "Signature": "1A78E08C-43CDA68E-B0F7A68A-D6E75309"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Properties": {
+      "FloatCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction Survivor_QuickPop_NE_C:MessageBoxOut_INST.MessageBoxOut.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.61"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction Survivor_QuickPop_NE_C:MessageBoxOut_INST.MessageBoxOut.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.62"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 18000
+            }
+          }
+        }
+      },
+      "Signature": "BAE4E38B-419FB3C3-4A0389B4-A8B07BAE"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "MessageBoxIn",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection Survivor_QuickPop_NE_C:MessageBoxIn_INST.MessageBoxIn.MovieSceneFloatTrack_0.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.63"
+        }
+      ],
+      "Signature": "7E7AFDC6-458788F6-5681E483-1F808E16"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "MessageBoxOut",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection Survivor_QuickPop_NE_C:MessageBoxOut_INST.MessageBoxOut.MovieSceneFloatTrack_0.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.64"
+        }
+      ],
+      "Signature": "E82F1039-450BACCE-4322D197-37BCA95C"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_133",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "MaxDesiredWidth": 400.0,
+      "MaxDesiredHeight": 62.0,
+      "bOverride_MaxDesiredWidth": true,
+      "bOverride_MaxDesiredHeight": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.SizeBox_133.SizeBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.68"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.27"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_1",
+    "Outer": "SizeBox_133",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.SizeBox_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.67"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.MessageText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.76"
+      }
+    }
+  },
+  {
+    "Type": "Survivor_MessageItem_NE_C",
+    "Name": "MessageItem",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__Survivor_MessageItem_NE_C",
+    "Properties": {
+      "Line": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.41"
+      },
+      "MessageButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.MessageButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.11"
+      },
+      "MessageText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.MessageText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.76"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.89"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageBox.VerticalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.80"
+      }
+    }
+  },
+  {
+    "Type": "Survivor_MessageList_NE_C",
+    "Name": "MessageList",
+    "Outer": "WidgetTree",
+    "Template": "Default__Survivor_MessageList_NE_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Survivor_QuickPop_NE_C:WidgetTree.CanvasPanel_39.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.20"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Survivor_MessageList_NE_C",
+    "Name": "MessageList",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__Survivor_MessageList_NE_C",
+    "Properties": {
+      "BG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.40"
+      },
+      "MessageBox": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.79"
+      },
+      "MessageItem": {
+        "ObjectName": "Survivor_MessageItem_NE_C WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.69"
+      },
+      "Noneitem": {
+        "ObjectName": "Survivor_MessageList_NENoneitem_C WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.72"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.88"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_39.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.22"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Survivor_MessageList_NENoneitem_C",
+    "Name": "Noneitem",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__Survivor_MessageList_NENoneitem_C",
+    "Properties": {
+      "Logo": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0.Logo",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.42"
+      },
+      "NoneitemText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0.NoneitemText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.77"
+      },
+      "Text": {
+        "Namespace": "",
+        "Key": "DE9425DB49B5F479C0A56B95C3437351",
+        "SourceString": "No quick messages"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.90"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.26"
+      }
+    }
+  },
+  {
+    "Type": "Survivor_QuickPop_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__Survivor_QuickPop_NE_C",
+    "Properties": {
+      "MessageList": {
+        "ObjectName": "Survivor_MessageList_NE_C WidgetArchetype:WidgetTree_0.MessageList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.71"
+      },
+      "QuickPopButton": {
+        "ObjectName": "Survivor_QuickPopButton_NE_C WidgetArchetype:WidgetTree_0.QuickPopButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.75"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.87"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "Survivor_QuickPopButton_NE_C",
+    "Name": "QuickPopButton",
+    "Outer": "WidgetTree",
+    "Template": "Default__Survivor_QuickPopButton_NE_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Survivor_QuickPop_NE_C:WidgetTree.CanvasPanel_39.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.21"
+      }
+    }
+  },
+  {
+    "Type": "Survivor_QuickPopButton_NE_C",
+    "Name": "QuickPopButton",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__Survivor_QuickPopButton_NE_C",
+    "Properties": {
+      "CDMask": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CDMask",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.43"
+      },
+      "CDTime": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CDTime",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.78"
+      },
+      "HightLight": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.HightLight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.19"
+      },
+      "HightlightBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.HightlightBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.44"
+      },
+      "QucikClose": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.QucikClose",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.45"
+      },
+      "QucikIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.QucikIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.46"
+      },
+      "QuckButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.QuckButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.12"
+      },
+      "QuickDefault": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.QuickDefault",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.47"
+      },
+      "QuickHighlight": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.QuickHighlight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.48"
+      },
+      "WidgetSwitcher": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.WidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.83"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.91"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_39.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.23"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "MessageText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "7C10C1BA46C59D2C5EE56E96FE0D7273",
+        "SourceString": "STOP THE REPAIRS,ILL SAVE PEOPLE!"
+      },
+      "Font": {
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Center",
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 380.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.SizeBox_133.SizeBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.68"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NoneitemText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "E70678274B0F57C03FD122B62CC08EE7",
+        "SourceString": "No chat history."
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.65,
+          "Hex": "A6FFFFFF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular"
+      },
+      "Justification": "ETextJustify::Center",
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 380.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.31"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "CDTime",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "78F28B544C25F63F016ABD83190A9A1C",
+        "SourceString": "@#5"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 32
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.34"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "MessageBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageBox.VerticalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.80"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.CanvasPanel_37.CanvasPanelSlot_13",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.25"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "MessageBox",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.79"
+      },
+      "Content": {
+        "ObjectName": "Survivor_MessageItem_NE_C WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.69"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "MessageBoxIn_INST",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene Survivor_QuickPop_NE_C:MessageBoxIn_INST.MessageBoxIn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.49"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "MessageList",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "7761835C-481CCE9C-DD396892-2E73BE9C",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "MessageBoxIn",
+      "PrecompiledEvaluationTemplate": {
+        "Tracks": null,
+        "EvaluationField": {
+          "Ranges": [
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 18001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 18001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            }
+          ],
+          "Groups": [
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 2
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            }
+          ],
+          "MetaData": [
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            }
+          ]
+        },
+        "SequenceSignature": "98CB8671-41366AC2-75C27885-31BAA3AA",
+        "TemplateSerialNumber": {
+          "Value": 1
+        },
+        "TemplateLedger": {
+          "LastTrackIdentifier": {
+            "Value": 1
+          },
+          "TrackSignatureToTrackIdentifier": null
+        },
+        "TrackFieldData": null
+      },
+      "Signature": "98CB8671-41366AC2-75C27885-31BAA3AA"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "MessageBoxOut_INST",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene Survivor_QuickPop_NE_C:MessageBoxOut_INST.MessageBoxOut",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.50"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "MessageList",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "AE604626-42EFCC75-DC264FAE-78AE92D0",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "MessageBoxOut",
+      "PrecompiledEvaluationTemplate": {
+        "Tracks": null,
+        "EvaluationField": {
+          "Ranges": [
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 18001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 18001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            }
+          ],
+          "Groups": [
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 2
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            }
+          ],
+          "MetaData": [
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            }
+          ]
+        },
+        "SequenceSignature": "4E914746-4205D4FF-D228CF8E-6DA6ADFF",
+        "TemplateSerialNumber": {
+          "Value": 1
+        },
+        "TemplateLedger": {
+          "LastTrackIdentifier": {
+            "Value": 1
+          },
+          "TrackSignatureToTrackIdentifier": null
+        },
+        "TrackFieldData": null
+      },
+      "Signature": "4E914746-4205D4FF-D228CF8E-6DA6ADFF"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WidgetSwitcher",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.WidgetSwitcher.WidgetSwitcherSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.85"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.WidgetSwitcher.WidgetSwitcherSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.84"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.37"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "WidgetSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.WidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.83"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.QucikClose",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.45"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_4",
+    "Outer": "WidgetSwitcher",
+    "Properties": {
+      "Padding": {
+        "Right": 2.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.WidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.83"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.QucikIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.46"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Survivor_QuickPop_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel Survivor_QuickPop_NE_C:WidgetTree.CanvasPanel_39",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_39",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.14"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "MessageList",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.CanvasPanel_37",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.15"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "MessageItem",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.MessageItem.WidgetTree_0.CanvasPanel_133",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.16"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "Noneitem",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MessageList.WidgetTree_0.Noneitem.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.17"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "QuickPopButton",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.QuickPopButton.WidgetTree_0.CanvasPanel_135",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Survivor/QuickPopButton/Survivor_QuickPop_NE.18"
+      }
+    }
+  }
+]

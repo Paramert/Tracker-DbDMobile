@@ -1,0 +1,551 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Battlepase_Integral_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree Battlepase_Integral_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.21"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DenominatorText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NumeratorText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TierText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class UMGHtmlRichText",
+          "ObjectPath": "/Script/DeadByDaylight"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Battlepase_Integral_NE_C Default__Battlepase_Integral_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.1"
+    }
+  },
+  {
+    "Type": "Battlepase_Integral_NE_C",
+    "Name": "Default__Battlepase_Integral_NE_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Battlepase_Integral_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__Battlepase_Integral_NE_C",
+    "Properties": {
+      "DenominatorText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.DenominatorText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.17"
+      },
+      "NumeratorText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.NumeratorText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.18"
+      },
+      "TierText": {
+        "ObjectName": "UMGHtmlRichText WidgetArchetype:WidgetTree_0.TierText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.20"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.22"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_19",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Battlepase_Integral_NE_C:WidgetTree.CanvasPanel_19.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_19",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_19.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_19",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Battlepase_Integral_NE_C:WidgetTree.CanvasPanel_19",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.3"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox Battlepase_Integral_NE_C:WidgetTree.Integral",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_19",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_19",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.4"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.Integral",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.8"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "Integral",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot Battlepase_Integral_NE_C:WidgetTree.Integral.HorizontalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.11"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot Battlepase_Integral_NE_C:WidgetTree.Integral.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.9"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot Battlepase_Integral_NE_C:WidgetTree.Integral.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.10"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Battlepase_Integral_NE_C:WidgetTree.CanvasPanel_19.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.5"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "Integral",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.Integral.HorizontalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.14"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.Integral.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.12"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.Integral.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_19.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.6"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "Integral",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox Battlepase_Integral_NE_C:WidgetTree.Integral",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.7"
+      },
+      "Content": {
+        "ObjectName": "TextBlock Battlepase_Integral_NE_C:WidgetTree.NumeratorText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.16"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "Integral",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox Battlepase_Integral_NE_C:WidgetTree.Integral",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.7"
+      },
+      "Content": {
+        "ObjectName": "TextBlock Battlepase_Integral_NE_C:WidgetTree.DenominatorText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.15"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "Integral",
+    "Properties": {
+      "Padding": {
+        "Top": -8.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox Battlepase_Integral_NE_C:WidgetTree.Integral",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.7"
+      },
+      "Content": {
+        "ObjectName": "UMGHtmlRichText Battlepase_Integral_NE_C:WidgetTree.TierText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.19"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "Integral",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.Integral",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.8"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.NumeratorText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.18"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "Integral",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.Integral",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.8"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.DenominatorText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.17"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "Integral",
+    "Properties": {
+      "Padding": {
+        "Top": -8.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.Integral",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.8"
+      },
+      "Content": {
+        "ObjectName": "UMGHtmlRichText WidgetArchetype:WidgetTree_0.TierText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.20"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "DenominatorText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "3F88729F470CDA855B5D75AC3C98603B",
+        "SourceString": "/10000"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.580392,
+          "G": 0.6,
+          "B": 0.611765,
+          "A": 1.0,
+          "Hex": "FFC9CCCD"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 26
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Battlepase_Integral_NE_C:WidgetTree.Integral.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.10"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NumeratorText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "A2709A90461FB79455DF2AB31AFC356B",
+        "SourceString": "10000"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 26
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Battlepase_Integral_NE_C:WidgetTree.Integral.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.9"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "DenominatorText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "3F88729F470CDA855B5D75AC3C98603B",
+        "SourceString": "/10000"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.580392,
+          "G": 0.6,
+          "B": 0.611765,
+          "A": 1.0,
+          "Hex": "FFC9CCCD"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 26
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.Integral.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.13"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NumeratorText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "A2709A90461FB79455DF2AB31AFC356B",
+        "SourceString": "10000"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 26
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.Integral.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.12"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UMGHtmlRichText",
+    "Name": "TierText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "7926CB9642603A4CA57DCDB03D8AD91B",
+        "SourceString": "Weekly Experienc"
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable HtmlTextStyleDB",
+        "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/HtmlTextStyleDB.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "Class UMGHtmlTextDecorator",
+          "ObjectPath": "/Script/DeadByDaylight"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass BP_RichTextRewardDecorator_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/MainMenu/Inbox/BP_RichTextRewardDecorator.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass AtlantaRichImageDecorator_C",
+          "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/AtlantaRichImageDecorator.0"
+        }
+      ],
+      "DefaultTextStyleOverride": {
+        "Font": {
+          "Size": 23
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Battlepase_Integral_NE_C:WidgetTree.Integral.HorizontalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.11"
+      }
+    }
+  },
+  {
+    "Type": "UMGHtmlRichText",
+    "Name": "TierText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "7926CB9642603A4CA57DCDB03D8AD91B",
+        "SourceString": "Weekly Experienc"
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable HtmlTextStyleDB",
+        "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/HtmlTextStyleDB.0"
+      },
+      "DecoratorClasses": [
+        {
+          "ObjectName": "Class UMGHtmlTextDecorator",
+          "ObjectPath": "/Script/DeadByDaylight"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass BP_RichTextRewardDecorator_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/MainMenu/Inbox/BP_RichTextRewardDecorator.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass AtlantaRichImageDecorator_C",
+          "ObjectPath": "DeadByDaylight/Content/Data/Atlanta/AtlantaRichImageDecorator.0"
+        }
+      ],
+      "DefaultTextStyleOverride": {
+        "Font": {
+          "Size": 23
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.Integral.HorizontalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.14"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Battlepase_Integral_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel Battlepase_Integral_NE_C:WidgetTree.CanvasPanel_19",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.3"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_19",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/Mission/Battlepase_Integral_NE.4"
+      }
+    }
+  }
+]

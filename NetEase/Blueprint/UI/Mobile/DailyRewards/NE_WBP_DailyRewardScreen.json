@@ -1,0 +1,5038 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_DailyRewardScreen_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_DailyRewardScreen_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.179"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation NE_WBP_DailyRewardScreen_C:Transition_In_INST",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.178"
+        }
+      ],
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Transition_In",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2147491860,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BG",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BG2",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BGmark",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BottomSafeZonePadding",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class SafeZone",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ContinueButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass NE_WBP_ContinueButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_ContinueButton.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ContinueButtonPanel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DailyRewardWidgetsGrid",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass NE_WBP_DailyRewardGrid_C",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardGrid.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "dividerTimer",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "InboxBg_Image",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LeftSafeZonePadding",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class SafeZone",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RemainingTimeTextBlock",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RightSafeZonePadding",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class SafeZone",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpikesTextureBgLeft",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpikesTextureBgRight",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TextBlock_1",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TextBlock_2",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "timerBG",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TitleText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TopSafeZonePadding",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class SafeZone",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NormalColor",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "PropertyFlags": 5,
+        "Struct": {
+          "ObjectName": "ScriptStruct SlateColor",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "WarningColor",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "PropertyFlags": 5,
+        "Struct": {
+          "ObjectName": "ScriptStruct SlateColor",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_DailyRewardScreen_C Default__NE_WBP_DailyRewardScreen_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.1"
+    }
+  },
+  {
+    "Type": "NE_WBP_DailyRewardScreen_C",
+    "Name": "Default__NE_WBP_DailyRewardScreen_C",
+    "Properties": {
+      "NormalColor": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        },
+        "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+      },
+      "WarningColor": {
+        "SpecifiedColor": {
+          "R": 0.282353,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF910000"
+        },
+        "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.56"
+      },
+      "RenderTransform": {
+        "Angle": 180.0
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.25"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.29"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.SafeZone.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ContinueButtonPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.ContinueButtonPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.34"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.33"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "DescriptionPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.DescriptionPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.35"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SafeZone",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.SafeZone.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.36"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.174"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Timer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.Timer.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.39"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.Timer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.37"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.Timer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.TopPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TopPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.TopPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.TopPanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.41"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.TopPanel.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.42"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.43"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.45"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.44"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.49"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.51"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.47"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.46"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.50"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.52"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_14",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.48"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SafeZone.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.70"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.53"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.54"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.55"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.56"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.57"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.58"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.59"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ContinueButtonPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButtonPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.60"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.52"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_18",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.61"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.62"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.63"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.64"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.65"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.66"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.67"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.68"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LastDailyRewardWidgetPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.67"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Side_Layout_13_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.61"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Side_Layout_7_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.65"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Side_Layout_9_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.63"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "DescriptionPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DescriptionPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.69"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SafeZone",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SafeZone.CanvasPanelSlot_10",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.70"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.177"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Timer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.73"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.71"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.72"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TopPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.74"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TopPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TopPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.74"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TopPanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.75"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TopPanel.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.76"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.3"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_DailyRewardScreen_C:WidgetTree.BackgroundOverlay_Image",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.105"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "ZOrder": 7,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.3"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalSafeZoneContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.80"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.3"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.77"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.1
+          }
+        }
+      },
+      "ZOrder": 1,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.TopPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.4"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_DailyRewardScreen_C:WidgetTree.BGmark",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.108"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 500.0,
+          "Top": 244.0,
+          "Right": 967.7553,
+          "Bottom": 678.266
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.4"
+      },
+      "Content": {
+        "ObjectName": "NE_WBP_DailyRewardGrid_C NE_WBP_DailyRewardScreen_C:WidgetTree.DailyRewardWidgetsGrid",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.142"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.4"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_DailyRewardScreen_C:WidgetTree.BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.106"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 108.0,
+          "Right": 0.0,
+          "Bottom": 808.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.DescriptionPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.4"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_DailyRewardScreen_C:WidgetTree.BG2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.107"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -580.0,
+          "Top": -150.0,
+          "Right": 402.38306,
+          "Bottom": 98.00139
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.ContinueButtonPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ContinueButtonPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": -352.79904,
+          "Bottom": 98.00139
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.ContinueButtonPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.5"
+      },
+      "Content": {
+        "ObjectName": "NE_WBP_ContinueButton_C NE_WBP_DailyRewardScreen_C:WidgetTree.ContinueButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.140"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "DescriptionPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 162.0,
+          "Top": 30.0,
+          "Right": 115.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.DescriptionPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_DailyRewardScreen_C:WidgetTree.TextBlock_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.158"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "SafeZone",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 6.491119,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.021728
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.SafeZone",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Timer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 600.0,
+          "Top": -55.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.8"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.78"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Timer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1200.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "bAutoSize": true,
+      "ZOrder": 1,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.8"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.79"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "Timer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 100.0,
+          "Top": 28.0,
+          "Right": 820.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.8"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_DailyRewardScreen_C:WidgetTree.topDivider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.115"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "TopPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -1919.0,
+          "Top": -52.61017,
+          "Right": 1900.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.TopPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "TopPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 163.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.19844541
+          },
+          "Maximum": {
+            "X": 0.5738095,
+            "Y": 0.8695149
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "ZOrder": 1,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.TopPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.9"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox NE_WBP_DailyRewardScreen_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.153"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "TopPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 50.0,
+          "Right": 50.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.TopPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.9"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_DailyRewardScreen_C:WidgetTree.divider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.109"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BackgroundOverlay_Image",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.116"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "ZOrder": 7,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.10"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalSafeZoneContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.84"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.10"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.81"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.1
+          }
+        }
+      },
+      "ZOrder": 1,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.11"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TopPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BGmark",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.119"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 500.0,
+          "Top": 244.0,
+          "Right": 967.7553,
+          "Bottom": 678.266
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.11"
+      },
+      "Content": {
+        "ObjectName": "NE_WBP_DailyRewardGrid_C WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.143"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.117"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 108.0,
+          "Right": 0.0,
+          "Bottom": 808.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.11"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DescriptionPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BG2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.118"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -580.0,
+          "Top": -150.0,
+          "Right": 402.38306,
+          "Bottom": 98.00139
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.11"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButtonPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -150.0,
+          "Top": -44.5,
+          "Right": 300.0,
+          "Bottom": 89.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.12"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -7.989734,
+          "Right": -18.642712,
+          "Bottom": -4.882615
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.120"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -24.782562,
+          "Top": -16.0,
+          "Right": 107.3183,
+          "Bottom": -15.388023
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.968139,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.968139,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.121"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.13"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -16.49136,
+          "Top": 0.740436,
+          "Right": 8.64475,
+          "Bottom": 0.259567
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.167718
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.837685
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.122"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -11.866351,
+          "Top": 0.543181,
+          "Right": 30.605194,
+          "Bottom": -4.025038
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.165016
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.767446
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.13"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.123"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -40.0,
+          "Right": 91.0056,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.13"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.161"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "ContinueButtonPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": -352.79904,
+          "Bottom": 98.00139
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButtonPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.14"
+      },
+      "Content": {
+        "ObjectName": "NE_WBP_ContinueButton_C WidgetArchetype:WidgetTree_0.ContinueButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.141"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 276.0,
+          "Top": -50.0,
+          "Right": 395.99182,
+          "Bottom": 584.98773
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Side_Layout_13_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -696.0,
+          "Right": 970.0,
+          "Bottom": 685.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.15"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Grid_Layout_13_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.167"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 400.0,
+          "Right": 405.0,
+          "Bottom": 607.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Side_Layout_9_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -816.0,
+          "Right": 1221.0,
+          "Bottom": 583.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.15"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Grid_Layout_9_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.169"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 236.0,
+          "Right": 405.0,
+          "Bottom": 580.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Side_Layout_7_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -645.0,
+          "Right": 882.0,
+          "Bottom": 583.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.15"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Grid_Layout_7_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.168"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 280.0,
+          "Right": 405.0,
+          "Bottom": 685.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.LastDailyRewardWidgetPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_18",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -696.0,
+          "Right": 960.0,
+          "Bottom": 685.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.15"
+      },
+      "Content": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.DailyRewardWidgetsGridPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.166"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "DescriptionPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 162.0,
+          "Top": 30.0,
+          "Right": 115.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DescriptionPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.20"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.163"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "SafeZone",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 6.491119,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.021728
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SafeZone",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.21"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Timer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 600.0,
+          "Top": -55.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.22"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.82"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Timer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1200.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "bAutoSize": true,
+      "ZOrder": 1,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.22"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.83"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "Timer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 100.0,
+          "Top": 28.0,
+          "Right": 820.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.22"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.topDivider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.130"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "TopPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -1919.0,
+          "Top": -52.61017,
+          "Right": 1900.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TopPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.23"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "TopPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 163.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.19844541
+          },
+          "Maximum": {
+            "X": 0.5738095,
+            "Y": 0.8695149
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "ZOrder": 1,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TopPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.23"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.154"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "TopPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 50.0,
+          "Right": 50.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TopPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.23"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.divider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.124"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.85"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.87"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.86"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.26"
+      },
+      "RenderOpacity": 0.9
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.89"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.88"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.Timer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.37"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_3",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.90"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.91"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.Timer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.38"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalSafeZoneContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalSafeZoneContainer.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.92"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalSafeZoneContainer.HorizontalBoxSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.94"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalSafeZoneContainer.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.93"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.25"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.95"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.97"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.96"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.45"
+      },
+      "RenderOpacity": 0.9
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_1.HorizontalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.99"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_1.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.98"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.71"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_3",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_3.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.100"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_3.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.101"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.72"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalSafeZoneContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalSafeZoneContainer.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.102"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalSafeZoneContainer.HorizontalBoxSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.104"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalSafeZoneContainer.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.103"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.44"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.77"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_DailyRewardScreen_C:WidgetTree.SpikesTextureBgRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.113"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.77"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_DailyRewardScreen_C:WidgetTree.SpikesTextureBgLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.112"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_7",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.77"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_DailyRewardScreen_C:WidgetTree.InboxBg_Image",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.111"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_1",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.78"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_DailyRewardScreen_C:WidgetTree.timerBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.114"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_1",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.78"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_DailyRewardScreen_C:WidgetTree.dividerTimer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.110"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_3",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.79"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_DailyRewardScreen_C:WidgetTree.TextBlock_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.159"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_3",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.79"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_DailyRewardScreen_C:WidgetTree.RemainingTimeTextBlock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.157"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalSafeZoneContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalSafeZoneContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.80"
+      },
+      "Content": {
+        "ObjectName": "SafeZone NE_WBP_DailyRewardScreen_C:WidgetTree.LeftSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.146"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalSafeZoneContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalSafeZoneContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.80"
+      },
+      "Content": {
+        "ObjectName": "SafeZone NE_WBP_DailyRewardScreen_C:WidgetTree.RightSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.147"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalSafeZoneContainer",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalSafeZoneContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.80"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox NE_WBP_DailyRewardScreen_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.170"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.81"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SpikesTextureBgRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.128"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.81"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SpikesTextureBgLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.127"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_7",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.81"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.InboxBg_Image",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.126"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_1",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.82"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.timerBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.129"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_1",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.82"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.dividerTimer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.125"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_3",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.83"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.164"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_3",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.83"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RemainingTimeTextBlock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.162"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalSafeZoneContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalSafeZoneContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.84"
+      },
+      "Content": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.LeftSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.150"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalSafeZoneContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalSafeZoneContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.84"
+      },
+      "Content": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.RightSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.151"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalSafeZoneContainer",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalSafeZoneContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.84"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.171"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BackgroundOverlay_Image",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.98,
+        "Hex": "FA000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.24"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1603.0,
+          "Y": 1001.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Options_BG",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Options/Atl_Options_BG.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.383707,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FF00A7FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.30"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1603.0,
+          "Y": 1001.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Options_BG",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Options/Atl_Options_BG.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.32"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BGmark",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 2340.0,
+          "Y": 1080.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_DailyRewCal_MarksBg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/Atl_DailyRewCal_MarksBg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.28"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": 0.85
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "divider",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.TopPanel.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.42"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "dividerTimer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 276.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.226966,
+            "G": 0.283149,
+            "B": 0.313989,
+            "A": 1.0,
+            "Hex": "FF839198"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_OnMM_Divider",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/Atl_OnMM_Divider.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.8,
+        "Hex": "CCFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.89"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "InboxBg_Image",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "Tiling": "ESlateBrushTileType::Vertical"
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.87"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.9
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "SpikesTextureBgLeft",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 224.0,
+          "Y": 1080.0
+        },
+        "Margin": {
+          "Right": 1.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Tooltip_bg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Tooltip_bg.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.86"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "SpikesTextureBgRight",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 224.0,
+          "Y": 1080.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Tooltip_bg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Tooltip_bg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.85"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "timerBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.015996,
+            "G": 0.036889,
+            "B": 0.059511,
+            "A": 1.0,
+            "Hex": "FF223645"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_DailyRewCal_TimerBg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/Atl_DailyRewCal_TimerBg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.88"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "topDivider",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.Timer.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.39"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BackgroundOverlay_Image",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.98,
+        "Hex": "FA000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.43"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1603.0,
+          "Y": 1001.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Options_BG",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Options/Atl_Options_BG.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.383707,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FF00A7FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.49"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1603.0,
+          "Y": 1001.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Options_BG",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Options/Atl_Options_BG.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.51"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BGmark",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 2340.0,
+          "Y": 1080.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_DailyRewCal_MarksBg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/Atl_DailyRewCal_MarksBg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_10",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.47"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": 0.85
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 359.0,
+          "Y": 106.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_bg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_bg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.54"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "FXSmoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 192.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Fx",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Fx.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.55"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        },
+        "Angle": 90.0
+      },
+      "RenderOpacity": 0.6
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 49.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_line",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_line.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.57"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VFXs",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 26.0,
+          "Y": 47.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_fx_orange",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_fx_orange.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.58"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "divider",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TopPanel.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.76"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "dividerTimer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 276.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.226966,
+            "G": 0.283149,
+            "B": 0.313989,
+            "A": 1.0,
+            "Hex": "FF839198"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_OnMM_Divider",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/EnterGame/Atl_OnMM_Divider.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.8,
+        "Hex": "CCFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_1.HorizontalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.99"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "InboxBg_Image",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "Tiling": "ESlateBrushTileType::Vertical"
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.97"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.9
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "SpikesTextureBgLeft",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 224.0,
+          "Y": 1080.0
+        },
+        "Margin": {
+          "Right": 1.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Tooltip_bg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Tooltip_bg.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.96"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "SpikesTextureBgRight",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 224.0,
+          "Y": 1080.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Tooltip_bg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Tooltip_bg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.95"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "timerBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.015996,
+            "G": 0.036889,
+            "B": 0.059511,
+            "A": 1.0,
+            "Hex": "FF223645"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_DailyRewCal_TimerBg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/Atl_DailyRewCal_TimerBg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_1.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.98"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "topDivider",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.73"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Transition_In",
+    "Outer": "Transition_In_INST",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "24B223CA-4A4E1FAC-359856A4-975D0D8C",
+          "Name": "HorizontalSafeZoneContainer",
+          "PossessedObjectClass": {
+            "ObjectName": "Class HorizontalBox",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "24B223CA-4A4E1FAC-359856A4-975D0D8C",
+          "BindingName": "HorizontalSafeZoneContainer",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack NE_WBP_DailyRewardScreen_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_1",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.133"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_WBP_DailyRewardScreen_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.139"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 15001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "885E4CC5-4142EE85-F57809B4-E949A5F0"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_1",
+    "Properties": {
+      "Translation": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_DailyRewardScreen_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.134"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_DailyRewardScreen_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.135"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "5DD1ECF6-44030383-3D969EBA-78527BB7"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_1",
+    "Outer": "Transition_In",
+    "Properties": {
+      "PropertyName": "RenderTransform",
+      "PropertyPath": "RenderTransform",
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection NE_WBP_DailyRewardScreen_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.132"
+        }
+      ],
+      "Signature": "240C2B96-4EFD7DE6-A0010089-7CBB1AA3"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Properties": {
+      "FloatCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_DailyRewardScreen_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.136"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_WBP_DailyRewardScreen_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.137"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "B633B666-44CAD2C2-002529BC-D2638D1F"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Transition_In",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_WBP_DailyRewardScreen_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.138"
+        }
+      ],
+      "Signature": "AFAED71D-441C7BF6-6745CE8F-45EE117A"
+    }
+  },
+  {
+    "Type": "NE_WBP_ContinueButton_C",
+    "Name": "ContinueButton",
+    "Outer": "WidgetTree",
+    "Template": "Default__NE_WBP_ContinueButton_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.ContinueButtonPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.34"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_ContinueButton_C",
+    "Name": "ContinueButton",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__NE_WBP_ContinueButton_C",
+    "Properties": {
+      "Background": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.120"
+      },
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.2"
+      },
+      "ButtonLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.161"
+      },
+      "FXSmoke": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.121"
+      },
+      "Line": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.122"
+      },
+      "VFXs": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.123"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.181"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButtonPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.60"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_DailyRewardGrid_C",
+    "Name": "DailyRewardWidgetsGrid",
+    "Outer": "WidgetTree",
+    "Template": "Default__NE_WBP_DailyRewardGrid_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.29"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_DailyRewardGrid_C",
+    "Name": "DailyRewardWidgetsGrid",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__NE_WBP_DailyRewardGrid_C",
+    "Properties": {
+      "DailyRewardWidgetsGridPanel": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.DailyRewardWidgetsGridPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.166"
+      },
+      "Grid_Layout_13_ref": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Grid_Layout_13_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.167"
+      },
+      "Grid_Layout_7_ref": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Grid_Layout_7_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.168"
+      },
+      "Grid_Layout_9_ref": {
+        "ObjectName": "UniformGridPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Grid_Layout_9_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.169"
+      },
+      "Side_Layout_13_ref": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Side_Layout_13_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.17"
+      },
+      "Side_Layout_7_ref": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Side_Layout_7_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.18"
+      },
+      "Side_Layout_9_ref": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.Side_Layout_9_ref",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.19"
+      },
+      "LastDailyRewardWidgetPanel": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.LastDailyRewardWidgetPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.16"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.182"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_2.CanvasPanelSlot_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.48"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_DailyRewardScreen_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_DailyRewardScreen_C",
+    "Properties": {
+      "BG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.117"
+      },
+      "BG2": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BG2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.118"
+      },
+      "BGmark": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BGmark",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.119"
+      },
+      "BottomSafeZonePadding": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.BottomSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.149"
+      },
+      "ContinueButton": {
+        "ObjectName": "NE_WBP_ContinueButton_C WidgetArchetype:WidgetTree_0.ContinueButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.141"
+      },
+      "ContinueButtonPanel": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButtonPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.14"
+      },
+      "DailyRewardWidgetsGrid": {
+        "ObjectName": "NE_WBP_DailyRewardGrid_C WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.143"
+      },
+      "dividerTimer": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.dividerTimer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.125"
+      },
+      "InboxBg_Image": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.InboxBg_Image",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.126"
+      },
+      "LeftSafeZonePadding": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.LeftSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.150"
+      },
+      "RemainingTimeTextBlock": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RemainingTimeTextBlock",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.162"
+      },
+      "RightSafeZonePadding": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.RightSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.151"
+      },
+      "SpikesTextureBgLeft": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SpikesTextureBgLeft",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.127"
+      },
+      "SpikesTextureBgRight": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SpikesTextureBgRight",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.128"
+      },
+      "TextBlock_1": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.163"
+      },
+      "TextBlock_2": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.164"
+      },
+      "timerBG": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.timerBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.129"
+      },
+      "TitleText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TitleText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.165"
+      },
+      "TopSafeZonePadding": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.TopSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.152"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.180"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "SafeZone",
+    "Name": "BottomSafeZonePadding",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "PadLeft": false,
+      "PadRight": false,
+      "PadTop": false,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.173"
+      }
+    }
+  },
+  {
+    "Type": "SafeZone",
+    "Name": "LeftSafeZonePadding",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "PadRight": false,
+      "PadTop": false,
+      "PadBottom": false,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalSafeZoneContainer.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.92"
+      }
+    }
+  },
+  {
+    "Type": "SafeZone",
+    "Name": "RightSafeZonePadding",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "PadLeft": false,
+      "PadTop": false,
+      "PadBottom": false,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalSafeZoneContainer.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.93"
+      }
+    }
+  },
+  {
+    "Type": "SafeZone",
+    "Name": "TopSafeZonePadding",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "PadLeft": false,
+      "PadRight": false,
+      "PadBottom": false,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.172"
+      }
+    }
+  },
+  {
+    "Type": "SafeZone",
+    "Name": "BottomSafeZonePadding",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "PadLeft": false,
+      "PadRight": false,
+      "PadTop": false,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.176"
+      }
+    }
+  },
+  {
+    "Type": "SafeZone",
+    "Name": "LeftSafeZonePadding",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "PadRight": false,
+      "PadTop": false,
+      "PadBottom": false,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalSafeZoneContainer.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.102"
+      }
+    }
+  },
+  {
+    "Type": "SafeZone",
+    "Name": "RightSafeZonePadding",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "PadLeft": false,
+      "PadTop": false,
+      "PadBottom": false,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalSafeZoneContainer.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.103"
+      }
+    }
+  },
+  {
+    "Type": "SafeZone",
+    "Name": "TopSafeZonePadding",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "PadLeft": false,
+      "PadRight": false,
+      "PadBottom": false,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.175"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.155"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.TopPanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.41"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.156"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TopPanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.75"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "ScaleBox NE_WBP_DailyRewardScreen_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.153"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_DailyRewardScreen_C:WidgetTree.TitleText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.160"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.154"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TitleText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.165"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "RemainingTimeTextBlock",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "5A993EC14F51CE24350ED4916E8381D7",
+        "SourceString": "4D 12H"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 28
+      },
+      "Margin": {
+        "Left": 20.0
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.91"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "000135B64D4B6AC4F4E3E79AF449F839",
+        "SourceString": "Log in enough days in the given time to get your rewards. Missing a day will not make you lose your progress, but may prevent you from getting all the rewards."
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.456411,
+          "G": 0.571125,
+          "B": 0.623961,
+          "A": 1.0,
+          "Hex": "FFB4C7CF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 26
+      },
+      "AutoWrapText": true,
+      "LineHeightPercentage": 0.85,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_DailyRewardScreen_C:WidgetTree.DescriptionPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.35"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "F936632A4AC3DCC15B6063BF5772F821",
+        "SourceString": "TIME LEFT"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 28
+      },
+      "Justification": "ETextJustify::Right",
+      "Margin": {
+        "Right": 20.0
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.90"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TitleText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "121164E042100F64866321B1817D36DD",
+        "SourceString": "LOGIN REWARD"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 44
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.155"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "283343C54108BE00FF2748A2B81A5623",
+        "SourceString": "CONTINUE"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 38
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.59"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "RemainingTimeTextBlock",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "5A993EC14F51CE24350ED4916E8381D7",
+        "SourceString": "4D 12H"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 28
+      },
+      "Margin": {
+        "Left": 20.0
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_3.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.101"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "000135B64D4B6AC4F4E3E79AF449F839",
+        "SourceString": "Log in enough days in the given time to get your rewards. Missing a day will not make you lose your progress, but may prevent you from getting all the rewards."
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.456411,
+          "G": 0.571125,
+          "B": 0.623961,
+          "A": 1.0,
+          "Hex": "FFB4C7CF"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 26
+      },
+      "AutoWrapText": true,
+      "LineHeightPercentage": 0.85,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DescriptionPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.69"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "F936632A4AC3DCC15B6063BF5772F821",
+        "SourceString": "TIME LEFT"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 28
+      },
+      "Justification": "ETextJustify::Right",
+      "Margin": {
+        "Right": 20.0
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_3.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.100"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TitleText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "121164E042100F64866321B1817D36DD",
+        "SourceString": "LOGIN REWARD"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 44
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.156"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "DailyRewardWidgetsGridPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.68"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "Grid_Layout_13_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.62"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "Grid_Layout_7_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "SlotPadding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.66"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "UniformGridPanel",
+    "Name": "Grid_Layout_9_ref",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "MinDesiredSlotWidth": 299.0,
+      "MinDesiredSlotHeight": 291.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.64"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.172"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.174"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.173"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_WBP_DailyRewardScreen_C:WidgetTree.HorizontalSafeZoneContainer.HorizontalBoxSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.94"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.175"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.177"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.176"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalSafeZoneContainer.HorizontalBoxSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.104"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_4",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_DailyRewardScreen_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.170"
+      },
+      "Content": {
+        "ObjectName": "SafeZone NE_WBP_DailyRewardScreen_C:WidgetTree.TopSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.148"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_5",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_DailyRewardScreen_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.170"
+      },
+      "Content": {
+        "ObjectName": "SafeZone NE_WBP_DailyRewardScreen_C:WidgetTree.BottomSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.145"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_6",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox NE_WBP_DailyRewardScreen_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.170"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.SafeZone",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.7"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_4",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.171"
+      },
+      "Content": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.TopSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.152"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_5",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.171"
+      },
+      "Content": {
+        "ObjectName": "SafeZone WidgetArchetype:WidgetTree_0.BottomSafeZonePadding",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.149"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_6",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.171"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SafeZone",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.21"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Transition_In_INST",
+    "Outer": "NE_WBP_DailyRewardScreen_C",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene NE_WBP_DailyRewardScreen_C:Transition_In_INST.Transition_In",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.131"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "HorizontalSafeZoneContainer",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "24B223CA-4A4E1FAC-359856A4-975D0D8C",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Transition_In",
+      "PrecompiledEvaluationTemplate": {
+        "Tracks": null,
+        "EvaluationField": {
+          "Ranges": [
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 15001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 15001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            }
+          ],
+          "Groups": [
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 2
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            }
+          ],
+          "MetaData": [
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            }
+          ]
+        },
+        "SequenceSignature": "B51F0BB9-4661D888-F1C52D9E-EDAC120A",
+        "TemplateSerialNumber": {
+          "Value": 1
+        },
+        "TemplateLedger": {
+          "LastTrackIdentifier": {
+            "Value": 1
+          },
+          "TrackSignatureToTrackIdentifier": null
+        },
+        "TrackFieldData": null
+      },
+      "Signature": "B51F0BB9-4661D888-F1C52D9E-EDAC120A"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_DailyRewardScreen_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_DailyRewardScreen_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.3"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.10"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "ContinueButton",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContinueButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "DailyRewardWidgetsGrid",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.DailyRewardWidgetsGrid.WidgetTree_0.CanvasPanel_18",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardScreen.15"
+      }
+    }
+  }
+]

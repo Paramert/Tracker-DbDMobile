@@ -1,0 +1,906 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Surrender_VoteItem_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree Surrender_VoteItem_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.37"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AgreePortrait",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AgreeSign",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Default",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HeadWidgetSwitcher",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetSwitcher",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RefusePortrait",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RefuseSign",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Surrender_VoteItem_NE_C Default__Surrender_VoteItem_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.1"
+    }
+  },
+  {
+    "Type": "Surrender_VoteItem_NE_C",
+    "Name": "Default__Surrender_VoteItem_NE_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Agree",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Surrender_VoteItem_NE_C:WidgetTree.Agree.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot Surrender_VoteItem_NE_C:WidgetTree.Agree.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.9"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot Surrender_VoteItem_NE_C:WidgetTree.HeadWidgetSwitcher.WidgetSwitcherSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_326",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Surrender_VoteItem_NE_C:WidgetTree.CanvasPanel_326.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Refuse",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Surrender_VoteItem_NE_C:WidgetTree.Refuse.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot Surrender_VoteItem_NE_C:WidgetTree.Refuse.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot Surrender_VoteItem_NE_C:WidgetTree.HeadWidgetSwitcher.WidgetSwitcherSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Agree",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Agree.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Agree.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.HeadWidgetSwitcher.WidgetSwitcherSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_326",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_326.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Refuse",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Refuse.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Refuse.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.HeadWidgetSwitcher.WidgetSwitcherSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Agree",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 94.0,
+          "Bottom": 94.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Surrender_VoteItem_NE_C:WidgetTree.Agree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.2"
+      },
+      "Content": {
+        "ObjectName": "Image Surrender_VoteItem_NE_C:WidgetTree.AgreePortrait",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Agree",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 68.0,
+          "Top": 60.0,
+          "Right": 34.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Surrender_VoteItem_NE_C:WidgetTree.Agree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.2"
+      },
+      "Content": {
+        "ObjectName": "Image Surrender_VoteItem_NE_C:WidgetTree.AgreeSign",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_326",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 94.0,
+          "Bottom": 94.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Surrender_VoteItem_NE_C:WidgetTree.CanvasPanel_326",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.3"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher Surrender_VoteItem_NE_C:WidgetTree.HeadWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Refuse",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 94.0,
+          "Bottom": 94.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Surrender_VoteItem_NE_C:WidgetTree.Refuse",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.4"
+      },
+      "Content": {
+        "ObjectName": "Image Surrender_VoteItem_NE_C:WidgetTree.RefusePortrait",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Refuse",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 63.0,
+          "Top": 62.0,
+          "Right": 32.0,
+          "Bottom": 32.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Surrender_VoteItem_NE_C:WidgetTree.Refuse",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.4"
+      },
+      "Content": {
+        "ObjectName": "Image Surrender_VoteItem_NE_C:WidgetTree.RefuseSign",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Agree",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 94.0,
+          "Bottom": 94.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Agree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.5"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.AgreePortrait",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Agree",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 68.0,
+          "Top": 60.0,
+          "Right": 34.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Agree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.5"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.AgreeSign",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_326",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 94.0,
+          "Bottom": 94.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_326",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.6"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.HeadWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Refuse",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 94.0,
+          "Bottom": 94.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Refuse",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RefusePortrait",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Refuse",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 63.0,
+          "Top": 62.0,
+          "Right": 32.0,
+          "Bottom": 32.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Refuse",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.7"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RefuseSign",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.27"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "AgreePortrait",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 150.0,
+          "Y": 150.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.095307,
+            "G": 0.291771,
+            "B": 0.05448,
+            "A": 1.0,
+            "Hex": "FF579342"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D statusIcon_default",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/PlayerStatus/statusIcon_default.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Surrender_VoteItem_NE_C:WidgetTree.Agree.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.8"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "AgreeSign",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 34.0,
+          "Y": 30.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Surrender_Yes_NE",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/HUD/Surrender/Surrender_Yes_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Surrender_VoteItem_NE_C:WidgetTree.Agree.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.9"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Default",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 150.0,
+          "Y": 150.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.124772,
+            "G": 0.144128,
+            "B": 0.165132,
+            "A": 1.0,
+            "Hex": "FF636A71"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D statusIcon_default",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/PlayerStatus/statusIcon_default.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot Surrender_VoteItem_NE_C:WidgetTree.HeadWidgetSwitcher.WidgetSwitcherSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.31"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RefusePortrait",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 150.0,
+          "Y": 150.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.491021,
+            "G": 0.024158,
+            "B": 0.024158,
+            "A": 1.0,
+            "Hex": "FFBA2B2B"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D statusIcon_default",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/PlayerStatus/statusIcon_default.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Surrender_VoteItem_NE_C:WidgetTree.Refuse.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.11"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RefuseSign",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Surrender_No_NE",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/HUD/Surrender/Surrender_No_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Surrender_VoteItem_NE_C:WidgetTree.Refuse.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.12"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "AgreePortrait",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 150.0,
+          "Y": 150.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.095307,
+            "G": 0.291771,
+            "B": 0.05448,
+            "A": 1.0,
+            "Hex": "FF579342"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D statusIcon_default",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/PlayerStatus/statusIcon_default.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Agree.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.13"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "AgreeSign",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 34.0,
+          "Y": 30.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Surrender_Yes_NE",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/HUD/Surrender/Surrender_Yes_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Agree.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.14"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Default",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 150.0,
+          "Y": 150.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.124772,
+            "G": 0.144128,
+            "B": 0.165132,
+            "A": 1.0,
+            "Hex": "FF636A71"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D statusIcon_default",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/PlayerStatus/statusIcon_default.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.HeadWidgetSwitcher.WidgetSwitcherSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.34"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RefusePortrait",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 150.0,
+          "Y": 150.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.491021,
+            "G": 0.024158,
+            "B": 0.024158,
+            "A": 1.0,
+            "Hex": "FFBA2B2B"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D statusIcon_default",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/PlayerStatus/statusIcon_default.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Refuse.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.16"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RefuseSign",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Surrender_No_NE",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/HUD/Surrender/Surrender_No_NE.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Refuse.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.17"
+      }
+    }
+  },
+  {
+    "Type": "Surrender_VoteItem_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__Surrender_VoteItem_NE_C",
+    "Properties": {
+      "AgreePortrait": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.AgreePortrait",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.23"
+      },
+      "AgreeSign": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.AgreeSign",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.24"
+      },
+      "Default": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Default",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.25"
+      },
+      "HeadWidgetSwitcher": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.HeadWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.30"
+      },
+      "RefusePortrait": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RefusePortrait",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.26"
+      },
+      "RefuseSign": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RefuseSign",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.27"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.38"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "HeadWidgetSwitcher",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot Surrender_VoteItem_NE_C:WidgetTree.HeadWidgetSwitcher.WidgetSwitcherSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.32"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot Surrender_VoteItem_NE_C:WidgetTree.HeadWidgetSwitcher.WidgetSwitcherSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.33"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot Surrender_VoteItem_NE_C:WidgetTree.HeadWidgetSwitcher.WidgetSwitcherSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.31"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Surrender_VoteItem_NE_C:WidgetTree.CanvasPanel_326.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.10"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "HeadWidgetSwitcher",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.HeadWidgetSwitcher.WidgetSwitcherSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.35"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.HeadWidgetSwitcher.WidgetSwitcherSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.36"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.HeadWidgetSwitcher.WidgetSwitcherSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.34"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_326.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.15"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "HeadWidgetSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher Surrender_VoteItem_NE_C:WidgetTree.HeadWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.29"
+      },
+      "Content": {
+        "ObjectName": "Image Surrender_VoteItem_NE_C:WidgetTree.Default",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.20"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_4",
+    "Outer": "HeadWidgetSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher Surrender_VoteItem_NE_C:WidgetTree.HeadWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.29"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Surrender_VoteItem_NE_C:WidgetTree.Agree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.2"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_6",
+    "Outer": "HeadWidgetSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher Surrender_VoteItem_NE_C:WidgetTree.HeadWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.29"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Surrender_VoteItem_NE_C:WidgetTree.Refuse",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "HeadWidgetSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.HeadWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.30"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Default",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.25"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_4",
+    "Outer": "HeadWidgetSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.HeadWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.30"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Agree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_6",
+    "Outer": "HeadWidgetSwitcher",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.HeadWidgetSwitcher",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.30"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Refuse",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Surrender_VoteItem_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel Surrender_VoteItem_NE_C:WidgetTree.CanvasPanel_326",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.3"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_326",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Surrender/Surrender_VoteItem_NE.6"
+      }
+    }
+  }
+]

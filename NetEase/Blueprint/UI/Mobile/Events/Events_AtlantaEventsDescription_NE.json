@@ -1,0 +1,3654 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Events_AtlantaEventsDescription_NE_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree Events_AtlantaEventsDescription_NE_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.150"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OnLeft_ChangeTimeBG",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetSwitcher",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SubmenuButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_SubmenuButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/PanelScreen/WBP_SubmenuButton.10"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_BothSides_CountDown",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_BothSides_EndTitle",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_BothSides_StartTime",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_BothSides_Title",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_OnLeft_Time",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_OnLeft_Title",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TimeAndTItleStyleChange",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetSwitcher",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Events_AtlantaEventsDescription_NE_C Default__Events_AtlantaEventsDescription_NE_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.1"
+    }
+  },
+  {
+    "Type": "Events_AtlantaEventsDescription_NE_C",
+    "Name": "Default__Events_AtlantaEventsDescription_NE_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "BackgroundColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "ClickMethod": "EButtonClickMethod::PreciseClick",
+      "TouchMethod": "EButtonTouchMethod::PreciseTap",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.24"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_153",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.CanvasPanel_153.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.132"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ItemsRewards",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.133"
+      },
+      "ToolTipText": {
+        "CultureInvariantString": null
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LinPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.LinPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.26"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.74"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "OnLeftStyle",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.29"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.TimeAndTItleStyleChange.WidgetSwitcherSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.144"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "P1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.P1.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.P1.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.30"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.72"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "P2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.P2.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.P2.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.33"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.73"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Timer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.Timer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.Timer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.34"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.CanvasPanel_153.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Timer_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.Timer_1.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.36"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.37"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_153",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_153.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.134"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ItemsRewards",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.135"
+      },
+      "ToolTipText": {
+        "CultureInvariantString": null
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "LinPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LinPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.83"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "OnLeftStyle",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.41"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.42"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.TimeAndTItleStyleChange.WidgetSwitcherSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.148"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "P1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P1.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.44"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P1.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.43"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.81"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "P2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P2.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.45"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P2.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.46"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.82"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.48"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.51"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.49"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.47"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.50"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.52"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "NotificationPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationPanel.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.53"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.47"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SelectedCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.54"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.55"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.56"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.57"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.49"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Timer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.59"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.58"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_153.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Timer_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer_1.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.60"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 35.0,
+          "Top": 20.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.3"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.130"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_153",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 5.0,
+          "Bottom": 66.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.CanvasPanel_153",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "LinPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 5.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.LinPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.6"
+      },
+      "Content": {
+        "ObjectName": "Image Events_AtlantaEventsDescription_NE_C:WidgetTree.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.86"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.Timer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 450.0,
+          "Bottom": 3.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.7"
+      },
+      "Content": {
+        "ObjectName": "Image Events_AtlantaEventsDescription_NE_C:WidgetTree.top_divider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.89"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -6.0,
+          "Right": 600.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.7"
+      },
+      "Content": {
+        "ObjectName": "Image Events_AtlantaEventsDescription_NE_C:WidgetTree.divider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.85"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "P1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 15.0,
+          "Right": 0.0,
+          "Bottom": 15.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.P1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.8"
+      },
+      "Content": {
+        "ObjectName": "SizeBox Events_AtlantaEventsDescription_NE_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.107"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "P1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -125.0,
+          "Top": -30.0,
+          "Right": 0.0,
+          "Bottom": 85.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.P1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.8"
+      },
+      "Content": {
+        "ObjectName": "Image Events_AtlantaEventsDescription_NE_C:WidgetTree.TimeLeftBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.88"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "P2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -30.0,
+          "Right": -200.0,
+          "Bottom": 85.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.P2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.9"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeft_ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.138"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "P2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 15.0,
+          "Right": 0.0,
+          "Bottom": 15.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.P2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.9"
+      },
+      "Content": {
+        "ObjectName": "SizeBox Events_AtlantaEventsDescription_NE_C:WidgetTree.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.106"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Timer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 80.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.10"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher Events_AtlantaEventsDescription_NE_C:WidgetTree.TimeAndTItleStyleChange",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.139"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Timer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.10"
+      },
+      "Content": {
+        "ObjectName": "WBP_SubmenuButton_C Events_AtlantaEventsDescription_NE_C:WidgetTree.SubmenuButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.136"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "Timer_1",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.Timer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.11"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 35.0,
+          "Top": 20.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.12"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.131"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_153",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 5.0,
+          "Bottom": 66.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_153",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.13"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "LinPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 5.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LinPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.15"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.92"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.16"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Timer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 450.0,
+          "Bottom": 3.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.top_divider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.103"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "OnLeftStyle",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -6.0,
+          "Right": 600.0,
+          "Bottom": 3.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.divider",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.91"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "P1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 15.0,
+          "Right": 0.0,
+          "Bottom": 15.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.17"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.109"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "P1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -125.0,
+          "Top": -30.0,
+          "Right": 0.0,
+          "Bottom": 85.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.17"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TimeLeftBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.102"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "P2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -30.0,
+          "Right": -200.0,
+          "Bottom": 85.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.18"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.OnLeft_ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.140"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "P2",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 15.0,
+          "Right": 0.0,
+          "Bottom": 15.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.18"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.108"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 50.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.19"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 107.0,
+          "Bottom": 106.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.94"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 107.0,
+          "Bottom": 106.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.19"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -50.0,
+          "Top": -50.0,
+          "Right": -50.0,
+          "Bottom": -50.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.19"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Top": 11.5,
+          "Right": 12.0,
+          "Bottom": 11.5
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.19"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.104"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -3.0,
+          "Top": -3.0,
+          "Right": -3.0,
+          "Bottom": -3.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.IMG_RoundBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.100"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "NotificationPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.20"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationBadge",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.101"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "SelectedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 35.0,
+          "Bottom": 34.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Image_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.96"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "SelectedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 35.0,
+          "Bottom": 34.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Image_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.97"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "SelectedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 35.0,
+          "Bottom": 34.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Image_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.98"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "SelectedCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 35.0,
+          "Bottom": 34.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Image_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.99"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Timer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 80.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.22"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.TimeAndTItleStyleChange",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.141"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Timer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 12.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Timer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.22"
+      },
+      "Content": {
+        "ObjectName": "WBP_SubmenuButton_C WidgetArchetype:WidgetTree_0.SubmenuButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.137"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "Timer_1",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Timer_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.23"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.65"
+      }
+    }
+  },
+  {
+    "Type": "Events_AtlantaEventsDescription_NE_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__Events_AtlantaEventsDescription_NE_C",
+    "Properties": {
+      "OnLeft_ChangeTimeBG": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.OnLeft_ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.140"
+      },
+      "SubmenuButton": {
+        "ObjectName": "WBP_SubmenuButton_C WidgetArchetype:WidgetTree_0.SubmenuButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.137"
+      },
+      "Text_BothSides_CountDown": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_CountDown",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.123"
+      },
+      "Text_BothSides_EndTitle": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_EndTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.124"
+      },
+      "Text_BothSides_StartTime": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_StartTime",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.125"
+      },
+      "Text_BothSides_Title": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.126"
+      },
+      "Text_OnLeft_Time": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_OnLeft_Time",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.127"
+      },
+      "Text_OnLeft_Title": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_OnLeft_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.128"
+      },
+      "TimeAndTItleStyleChange": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.TimeAndTItleStyleChange",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.141"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.151"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "BothSidesStyle",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.70"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.71"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.66"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.69"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.67"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.68"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.TimeAndTItleStyleChange.WidgetSwitcherSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.145"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_198",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.72"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.74"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.HorizontalBox_198.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.73"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.Timer_1.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.36"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "BothSidesStyle",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.79"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.80"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.75"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.78"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.76"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.77"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.TimeAndTItleStyleChange.WidgetSwitcherSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.149"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_198",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.81"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.83"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_198.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.82"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer_1.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.60"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.62"
+      },
+      "Content": {
+        "ObjectName": "TextBlock Events_AtlantaEventsDescription_NE_C:WidgetTree.Text_BothSides_CountDown",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.116"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.62"
+      },
+      "Content": {
+        "ObjectName": "TextBlock Events_AtlantaEventsDescription_NE_C:WidgetTree.TextBlock_44",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.122"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.62"
+      },
+      "Content": {
+        "ObjectName": "TextBlock Events_AtlantaEventsDescription_NE_C:WidgetTree.Text_BothSides_EndTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.117"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.62"
+      },
+      "Content": {
+        "ObjectName": "TextBlock Events_AtlantaEventsDescription_NE_C:WidgetTree.Text_BothSides_StartTime",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.118"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_7",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.62"
+      },
+      "Content": {
+        "ObjectName": "TextBlock Events_AtlantaEventsDescription_NE_C:WidgetTree.Text_BothSides_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.119"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_8",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.62"
+      },
+      "Content": {
+        "ObjectName": "Spacer Events_AtlantaEventsDescription_NE_C:WidgetTree.Spacer_473",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.114"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.63"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.P1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.8"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.63"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.P2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.9"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.63"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.LinPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.6"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.64"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_CountDown",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.123"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.64"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_44",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.129"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.64"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_EndTitle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.124"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.64"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_StartTime",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.125"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_7",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.64"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_BothSides_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.126"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_8",
+    "Outer": "BothSidesStyle",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.64"
+      },
+      "Content": {
+        "ObjectName": "Spacer WidgetArchetype:WidgetTree_0.Spacer_473",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.115"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.65"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.17"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.65"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.P2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.18"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_198",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_198",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.65"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LinPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.15"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BlueBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.017642,
+            "G": 0.057805,
+            "B": 0.082283,
+            "A": 1.0,
+            "Hex": "FF244451"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeft_ChangeTimeBG.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.143"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "divider",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.29"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.LinPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.26"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RedBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.270833,
+            "G": 0.0,
+            "B": 0.002249,
+            "A": 1.0,
+            "Hex": "FF8E0007"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeft_ChangeTimeBG.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.142"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TimeLeftBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.P1.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.31"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "top_divider",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeftStyle.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.28"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BlueBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.017642,
+            "G": 0.057805,
+            "B": 0.082283,
+            "A": 1.0,
+            "Hex": "FF244451"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.OnLeft_ChangeTimeBG.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.147"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "divider",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.42"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LinPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.39"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RedBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.270833,
+            "G": 0.0,
+            "B": 0.002249,
+            "A": 1.0,
+            "Hex": "FF8E0007"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.OnLeft_ChangeTimeBG.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.146"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 107.0,
+          "Y": 106.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Filters_Box",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Filters_Box.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.75,
+        "Hex": "BFFFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.48"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Icon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 89.0,
+          "Y": 89.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_CharSelect_info_icon",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/CharacterSelect/Atl_CharSelect_info_icon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.105"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.54"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_6",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.55"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": -1.0
+        },
+        "Angle": -90.0
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_7",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.56"
+      },
+      "RenderTransform": {
+        "Angle": -90.0
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_8",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 83.0,
+          "Y": 81.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Loadout_Selected_Square",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Loadout/Atl_Loadout_Selected_Square.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.57"
+      },
+      "RenderTransform": {
+        "Angle": 180.0
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IMG_RoundBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 256.0,
+          "Y": 256.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D highlightOutline_item",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Shared/Items/highlightOutline_item.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.52"
+      },
+      "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "NotificationBadge",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 99.0,
+          "Y": 110.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_Notification",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/Atl_Main_Notification.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationPanel.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.53"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TimeLeftBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 364.0,
+          "Y": 92.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_DailyRewCal_TimerBg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/DailyRewardCalendar/OutputPaper2D/Frames/Atl_DailyRewCal_TimerBg_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P1.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.44"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": -1.0,
+          "Y": 1.0
+        }
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "top_divider",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Inbox_TopBar_border",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Inbox/Atl_Inbox_TopBar_border.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.OnLeftStyle.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.41"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.105"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.51"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.104"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Icon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.95"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.SizeBox.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.110"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.P2.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.33"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.111"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.P1.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.30"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.112"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P2.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.46"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.113"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P1.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.43"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Right": 20.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox Events_AtlantaEventsDescription_NE_C:WidgetTree.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.106"
+      },
+      "Content": {
+        "ObjectName": "TextBlock Events_AtlantaEventsDescription_NE_C:WidgetTree.Text_OnLeft_Time",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.120"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Right": 20.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox Events_AtlantaEventsDescription_NE_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.107"
+      },
+      "Content": {
+        "ObjectName": "TextBlock Events_AtlantaEventsDescription_NE_C:WidgetTree.Text_OnLeft_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.121"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Right": 20.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.108"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_OnLeft_Time",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.127"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0,
+        "Right": 20.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.109"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_OnLeft_Title",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.128"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_473",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.71"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_473",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.80"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_CountDown",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "TIME PERIOD: "
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 25
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.66"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_EndTitle",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "4/18 17:00 UTC"
+      },
+      "Font": {
+        "Size": 25
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.68"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_StartTime",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "4/6 17:00 UTC"
+      },
+      "Font": {
+        "Size": 25
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.69"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_Title",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "EC7C2BE64723F39505B13A8D08D7091D",
+        "SourceString": "BLOODHUNT+"
+      },
+      "Font": {
+        "Size": 35
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.70"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_OnLeft_Time",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C87689AF4C418173FD377E8594BCEF38",
+        "SourceString": "6D 21H 23M"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.SizeBox.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.110"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_OnLeft_Title",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C1234D4947F323622B3768AEDBBC7965",
+        "SourceString": "TIME LEFT"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.111"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_44",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": " - "
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle.HorizontalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.67"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_CountDown",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "TIME PERIOD: "
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 25
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.75"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_EndTitle",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "4/18 17:00 UTC"
+      },
+      "Font": {
+        "Size": 25
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.77"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_StartTime",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "4/6 17:00 UTC"
+      },
+      "Font": {
+        "Size": 25
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.78"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_BothSides_Title",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "EC7C2BE64723F39505B13A8D08D7091D",
+        "SourceString": "BLOODHUNT+"
+      },
+      "Font": {
+        "Size": 35
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.79"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_OnLeft_Time",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C87689AF4C418173FD377E8594BCEF38",
+        "SourceString": "6D 21H 23M"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.112"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_OnLeft_Title",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C1234D4947F323622B3768AEDBBC7965",
+        "SourceString": "TIME LEFT"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.693872,
+          "G": 0.597202,
+          "B": 0.391573,
+          "A": 1.0,
+          "Hex": "FFD9CBA8"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Medium_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Medium_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.113"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_44",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": " - "
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.BothSidesStyle.HorizontalBoxSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.76"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.132"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.133"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.24"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.134"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.135"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.37"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.130"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.CanvasPanel_153",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.4"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.130"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.ItemsRewards",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.5"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.131"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_153",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.13"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.131"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ItemsRewards",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.14"
+      }
+    }
+  },
+  {
+    "Type": "WBP_SubmenuButton_C",
+    "Name": "SubmenuButton",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_SubmenuButton_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.Timer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.35"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      }
+    }
+  },
+  {
+    "Type": "WBP_SubmenuButton_C",
+    "Name": "SubmenuButton",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_SubmenuButton_C",
+    "Properties": {
+      "Icon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Icon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.95"
+      },
+      "IMG_RoundBox": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.IMG_RoundBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.100"
+      },
+      "NotificationBadge": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationBadge",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.101"
+      },
+      "SelectedCanvas": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.SelectedCanvas",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.21"
+      },
+      "NotificationPanel": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.20"
+      },
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.2"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.152"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.59"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "OnLeft_ChangeTimeBG",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeft_ChangeTimeBG.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.142"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeft_ChangeTimeBG.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.143"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.P2.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.32"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "TimeAndTItleStyleChange",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.TimeAndTItleStyleChange.WidgetSwitcherSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.145"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.TimeAndTItleStyleChange.WidgetSwitcherSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.144"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot Events_AtlantaEventsDescription_NE_C:WidgetTree.Timer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.34"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "OnLeft_ChangeTimeBG",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.OnLeft_ChangeTimeBG.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.146"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.OnLeft_ChangeTimeBG.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.147"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.P2.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.45"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "TimeAndTItleStyleChange",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.TimeAndTItleStyleChange.WidgetSwitcherSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.149"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.TimeAndTItleStyleChange.WidgetSwitcherSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.148"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Timer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.58"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "OnLeft_ChangeTimeBG",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeft_ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.138"
+      },
+      "Content": {
+        "ObjectName": "Image Events_AtlantaEventsDescription_NE_C:WidgetTree.RedBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.87"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "OnLeft_ChangeTimeBG",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeft_ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.138"
+      },
+      "Content": {
+        "ObjectName": "Image Events_AtlantaEventsDescription_NE_C:WidgetTree.BlueBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.84"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "TimeAndTItleStyleChange",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher Events_AtlantaEventsDescription_NE_C:WidgetTree.TimeAndTItleStyleChange",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.139"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "TimeAndTItleStyleChange",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher Events_AtlantaEventsDescription_NE_C:WidgetTree.TimeAndTItleStyleChange",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.139"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox Events_AtlantaEventsDescription_NE_C:WidgetTree.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.62"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "OnLeft_ChangeTimeBG",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.OnLeft_ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.140"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RedBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.93"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "OnLeft_ChangeTimeBG",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.OnLeft_ChangeTimeBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.140"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.BlueBG",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.90"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "TimeAndTItleStyleChange",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.TimeAndTItleStyleChange",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.141"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.OnLeftStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.16"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "TimeAndTItleStyleChange",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.TimeAndTItleStyleChange",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.141"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.BothSidesStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.64"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Events_AtlantaEventsDescription_NE_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel Events_AtlantaEventsDescription_NE_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.3"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "SubmenuButton",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SubmenuButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Events/Events_AtlantaEventsDescription_NE.19"
+      }
+    }
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetPercentage",
+    "Outer": "NE_WBP_PerkProgressBar_C",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "percent",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_FloatToString_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 16
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 16
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Add_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Subtract_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CheckImageIsValid_isValid",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDynamicMaterial_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstanceDynamic",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDynamicMaterial_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstanceDynamic",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckImageIsValid",
+    "Outer": "NE_WBP_PerkProgressBar_C",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "isValid",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 384,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDynamicMaterial_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstanceDynamic",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDynamicMaterial_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstanceDynamic",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 205783040
+  },
+  {
+    "Type": "Function",
+    "Name": "SetDebugText",
+    "Outer": "NE_WBP_PerkProgressBar_C",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "percent",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_PerkProgressBar_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_PerkProgressBar_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.20"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_WBP_PerkProgressBar_C:SetDebugText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.2"
+      },
+      {
+        "ObjectName": "Function NE_WBP_PerkProgressBar_C:CheckImageIsValid",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.1"
+      },
+      {
+        "ObjectName": "Function NE_WBP_PerkProgressBar_C:SetPercentage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageBlack",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImageRed",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TextDebug",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetPercentage": {
+        "ObjectName": "Function NE_WBP_PerkProgressBar_C:SetPercentage",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.0"
+      },
+      "CheckImageIsValid": {
+        "ObjectName": "Function NE_WBP_PerkProgressBar_C:CheckImageIsValid",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.1"
+      },
+      "SetDebugText": {
+        "ObjectName": "Function NE_WBP_PerkProgressBar_C:SetDebugText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.2"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_PerkProgressBar_C Default__NE_WBP_PerkProgressBar_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.4"
+    }
+  },
+  {
+    "Type": "NE_WBP_PerkProgressBar_C",
+    "Name": "Default__NE_WBP_PerkProgressBar_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PerkProgressBar_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PerkProgressBar_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_PerkProgressBar_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkProgressBar_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.5"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_PerkProgressBar_C:WidgetTree.ImageRed",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkProgressBar_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.5"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_PerkProgressBar_C:WidgetTree.ImageBlack",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkProgressBar_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.5"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_PerkProgressBar_C:WidgetTree.TextDebug",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.6"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageRed",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.6"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageBlack",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextDebug",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.19"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageBlack",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant MI_PerkProgressbar",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/MI_PerkProgressbar.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PerkProgressBar_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.8"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRed",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFF0000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant MI_PerkProgressbar",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/MI_PerkProgressbar.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PerkProgressBar_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.7"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageBlack",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant MI_PerkProgressbar",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/MI_PerkProgressbar.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.11"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImageRed",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFF0000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant MI_PerkProgressbar",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/HUD/Perk/MI_PerkProgressbar.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.10"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_PerkProgressBar_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_PerkProgressBar_C",
+    "Properties": {
+      "ImageBlack": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageBlack",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.15"
+      },
+      "ImageRed": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageRed",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.16"
+      },
+      "TextDebug": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextDebug",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.19"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.21"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextDebug",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "1111"
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_PerkProgressBar_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.9"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextDebug",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "1111"
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.12"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_PerkProgressBar_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_PerkProgressBar_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HUD/Perk/NE_WBP_PerkProgressBar.6"
+      }
+    }
+  }
+]

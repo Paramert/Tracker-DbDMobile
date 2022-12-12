@@ -1,0 +1,1796 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_Settlement_PyWBP_Small_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_Settlement_PyWBP_Small_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.61"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Background",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "border",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerDevotionText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerLevelText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "smoke",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TooltipButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Button",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TooltipHighlightPicture",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "XPProgressBar",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ProgressBar",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_Settlement_PyWBP_Small_C Default__NE_Settlement_PyWBP_Small_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.1"
+    }
+  },
+  {
+    "Type": "NE_Settlement_PyWBP_Small_C",
+    "Name": "Default__NE_Settlement_PyWBP_Small_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "TooltipButton",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 205.0,
+            "Y": 182.0
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 205.0,
+            "Y": 182.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Alt_Tooltip_PLevelSelected_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Alt_Tooltip_PLevelSelected_png.1"
+          }
+        },
+        "Disabled": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FF000000"
+            }
+          }
+        }
+      },
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.13"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "TooltipButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 205.0,
+            "Y": 182.0
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 205.0,
+            "Y": 182.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Alt_Tooltip_PLevelSelected_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Alt_Tooltip_PLevelSelected_png.1"
+          }
+        },
+        "Disabled": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FF000000"
+            }
+          }
+        }
+      },
+      "IsFocusable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.12"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.ProgressBarContainer.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.ProgressBarContainer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Tooltip_btn_anim",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.Tooltip_btn_anim.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.Tooltip_btn_anim.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.18"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.23"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.24"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.23"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ProgressBarContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarContainer.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarContainer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.30"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Tooltip_btn_anim",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.32"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.29"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 130.0,
+          "Bottom": 180.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -35.333336,
+          "Top": -4.666667,
+          "Right": -34.256413,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.5"
+      },
+      "Content": {
+        "ObjectName": "Button NE_Settlement_PyWBP_Small_C:WidgetTree.TooltipButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.2"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -10.0,
+          "Right": 128.0,
+          "Bottom": 128.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.5"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Settlement_PyWBP_Small_C:WidgetTree.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 18.5,
+          "Top": 55.0,
+          "Right": 91.0,
+          "Bottom": 57.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.5"
+      },
+      "Content": {
+        "ObjectName": "SizeBox NE_Settlement_PyWBP_Small_C:WidgetTree.SizeBox_122",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -10.0,
+          "Right": 130.0,
+          "Bottom": 150.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 18.0,
+          "Top": 87.246,
+          "Right": 93.0,
+          "Bottom": 51.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.5"
+      },
+      "Content": {
+        "ObjectName": "SizeBox NE_Settlement_PyWBP_Small_C:WidgetTree.SizeBox_284",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 130.0,
+          "Bottom": 130.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ProgressBarContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 1.4,
+          "Right": 116.8,
+          "Bottom": 122.799995
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.6"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar NE_Settlement_PyWBP_Small_C:WidgetTree.XPProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ProgressBarContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -0.75,
+          "Top": 2.0,
+          "Right": 194.5,
+          "Bottom": 168.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Settlement_PyWBP_Small_C:WidgetTree.TooltipHighlightPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Tooltip_btn_anim",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 0.5,
+          "Top": -9.555746,
+          "Right": 331.0,
+          "Bottom": 330.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.7"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox NE_Settlement_PyWBP_Small_C:WidgetTree.Item_Highlighted",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Tooltip_btn_anim",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1.496791,
+          "Top": -11.468263,
+          "Right": 172.51054,
+          "Bottom": 175.33083
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.7"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Settlement_PyWBP_Small_C:WidgetTree.smoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 130.0,
+          "Bottom": 180.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -35.333336,
+          "Top": -4.666667,
+          "Right": -34.256413,
+          "Bottom": 10.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.9"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.TooltipButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -10.0,
+          "Right": 128.0,
+          "Bottom": 128.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 18.5,
+          "Top": 55.0,
+          "Right": 91.0,
+          "Bottom": 57.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.9"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_122",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -10.0,
+          "Right": 130.0,
+          "Bottom": 150.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 18.0,
+          "Top": 87.246,
+          "Right": 93.0,
+          "Bottom": 51.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.9"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_284",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_1",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 130.0,
+          "Bottom": 130.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "ProgressBarContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 1.4,
+          "Right": 116.8,
+          "Bottom": 122.799995
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.10"
+      },
+      "Content": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.XPProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ProgressBarContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -0.75,
+          "Top": 2.0,
+          "Right": 194.5,
+          "Bottom": 168.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ProgressBarContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TooltipHighlightPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Tooltip_btn_anim",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 0.5,
+          "Top": -9.555746,
+          "Right": 331.0,
+          "Bottom": 330.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.11"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.Item_Highlighted",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Tooltip_btn_anim",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1.496791,
+          "Top": -11.468263,
+          "Right": 172.51054,
+          "Bottom": 175.33083
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.Tooltip_btn_anim",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.smoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.40"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 128.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tally_Level_Body_Small_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Tally_Level_Body_Small_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.14"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "border",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 326.0,
+          "Y": 363.0
+        },
+        "Margin": {
+          "Left": 0.92,
+          "Top": 0.92,
+          "Right": 0.92,
+          "Bottom": 0.92
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Loadout_Offering_HoldPressedOutline_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Offering_HoldPressedOutline_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot NE_Settlement_PyWBP_Small_C:WidgetTree.Item_Highlighted.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.47"
+      },
+      "RenderTransform": {
+        "Angle": -45.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "smoke",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 326.0,
+          "Y": 363.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Loadout_Offering_HoldPressedSmoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Offering_HoldPressedSmoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.Tooltip_btn_anim.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.22"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TooltipHighlightPicture",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 205.0,
+          "Y": 182.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Alt_Tooltip_PLevelSelected_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Alt_Tooltip_PLevelSelected_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.ProgressBarContainer.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.20"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 128.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Tally_Level_Body_Small_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Tally_Level_Body_Small_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.25"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "border",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 326.0,
+          "Y": 363.0
+        },
+        "Margin": {
+          "Left": 0.92,
+          "Top": 0.92,
+          "Right": 0.92,
+          "Bottom": 0.92
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Loadout_Offering_HoldPressedOutline_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Offering_HoldPressedOutline_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.Item_Highlighted.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.48"
+      },
+      "RenderTransform": {
+        "Angle": -45.0
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "smoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 326.0,
+          "Y": 363.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Loadout_Offering_HoldPressedSmoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Loadout_Offering_HoldPressedSmoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.33"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TooltipHighlightPicture",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 205.0,
+          "Y": 182.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Alt_Tooltip_PLevelSelected_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Alt_Tooltip_PLevelSelected_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarContainer.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.31"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "NE_Settlement_PyWBP_Small_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_Settlement_PyWBP_Small_C",
+    "Properties": {
+      "Background": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.38"
+      },
+      "border": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.border",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.39"
+      },
+      "PlayerDevotionText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerDevotionText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.59"
+      },
+      "PlayerLevelText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerLevelText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.60"
+      },
+      "smoke": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.smoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.40"
+      },
+      "TooltipButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.TooltipButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.3"
+      },
+      "TooltipHighlightPicture": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TooltipHighlightPicture",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.41"
+      },
+      "XPProgressBar": {
+        "ObjectName": "ProgressBar WidgetArchetype:WidgetTree_0.XPProgressBar",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.44"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.62"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "XPProgressBar",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 446.0,
+            "Y": 465.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Tally_Level_Growing_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Tally_Level_Growing_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "MarqueeImage": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::BottomToTop",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.ProgressBarContainer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.19"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "ProgressBar",
+    "Name": "XPProgressBar",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "BackgroundImage": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "FillImage": {
+          "ImageSize": {
+            "X": 446.0,
+            "Y": 465.0
+          },
+          "ResourceObject": {
+            "ObjectName": "PaperSprite Atl_Tally_Level_Growing_png",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/OutputPaper2D/Frames/Atl_Tally_Level_Growing_png.1"
+          },
+          "DrawAs": "ESlateBrushDrawType::Image"
+        },
+        "MarqueeImage": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "Percent": 1.0,
+      "BarFillType": "EProgressBarFillType::BottomToTop",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ProgressBarContainer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.30"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "Item_Highlighted",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Stretch": "EStretch::None",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot NE_Settlement_PyWBP_Small_C:WidgetTree.Item_Highlighted.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.47"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.Tooltip_btn_anim.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.21"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.75,
+          "Y": 0.75
+        },
+        "Angle": 45.0
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "Item_Highlighted",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Stretch": "EStretch::None",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.Item_Highlighted.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.48"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.Tooltip_btn_anim.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.32"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.75,
+          "Y": 0.75
+        },
+        "Angle": 45.0
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "Item_Highlighted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox NE_Settlement_PyWBP_Small_C:WidgetTree.Item_Highlighted",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.45"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Settlement_PyWBP_Small_C:WidgetTree.border",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.35"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "Item_Highlighted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.Item_Highlighted",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.46"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.border",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.39"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_122",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidthOverride": 91.0,
+      "HeightOverride": 57.0,
+      "MaxDesiredWidth": 91.0,
+      "MaxDesiredHeight": 57.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "bOverride_MaxDesiredWidth": true,
+      "bOverride_MaxDesiredHeight": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot NE_Settlement_PyWBP_Small_C:WidgetTree.SizeBox_122.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.53"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.15"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_284",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidthOverride": 93.0,
+      "HeightOverride": 51.0,
+      "MaxDesiredWidth": 93.0,
+      "MaxDesiredHeight": 51.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "bOverride_MaxDesiredWidth": true,
+      "bOverride_MaxDesiredHeight": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot NE_Settlement_PyWBP_Small_C:WidgetTree.SizeBox_284.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.54"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.17"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_122",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidthOverride": 91.0,
+      "HeightOverride": 57.0,
+      "MaxDesiredWidth": 91.0,
+      "MaxDesiredHeight": 57.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "bOverride_MaxDesiredWidth": true,
+      "bOverride_MaxDesiredHeight": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_122.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.55"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.26"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_284",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidthOverride": 93.0,
+      "HeightOverride": 51.0,
+      "MaxDesiredWidth": 93.0,
+      "MaxDesiredHeight": 51.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "bOverride_MaxDesiredWidth": true,
+      "bOverride_MaxDesiredHeight": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_284.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.56"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.28"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_122",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "SizeBox NE_Settlement_PyWBP_Small_C:WidgetTree.SizeBox_122",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.49"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_Settlement_PyWBP_Small_C:WidgetTree.PlayerLevelText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.58"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_284",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox NE_Settlement_PyWBP_Small_C:WidgetTree.SizeBox_284",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.50"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_Settlement_PyWBP_Small_C:WidgetTree.PlayerDevotionText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.57"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_122",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_122",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.51"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerLevelText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.60"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_284",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_284",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.52"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.PlayerDevotionText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.59"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerDevotionText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Font": {
+        "TypefaceFontName": "Light",
+        "Size": 22
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 100.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot NE_Settlement_PyWBP_Small_C:WidgetTree.SizeBox_284.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.54"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerLevelText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Justification": "ETextJustify::Center",
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 120.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot NE_Settlement_PyWBP_Small_C:WidgetTree.SizeBox_122.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.53"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerDevotionText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Font": {
+        "TypefaceFontName": "Light",
+        "Size": 22
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 100.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_284.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.56"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PlayerLevelText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Justification": "ETextJustify::Center",
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 120.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_122.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.55"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_Settlement_PyWBP_Small_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_Settlement_PyWBP_Small_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/WarSettlement/Record/NE_Settlement_PyWBP_Small.8"
+      }
+    }
+  }
+]

@@ -1,0 +1,2853 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_NE_LobbyChat_PyWBP_FriendList",
+    "Outer": "NE_LobbyChat_PyWBP_FriendList_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_ComponentBoundEvent_bIsChecked",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__ToggleState_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature",
+    "Outer": "NE_LobbyChat_PyWBP_FriendList_C",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsChecked",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_LobbyChat_PyWBP_FriendList_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_LobbyChat_PyWBP_FriendList_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.96"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.WidgetArchetype",
+        "SubPathString": ""
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding NE_LobbyChat_PyWBP_FriendList_C:ComponentDelegateBinding_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.30"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function NE_LobbyChat_PyWBP_FriendList_C:ExecuteUbergraph_NE_LobbyChat_PyWBP_FriendList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyListEntry",
+      "ObjectPath": "/Script/DBDPython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_LobbyChat_PyWBP_FriendList_C:BndEvt__ToggleState_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.1"
+      },
+      {
+        "ObjectName": "Function NE_LobbyChat_PyWBP_FriendList_C:ExecuteUbergraph_NE_LobbyChat_PyWBP_FriendList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ExpandableArea_26",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class ExpandableArea",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_40",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MaskedList",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class HorizontalBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MultiStateList",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetSwitcher",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NotificationIcon",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NotificationPanel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OfflineList",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class HorizontalBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OnlineList",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class HorizontalBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ToggleState",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CheckBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_NE_LobbyChat_PyWBP_FriendList": {
+        "ObjectName": "Function NE_LobbyChat_PyWBP_FriendList_C:ExecuteUbergraph_NE_LobbyChat_PyWBP_FriendList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.0"
+      },
+      "BndEvt__ToggleState_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature": {
+        "ObjectName": "Function NE_LobbyChat_PyWBP_FriendList_C:BndEvt__ToggleState_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.1"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_LobbyChat_PyWBP_FriendList_C Default__NE_LobbyChat_PyWBP_FriendList_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.3"
+    }
+  },
+  {
+    "Type": "NE_LobbyChat_PyWBP_FriendList_C",
+    "Name": "Default__NE_LobbyChat_PyWBP_FriendList_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_14",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_41",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_41.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_41.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_14.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_73",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_73.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_73.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_73.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.17"
+        }
+      ],
+      "RenderTransform": {
+        "Translation": {
+          "X": 0.0,
+          "Y": 3.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "NotificationPanel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.NotificationPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.NotificationPanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_73.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.17"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_14",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_41",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_41.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_41.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_14.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_73",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_73.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_73.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_73.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.25"
+        }
+      ],
+      "RenderTransform": {
+        "Translation": {
+          "X": 0.0,
+          "Y": 3.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "NotificationPanel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NotificationPanel.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NotificationPanel.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.27"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_73.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.25"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 2.0,
+          "Right": 550.0,
+          "Bottom": 66.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_41",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 55.0,
+          "Top": 2.0,
+          "Right": 487.5357,
+          "Bottom": 66.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.5"
+      },
+      "Content": {
+        "ObjectName": "ExpandableArea NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.ExpandableArea_26",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_41",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -54.0,
+          "Top": 11.5,
+          "Right": -28.985508,
+          "Bottom": 11.5
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.5"
+      },
+      "Content": {
+        "ObjectName": "CheckBox NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.ToggleState",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.28"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_73",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 158.60059,
+          "Bottom": 49.72789
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_73",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.6"
+      },
+      "Content": {
+        "ObjectName": "Image NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.Image_40",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_73",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 32.0,
+          "Right": 185.034,
+          "Bottom": 47.0068
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_73",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.6"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.80"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_73",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 55.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_73",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "NotificationPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.0,
+          "Right": 99.0,
+          "Bottom": 110.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.7"
+      },
+      "Content": {
+        "ObjectName": "Image NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.NotificationIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "NotificationPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.0,
+          "Top": -18.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "ZOrder": 2,
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.7"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.NotificationCountText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.59"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_14",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 2.0,
+          "Right": 550.0,
+          "Bottom": 66.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_41",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 55.0,
+          "Top": 2.0,
+          "Right": 487.5357,
+          "Bottom": 66.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.9"
+      },
+      "Content": {
+        "ObjectName": "ExpandableArea WidgetArchetype:WidgetTree_0.ExpandableArea_26",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_41",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -54.0,
+          "Top": 11.5,
+          "Right": -28.985508,
+          "Bottom": 11.5
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_41",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.9"
+      },
+      "Content": {
+        "ObjectName": "CheckBox WidgetArchetype:WidgetTree_0.ToggleState",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_73",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 158.60059,
+          "Bottom": 49.72789
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_73",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.10"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_40",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_73",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 32.0,
+          "Right": 185.034,
+          "Bottom": 47.0068
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_73",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.10"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.81"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_73",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 55.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_73",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.10"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "NotificationPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.0,
+          "Right": 99.0,
+          "Bottom": 110.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.11"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.NotificationIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.54"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "NotificationPanel",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.0,
+          "Top": -18.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        }
+      },
+      "ZOrder": 2,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.11"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.NotificationCountText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.70"
+      }
+    }
+  },
+  {
+    "Type": "CheckBox",
+    "Name": "ToggleState",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "CheckedState": "ECheckBoxState::Checked",
+      "WidgetStyle": {
+        "CheckBoxType": "ESlateCheckBoxType::ToggleButton",
+        "UncheckedImage": {
+          "ImageSize": {
+            "X": 922.0,
+            "Y": 50.0
+          },
+          "Margin": {
+            "Left": 0.25,
+            "Top": 0.25,
+            "Right": 0.25,
+            "Bottom": 0.25
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 0.5,
+              "Hex": "7F000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Friendlist_List_Cat_Title",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Friendlist/Atl_Friendlist_List_Cat_Title.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Box"
+        },
+        "UncheckedHoveredImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "UncheckedPressedImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.5,
+              "G": 0.5,
+              "B": 0.5,
+              "A": 0.0,
+              "Hex": "BCBCBC"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "CheckedImage": {
+          "ImageSize": {
+            "X": 922.0,
+            "Y": 50.0
+          },
+          "Margin": {
+            "Left": 0.25,
+            "Top": 0.25,
+            "Right": 0.25,
+            "Bottom": 0.25
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.75,
+              "Hex": "BFFFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Friendlist_List_Cat_Title",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Friendlist/Atl_Friendlist_List_Cat_Title.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Box"
+        },
+        "CheckedHoveredImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.5,
+              "G": 0.5,
+              "B": 0.5,
+              "A": 0.0,
+              "Hex": "BCBCBC"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "CheckedPressedImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "UndeterminedImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "UndeterminedHoveredImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "UndeterminedPressedImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.5,
+              "G": 0.5,
+              "B": 0.5,
+              "A": 0.0,
+              "Hex": "BCBCBC"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Padding": {
+          "Left": 0.0
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_41.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.14"
+      }
+    }
+  },
+  {
+    "Type": "CheckBox",
+    "Name": "ToggleState",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "CheckedState": "ECheckBoxState::Checked",
+      "WidgetStyle": {
+        "CheckBoxType": "ESlateCheckBoxType::ToggleButton",
+        "UncheckedImage": {
+          "ImageSize": {
+            "X": 922.0,
+            "Y": 50.0
+          },
+          "Margin": {
+            "Left": 0.25,
+            "Top": 0.25,
+            "Right": 0.25,
+            "Bottom": 0.25
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 0.5,
+              "Hex": "7F000000"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Friendlist_List_Cat_Title",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Friendlist/Atl_Friendlist_List_Cat_Title.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Box"
+        },
+        "UncheckedHoveredImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "UncheckedPressedImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.5,
+              "G": 0.5,
+              "B": 0.5,
+              "A": 0.0,
+              "Hex": "BCBCBC"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "CheckedImage": {
+          "ImageSize": {
+            "X": 922.0,
+            "Y": 50.0
+          },
+          "Margin": {
+            "Left": 0.25,
+            "Top": 0.25,
+            "Right": 0.25,
+            "Bottom": 0.25
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.75,
+              "Hex": "BFFFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Friendlist_List_Cat_Title",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Friendlist/Atl_Friendlist_List_Cat_Title.0"
+          },
+          "DrawAs": "ESlateBrushDrawType::Box"
+        },
+        "CheckedHoveredImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.5,
+              "G": 0.5,
+              "B": 0.5,
+              "A": 0.0,
+              "Hex": "BCBCBC"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "CheckedPressedImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "UndeterminedImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "UndeterminedHoveredImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "UndeterminedPressedImage": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.5,
+              "G": 0.5,
+              "B": 0.5,
+              "A": 0.0,
+              "Hex": "BCBCBC"
+            }
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "Padding": {
+          "Left": 0.0
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_41.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.22"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "NE_LobbyChat_PyWBP_FriendList_C",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "ToggleState",
+          "DelegatePropertyName": "OnCheckStateChanged",
+          "FunctionNameToBind": "BndEvt__ToggleState_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ExpandableArea",
+    "Name": "ExpandableArea_26",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Style": {
+        "CollapsedImage": {
+          "ImageSize": {
+            "X": 54.0,
+            "Y": 54.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Friendlist_List_Cat_Arrow",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Friendlist/Atl_Friendlist_List_Cat_Arrow.0"
+          }
+        },
+        "ExpandedImage": {
+          "ImageSize": {
+            "X": 64.0,
+            "Y": 64.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Friendlist_List_Cat_Arrow02",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Friendlist/Atl_Friendlist_List_Cat_Arrow02.0"
+          }
+        }
+      },
+      "BorderBrush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.0,
+            "Hex": "FFFFFF"
+          }
+        }
+      },
+      "HeaderContent": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_73",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.6"
+      },
+      "BodyContent": {
+        "ObjectName": "VerticalBox NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.VerticalBox_61",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.78"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_41.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.13"
+      }
+    }
+  },
+  {
+    "Type": "ExpandableArea",
+    "Name": "ExpandableArea_26",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Style": {
+        "CollapsedImage": {
+          "ImageSize": {
+            "X": 54.0,
+            "Y": 54.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Friendlist_List_Cat_Arrow",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Friendlist/Atl_Friendlist_List_Cat_Arrow.0"
+          }
+        },
+        "ExpandedImage": {
+          "ImageSize": {
+            "X": 64.0,
+            "Y": 64.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Friendlist_List_Cat_Arrow02",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Friendlist/Atl_Friendlist_List_Cat_Arrow02.0"
+          }
+        }
+      },
+      "BorderBrush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.0,
+            "Hex": "FFFFFF"
+          }
+        }
+      },
+      "HeaderContent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_73",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.10"
+      },
+      "BodyContent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_61",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.79"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_41.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.21"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "MaskedList",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MaskedList.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.39"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MaskedList.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.40"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.84"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "OfflineList",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OfflineList.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.41"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OfflineList.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.42"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.83"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "OnlineList",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OnlineList.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.43"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OnlineList.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.44"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.82"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "MaskedList",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.MaskedList.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.45"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.MaskedList.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.46"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.91"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "OfflineList",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.OfflineList.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.47"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.OfflineList.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.48"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.90"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "OnlineList",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.OnlineList.HorizontalBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.49"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.OnlineList.HorizontalBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.50"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.89"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "MaskedList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MaskedList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.33"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.Masked",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.57"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "MaskedList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MaskedList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.33"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MaskedNumber",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.58"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "OfflineList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OfflineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.34"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.Offline",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.60"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "OfflineList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OfflineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.34"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OfflineNumber",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.61"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "OnlineList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OnlineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.35"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.Online",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.62"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "OnlineList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OnlineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.35"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OnlineNumber",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.63"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "MaskedList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.MaskedList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.36"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Masked",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.68"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "MaskedList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.MaskedList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.36"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.MaskedNumber",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.69"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "OfflineList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.OfflineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.37"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Offline",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.71"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "OfflineList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.OfflineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.37"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.OfflineNumber",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.72"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "OnlineList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.OnlineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.38"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Online",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.73"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "OnlineList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.OnlineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.38"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.OnlineNumber",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.74"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_40",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.0,
+            "Hex": "FFFFFF"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_73.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.15"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "NotificationIcon",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 99.0,
+          "Y": 110.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_Notification",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/Atl_Main_Notification.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.NotificationPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.18"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.7,
+          "Y": 0.7
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_40",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.0,
+            "Hex": "FFFFFF"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_73.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.23"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "NotificationIcon",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 99.0,
+          "Y": 110.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_Notification",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/Atl_Main_Notification.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NotificationPanel.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.26"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.7,
+          "Y": 0.7
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "NE_LobbyChat_PyWBP_FriendList_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_LobbyChat_PyWBP_FriendList_C",
+    "Properties": {
+      "ExpandableArea_26": {
+        "ObjectName": "ExpandableArea WidgetArchetype:WidgetTree_0.ExpandableArea_26",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.32"
+      },
+      "Image_40": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_40",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.53"
+      },
+      "MaskedList": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.MaskedList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.36"
+      },
+      "MultiStateList": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.81"
+      },
+      "NotificationIcon": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.NotificationIcon",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.54"
+      },
+      "NotificationPanel": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.NotificationPanel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.11"
+      },
+      "OfflineList": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.OfflineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.37"
+      },
+      "OnlineList": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.OnlineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.38"
+      },
+      "ToggleState": {
+        "ObjectName": "CheckBox WidgetArchetype:WidgetTree_0.ToggleState",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.29"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.97"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "LatelyPlayer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "134C08CF42E43F8FC8E079B4DF66B595",
+        "SourceString": "最近对局中玩家"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.87"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Masked",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "4041E1F045C6DFCB76F90F9830022673",
+        "SourceString": "屏蔽"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MaskedList.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.39"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "MaskedNumber",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "F80D847944D48DE50282988B107BBEE5",
+        "SourceString": "（3）"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.701102,
+          "G": 0.266356,
+          "B": 0.002732,
+          "A": 1.0,
+          "Hex": "FFDA8D09"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Bold Italic"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MaskedList.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.40"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NotificationCountText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "9"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 26
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.NotificationPanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.19"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Offline",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "DD7B4F6845203200568E069FFAEFFF61",
+        "SourceString": "离线"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OfflineList.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.41"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "OfflineNumber",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "299A1EC144F1EA01FB50CD8D493D6899",
+        "SourceString": "（4）"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.701102,
+          "G": 0.266356,
+          "B": 0.002732,
+          "A": 1.0,
+          "Hex": "FFDA8D09"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Bold Italic"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OfflineList.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.42"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Online",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "DD6644EB47938D5FBA0FD389BA987327",
+        "SourceString": "在线"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OnlineList.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.43"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "OnlineNumber",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "F80D847944D48DE50282988B107BBEE5",
+        "SourceString": "（3）"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.701102,
+          "G": 0.266356,
+          "B": 0.002732,
+          "A": 1.0,
+          "Hex": "FFDA8D09"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Bold Italic"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OnlineList.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.44"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ReceivedRequest",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "98D51B5A464406C9FF383D92F133BA7D",
+        "SourceString": "已收到请求"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.85"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SendRequest",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "A140DA8D46A077D1E92A8A9B6876D319",
+        "SourceString": "发送请求"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.86"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SocialContact",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "E7F114B545F2C0C2FF9FDFAAC3C30E43",
+        "SourceString": "社交平台好友"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.88"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "LatelyPlayer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "134C08CF42E43F8FC8E079B4DF66B595",
+        "SourceString": "最近对局中玩家"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.94"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Masked",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "4041E1F045C6DFCB76F90F9830022673",
+        "SourceString": "屏蔽"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.MaskedList.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.45"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "MaskedNumber",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "F80D847944D48DE50282988B107BBEE5",
+        "SourceString": "（3）"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.701102,
+          "G": 0.266356,
+          "B": 0.002732,
+          "A": 1.0,
+          "Hex": "FFDA8D09"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Bold Italic"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.MaskedList.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.46"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NotificationCountText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "CultureInvariantString": "9"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 26
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.NotificationPanel.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.27"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Offline",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "DD7B4F6845203200568E069FFAEFFF61",
+        "SourceString": "离线"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.OfflineList.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.47"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "OfflineNumber",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "299A1EC144F1EA01FB50CD8D493D6899",
+        "SourceString": "（4）"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.701102,
+          "G": 0.266356,
+          "B": 0.002732,
+          "A": 1.0,
+          "Hex": "FFDA8D09"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Bold Italic"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.OfflineList.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.48"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Online",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "DD6644EB47938D5FBA0FD389BA987327",
+        "SourceString": "在线"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.OnlineList.HorizontalBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.49"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "OnlineNumber",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "F80D847944D48DE50282988B107BBEE5",
+        "SourceString": "（3）"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.701102,
+          "G": 0.266356,
+          "B": 0.002732,
+          "A": 1.0,
+          "Hex": "FFDA8D09"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Bold Italic"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.OnlineList.HorizontalBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.50"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ReceivedRequest",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "98D51B5A464406C9FF383D92F133BA7D",
+        "SourceString": "已收到请求"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.92"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SendRequest",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "A140DA8D46A077D1E92A8A9B6876D319",
+        "SourceString": "发送请求"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.93"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SocialContact",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "E7F114B545F2C0C2FF9FDFAAC3C30E43",
+        "SourceString": "社交平台好友"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.473532,
+          "G": 0.14996,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFB76C00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font Roboto-Black_Font",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.95"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 5.0,
+          "Y": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_61",
+    "Outer": "WidgetTree"
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_61",
+    "Outer": "WidgetTree_0"
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "MultiStateList",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.82"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.83"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.84"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.85"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.86"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.87"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList.WidgetSwitcherSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.88"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_73.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.16"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "MultiStateList",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.89"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.90"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.91"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.92"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.93"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.94"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.MultiStateList.WidgetSwitcherSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.95"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_73.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.24"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.80"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OnlineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.35"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.80"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.OfflineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.34"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.80"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MaskedList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.33"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.80"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.ReceivedRequest",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.64"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_4",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.80"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.SendRequest",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.65"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_5",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.80"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.LatelyPlayer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.56"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_6",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.80"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.SocialContact",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.66"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.81"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.OnlineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.38"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.81"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.OfflineList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.37"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.81"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.MaskedList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.36"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.81"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ReceivedRequest",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.75"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_4",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.81"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.SendRequest",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.76"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_5",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.81"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.LatelyPlayer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.67"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_6",
+    "Outer": "MultiStateList",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.MultiStateList",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.81"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.SocialContact",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.77"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_LobbyChat_PyWBP_FriendList_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_LobbyChat_PyWBP_FriendList_C:WidgetTree.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_14",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Chat/LobbyChat/Friends/NE_LobbyChat_PyWBP_FriendList.8"
+      }
+    }
+  }
+]

@@ -1,0 +1,664 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetAutoRunLabelText",
+    "Outer": "NE_WBP_HudEdit_AutoRun_C",
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "text",
+        "Flags": 1,
+        "ElementSize": 24,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetColor",
+    "Outer": "NE_WBP_HudEdit_AutoRun_C",
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "SetColor",
+    "Outer": "NE_WBP_HudEdit_AutoRun_C",
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTextRenderSize",
+    "Outer": "NE_WBP_HudEdit_AutoRun_C",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "NewParam",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "NewParam1",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct Vector2D",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_WBP_HudEdit_AutoRun_C",
+    "Super": "NE_Py_Drag_Widget_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_WBP_HudEdit_AutoRun_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.25"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "WidgetBlueprintGeneratedClass NE_Py_Drag_Widget_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/DragWidget/NE_Py_Drag_Widget.15"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_WBP_HudEdit_AutoRun_C:SetTextRenderSize",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.3"
+      },
+      {
+        "ObjectName": "Function NE_WBP_HudEdit_AutoRun_C:SetColor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.2"
+      },
+      {
+        "ObjectName": "Function NE_WBP_HudEdit_AutoRun_C:ResetColor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.1"
+      },
+      {
+        "ObjectName": "Function NE_WBP_HudEdit_AutoRun_C:SetAutoRunLabelText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ButtonLabel",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "JoystickOn",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UnderSizeBox",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class SizeBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Id",
+        "Flags": 2097153,
+        "ElementSize": 12,
+        "PropertyFlags": 5,
+        "Struct": {
+          "ObjectName": "ScriptStruct GameplayTag",
+          "ObjectPath": "/Script/GameplayTags"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetAutoRunLabelText": {
+        "ObjectName": "Function NE_WBP_HudEdit_AutoRun_C:SetAutoRunLabelText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.0"
+      },
+      "ResetColor": {
+        "ObjectName": "Function NE_WBP_HudEdit_AutoRun_C:ResetColor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.1"
+      },
+      "SetColor": {
+        "ObjectName": "Function NE_WBP_HudEdit_AutoRun_C:SetColor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.2"
+      },
+      "SetTextRenderSize": {
+        "ObjectName": "Function NE_WBP_HudEdit_AutoRun_C:SetTextRenderSize",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.3"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_WBP_HudEdit_AutoRun_C Default__NE_WBP_HudEdit_AutoRun_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.5"
+    }
+  },
+  {
+    "Type": "NE_WBP_HudEdit_AutoRun_C",
+    "Name": "Default__NE_WBP_HudEdit_AutoRun_C",
+    "Template": "Default__NE_Py_Drag_Widget_C",
+    "Properties": {
+      "Id": {
+        "TagName": "None"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_110",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_110.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_110.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_110",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_110.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_110.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 3.5,
+          "Top": 4.0,
+          "Right": 3.5,
+          "Bottom": -0.49998474
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.9792627
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_110",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.6"
+      },
+      "Content": {
+        "ObjectName": "SizeBox NE_WBP_HudEdit_AutoRun_C:WidgetTree.UnderSizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_110",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_110",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.7"
+      },
+      "Content": {
+        "ObjectName": "Image NE_WBP_HudEdit_AutoRun_C:WidgetTree.JoystickOn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_110",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.5,
+          "Top": 1.2124329,
+          "Right": 2.5,
+          "Bottom": 1.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.8
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.95632386
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_110",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.7"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_WBP_HudEdit_AutoRun_C:WidgetTree.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 3.5,
+          "Top": 4.0,
+          "Right": 3.5,
+          "Bottom": -0.49998474
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.9792627
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_110",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.8"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.UnderSizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_110",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_110",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.9"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.JoystickOn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_110",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.5,
+          "Top": 1.2124329,
+          "Right": 2.5,
+          "Bottom": 1.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.8
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.95632386
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_110",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.9"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.24"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "JoystickOn",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 196.0,
+          "Y": 195.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Hud_Pad_RunLock",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/HUDEditor/Frames/Atl_Hud_Pad_RunLock.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_110.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.12"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "JoystickOn",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 196.0,
+          "Y": 195.0
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_Hud_Pad_RunLock",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Tally/HUDEditor/Frames/Atl_Hud_Pad_RunLock.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_110.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.16"
+      }
+    }
+  },
+  {
+    "Type": "NE_WBP_HudEdit_AutoRun_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_WBP_HudEdit_AutoRun_C",
+    "Properties": {
+      "ButtonLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.24"
+      },
+      "JoystickOn": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.JoystickOn",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.19"
+      },
+      "UnderSizeBox": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.UnderSizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.22"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.26"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "UnderSizeBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.11"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "UnderSizeBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.15"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "EA4E1984480E6D4B102486A91CF2B055",
+        "SourceString": "Auto Run"
+      },
+      "Font": {
+        "Size": 18
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.6,
+        "Hex": "99000000"
+      },
+      "Justification": "ETextJustify::Center",
+      "AutoWrapText": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_110.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.13"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "EA4E1984480E6D4B102486A91CF2B055",
+        "SourceString": "Auto Run"
+      },
+      "Font": {
+        "Size": 18
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.6,
+        "Hex": "99000000"
+      },
+      "Justification": "ETextJustify::Center",
+      "AutoWrapText": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_110.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.17"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_WBP_HudEdit_AutoRun_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_WBP_HudEdit_AutoRun_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/HudEditor/Common/NE_WBP_HudEdit_AutoRun.8"
+      }
+    }
+  }
+]
