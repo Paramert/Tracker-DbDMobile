@@ -1,0 +1,162 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_3",
+    "Outer": "SM_Chair",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -1.1444092E-05,
+              "Y": -1.5258789E-05,
+              "Z": 39.40833
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 61.315586,
+            "Y": 58.49239,
+            "Z": 65.78117,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          },
+          {
+            "Center": {
+              "X": -1.1444092E-05,
+              "Y": -25.611023,
+              "Z": 77.637726
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 56.698055,
+            "Y": 16.610422,
+            "Z": 148.62395,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "17B239C142ECB81D1532DD92A8607F6F",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 87760,
+        "SizeOnDisk": 87760,
+        "OffsetInFile": "0x32C2C"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "SM_Chair",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 509,
+        "SizeOnDisk": 509,
+        "OffsetInFile": "0x48344"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Chair",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material M_Chair",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Chair.0"
+          },
+          "MaterialSlotName": "M_Chair",
+          "ImportedMaterialSlotName": "M_Chair",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 234.20085,
+            "LocalUVDensities": 263.3773,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 263.3773,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.1444092E-05,
+          "Y": -1.5258789E-05,
+          "Z": 77.637726
+        },
+        "BoxExtent": {
+          "X": 32.496384,
+          "Y": 33.431137,
+          "Z": 77.63772
+        },
+        "SphereRadius": 87.878136
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Chair:BodySetup_3",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Chair.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Chair:NavCollision_5",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Chair.1"
+    },
+    "LightingGuid": "9A30E018-4A6AA2E7-59F9DEA2-6C6B3FB3",
+    "RenderData": null
+  }
+]

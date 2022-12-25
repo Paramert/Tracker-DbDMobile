@@ -126,6 +126,18 @@
         }
       },
       {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
         "Type": "ObjectProperty",
         "Name": "CallFunc_PlayAnimation_ReturnValue_2",
         "Flags": 1,
@@ -350,6 +362,16 @@
   },
   {
     "Type": "Function",
+    "Name": "Construct",
+    "Outer": "NE_WBP_DailyRewardWidget_small_7_C",
+    "SuperStruct": {
+      "ObjectName": "Function UserWidget:Construct",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": 134350856
+  },
+  {
+    "Type": "Function",
     "Name": "OnAnimationFinished_Event_1",
     "Outer": "NE_WBP_DailyRewardWidget_small_7_C",
     "FunctionFlags": 201326592
@@ -359,16 +381,6 @@
     "Name": "OnAnimationFinished_Event_0",
     "Outer": "NE_WBP_DailyRewardWidget_small_7_C",
     "FunctionFlags": 201326592
-  },
-  {
-    "Type": "Function",
-    "Name": "Construct",
-    "Outer": "NE_WBP_DailyRewardWidget_small_7_C",
-    "SuperStruct": {
-      "ObjectName": "Function UserWidget:Construct",
-      "ObjectPath": "/Script/UMG"
-    },
-    "FunctionFlags": 134350856
   },
   {
     "Type": "Function",
@@ -732,15 +744,15 @@
         "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardWidget_small_7.15"
       },
       {
-        "ObjectName": "Function NE_WBP_DailyRewardWidget_small_7_C:Construct",
+        "ObjectName": "Function NE_WBP_DailyRewardWidget_small_7_C:OnAnimationFinished_Event_0",
         "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardWidget_small_7.14"
       },
       {
-        "ObjectName": "Function NE_WBP_DailyRewardWidget_small_7_C:OnAnimationFinished_Event_0",
+        "ObjectName": "Function NE_WBP_DailyRewardWidget_small_7_C:OnAnimationFinished_Event_1",
         "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardWidget_small_7.13"
       },
       {
-        "ObjectName": "Function NE_WBP_DailyRewardWidget_small_7_C:OnAnimationFinished_Event_1",
+        "ObjectName": "Function NE_WBP_DailyRewardWidget_small_7_C:Construct",
         "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardWidget_small_7.12"
       },
       {
@@ -1496,16 +1508,16 @@
         "ObjectName": "Function NE_WBP_DailyRewardWidget_small_7_C:CollectReward",
         "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardWidget_small_7.11"
       },
+      "Construct": {
+        "ObjectName": "Function NE_WBP_DailyRewardWidget_small_7_C:Construct",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardWidget_small_7.12"
+      },
       "OnAnimationFinished_Event_1": {
         "ObjectName": "Function NE_WBP_DailyRewardWidget_small_7_C:OnAnimationFinished_Event_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardWidget_small_7.12"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardWidget_small_7.13"
       },
       "OnAnimationFinished_Event_0": {
         "ObjectName": "Function NE_WBP_DailyRewardWidget_small_7_C:OnAnimationFinished_Event_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardWidget_small_7.13"
-      },
-      "Construct": {
-        "ObjectName": "Function NE_WBP_DailyRewardWidget_small_7_C:Construct",
         "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/DailyRewards/NE_WBP_DailyRewardWidget_small_7.14"
       },
       "SelectIdleAnimation": {
@@ -1588,6 +1600,32 @@
             "Bottom": 0.0
           }
         },
+        "Hovered": {
+          "ImageSize": {
+            "X": 299.0,
+            "Y": 291.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 299.0,
+            "Y": 291.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
         "NormalPadding": {
           "Left": 0.0,
           "Top": 0.0,
@@ -1625,6 +1663,32 @@
             "Right": 0.0,
             "Bottom": 0.0
           }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 299.0,
+            "Y": 291.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 299.0,
+            "Y": 291.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Button.png"
         },
         "NormalPadding": {
           "Left": 0.0,

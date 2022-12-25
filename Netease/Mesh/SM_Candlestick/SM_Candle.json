@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Candle",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "04A1F1D44C4D55CD73DD9185D56F1EC1",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 6373,
+        "SizeOnDisk": 6373,
+        "OffsetInFile": "0x54F3"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Candle",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6E20"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Candle",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Candlestick",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/SM_Candlestick/MI_Candlestick.0"
+          },
+          "MaterialSlotName": "lambert2",
+          "ImportedMaterialSlotName": "lambert2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 54.494743,
+            "LocalUVDensities": 72.97308,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 72.97308,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.9923997,
+          "Y": 0.21525002,
+          "Z": 11.38213
+        },
+        "BoxExtent": {
+          "X": 5.8940997,
+          "Y": 5.71205,
+          "Z": 11.317932
+        },
+        "SphereRadius": 12.8714075
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Candle:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_Candlestick/SM_Candle.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Candle:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_Candlestick/SM_Candle.1"
+    },
+    "LightingGuid": "62FABB3A-44EA5E87-9E679288-1CE7142F",
+    "RenderData": null
+  }
+]

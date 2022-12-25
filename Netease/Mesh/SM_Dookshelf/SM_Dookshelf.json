@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Dookshelf",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "1DCCF98F47D4BE81CE8225B441EC976C",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 72937,
+        "SizeOnDisk": 72937,
+        "OffsetInFile": "0x3CF9F"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "SM_Dookshelf",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4ECD0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Dookshelf",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Dookshelf",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/SM_Dookshelf/Instance/MI_Dookshelf.0"
+          },
+          "MaterialSlotName": "SM_Dookshelf",
+          "ImportedMaterialSlotName": "SM_Dookshelf",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 522.2174,
+            "LocalUVDensities": 1711.1204,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1711.1204,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.0025939941,
+          "Y": -2.895279,
+          "Z": 272.94785
+        },
+        "BoxExtent": {
+          "X": 422.1234,
+          "Y": 78.3651,
+          "Z": 274.6375
+        },
+        "SphereRadius": 505.1849
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Dookshelf:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_Dookshelf/SM_Dookshelf.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Dookshelf:NavCollision_1",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_Dookshelf/SM_Dookshelf.1"
+    },
+    "LightingGuid": "870F1AC1-4DF0FE0C-21AED2B2-90ECB64C",
+    "RenderData": null
+  }
+]

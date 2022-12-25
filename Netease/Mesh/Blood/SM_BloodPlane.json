@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_BloodPlane",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "3D92113B46DE2B79F05AEFB83FAEC9C2",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 739,
+        "SizeOnDisk": 739,
+        "OffsetInFile": "0x2516"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_BloodPlane",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2841"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_BloodPlane",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Blood",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Blood/Instance/MI_Blood.0"
+          },
+          "MaterialSlotName": "Material #56",
+          "ImportedMaterialSlotName": "Material #56",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 84.91697,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 84.91697,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 6.335209,
+          "Y": -3.8851585,
+          "Z": 2.3789725E-16
+        },
+        "BoxExtent": {
+          "X": 37.824448,
+          "Y": 46.11484,
+          "Z": 2.8237196E-15
+        },
+        "SphereRadius": 52.10548
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_BloodPlane:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Blood/SM_BloodPlane.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_BloodPlane:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Blood/SM_BloodPlane.1"
+    },
+    "LightingGuid": "8F89AAC4-4F293D9F-08C43195-6839BA8D",
+    "RenderData": null
+  }
+]

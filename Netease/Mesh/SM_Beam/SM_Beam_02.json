@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Beam_02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "CF6131754B948959157D4C8AB8AD0947",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 8789,
+        "SizeOnDisk": 8789,
+        "OffsetInFile": "0x92CF"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Beam_02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xB56C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Beam_02",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Beam",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/SM_Beam/MI_Beam.0"
+          },
+          "MaterialSlotName": "02 - Default",
+          "ImportedMaterialSlotName": "02 - Default",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 539.59973,
+            "LocalUVDensities": 565.275,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 565.275,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 236.19652,
+          "Y": 167.89552,
+          "Z": 647.9112
+        },
+        "BoxExtent": {
+          "X": 96.73192,
+          "Y": 150.70805,
+          "Z": 86.00409
+        },
+        "SphereRadius": 198.62756
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Beam_02:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_Beam/SM_Beam_02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Beam_02:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_Beam/SM_Beam_02.1"
+    },
+    "LightingGuid": "D2F6914C-48FFA078-5BFC8C91-5ADF8937",
+    "RenderData": null
+  }
+]

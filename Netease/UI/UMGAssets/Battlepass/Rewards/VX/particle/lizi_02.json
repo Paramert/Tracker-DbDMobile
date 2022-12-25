@@ -1,0 +1,359 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0"
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired lizi_02:ParticleModuleRequired_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/Rewards/VX/particle/lizi_02.5"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime lizi_02:ParticleModuleLifetime_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/Rewards/VX/particle/lizi_02.3"
+        },
+        {
+          "ObjectName": "ParticleModuleSize lizi_02:ParticleModuleSize_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/Rewards/VX/particle/lizi_02.6"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity lizi_02:ParticleModuleVelocity_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/Rewards/VX/particle/lizi_02.8"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife lizi_02:ParticleModuleColorOverLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/Rewards/VX/particle/lizi_02.2"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere lizi_02:ParticleModuleLocationPrimitiveSphere_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/Rewards/VX/particle/lizi_02.4"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn lizi_02:ParticleModuleSpawn_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/Rewards/VX/particle/lizi_02.7"
+      },
+      "PeakActiveParticles": 17
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "lizi_02",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.875,
+        "MaxValue": 7.0,
+        "MinValueVec": {
+          "X": 7.0,
+          "Y": 0.875,
+          "Z": 0.875
+        },
+        "MaxValueVec": {
+          "X": 7.0,
+          "Y": 0.875,
+          "Z": 0.875
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            7.0,
+            0.875,
+            0.875
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "lizi_02",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.15,
+        "MaxValue": 0.1,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.15,
+            0.1
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveSphere",
+    "Name": "ParticleModuleLocationPrimitiveSphere_0",
+    "Outer": "lizi_02",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 225.0,
+        "MaxValue": 225.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            225.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": true,
+      "VelocityScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "lizi_02",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant NewMaterial_Inst8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/Rewards/VX/material/NewMaterial_Inst8.0"
+      },
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant lizi_02:ParticleModuleRequired_0.RequiredDistributionSpawnRate",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/Rewards/VX/particle/lizi_02.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "lizi_02",
+    "Properties": {
+      "StartSize": {
+        "MaxValue": 5.0,
+        "MinValueVec": {
+          "X": 20.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 5.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0,
+            0.0,
+            0.0,
+            5.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "lizi_02",
+    "Properties": {
+      "Rate": {
+        "MinValue": 100.0,
+        "MaxValue": 100.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            100.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "lizi_02",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -800.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": -800.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": -800.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            -800.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "lizi_02",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel lizi_02:ParticleSpriteEmitter_0.ParticleLODLevel_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/Rewards/VX/particle/lizi_02.1"
+        }
+      ],
+      "DetailModeBitmask": 63
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "lizi_02",
+    "Properties": {
+      "UpdateTime_FPS": 30.0,
+      "UpdateTime_Delta": 0.033333335,
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter lizi_02:ParticleSpriteEmitter_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Battlepass/Rewards/VX/particle/lizi_02.9"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

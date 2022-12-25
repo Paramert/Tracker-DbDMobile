@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Paper_04",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "AF864FEB42C7A5FFC2A4CB9A9D2930A3",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 1333,
+        "SizeOnDisk": 1333,
+        "OffsetInFile": "0x290D"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Paper_04",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2E8A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Paper_04",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant M_Papers_Inst",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Papers_Inst.0"
+          },
+          "MaterialSlotName": "M_Papers_Inst",
+          "ImportedMaterialSlotName": "M_Papers_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 88.95419,
+            "LocalUVDensities": 32.36144,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 32.36144,
+      "LightMapResolution": 16,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.0007724762,
+          "Y": 0.00028324127,
+          "Z": 0.4901788
+        },
+        "BoxExtent": {
+          "X": 20.723946,
+          "Y": 10.677452,
+          "Z": 0.49061522
+        },
+        "SphereRadius": 23.312943
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Paper_04:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Paper_04.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Paper_04:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Paper_04.1"
+    },
+    "LightingGuid": "BA1B3C6D-4CC01514-4066488D-ECD8E33D",
+    "RenderData": null
+  }
+]

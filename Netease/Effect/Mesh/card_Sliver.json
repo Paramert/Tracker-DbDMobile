@@ -1,0 +1,117 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "card_Sliver",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "F374246F43A18A43A23EF29281FDB791",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 365,
+        "SizeOnDisk": 365,
+        "OffsetInFile": "0x212C"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "card_Sliver",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x22E1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "card_Sliver",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material M_Card_Sliver",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Material/M_Card_Sliver.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 410.97934,
+            "LocalUVDensities": 417.8169,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 417.8169,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 172.0,
+          "Y": 245.5,
+          "Z": 1.503254E-14
+        },
+        "SphereRadius": 299.757
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup card_Sliver:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Mesh/card_Sliver.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision card_Sliver:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Mesh/card_Sliver.1"
+    },
+    "LightingGuid": "B052B0C0-48D9163B-9B3A4481-60405CA2",
+    "RenderData": null
+  }
+]

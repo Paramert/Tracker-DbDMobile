@@ -1,0 +1,144 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "SM_Railing_Long",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 1.8480988,
+              "Y": 0.250762,
+              "Z": 59.100014
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 300.0,
+            "Y": 14.337891,
+            "Z": 99.930214,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "62195D1D4E2D9F2E6D23978A004DBB7F",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 67769,
+        "SizeOnDisk": 67769,
+        "OffsetInFile": "0x2D4DF"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "SM_Railing_Long",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x3DDE0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Railing_Long",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material M_Railing",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Railing.0"
+          },
+          "MaterialSlotName": "M_Railing",
+          "ImportedMaterialSlotName": "M_Railing",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 214.88896,
+            "LocalUVDensities": 389.137,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 389.137,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.8480988,
+          "Y": 0.250762,
+          "Z": 64.575
+        },
+        "BoxExtent": {
+          "X": 150.0,
+          "Y": 7.1689453,
+          "Z": 54.7553
+        },
+        "SphereRadius": 159.84222
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Railing_Long:BodySetup_2",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Railing_Long.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Railing_Long:NavCollision_4",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Railing_Long.1"
+    },
+    "LightingGuid": "12A8786E-4CDF1FF1-BF24B99A-467FCDDC",
+    "RenderData": null
+  }
+]

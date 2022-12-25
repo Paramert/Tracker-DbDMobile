@@ -1,0 +1,208 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "SM_Floor_Carpet",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 200.125,
+                "Y": -200.099,
+                "Z": -1.4375
+              },
+              {
+                "X": 200.09981,
+                "Y": -200.112,
+                "Z": 0.125
+              },
+              {
+                "X": 200.09981,
+                "Y": 0.125,
+                "Z": 0.125
+              },
+              {
+                "X": 200.125,
+                "Y": 0.125,
+                "Z": -1.4671494
+              },
+              {
+                "X": -0.11260222,
+                "Y": 0.10100314,
+                "Z": -1.4375
+              },
+              {
+                "X": -0.10020553,
+                "Y": 0.125,
+                "Z": 0.125
+              },
+              {
+                "X": -0.10020553,
+                "Y": -200.112,
+                "Z": 0.125
+              },
+              {
+                "X": -0.112599865,
+                "Y": -200.125,
+                "Z": -1.4671494
+              }
+            ],
+            "IndexData": [],
+            "ElemBox": {
+              "Min": {
+                "X": -0.11260222,
+                "Y": -200.125,
+                "Z": -1.4671494
+              },
+              "Max": {
+                "X": 200.125,
+                "Y": 0.125,
+                "Z": 0.125
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "D7E7301146696542797013B26E01A6A5",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 1515,
+        "SizeOnDisk": 1515,
+        "OffsetInFile": "0x338F"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_Floor_Carpet",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x39C2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Floor_Carpet",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant M_Carpet_WorldAligned_Inst",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Carpet_WorldAligned_Inst.0"
+          },
+          "MaterialSlotName": "M_Carpet_WorldAligned_Inst",
+          "ImportedMaterialSlotName": "M_Carpet_WorldAligned_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 200.17113,
+            "LocalUVDensities": 403.22403,
+            "LocalUVDensities": 413.68463,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 413.68463,
+      "LightMapResolution": 128,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 100.0,
+          "Y": -100.0,
+          "Z": -0.6835747
+        },
+        "BoxExtent": {
+          "X": 100.0,
+          "Y": 100.0,
+          "Z": 0.6835747
+        },
+        "SphereRadius": 141.423
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Floor_Carpet:BodySetup_1",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Floor_Carpet.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Floor_Carpet:NavCollision_2",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Floor_Carpet.1"
+    },
+    "LightingGuid": "96437B84-4EF8EA19-6B6FC2A7-617D52FE",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "SM_BRL_HumanHip01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "C045CB5840C57986AAE443B242DE1016"
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "SM_BRL_HumanHip01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x5FDB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_BRL_HumanHip01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_HumanSkeleton02",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/HumanSkull/Instance/MI_HumanSkeleton02.0"
+          },
+          "MaterialSlotName": "MI_BRL_HumanSkeleton01",
+          "ImportedMaterialSlotName": "MI_BRL_HumanSkeleton01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 134.67538,
+            "LocalUVDensities": 49.35617,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 49.35617,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -7.6293945E-06,
+          "Y": 4.7683716E-07,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 11.530098,
+          "Y": 6.253932,
+          "Z": 9.333916
+        },
+        "SphereRadius": 13.616336
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_BRL_HumanHip01:BodySetup_1",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/HumanHip/SM_BRL_HumanHip01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_BRL_HumanHip01:NavCollision_1",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/HumanHip/SM_BRL_HumanHip01.1"
+    },
+    "LightingGuid": "03F34D00-46A830A9-1F0A9191-0F56AE5D",
+    "RenderData": null
+  }
+]

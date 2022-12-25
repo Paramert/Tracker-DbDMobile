@@ -1,0 +1,113 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "ST_EFF_rf_Debris_02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "1C267FBF44289676720D76A1AE9F29C5"
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "ST_EFF_rf_Debris_02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x556B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "ST_EFF_rf_Debris_02",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "lambert1",
+          "ImportedMaterialSlotName": "lambert1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 31.62148,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 31.62148,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.3335438,
+          "Y": 0.4621377,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 11.822847,
+          "Y": 7.69646,
+          "Z": 2.5
+        },
+        "SphereRadius": 12.339972
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup ST_EFF_rf_Debris_02:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Mesh/ST_EFF_rf_Debris_02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision ST_EFF_rf_Debris_02:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Mesh/ST_EFF_rf_Debris_02.1"
+    },
+    "LightingGuid": "03AC483F-4508DDCB-1CD1008E-DA78D81E",
+    "RenderData": null
+  }
+]

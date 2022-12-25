@@ -1,0 +1,137 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_sky_01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "41FE1FDB415993D27588D0B495C1B8F7",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 10077,
+        "SizeOnDisk": 10077,
+        "OffsetInFile": "0x731E"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_sky_01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x9AC3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_sky_01",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Background03_Inst1",
+            "ObjectPath": "DeadByDaylight/Content/Maps/Atlanta/MI/MI_Background03_Inst1.0"
+          },
+          "MaterialSlotName": "MI_Background03_Inst1",
+          "ImportedMaterialSlotName": "T_Groud_d",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2627.904,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Background03_Inst2",
+            "ObjectPath": "DeadByDaylight/Content/Maps/Atlanta/MI/MI_Background03_Inst2.0"
+          },
+          "MaterialSlotName": "MI_Background03_Inst2",
+          "ImportedMaterialSlotName": "T_Groud_d_3",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1962.693,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2410.5454,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 580.29846
+        },
+        "BoxExtent": {
+          "X": 900.0,
+          "Y": 900.0,
+          "Z": 580.29846
+        },
+        "SphereRadius": 955.09644
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_sky_01:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Floor/SM_sky_01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_sky_01:NavCollision_2",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Floor/SM_sky_01.1"
+    },
+    "LightingGuid": "3A4DE765-4C260B08-90F0EDBA-E2DBAB90",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Stone",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "EF27B4CF484043F51228C4B89B796B02",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 6529,
+        "SizeOnDisk": 6529,
+        "OffsetInFile": "0x8B9B"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Stone",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xA564"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Stone",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Stone",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Stone/MI_Stone.0"
+          },
+          "MaterialSlotName": "MI_Stone",
+          "ImportedMaterialSlotName": "MI_Stone",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 74.271736,
+            "LocalUVDensities": 81.5499,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 81.5499,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.06410408,
+          "Y": 0.6759901,
+          "Z": -2.40827
+        },
+        "BoxExtent": {
+          "X": 15.651224,
+          "Y": 11.304871,
+          "Z": 25.364954
+        },
+        "SphereRadius": 25.620968
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Stone:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Stone/Stone.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Stone:NavCollision_1",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Stone/Stone.1"
+    },
+    "LightingGuid": "B84D0FC9-4CCABFBF-6D599C95-D0555F3F",
+    "RenderData": null
+  }
+]

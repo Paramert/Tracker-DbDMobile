@@ -1,0 +1,123 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "RB_BodySetup_2",
+    "Outer": "SM_GodRay_Plane",
+    "Properties": {
+      "PhysicsType": "PhysType_Kinematic",
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "2E64633A4AB79244F190C1A54062C0F4",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 365,
+        "SizeOnDisk": 365,
+        "OffsetInFile": "0x2267"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "SM_GodRay_Plane",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x241C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_GodRay_Plane",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 10.0,
+            "LocalUVDensities": 10.087272,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 10.087272,
+      "LightMapResolution": 32,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 50.0,
+          "Y": 5.564195E-06,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 50.0,
+          "Y": 2.1855694E-06,
+          "Z": 0.5
+        },
+        "SphereRadius": 50.0025
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_GodRay_Plane:RB_BodySetup_2",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_GodRay_Plane.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_GodRay_Plane:NavCollision_4",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_GodRay_Plane.1"
+    },
+    "LightingGuid": "A8CB4FC2-4245A02C-FEACEDBB-5225E563",
+    "RenderData": null
+  }
+]

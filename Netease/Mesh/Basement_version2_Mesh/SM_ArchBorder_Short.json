@@ -1,0 +1,218 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_ArchBorder_Short",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 200.09991,
+                "Y": 0.02538681,
+                "Z": -0.11595081
+              },
+              {
+                "X": 200.09991,
+                "Y": -18.01195,
+                "Z": -0.09998703
+              },
+              {
+                "X": 200.09991,
+                "Y": -18.01195,
+                "Z": 50.125
+              },
+              {
+                "X": 200.09991,
+                "Y": 10.25,
+                "Z": 50.125
+              },
+              {
+                "X": 200.09991,
+                "Y": 10.25,
+                "Z": 10.108661
+              },
+              {
+                "X": -0.10009495,
+                "Y": 0.032309532,
+                "Z": -0.1090301
+              },
+              {
+                "X": -0.10009495,
+                "Y": 10.25,
+                "Z": 10.108662
+              },
+              {
+                "X": -0.10009495,
+                "Y": 10.25,
+                "Z": 50.125
+              },
+              {
+                "X": -0.10009495,
+                "Y": -18.011948,
+                "Z": 50.125
+              },
+              {
+                "X": -0.11254883,
+                "Y": -18.023897,
+                "Z": -0.09998703
+              }
+            ],
+            "IndexData": [],
+            "ElemBox": {
+              "Min": {
+                "X": -0.11254883,
+                "Y": -18.023897,
+                "Z": -0.11595081
+              },
+              "Max": {
+                "X": 200.09991,
+                "Y": 10.25,
+                "Z": 50.125
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "57AB42074C272B71FC606193FA369D3C",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 2967,
+        "SizeOnDisk": 2967,
+        "OffsetInFile": "0x4103"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_ArchBorder_Short",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 577,
+        "SizeOnDisk": 577,
+        "OffsetInFile": "0x4CE2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_ArchBorder_Short",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant M_ArchBorder_Long_Inst",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_ArchBorder_Long_Inst.0"
+          },
+          "MaterialSlotName": "M_ArchBorder_Long_Inst",
+          "ImportedMaterialSlotName": "M_ArchBorder_Long_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 287.07867,
+            "LocalUVDensities": 210.26682,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 210.26682,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 99.99991,
+          "Y": -3.8902054,
+          "Z": 25.000105
+        },
+        "BoxExtent": {
+          "X": 100.0,
+          "Y": 14.033691,
+          "Z": 25.000092
+        },
+        "SphereRadius": 104.028595
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_ArchBorder_Short:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_ArchBorder_Short.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_ArchBorder_Short:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_ArchBorder_Short.1"
+    },
+    "LightingGuid": "95C1B90F-4FE778EE-12136B90-D116BCBB",
+    "RenderData": null
+  }
+]

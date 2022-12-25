@@ -1,0 +1,4579 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_NE_Migration_Screen",
+    "Outer": "NE_Migration_Screen_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPopupDisappearance_1",
+    "Outer": "NE_Migration_Screen_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPopupAppearance_1",
+    "Outer": "NE_Migration_Screen_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "NE_Migration_Screen_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree NE_Migration_Screen_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.145"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation NE_Migration_Screen_C:Transition_In_INST",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.144"
+        }
+      ],
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.WidgetArchetype",
+        "SubPathString": ""
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function NE_Migration_Screen_C:ExecuteUbergraph_NE_Migration_Screen",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class PyUserWidget",
+      "ObjectPath": "/Script/UnrealEnginePython"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function NE_Migration_Screen_C:OnPopupAppearance_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.2"
+      },
+      {
+        "ObjectName": "Function NE_Migration_Screen_C:OnPopupDisappearance_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.1"
+      },
+      {
+        "ObjectName": "Function NE_Migration_Screen_C:ExecuteUbergraph_NE_Migration_Screen",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Transition_In",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2147491860,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Background",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ContentText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class RichTextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "InputText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class MultiLineEditableTextBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LeftButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_RegressionPopupButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/Popups/WBP_RegressionPopupButton.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Overlay",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RightButton",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_ProgressionPopupButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/Popups/WBP_ProgressionPopupButton.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RightButton_1",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass WBP_ProgressionPopupButton_C",
+          "ObjectPath": "DeadByDaylight/Content/Blueprints/UI/Mobile/Popups/WBP_ProgressionPopupButton.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TitleBackground",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TitleSmoke",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TitleText",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TitleText2",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class TextBlock",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_NE_Migration_Screen": {
+        "ObjectName": "Function NE_Migration_Screen_C:ExecuteUbergraph_NE_Migration_Screen",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.0"
+      },
+      "OnPopupDisappearance_1": {
+        "ObjectName": "Function NE_Migration_Screen_C:OnPopupDisappearance_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.1"
+      },
+      "OnPopupAppearance_1": {
+        "ObjectName": "Function NE_Migration_Screen_C:OnPopupAppearance_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.2"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NE_Migration_Screen_C Default__NE_Migration_Screen_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.4"
+    }
+  },
+  {
+    "Type": "NE_Migration_Screen_C",
+    "Name": "Default__NE_Migration_Screen_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.26"
+      }
+    }
+  },
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.42"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.57"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.63"
+      },
+      "RenderTransform": {
+        "Angle": 180.0
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Hovered": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.4,
+              "Hex": "66FFFFFF"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        },
+        "Pressed": {
+          "ImageSize": {
+            "X": 329.0,
+            "Y": 41.0
+          },
+          "Margin": {
+            "Left": 0.036697,
+            "Top": 0.3,
+            "Right": 0.6,
+            "Bottom": 0.3
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D Atl_Main_BTN_Frame",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Frame.0"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.69"
+      },
+      "RenderTransform": {
+        "Angle": 180.0
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "BottomContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.BottomContainer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.BottomContainer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.BottomContainer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.27"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_4",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.31"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ContentContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.ContentContainer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.ContentContainer.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.ContentContainer.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.34"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TitleContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.TitleContainer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.36"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.TitleContainer.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.37"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.TitleContainer.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "BottomContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.BottomContainer.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.39"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.BottomContainer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.BottomContainer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_4.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.42"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.44"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_11",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.43"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_4",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_4.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.45"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_4.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.46"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_4.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.48"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_4.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.47"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_11",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ContentContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContentContainer.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.49"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContentContainer.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.51"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContentContainer.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.50"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_4.CanvasPanelSlot_8",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.56"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_13",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.53"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.57"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.54"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.55"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.52"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.62"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.59"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.63"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.60"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.61"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.58"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.68"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.65"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.69"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.66"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.67"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.64"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TitleContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitleContainer.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.70"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitleContainer.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.71"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitleContainer.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.72"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_4.CanvasPanelSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "BottomContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 156.0,
+          "Top": -19.0,
+          "Right": 322.66666,
+          "Bottom": 75.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.BottomContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.10"
+      },
+      "Content": {
+        "ObjectName": "WBP_RegressionPopupButton_C NE_Migration_Screen_C:WidgetTree.LeftButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.142"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "BottomContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -156.0,
+          "Top": -63.333332,
+          "Right": 310.66666,
+          "Bottom": 96.66667
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.BottomContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.10"
+      },
+      "Content": {
+        "ObjectName": "WBP_ProgressionPopupButton_C NE_Migration_Screen_C:WidgetTree.RightButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.138"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "BottomContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -6.088889,
+          "Top": -17.377779,
+          "Right": 297.82224,
+          "Bottom": 77.422226
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.BottomContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.10"
+      },
+      "Content": {
+        "ObjectName": "WBP_ProgressionPopupButton_C NE_Migration_Screen_C:WidgetTree.RightButton_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.139"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.11"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur NE_Migration_Screen_C:WidgetTree.BackgroundBlur_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 48.0,
+          "Right": 0.0,
+          "Bottom": 536.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.11"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.11"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Migration_Screen_C:WidgetTree.Overlay",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.74"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_4",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -184.0,
+          "Right": 0.0,
+          "Bottom": -88.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.12"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Migration_Screen_C:WidgetTree.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.73"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_4",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -84.0,
+          "Right": 0.0,
+          "Bottom": 115.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.12"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.TitleContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_4",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -52.0,
+          "Right": 0.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.12"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.BottomContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_4",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 40.0,
+          "Right": 0.0,
+          "Bottom": 93.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.12"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.ContentContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ContentContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -48.0,
+          "Right": 1920.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.ContentContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.13"
+      },
+      "Content": {
+        "ObjectName": "SizeBox NE_Migration_Screen_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.120"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "ContentContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 3.0,
+          "Right": 818.0,
+          "Bottom": 102.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.ContentContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.13"
+      },
+      "Content": {
+        "ObjectName": "MultiLineEditableTextBox NE_Migration_Screen_C:WidgetTree.InputText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.102"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "ContentContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 61.5,
+          "Right": 1920.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.ContentContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.13"
+      },
+      "Content": {
+        "ObjectName": "SizeBox NE_Migration_Screen_C:WidgetTree.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.119"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "TitleContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.TitleContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.14"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Migration_Screen_C:WidgetTree.TitleBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.75"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "TitleContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.TitleContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.14"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox NE_Migration_Screen_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.107"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "TitleContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 36.0,
+          "Right": 593.3333,
+          "Bottom": 59.333336
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.TitleContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.14"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox NE_Migration_Screen_C:WidgetTree.ScaleBox_59",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.108"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "BottomContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 156.0,
+          "Top": -19.0,
+          "Right": 322.66666,
+          "Bottom": 75.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.BottomContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.15"
+      },
+      "Content": {
+        "ObjectName": "WBP_RegressionPopupButton_C WidgetArchetype:WidgetTree_0.LeftButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.143"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "BottomContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -156.0,
+          "Top": -63.333332,
+          "Right": 310.66666,
+          "Bottom": 96.66667
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.BottomContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.15"
+      },
+      "Content": {
+        "ObjectName": "WBP_ProgressionPopupButton_C WidgetArchetype:WidgetTree_0.RightButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.140"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "BottomContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -6.088889,
+          "Top": -17.377779,
+          "Right": 297.82224,
+          "Bottom": 77.422226
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.BottomContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.15"
+      },
+      "Content": {
+        "ObjectName": "WBP_ProgressionPopupButton_C WidgetArchetype:WidgetTree_0.RightButton_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.141"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.16"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur WidgetArchetype:WidgetTree_0.BackgroundBlur_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 48.0,
+          "Right": 0.0,
+          "Bottom": 536.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.16"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.16"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Overlay",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.82"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_4",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -184.0,
+          "Right": 0.0,
+          "Bottom": -88.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.17"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.77"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_4",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -84.0,
+          "Right": 0.0,
+          "Bottom": 115.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.17"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TitleContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_4",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -52.0,
+          "Right": 0.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.17"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.BottomContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_4",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 40.0,
+          "Right": 0.0,
+          "Bottom": 93.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.17"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContentContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ContentContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -48.0,
+          "Right": 1920.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContentContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.18"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.124"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "ContentContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 3.0,
+          "Right": 818.0,
+          "Bottom": 102.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContentContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.18"
+      },
+      "Content": {
+        "ObjectName": "MultiLineEditableTextBox WidgetArchetype:WidgetTree_0.InputText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.103"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "ContentContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 61.5,
+          "Right": 1920.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.ContentContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.18"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.123"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 40.0,
+          "Right": 91.0056,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.19"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.133"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -22.757187,
+          "Top": -8.902112,
+          "Right": 86.95183,
+          "Bottom": -15.122031
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.014961,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.014961,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.79"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 15.0,
+          "Top": 0.25,
+          "Right": 6.0,
+          "Bottom": 0.25
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.2
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.8
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.80"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 5.7899904,
+          "Top": 0.12242031,
+          "Right": 20.518154,
+          "Bottom": 0.30274963
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.13657814
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.86619616
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.81"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -18.0,
+          "Top": -5.0,
+          "Right": 0.0,
+          "Bottom": -3.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.19"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.78"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.19"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -40.0,
+          "Right": 650.0,
+          "Bottom": 70.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.20"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.121"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -24.782562,
+          "Top": -16.0,
+          "Right": 107.3183,
+          "Bottom": -15.388023
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.968139,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.968139,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.20"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.84"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -16.49136,
+          "Top": 0.7404356,
+          "Right": 8.64475,
+          "Bottom": 0.25956726
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.16771784
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.83768505
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.20"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.85"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -11.866351,
+          "Top": 0.54318094,
+          "Right": 30.605194,
+          "Bottom": -4.0250382
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.16501635
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.76744646
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.20"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.86"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -7.9897337,
+          "Right": -18.642712,
+          "Bottom": -4.882615
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.20"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.83"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.20"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -40.0,
+          "Right": 650.0,
+          "Bottom": 70.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.21"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.122"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -24.782562,
+          "Top": -16.0,
+          "Right": 107.3183,
+          "Bottom": -15.388023
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.968139,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.968139,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.88"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -16.49136,
+          "Top": 0.7404356,
+          "Right": 8.64475,
+          "Bottom": 0.25956726
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.16771784
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.83768505
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.89"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -11.866351,
+          "Top": 0.54318094,
+          "Right": 30.605194,
+          "Bottom": -4.0250382
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.16501635
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.76744646
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.90"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": -7.9897337,
+          "Right": -18.642712,
+          "Bottom": -4.882615
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.21"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.87"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.21"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "TitleContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TitleContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.22"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TitleBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.91"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "TitleContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TitleContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.22"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.111"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "TitleContainer",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 36.0,
+          "Right": 593.3333,
+          "Bottom": 59.333336
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TitleContainer",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.22"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_59",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.112"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1022.0,
+          "Y": 278.0
+        },
+        "Margin": {
+          "Top": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_bg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_bg_png.1"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_4.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.29"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.9
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Overlay",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_SquareSprite",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/Atl_Main_SquareSprite.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.5,
+        "Hex": "7F000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.28"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TitleBackground",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 983.0,
+          "Y": 115.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Right": 0.6
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_TitleBg_png1",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_TitleBg_png1.1"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "ColorAndOpacity": {
+        "R": 0.008023,
+        "G": 0.012983,
+        "B": 0.017642,
+        "A": 1.0,
+        "Hex": "FF161E24"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.TitleContainer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.36"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TitleSmoke",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1022.0,
+          "Y": 115.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.144128,
+            "G": 0.266356,
+            "B": 0.341914,
+            "A": 1.0,
+            "Hex": "FF6A8D9E"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_TitleSmoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_TitleSmoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot NE_Migration_Screen_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.113"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.1,
+          "Y": 1.0
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1022.0,
+          "Y": 278.0
+        },
+        "Margin": {
+          "Top": 0.5,
+          "Bottom": 0.5
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_bg_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_bg_png.1"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_4.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.45"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible",
+      "RenderOpacity": 0.9
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 359.0,
+          "Y": 106.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_bg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_bg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.56"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "FXSmoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 192.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Fx",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Fx.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_13",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.53"
+      },
+      "RenderTransform": {
+        "Angle": 90.0
+      },
+      "RenderOpacity": 0.6
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 49.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_line",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_line.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.54"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VFXs",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 26.0,
+          "Y": 47.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_fx_orange",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_fx_orange.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.55"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Overlay",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 12.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_SquareSprite",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/Atl_Main_SquareSprite.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.5,
+        "Hex": "7F000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.44"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 359.0,
+          "Y": 106.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_bg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_bg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.62"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "FXSmoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 192.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Fx",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Fx.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.59"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        },
+        "Angle": 90.0
+      },
+      "RenderOpacity": 0.6
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 49.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_line",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_line.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.60"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VFXs",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 26.0,
+          "Y": 47.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_fx_orange",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_fx_orange.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.61"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Background",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 359.0,
+          "Y": 106.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_bg",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_bg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.68"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "FXSmoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 184.0,
+          "Y": 192.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Main_BTN_Fx",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/MainMenu/MiddleleftAnchor/Atl_Main_BTN_Fx.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.65"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.0,
+          "Y": -1.0
+        },
+        "Angle": 90.0
+      },
+      "RenderOpacity": 0.6
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 49.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_line",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_line.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.66"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VFXs",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 26.0,
+          "Y": 47.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_GenPopup_btn_fx_orange",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Atl_GenPopup_btn_fx_orange.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.67"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TitleBackground",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 983.0,
+          "Y": 115.0
+        },
+        "Margin": {
+          "Left": 0.5,
+          "Right": 0.6
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_TitleBg_png1",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_TitleBg_png1.1"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "ColorAndOpacity": {
+        "R": 0.008023,
+        "G": 0.012983,
+        "B": 0.017642,
+        "A": 1.0,
+        "Hex": "FF161E24"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitleContainer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.70"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TitleSmoke",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 1022.0,
+          "Y": 115.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.144128,
+            "G": 0.266356,
+            "B": 0.341914,
+            "A": 1.0,
+            "Hex": "FF6A8D9E"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "PaperSprite Atl_GenPopup_TitleSmoke_png",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Popups/Frames/Atl_GenPopup_TitleSmoke_png.1"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.117"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 1.1,
+          "Y": 1.0
+        }
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Transition_In",
+    "Outer": "Transition_In_INST",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "FD7CAC4E-4B2012B7-D2718DB6-D2B26A68",
+          "Name": "CanvasPanel_4",
+          "PossessedObjectClass": {
+            "ObjectName": "Class CanvasPanel",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "FD7CAC4E-4B2012B7-D2718DB6-D2B26A68",
+          "BindingName": "CanvasPanel_4",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack NE_Migration_Screen_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.95"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_Migration_Screen_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.101"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 15001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "6A60DBCF-48764B6E-9B014BA8-38CB65AA"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Properties": {
+      "Translation": null,
+      "EvalOptions": {
+        "CompletionMode": "EMovieSceneCompletionMode::KeepState"
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Migration_Screen_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.96"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Migration_Screen_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.97"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "6A56E36C-48201D41-81F32092-89055F13"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "Transition_In",
+    "Properties": {
+      "PropertyName": "RenderTransform",
+      "PropertyPath": "RenderTransform",
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection NE_Migration_Screen_C:Transition_In_INST.Transition_In.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.94"
+        }
+      ],
+      "Signature": "193B1D34-461E4FA3-C19DF292-3508B1DC"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Properties": {
+      "FloatCurve": null,
+      "EvalOptions": {
+        "CompletionMode": "EMovieSceneCompletionMode::KeepState"
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Migration_Screen_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.98"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Migration_Screen_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.99"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "793A7EEC-40B0E621-BC7B16A7-2C4E5407"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Transition_In",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_Migration_Screen_C:Transition_In_INST.Transition_In.MovieSceneFloatTrack_0.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.100"
+        }
+      ],
+      "Signature": "69EBB0EA-4C221CB7-69442683-F54EE294"
+    }
+  },
+  {
+    "Type": "MultiLineEditableTextBox",
+    "Name": "InputText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "4D0FEBB9407AA9E02BE837A39CA98DB1",
+        "SourceString": "9af00865-332a-43cda9c3-8bd7695c4d812365jshlcjgyk59af 00865-332a-43cda9c3-8bd7695c4d812365jshlcjgyk5"
+      },
+      "HintText": {
+        "Namespace": "",
+        "Key": "A9D4455C4FEA3A11E63960A63C44DC92",
+        "SourceString": "Please enter the continuation code"
+      },
+      "WidgetStyle": {
+        "BackgroundImageNormal": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 92.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Btn_Channel",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Btn_Channel.0"
+          }
+        },
+        "BackgroundImageHovered": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 92.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Btn_Channel",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Btn_Channel.0"
+          }
+        },
+        "BackgroundImageFocused": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 92.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Btn_Channel",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Btn_Channel.0"
+          }
+        },
+        "BackgroundImageReadOnly": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 92.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Btn_Channel",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Btn_Channel.0"
+          }
+        },
+        "Padding": {
+          "Left": 20.0,
+          "Top": 20.0
+        },
+        "Font": {
+          "Size": 20
+        },
+        "ForegroundColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          }
+        }
+      },
+      "TextStyle": {
+        "Font": {
+          "FontObject": {
+            "ObjectName": "Font Roboto-Black_Font",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+          },
+          "TypefaceFontName": "Default"
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          }
+        }
+      },
+      "Justification": "ETextJustify::Center",
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.ContentContainer.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.34"
+      }
+    }
+  },
+  {
+    "Type": "MultiLineEditableTextBox",
+    "Name": "InputText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "4D0FEBB9407AA9E02BE837A39CA98DB1",
+        "SourceString": "9af00865-332a-43cda9c3-8bd7695c4d812365jshlcjgyk59af 00865-332a-43cda9c3-8bd7695c4d812365jshlcjgyk5"
+      },
+      "HintText": {
+        "Namespace": "",
+        "Key": "A9D4455C4FEA3A11E63960A63C44DC92",
+        "SourceString": "Please enter the continuation code"
+      },
+      "WidgetStyle": {
+        "BackgroundImageNormal": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 92.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Btn_Channel",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Btn_Channel.0"
+          }
+        },
+        "BackgroundImageHovered": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 92.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Btn_Channel",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Btn_Channel.0"
+          }
+        },
+        "BackgroundImageFocused": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 92.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Btn_Channel",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Btn_Channel.0"
+          }
+        },
+        "BackgroundImageReadOnly": {
+          "ImageSize": {
+            "X": 328.0,
+            "Y": 92.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D NE_Chat_Lobby_Btn_Channel",
+            "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/Chat/LobbyChat/NE_Chat_Lobby_Btn_Channel.0"
+          }
+        },
+        "Padding": {
+          "Left": 20.0,
+          "Top": 20.0
+        },
+        "Font": {
+          "Size": 20
+        },
+        "ForegroundColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          }
+        }
+      },
+      "TextStyle": {
+        "Font": {
+          "FontObject": {
+            "ObjectName": "Font Roboto-Black_Font",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+          },
+          "TypefaceFontName": "Default"
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          }
+        }
+      },
+      "Justification": "ETextJustify::Center",
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContentContainer.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.50"
+      }
+    }
+  },
+  {
+    "Type": "NE_Migration_Screen_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__NE_Migration_Screen_C",
+    "Properties": {
+      "Background": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.77"
+      },
+      "ContentText": {
+        "ObjectName": "RichTextBlock WidgetArchetype:WidgetTree_0.ContentText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.106"
+      },
+      "InputText": {
+        "ObjectName": "MultiLineEditableTextBox WidgetArchetype:WidgetTree_0.InputText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.103"
+      },
+      "LeftButton": {
+        "ObjectName": "WBP_RegressionPopupButton_C WidgetArchetype:WidgetTree_0.LeftButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.143"
+      },
+      "Overlay": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Overlay",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.82"
+      },
+      "RightButton": {
+        "ObjectName": "WBP_ProgressionPopupButton_C WidgetArchetype:WidgetTree_0.RightButton",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.140"
+      },
+      "RightButton_1": {
+        "ObjectName": "WBP_ProgressionPopupButton_C WidgetArchetype:WidgetTree_0.RightButton_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.141"
+      },
+      "TitleBackground": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TitleBackground",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.91"
+      },
+      "TitleSmoke": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TitleSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.92"
+      },
+      "TitleText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TitleText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.136"
+      },
+      "TitleText2": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TitleText2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.137"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.146"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "RichTextBlock",
+    "Name": "ContentText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "9723B00E41272F4D1AC2B69C8E4E0D5F",
+        "SourceString": "当前登录的账号已进行过游戏，<Red>确认迁移将丢失当前游戏数据</>，是否继续？"
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable MigrationStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/MigrationStyle.0"
+      },
+      "bOverrideDefaultStyle": true,
+      "DefaultTextStyleOverride": {
+        "Font": {
+          "FontObject": {
+            "ObjectName": "Font Roboto-Black_Font",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+          },
+          "TypefaceFontName": "Default",
+          "Size": 27
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          }
+        }
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 1600.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot NE_Migration_Screen_C:WidgetTree.SizeBox_0.SizeBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.126"
+      }
+    }
+  },
+  {
+    "Type": "RichTextBlock",
+    "Name": "ContentText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "9723B00E41272F4D1AC2B69C8E4E0D5F",
+        "SourceString": "当前登录的账号已进行过游戏，<Red>确认迁移将丢失当前游戏数据</>，是否继续？"
+      },
+      "TextStyleSet": {
+        "ObjectName": "DataTable MigrationStyle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/MigrationStyle.0"
+      },
+      "bOverrideDefaultStyle": true,
+      "DefaultTextStyleOverride": {
+        "Font": {
+          "FontObject": {
+            "ObjectName": "Font Roboto-Black_Font",
+            "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Fonts/Roboto-Black_Font.0"
+          },
+          "TypefaceFontName": "Default",
+          "Size": 27
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          }
+        }
+      },
+      "WrappingPolicy": "ETextWrappingPolicy::AllowPerCharacterWrapping",
+      "WrapTextAt": 1600.0,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.130"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot NE_Migration_Screen_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.113"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.TitleContainer.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.37"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_59",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot NE_Migration_Screen_C:WidgetTree.ScaleBox_59.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.114"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.TitleContainer.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.38"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.115"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.127"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.116"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.128"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.117"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitleContainer.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.71"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_59",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_59.ScaleBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.118"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.TitleContainer.CanvasPanelSlot_4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.72"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox NE_Migration_Screen_C:WidgetTree.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.107"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Migration_Screen_C:WidgetTree.TitleSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.76"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_59",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox NE_Migration_Screen_C:WidgetTree.ScaleBox_59",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.108"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_Migration_Screen_C:WidgetTree.TitleText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.131"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.109"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.134"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.110"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.135"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.111"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.TitleSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.92"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_59",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_59",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.112"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TitleText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.136"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot NE_Migration_Screen_C:WidgetTree.SizeBox.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.125"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.ContentContainer.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.35"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot NE_Migration_Screen_C:WidgetTree.SizeBox_0.SizeBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.126"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.ContentContainer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.33"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.127"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.58"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.128"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.64"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox.SizeBoxSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.129"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContentContainer.CanvasPanelSlot_9",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.51"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.130"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.ContentContainer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.49"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox NE_Migration_Screen_C:WidgetTree.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.119"
+      },
+      "Content": {
+        "ObjectName": "TextBlock NE_Migration_Screen_C:WidgetTree.TitleText2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.132"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_1",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox NE_Migration_Screen_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.120"
+      },
+      "Content": {
+        "ObjectName": "RichTextBlock NE_Migration_Screen_C:WidgetTree.ContentText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.105"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.121"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.109"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.122"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.ScaleBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.110"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.123"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TitleText2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.137"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_1",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.124"
+      },
+      "Content": {
+        "ObjectName": "RichTextBlock WidgetArchetype:WidgetTree_0.ContentText",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.106"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TitleText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "12BF9DCB43F4802662CC7AA9EC7FDC33",
+        "SourceString": "数据迁移"
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot NE_Migration_Screen_C:WidgetTree.ScaleBox_59.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.114"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TitleText2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "782010B54ECF22BD3AFA2BB1AE5F5D3B",
+        "SourceString": "无效的引继码"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.85098,
+          "G": 0.011765,
+          "B": 0.011765,
+          "A": 1.0,
+          "Hex": "FFEE1C1C"
+        }
+      },
+      "Font": {
+        "Size": 27
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot NE_Migration_Screen_C:WidgetTree.SizeBox.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.125"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "ButtonLabels",
+        "Key": "588F94A142DFB351564D2185D0E365FD",
+        "SourceString": "CANCEL"
+      },
+      "Font": {
+        "Size": 23
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.52"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "ButtonLabels",
+        "Key": "FDAA28B34DA3CC1D5FC206A9FA99BD36",
+        "SourceString": "ok"
+      },
+      "Font": {
+        "Size": 38
+      },
+      "MinDesiredWidth": 200.0,
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.115"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ButtonLabel",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "ButtonLabels",
+        "Key": "FDAA28B34DA3CC1D5FC206A9FA99BD36",
+        "SourceString": "ok"
+      },
+      "Font": {
+        "Size": 38
+      },
+      "MinDesiredWidth": 200.0,
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.ScaleBox_0.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.116"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TitleText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "12BF9DCB43F4802662CC7AA9EC7FDC33",
+        "SourceString": "数据迁移"
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_59.ScaleBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.118"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TitleText2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "782010B54ECF22BD3AFA2BB1AE5F5D3B",
+        "SourceString": "无效的引继码"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.85098,
+          "G": 0.011765,
+          "B": 0.011765,
+          "A": 1.0,
+          "Hex": "FFEE1C1C"
+        }
+      },
+      "Font": {
+        "Size": 27
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox.SizeBoxSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.129"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WBP_ProgressionPopupButton_C",
+    "Name": "RightButton",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_ProgressionPopupButton_C",
+    "Properties": {
+      "ButtonText": {
+        "Namespace": "",
+        "Key": "15BFA7AE432831CDDB7E8E84CDFBB376",
+        "SourceString": "确定"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.BottomContainer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.24"
+      }
+    }
+  },
+  {
+    "Type": "WBP_ProgressionPopupButton_C",
+    "Name": "RightButton_1",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_ProgressionPopupButton_C",
+    "Properties": {
+      "ButtonText": {
+        "Namespace": "",
+        "Key": "933A995249426976CB0B28A9B39F594B",
+        "SourceString": "帮助"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.BottomContainer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.25"
+      }
+    }
+  },
+  {
+    "Type": "WBP_ProgressionPopupButton_C",
+    "Name": "RightButton",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_ProgressionPopupButton_C",
+    "Properties": {
+      "Background": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.83"
+      },
+      "VFXs": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.86"
+      },
+      "Line": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.85"
+      },
+      "FXSmoke": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.84"
+      },
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.8"
+      },
+      "ButtonLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.134"
+      },
+      "ButtonText": {
+        "Namespace": "",
+        "Key": "15BFA7AE432831CDDB7E8E84CDFBB376",
+        "SourceString": "确定"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.148"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.BottomContainer.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.40"
+      }
+    }
+  },
+  {
+    "Type": "WBP_ProgressionPopupButton_C",
+    "Name": "RightButton_1",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_ProgressionPopupButton_C",
+    "Properties": {
+      "Background": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.87"
+      },
+      "VFXs": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.90"
+      },
+      "Line": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.89"
+      },
+      "FXSmoke": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.88"
+      },
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.9"
+      },
+      "ButtonLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.135"
+      },
+      "ButtonText": {
+        "Namespace": "",
+        "Key": "933A995249426976CB0B28A9B39F594B",
+        "SourceString": "帮助"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.149"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.BottomContainer.CanvasPanelSlot_2",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.41"
+      }
+    }
+  },
+  {
+    "Type": "WBP_RegressionPopupButton_C",
+    "Name": "LeftButton",
+    "Outer": "WidgetTree",
+    "Template": "Default__WBP_RegressionPopupButton_C",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Migration_Screen_C:WidgetTree.BottomContainer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.23"
+      }
+    }
+  },
+  {
+    "Type": "WBP_RegressionPopupButton_C",
+    "Name": "LeftButton",
+    "Outer": "WidgetTree_0",
+    "Template": "Default__WBP_RegressionPopupButton_C",
+    "Properties": {
+      "Background": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.Background",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.78"
+      },
+      "VFXs": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.VFXs",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.81"
+      },
+      "Line": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.Line",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.80"
+      },
+      "FXSmoke": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.FXSmoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.79"
+      },
+      "Button": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.Button",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.7"
+      },
+      "ButtonLabel": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.ButtonLabel",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.133"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.147"
+      },
+      "bCookedWidgetTree": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.BottomContainer.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.39"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Transition_In_INST",
+    "Outer": "NE_Migration_Screen_C",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene NE_Migration_Screen_C:Transition_In_INST.Transition_In",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.93"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "CanvasPanel_4",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "FD7CAC4E-4B2012B7-D2718DB6-D2B26A68",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Transition_In",
+      "PrecompiledEvaluationTemplate": {
+        "Tracks": null,
+        "EvaluationField": {
+          "Ranges": [
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 15001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 15001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            }
+          ],
+          "Groups": [
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 2
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            }
+          ],
+          "MetaData": [
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            }
+          ]
+        },
+        "SequenceSignature": "481745DA-41972676-0324F1B3-8DD127D2",
+        "TemplateSerialNumber": {
+          "Value": 1
+        },
+        "TemplateLedger": {
+          "LastTrackIdentifier": {
+            "Value": 1
+          },
+          "TrackSignatureToTrackIdentifier": null
+        },
+        "TrackFieldData": null
+      },
+      "Signature": "481745DA-41972676-0324F1B3-8DD127D2"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "NE_Migration_Screen_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel NE_Migration_Screen_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.16"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "LeftButton",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.LeftButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.19"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "RightButton",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.20"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "RightButton_1",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.RightButton_1.WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Popups/Migration/NE_Migration_Screen.21"
+      }
+    }
+  }
+]

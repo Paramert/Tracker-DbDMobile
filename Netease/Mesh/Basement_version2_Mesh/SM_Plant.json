@@ -1,0 +1,175 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Plant",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 2.1825142,
+              "Y": 0.00076675415,
+              "Z": 34.72844
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 19.14268,
+            "Length": 50.882576,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "2F65AE3543E4423C2597C4B0198F137E",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 127485,
+        "SizeOnDisk": 127485,
+        "OffsetInFile": "0x45DA5"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Plant",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x64FEA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Plant",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant M_Leaves_Inst_Dark",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Leaves_Inst_Dark.0"
+          },
+          "MaterialSlotName": "M_Leaves_Inst_Dark",
+          "ImportedMaterialSlotName": "M_Leaves_Inst_Dark",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.7303284,
+            "LocalUVDensities": 145.31595,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant M_Leaves_Inst_Dark",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Leaves_Inst_Dark.0"
+          },
+          "MaterialSlotName": "M_Leaves_Inst_Dark_1",
+          "ImportedMaterialSlotName": "M_Leaves_Inst_Dark_1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 23.15743,
+            "LocalUVDensities": 137.63628,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant M_Plant_Inst",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Plant_Inst.0"
+          },
+          "MaterialSlotName": "M_Plant_Inst",
+          "ImportedMaterialSlotName": "M_Plant_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 73.450356,
+            "LocalUVDensities": 140.04811,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 138.199,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.0024604797,
+          "Y": 0.00076675415,
+          "Z": 42.834076
+        },
+        "BoxExtent": {
+          "X": 32.97606,
+          "Y": 26.33606,
+          "Z": 42.834538
+        },
+        "SphereRadius": 44.676167
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Plant:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Plant.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Plant:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Plant.1"
+    },
+    "LightingGuid": "63F5A151-4ABB14FF-062AB7AC-25FA12AF",
+    "RenderData": null
+  }
+]

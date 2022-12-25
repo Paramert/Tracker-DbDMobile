@@ -1,0 +1,464 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0"
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired P_Smoke:ParticleModuleRequired_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.6"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLocation P_Smoke:ParticleModuleLocation_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.4"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation P_Smoke:ParticleModuleRotation_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.7"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate P_Smoke:ParticleModuleRotationRate_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.8"
+        },
+        {
+          "ObjectName": "ParticleModuleLifetime P_Smoke:ParticleModuleLifetime_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.3"
+        },
+        {
+          "ObjectName": "ParticleModuleSize P_Smoke:ParticleModuleSize_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.9"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife P_Smoke:ParticleModuleColorOverLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.2"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife P_Smoke:ParticleModuleSizeMultiplyLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.10"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveCylinder P_Smoke:ParticleModuleLocationPrimitiveCylinder_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.5"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn P_Smoke:ParticleModuleSpawn_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.11"
+      },
+      "PeakActiveParticles": 202
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_Smoke",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.646591,
+        "MaxValue": 0.875,
+        "MinValueVec": {
+          "X": 0.646591,
+          "Y": 0.766086,
+          "Z": 0.875
+        },
+        "MaxValueVec": {
+          "X": 0.646591,
+          "Y": 0.766086,
+          "Z": 0.875
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.646591,
+            0.766086,
+            0.875
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.5203413,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            0.0,
+            0.15172349,
+            0.41712967,
+            0.5168544,
+            0.4171549,
+            0.24160346,
+            0.074463814,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_Smoke",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 3.0,
+        "MaxValue": 5.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            5.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_2",
+    "Outer": "P_Smoke",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -250.0,
+        "MaxValue": 250.0,
+        "MinValueVec": {
+          "X": -250.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 250.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -250.0,
+            0.0,
+            0.0,
+            250.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveCylinder",
+    "Name": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Outer": "P_Smoke",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 200.0,
+        "MaxValue": 200.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            200.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartHeight": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": true,
+      "VelocityScale": {
+        "MinValue": 0.05,
+        "MaxValue": 0.05,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.05
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "b3DDrawMode": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_Smoke",
+    "Properties": {
+      "Material": {
+        "ObjectName": "Material M_Smoke",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/M_Smoke.0"
+      },
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_Smoke:ParticleModuleRequired_0.RequiredDistributionSpawnRate",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_Smoke",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_0",
+    "Outer": "P_Smoke",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": 0.002,
+        "MaxValue": -0.002,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.002,
+            -0.002
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_Smoke",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 25.0,
+        "MaxValue": 200.0,
+        "MinValueVec": {
+          "X": 300.0,
+          "Y": 25.0,
+          "Z": 25.0
+        },
+        "MaxValueVec": {
+          "X": 200.0,
+          "Y": 25.0,
+          "Z": 25.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            300.0,
+            25.0,
+            25.0,
+            200.0,
+            25.0,
+            25.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_Smoke",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 0.5,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 0.5,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.5,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_Smoke",
+    "Properties": {
+      "Rate": {
+        "MinValue": 40.0,
+        "MaxValue": 40.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            40.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_Smoke",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel P_Smoke:ParticleSpriteEmitter_0.ParticleLODLevel_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.1"
+        }
+      ],
+      "DetailModeBitmask": 63
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Smoke",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter P_Smoke:ParticleSpriteEmitter_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/Material/Rank/ParticleMaterials/P_Smoke.12"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

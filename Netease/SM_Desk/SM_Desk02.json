@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Desk02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "54D647BA4099CE665F853192C7405456",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 18079,
+        "SizeOnDisk": 18079,
+        "OffsetInFile": "0xE729"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Desk02",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x12E10"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Desk02",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Desk",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/SM_Desk/MI_Desk.0"
+          },
+          "MaterialSlotName": "SM_Desk",
+          "ImportedMaterialSlotName": "SM_Desk",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 453.73642,
+            "LocalUVDensities": 1136.6439,
+            "LocalUVDensities": 1288.0936,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1288.0936,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 18.04042,
+          "Z": 129.64589
+        },
+        "BoxExtent": {
+          "X": 352.5298,
+          "Y": 138.4283,
+          "Z": 129.52525
+        },
+        "SphereRadius": 395.674
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Desk02:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/SM_Desk/SM_Desk02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Desk02:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/SM_Desk/SM_Desk02.1"
+    },
+    "LightingGuid": "D16F87E9-488EB696-9E92B990-F0FA2761",
+    "RenderData": null
+  }
+]

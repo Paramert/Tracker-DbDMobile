@@ -1,0 +1,481 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionVelocityScale",
+    "Outer": "ParticleModuleLocationPrimitiveSphere_0",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_1"
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_1",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired P_Somke_5:ParticleModuleRequired_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.6"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime P_Somke_5:ParticleModuleLifetime_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSize P_Somke_5:ParticleModuleSize_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.9"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity P_Somke_5:ParticleModuleVelocity_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.12"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife P_Somke_5:ParticleModuleColorOverLife_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.3"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation P_Somke_5:ParticleModuleRotation_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.7"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate P_Somke_5:ParticleModuleRotationRate_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.8"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife P_Somke_5:ParticleModuleSizeMultiplyLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.10"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere P_Somke_5:ParticleModuleLocationPrimitiveSphere_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.5"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn P_Somke_5:ParticleModuleSpawn_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.11"
+      },
+      "PeakActiveParticles": 32
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_1",
+    "Outer": "P_Somke_5",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.055079,
+        "MaxValue": 0.463542,
+        "MinValueVec": {
+          "X": 0.213093,
+          "Y": 0.055079,
+          "Z": 0.463542
+        },
+        "MaxValueVec": {
+          "X": 0.213093,
+          "Y": 0.055079,
+          "Z": 0.463542
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.213093,
+            0.055079,
+            0.463542
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.4,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 3.0,
+          "Values": [
+            0.0,
+            0.4,
+            0.4,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 4,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_1",
+    "Outer": "P_Somke_5",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.2,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.2,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveSphere",
+    "Name": "ParticleModuleLocationPrimitiveSphere_0",
+    "Outer": "P_Somke_5",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 100.0,
+        "MaxValue": 100.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            100.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "VelocityScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_Somke_5:ParticleModuleLocationPrimitiveSphere_0.DistributionVelocityScale",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.0"
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "b3DDrawMode": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_1",
+    "Outer": "P_Somke_5",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant M_Golw_04_GL_Inst3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Material/M_Golw_04_GL_Inst3.0"
+      },
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_Somke_5:ParticleModuleRequired_1.RequiredDistributionSpawnRate",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.1"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_1",
+    "Outer": "P_Somke_5",
+    "Properties": {
+      "StartRotation": {
+        "MinValue": -0.01,
+        "MaxValue": 0.01,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.01,
+            0.01
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_1",
+    "Outer": "P_Somke_5",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.01,
+        "MaxValue": 0.05,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.01,
+            0.05
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_1",
+    "Outer": "P_Somke_5",
+    "Properties": {
+      "StartSize": {
+        "MaxValue": 55.0,
+        "MinValueVec": {
+          "X": 40.0,
+          "Y": 40.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 55.0,
+          "Y": 55.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            40.0,
+            40.0,
+            0.0,
+            55.0,
+            55.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_Somke_5",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 0.8,
+        "MaxValue": 1.5,
+        "MinValueVec": {
+          "X": 0.8,
+          "Y": 0.8,
+          "Z": 0.8
+        },
+        "MaxValueVec": {
+          "X": 1.5,
+          "Y": 1.5,
+          "Z": 1.5
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            0.8,
+            0.8,
+            0.8,
+            1.1333333,
+            1.1333333,
+            1.1333333,
+            1.4666666,
+            1.4666666,
+            1.4666666,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_1",
+    "Outer": "P_Somke_5",
+    "Properties": {
+      "Rate": {
+        "MinValue": 20.0,
+        "MaxValue": 30.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0,
+            30.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_1",
+    "Outer": "P_Somke_5",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -35.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": -35.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": -50.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            -35.0,
+            0.0,
+            0.0,
+            -50.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_1",
+    "Outer": "P_Somke_5",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel P_Somke_5:ParticleSpriteEmitter_1.ParticleLODLevel_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.2"
+        }
+      ],
+      "DetailModeBitmask": 63
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Somke_5",
+    "Properties": {
+      "UpdateTime_FPS": 30.0,
+      "UpdateTime_Delta": 0.033333335,
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter P_Somke_5:ParticleSpriteEmitter_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Somke_5.13"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

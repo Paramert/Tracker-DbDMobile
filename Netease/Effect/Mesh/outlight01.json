@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "outlight01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "4A78F9BC4BD0473985BB13B94C711117",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 649,
+        "SizeOnDisk": 649,
+        "OffsetInFile": "0x24AB"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "outlight01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x277C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "outlight01",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material glow",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Material/glow.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 433.4361,
+            "LocalUVDensities": 438.54218,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 438.54218,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 3.0517578E-05,
+          "Z": 1.6215625E-05
+        },
+        "BoxExtent": {
+          "X": 232.28883,
+          "Y": 336.46536,
+          "Z": 1.4196992E-05
+        },
+        "SphereRadius": 404.54617
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup outlight01:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Mesh/outlight01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision outlight01:NavCollision_2",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Mesh/outlight01.1"
+    },
+    "LightingGuid": "4BB30ABA-458C0FB5-7B3F7FAE-65B7B3F0",
+    "RenderData": null
+  }
+]

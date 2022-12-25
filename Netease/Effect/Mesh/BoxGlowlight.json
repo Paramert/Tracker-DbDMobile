@@ -1,0 +1,208 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_7",
+    "Outer": "BoxGlowlight",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 59.247776,
+                "Y": -34.52701,
+                "Z": 46.75
+              },
+              {
+                "X": 59.247776,
+                "Y": -34.52701,
+                "Z": 51.25
+              },
+              {
+                "X": 59.247776,
+                "Y": 34.34375,
+                "Z": 51.25
+              },
+              {
+                "X": 59.247776,
+                "Y": 34.34375,
+                "Z": 46.774567
+              },
+              {
+                "X": -59.311302,
+                "Y": 34.34375,
+                "Z": 46.75
+              },
+              {
+                "X": -59.311302,
+                "Y": 34.34375,
+                "Z": 51.25
+              },
+              {
+                "X": -59.311302,
+                "Y": -34.52701,
+                "Z": 51.25
+              },
+              {
+                "X": -59.311302,
+                "Y": -34.52701,
+                "Z": 46.774567
+              }
+            ],
+            "IndexData": [],
+            "ElemBox": {
+              "Min": {
+                "X": -59.311302,
+                "Y": -34.52701,
+                "Z": 46.75
+              },
+              "Max": {
+                "X": 59.247776,
+                "Y": 34.34375,
+                "Z": 51.25
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "B741C63D4A6CA60E21D8EAB953D6AF74",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 1491,
+        "SizeOnDisk": 1491,
+        "OffsetInFile": "0x32F3"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "BoxGlowlight",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x390E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BoxGlowlight",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material m_BoxGlowlight",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Material/m_BoxGlowlight.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 269.95755,
+            "LocalUVDensities": 40.861088,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 40.861088,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.03176117,
+          "Y": -0.13043213,
+          "Z": 49.02733
+        },
+        "BoxExtent": {
+          "X": 59.179543,
+          "Y": 34.3236,
+          "Z": 2.1527653
+        },
+        "SphereRadius": 68.44678
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BoxGlowlight:BodySetup_7",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Mesh/BoxGlowlight.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision BoxGlowlight:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Mesh/BoxGlowlight.1"
+    },
+    "LightingGuid": "016CABE0-486ADBC2-D59E7C98-C2F6EAFA",
+    "RenderData": null
+  }
+]

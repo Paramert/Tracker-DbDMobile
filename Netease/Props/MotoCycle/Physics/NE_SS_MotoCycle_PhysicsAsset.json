@@ -1,0 +1,127 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "NE_SS_MotoCycle_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup NE_SS_MotoCycle_PhysicsAsset:SkeletalBodySetup_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Props/MotoCycle/Physics/NE_SS_MotoCycle_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup NE_SS_MotoCycle_PhysicsAsset:SkeletalBodySetup_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Props/MotoCycle/Physics/NE_SS_MotoCycle_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate NE_SS_MotoCycle_PhysicsAsset:PhysicsConstraintTemplate_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Props/MotoCycle/Physics/NE_SS_MotoCycle_PhysicsAsset.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "NE_SS_MotoCycle_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Fangxiang",
+        "ConstraintBone1": "Fangxiang",
+        "ConstraintBone2": "Moto",
+        "Pos2": {
+          "X": 1.0003327,
+          "Y": 0.45474708,
+          "Z": -3.5059786E-06
+        },
+        "PriAxis2": {
+          "X": -0.94348395,
+          "Y": 0.3314178,
+          "Z": -3.7462573E-06
+        },
+        "SecAxis2": {
+          "X": 0.3314178,
+          "Y": 0.94348407,
+          "Z": -7.4615305E-06
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "NE_SS_MotoCycle_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.6571974,
+              "Y": -0.1659282,
+              "Z": 0.008052692
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -12.276008,
+              "Roll": -89.498856
+            },
+            "Radius": 0.614154,
+            "Length": 1.035102,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "Moto",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "9602B1FA426F73CB5745169E319E8356"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "NE_SS_MotoCycle_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.48915988,
+              "Y": 0.009616718,
+              "Z": 0.010891974
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 87.63492,
+              "Roll": -88.62357
+            },
+            "Radius": 0.40707543,
+            "Length": 0.5567238,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "BoneName": "Fangxiang",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "81A12E0642C68EBD1D8C808D8A46A898"
+  }
+]

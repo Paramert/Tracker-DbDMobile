@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_GravelBunch_Small2",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "9CD056D04CB634BE0A42348AA799D20F",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 35521,
+        "SizeOnDisk": 35521,
+        "OffsetInFile": "0x14565"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_GravelBunch_Small2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1D06E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_GravelBunch_Small2",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material M_Gravel",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Gravel.0"
+          },
+          "MaterialSlotName": "M_Gravel",
+          "ImportedMaterialSlotName": "M_Gravel",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 195.54051,
+            "LocalUVDensities": 51.5209,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 51.5209,
+      "LightMapResolution": 16,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.0042762756,
+          "Y": -0.0053634644,
+          "Z": 3.6001604
+        },
+        "BoxExtent": {
+          "X": 11.194344,
+          "Y": 19.40771,
+          "Z": 3.6043906
+        },
+        "SphereRadius": 19.804674
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_GravelBunch_Small2:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_GravelBunch_Small2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_GravelBunch_Small2:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_GravelBunch_Small2.1"
+    },
+    "LightingGuid": "A7EA568C-420B7D0B-267CE690-827473D2",
+    "RenderData": null
+  }
+]

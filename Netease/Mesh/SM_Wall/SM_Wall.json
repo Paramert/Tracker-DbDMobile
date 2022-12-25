@@ -1,0 +1,154 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Wall",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "6EDF92D945ABF93C6AE93EAA128C3477",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 24441,
+        "SizeOnDisk": 24441,
+        "OffsetInFile": "0x16B13"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_Wall",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1CAD4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Wall",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Wall_2",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/SM_Wall/MI_Wall_2.0"
+          },
+          "MaterialSlotName": "SM_Wall_02",
+          "ImportedMaterialSlotName": "SM_Wall_02",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 178.58968,
+            "LocalUVDensities": 525.6001,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Wall_3",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/SM_Wall/MI_Wall_3.0"
+          },
+          "MaterialSlotName": "SM_Wall_03",
+          "ImportedMaterialSlotName": "SM_Wall_03",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 81.76906,
+            "LocalUVDensities": 528.2831,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Wall",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/SM_Wall/MI_Wall.0"
+          },
+          "MaterialSlotName": "SM_Wall_01",
+          "ImportedMaterialSlotName": "SM_Wall_01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 77.3834,
+            "LocalUVDensities": 523.9471,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 525.8926,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.0388031,
+          "Y": 38.70002,
+          "Z": 139.23886
+        },
+        "BoxExtent": {
+          "X": 140.52985,
+          "Y": 54.018456,
+          "Z": 139.23886
+        },
+        "SphereRadius": 202.28079
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Wall:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_Wall/SM_Wall.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Wall:NavCollision_2",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_Wall/SM_Wall.1"
+    },
+    "LightingGuid": "9A23C14C-47EDFA9A-364DCCAA-C8C032C8",
+    "RenderData": null
+  }
+]

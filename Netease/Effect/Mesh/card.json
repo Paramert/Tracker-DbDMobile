@@ -1,0 +1,117 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "card",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "200AC8D94DE512D97D3B749E044C1635",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 365,
+        "SizeOnDisk": 365,
+        "OffsetInFile": "0x2108"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "card",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x22BD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "card",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material M_Card_Gold",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Material/M_Card_Gold.0"
+          },
+          "MaterialSlotName": "Material #25",
+          "ImportedMaterialSlotName": "Material #25",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 410.97934,
+            "LocalUVDensities": 417.8169,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 417.8169,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 172.0,
+          "Y": 245.5,
+          "Z": 1.503254E-14
+        },
+        "SphereRadius": 299.757
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup card:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Mesh/card.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision card:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Mesh/card.1"
+    },
+    "LightingGuid": "C3C39330-478BBBA7-52E003B5-5CD91E97",
+    "RenderData": null
+  }
+]

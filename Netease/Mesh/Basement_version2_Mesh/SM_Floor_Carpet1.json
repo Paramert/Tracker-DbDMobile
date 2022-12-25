@@ -1,0 +1,114 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Floor_Carpet1",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "1B996F51472AD1B368987383260EBFD3",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 2061,
+        "SizeOnDisk": 2061,
+        "OffsetInFile": "0x3A72"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_Floor_Carpet1",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x42C7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Floor_Carpet1",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": null,
+          "MaterialSlotName": "24 - Default",
+          "ImportedMaterialSlotName": "24 - Default",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2.0002763,
+            "LocalUVDensities": 4.0313277,
+            "LocalUVDensities": 4.0919294,
+            "LocalUVDensities": 7.316543
+          }
+        }
+      ],
+      "LightmapUVDensity": 7.316543,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 3,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 4.4954734,
+          "Y": 2.8477902,
+          "Z": 0.0068357475
+        },
+        "SphereRadius": 4.913734
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Floor_Carpet1:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Floor_Carpet1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Floor_Carpet1:NavCollision_2",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Floor_Carpet1.1"
+    },
+    "LightingGuid": "9B9C0734-422C1C2C-A2A6C8B0-A1E1D170",
+    "RenderData": null
+  }
+]

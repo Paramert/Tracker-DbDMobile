@@ -1,0 +1,412 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionVelocityScale",
+    "Outer": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Properties": {
+      "Constant": 0.5
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired P_FogCloud_Complex_01_RoundCloud:ParticleModuleRequired_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.7"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime P_FogCloud_Complex_01_RoundCloud:ParticleModuleLifetime_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSize P_FogCloud_Complex_01_RoundCloud:ParticleModuleSize_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.8"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity P_FogCloud_Complex_01_RoundCloud:ParticleModuleVelocity_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.10"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife P_FogCloud_Complex_01_RoundCloud:ParticleModuleColorOverLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.4"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveCylinder P_FogCloud_Complex_01_RoundCloud:ParticleModuleLocationPrimitiveCylinder_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.6"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn P_FogCloud_Complex_01_RoundCloud:ParticleModuleSpawn_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.9"
+      },
+      "PeakActiveParticles": 302
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_FogCloud_Complex_01_RoundCloud",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.093059,
+        "MaxValue": 0.187821,
+        "MinValueVec": {
+          "X": 0.093059,
+          "Y": 0.132868,
+          "Z": 0.187821
+        },
+        "MaxValueVec": {
+          "X": 0.093059,
+          "Y": 0.132868,
+          "Z": 0.187821
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.093059,
+            0.132868,
+            0.187821
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 14.999999,
+          "Values": [
+            0.0,
+            0.12648542,
+            0.4170258,
+            0.74057364,
+            0.9655236,
+            0.99333715,
+            0.94456273,
+            0.85688823,
+            0.74071574,
+            0.6064055,
+            0.46431643,
+            0.32481351,
+            0.19828965,
+            0.09503683,
+            0.025559599,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_FogCloud_Complex_01_RoundCloud",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 8.0,
+        "MaxValue": 10.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            8.0,
+            10.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveCylinder",
+    "Name": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Outer": "P_FogCloud_Complex_01_RoundCloud",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 200.0,
+        "MaxValue": 200.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            200.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartHeight": {
+        "MaxValue": 256.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            256.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "VelocityScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_FogCloud_Complex_01_RoundCloud:ParticleModuleLocationPrimitiveCylinder_0.DistributionVelocityScale",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.0"
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_FogCloud_Complex_01_RoundCloud",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant M_FogParticle_Complex_GodRays_Deer_NoInnerCollor",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/M_FogParticle_Complex_GodRays_Deer_NoInnerCollor.0"
+      },
+      "ScreenAlignment": "PSA_Rectangle",
+      "bUseLocalSpace": true,
+      "SortMode": "PSORTMODE_Age_NewestFirst",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_FogCloud_Complex_01_RoundCloud:ParticleModuleRequired_0.RequiredDistributionSpawnRate",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.1"
+        }
+      },
+      "bUseMaxDrawCount": false,
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_FogCloud_Complex_01_RoundCloud",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 200.0,
+        "MaxValue": 300.0,
+        "MinValueVec": {
+          "X": 200.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 300.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            200.0,
+            200.0,
+            200.0,
+            300.0,
+            300.0,
+            300.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_FogCloud_Complex_01_RoundCloud",
+    "Properties": {
+      "Rate": {
+        "MinValue": 30.0,
+        "MaxValue": 30.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            30.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_FogCloud_Complex_01_RoundCloud:ParticleModuleSpawn_0.BurstScaleDistribution",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_FogCloud_Complex_01_RoundCloud",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -40.0,
+        "MaxValue": 40.0,
+        "MinValueVec": {
+          "X": -40.0,
+          "Y": -40.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 40.0,
+          "Y": 40.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -40.0,
+            -40.0,
+            0.0,
+            40.0,
+            40.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_FogCloud_Complex_01_RoundCloud",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel P_FogCloud_Complex_01_RoundCloud:ParticleSpriteEmitter_0.ParticleLODLevel_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.3"
+        }
+      ],
+      "DetailModeBitmask": 63
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_FogCloud_Complex_01_RoundCloud",
+    "Properties": {
+      "WarmupTime": 20.0,
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter P_FogCloud_Complex_01_RoundCloud:ParticleSpriteEmitter_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/GDCLearningTheaterFog/P_FogCloud_Complex_01_RoundCloud.11"
+        }
+      ],
+      "CurveEdSetup": null,
+      "MacroUVRadius": 2500.0,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -4096.0,
+          "Y": -4096.0,
+          "Z": -4096.0
+        },
+        "Max": {
+          "X": 4096.0,
+          "Y": 4096.0,
+          "Z": 4096.0
+        },
+        "IsValid": 1
+      },
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

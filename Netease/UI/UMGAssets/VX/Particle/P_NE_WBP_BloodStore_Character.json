@@ -1,0 +1,449 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired P_NE_WBP_BloodStore_Character:ParticleModuleRequired_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.6"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime P_NE_WBP_BloodStore_Character:ParticleModuleLifetime_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSize P_NE_WBP_BloodStore_Character:ParticleModuleSize_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.9"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity P_NE_WBP_BloodStore_Character:ParticleModuleVelocity_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.12"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife P_NE_WBP_BloodStore_Character:ParticleModuleColorOverLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.3"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation P_NE_WBP_BloodStore_Character:ParticleModuleLocation_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.5"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation P_NE_WBP_BloodStore_Character:ParticleModuleRotation_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.7"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate P_NE_WBP_BloodStore_Character:ParticleModuleRotationRate_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.8"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife P_NE_WBP_BloodStore_Character:ParticleModuleSizeMultiplyLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.10"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn P_NE_WBP_BloodStore_Character:ParticleModuleSpawn_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.11"
+      },
+      "PeakActiveParticles": 17
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "ColorOverLife": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.2,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 14.999999,
+          "Values": [
+            0.0,
+            0.13333334,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.17777774,
+            0.08888887,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 3.5,
+        "MaxValue": 3.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.5
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_0",
+    "Outer": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -50.0,
+        "MaxValue": 50.0,
+        "MinValueVec": {
+          "X": -50.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 50.0,
+          "Y": -50.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -50.0,
+            0.0,
+            0.0,
+            50.0,
+            -50.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant Ml_NE_WBP_BloodStore_Character_03",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Material/Ml_NE_WBP_BloodStore_Character_03.0"
+      },
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_NE_WBP_BloodStore_Character:ParticleModuleRequired_0.RequiredDistributionSpawnRate",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "MaxDrawCount": 20,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_0",
+    "Outer": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.01,
+        "MaxValue": 0.01,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.01,
+            0.01
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "StartSize": {
+        "MaxValue": 200.0,
+        "MinValueVec": {
+          "X": 230.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 200.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            230.0,
+            0.0,
+            0.0,
+            200.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 1.0,
+        "MaxValue": 1.3,
+        "MinValueVec": {
+          "X": 1.2,
+          "Y": 1.2,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.3,
+          "Y": 1.3,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.2,
+            1.2,
+            1.0,
+            1.3,
+            1.3,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "Rate": {
+        "MinValue": 4.0,
+        "MaxValue": 4.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            4.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_NE_WBP_BloodStore_Character:ParticleModuleSpawn_0.BurstScaleDistribution",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -30.0,
+        "MaxValue": 15.0,
+        "MinValueVec": {
+          "X": -15.0,
+          "Y": -30.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 15.0,
+          "Y": -20.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -15.0,
+            -30.0,
+            0.0,
+            15.0,
+            -20.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel P_NE_WBP_BloodStore_Character:ParticleSpriteEmitter_0.ParticleLODLevel_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.2"
+        }
+      ],
+      "DetailModeBitmask": 63
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_NE_WBP_BloodStore_Character",
+    "Properties": {
+      "UpdateTime_FPS": 30.0,
+      "UpdateTime_Delta": 0.033333335,
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter P_NE_WBP_BloodStore_Character:ParticleSpriteEmitter_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_NE_WBP_BloodStore_Character.13"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

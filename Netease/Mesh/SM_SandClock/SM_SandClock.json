@@ -1,0 +1,138 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_SandClock",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "7C30D2754FEECC893A195F8FE3D4A10C",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 86062,
+        "SizeOnDisk": 86062,
+        "OffsetInFile": "0x377B8"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_SandClock",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4C82E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_SandClock",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_SandClock",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/SM_SandClock/MI_SandClock.0"
+          },
+          "MaterialSlotName": "SM_SandClock",
+          "ImportedMaterialSlotName": "SM_SandClock",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 104.15099,
+            "LocalUVDensities": 131.1062,
+            "LocalUVDensities": 182.73903,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_SandClock_2",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/SM_SandClock/MI_SandClock_2.0"
+          },
+          "MaterialSlotName": "SM_SandClock_Glass",
+          "ImportedMaterialSlotName": "SM_SandClock_Glass",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 116.43575,
+            "LocalUVDensities": 133.70103,
+            "LocalUVDensities": 184.51154,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 182.8274,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 36.366432
+        },
+        "BoxExtent": {
+          "X": 19.7091,
+          "Y": 19.438797,
+          "Z": 36.370995
+        },
+        "SphereRadius": 41.11352
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_SandClock:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_SandClock/SM_SandClock.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_SandClock:NavCollision_2",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_SandClock/SM_SandClock.1"
+    },
+    "LightingGuid": "1316F7B0-4877B0EF-378741A3-A612BCCC",
+    "RenderData": null
+  }
+]

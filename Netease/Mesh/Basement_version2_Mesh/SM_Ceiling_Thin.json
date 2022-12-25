@@ -1,0 +1,208 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Ceiling_Thin",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 200.10025,
+                "Y": -700.1125,
+                "Z": -0.10002899
+              },
+              {
+                "X": 200.10025,
+                "Y": -700.1125,
+                "Z": 23.25
+              },
+              {
+                "X": 200.10025,
+                "Y": 0.125,
+                "Z": 23.25
+              },
+              {
+                "X": 200.125,
+                "Y": 0.125,
+                "Z": -0.100029066
+              },
+              {
+                "X": -0.10024504,
+                "Y": 0.125,
+                "Z": -0.10002899
+              },
+              {
+                "X": -0.10024504,
+                "Y": 0.125,
+                "Z": 23.25
+              },
+              {
+                "X": -0.10024504,
+                "Y": -700.11255,
+                "Z": 23.25
+              },
+              {
+                "X": -0.11262512,
+                "Y": -700.10004,
+                "Z": -0.10002899
+              }
+            ],
+            "IndexData": [],
+            "ElemBox": {
+              "Min": {
+                "X": -0.11262512,
+                "Y": -700.11255,
+                "Z": -0.100029066
+              },
+              "Max": {
+                "X": 200.125,
+                "Y": 0.125,
+                "Z": 23.25
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "5AB411A441D3138F035AD98E1FA653A8",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 1995,
+        "SizeOnDisk": 1995,
+        "OffsetInFile": "0x3757"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "SM_Ceiling_Thin",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x3F6A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Ceiling_Thin",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material M_Ceiling_Thin_CLEAN",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Ceiling_Thin_CLEAN.0"
+          },
+          "MaterialSlotName": "M_Ceiling_Thin_CLEAN",
+          "ImportedMaterialSlotName": "M_Ceiling_Thin_CLEAN",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 745.6384,
+            "LocalUVDensities": 767.68835,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 767.68835,
+      "LightMapResolution": 128,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 100.0,
+          "Y": -350.00003,
+          "Z": 11.576204
+        },
+        "BoxExtent": {
+          "X": 100.000244,
+          "Y": 350.00003,
+          "Z": 11.576233
+        },
+        "SphereRadius": 364.18967
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Ceiling_Thin:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Ceiling_Thin.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Ceiling_Thin:NavCollision_1",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Ceiling_Thin.1"
+    },
+    "LightingGuid": "D6CB24F0-45D69075-1DCC1089-EC7F7BDC",
+    "RenderData": null
+  }
+]

@@ -1,0 +1,325 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetMaterial",
+    "Outer": "UI_CollectPSO_C",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Mat",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstance",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPostMaterial",
+    "Outer": "UI_CollectPSO_C",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "NewParam",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstance",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "___int_Array_Index_Variable",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "___int_Loop_Counter_Variable",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134217728,
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+          "Flags": 1,
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class PostProcessVolume",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Actor",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_As______",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class PostProcessVolume",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "UI_CollectPSO_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree UI_CollectPSO_C:WidgetTree",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.11"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "TemplateAsset": {
+        "AssetPathName": "/Game/Netease/UI/UI_CollectPSO.WidgetArchetype",
+        "SubPathString": ""
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class UserWidget",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function UI_CollectPSO_C:SetPostMaterial",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.1"
+      },
+      {
+        "ObjectName": "Function UI_CollectPSO_C:SetMaterial",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_76",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class Image",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetMaterial": {
+        "ObjectName": "Function UI_CollectPSO_C:SetMaterial",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.0"
+      },
+      "SetPostMaterial": {
+        "ObjectName": "Function UI_CollectPSO_C:SetPostMaterial",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.1"
+      }
+    },
+    "ClassFlags": 10754064,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "UI_CollectPSO_C Default__UI_CollectPSO_C",
+      "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.3"
+    }
+  },
+  {
+    "Type": "UI_CollectPSO_C",
+    "Name": "Default__UI_CollectPSO_C",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot UI_CollectPSO_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 300.0,
+          "Bottom": 100.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel UI_CollectPSO_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.4"
+      },
+      "Content": {
+        "ObjectName": "Image UI_CollectPSO_C:WidgetTree.Image_76",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 300.0,
+          "Bottom": 100.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.5"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_76",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.9"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_76",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot UI_CollectPSO_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.6"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_76",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.7"
+      }
+    }
+  },
+  {
+    "Type": "UI_CollectPSO_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__UI_CollectPSO_C",
+    "Properties": {
+      "Image_76": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_76",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.9"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.12"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "UI_CollectPSO_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel UI_CollectPSO_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UI_CollectPSO.5"
+      }
+    }
+  }
+]

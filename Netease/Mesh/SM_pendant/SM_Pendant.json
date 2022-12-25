@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Pendant",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "9A634E5D4369C43EFB4C109C5CA5B5D1",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 136799,
+        "SizeOnDisk": 136799,
+        "OffsetInFile": "0x8AA6B"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Pendant",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xAC112"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Pendant",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_pendant",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/SM_pendant/MI_pendant.0"
+          },
+          "MaterialSlotName": "SM_Pendant",
+          "ImportedMaterialSlotName": "SM_Pendant",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 50.727814,
+            "LocalUVDensities": 208.14278,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 208.14278,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -0.113521576,
+          "Z": 86.374535
+        },
+        "BoxExtent": {
+          "X": 61.878014,
+          "Y": 61.84723,
+          "Z": 86.37452
+        },
+        "SphereRadius": 86.3983
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Pendant:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_pendant/SM_Pendant.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Pendant:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_pendant/SM_Pendant.1"
+    },
+    "LightingGuid": "1262CD1D-4B3BD700-0FA761A4-C1F617A7",
+    "RenderData": null
+  }
+]

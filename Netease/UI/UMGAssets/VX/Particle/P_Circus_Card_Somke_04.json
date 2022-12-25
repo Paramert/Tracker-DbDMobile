@@ -1,0 +1,452 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired P_Circus_Card_Somke_04:ParticleModuleRequired_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.6"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime P_Circus_Card_Somke_04:ParticleModuleLifetime_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSize P_Circus_Card_Somke_04:ParticleModuleSize_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.9"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity P_Circus_Card_Somke_04:ParticleModuleVelocity_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.12"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife P_Circus_Card_Somke_04:ParticleModuleColorOverLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.3"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation P_Circus_Card_Somke_04:ParticleModuleLocation_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife P_Circus_Card_Somke_04:ParticleModuleSizeMultiplyLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.10"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation P_Circus_Card_Somke_04:ParticleModuleRotation_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.7"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate P_Circus_Card_Somke_04:ParticleModuleRotationRate_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.8"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn P_Circus_Card_Somke_04:ParticleModuleSpawn_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.11"
+      },
+      "PeakActiveParticles": 30
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.143241,
+        "MaxValue": 0.203125,
+        "MinValueVec": {
+          "X": 0.203125,
+          "Y": 0.143241,
+          "Z": 0.201124
+        },
+        "MaxValueVec": {
+          "X": 0.203125,
+          "Y": 0.143241,
+          "Z": 0.201124
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.203125,
+            0.143241,
+            0.201124
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.07,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 3.0,
+          "Values": [
+            0.0,
+            0.07,
+            0.07,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 4,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 3.0,
+        "MaxValue": 4.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            4.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_0",
+    "Outer": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -500.0,
+        "MaxValue": 500.0,
+        "MinValueVec": {
+          "X": -500.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 500.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -500.0,
+            0.0,
+            0.0,
+            500.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant MI_Rotation_01_GL_Inst4",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Material/MI_Rotation_01_GL_Inst4.0"
+      },
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_Circus_Card_Somke_04:ParticleModuleRequired_0.RequiredDistributionSpawnRate",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_0",
+    "Outer": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.01,
+        "MaxValue": 0.01,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.01,
+            0.01
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "StartSize": {
+        "MaxValue": 200.0,
+        "MinValueVec": {
+          "X": 150.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 200.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            150.0,
+            0.0,
+            0.0,
+            200.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 1.0,
+        "MaxValue": 2.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 2.0,
+          "Y": 2.0,
+          "Z": 2.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "Rate": {
+        "MinValue": 5.0,
+        "MaxValue": 7.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            5.0,
+            7.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_Circus_Card_Somke_04:ParticleModuleSpawn_0.BurstScaleDistribution",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -10.0,
+        "MaxValue": 10.0,
+        "MinValueVec": {
+          "X": -10.0,
+          "Y": -10.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 10.0,
+          "Y": -50.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -10.0,
+            -10.0,
+            0.0,
+            10.0,
+            -50.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel P_Circus_Card_Somke_04:ParticleSpriteEmitter_0.ParticleLODLevel_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.2"
+        }
+      ],
+      "DetailModeBitmask": 63
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Circus_Card_Somke_04",
+    "Properties": {
+      "UpdateTime_FPS": 30.0,
+      "UpdateTime_Delta": 0.033333335,
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter P_Circus_Card_Somke_04:ParticleSpriteEmitter_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Circus_Card_Somke_04.13"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

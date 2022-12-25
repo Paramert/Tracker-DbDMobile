@@ -1,0 +1,144 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Elec_Box_Small_01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 8.996293,
+              "Y": 0.0,
+              "Z": 18.576893
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 17.617073,
+            "Y": 16.797277,
+            "Z": 37.153786,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "048EE6BC4154202057AF49834125AC9D",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 66599,
+        "SizeOnDisk": 66599,
+        "OffsetInFile": "0x26AD1"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "SM_Elec_Box_Small_01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x36F40"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Elec_Box_Small_01",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant M_Elec_Box_Small_04_Inst",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/elec_box_small_01/M_Elec_Box_Small_04_Inst.0"
+          },
+          "MaterialSlotName": "elec_box_small_01_mat",
+          "ImportedMaterialSlotName": "elec_box_small_01_mat",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 68.3435,
+            "LocalUVDensities": 61.823593,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 61.823593,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 8.996293,
+          "Y": 0.0,
+          "Z": 18.576893
+        },
+        "BoxExtent": {
+          "X": 8.808537,
+          "Y": 8.398639,
+          "Z": 18.576893
+        },
+        "SphereRadius": 21.432306
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Elec_Box_Small_01:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/elec_box_small_01/SM_Elec_Box_Small_01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Elec_Box_Small_01:NavCollision_3",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/elec_box_small_01/SM_Elec_Box_Small_01.1"
+    },
+    "LightingGuid": "7C78F95E-4D4D2E87-2C49D2B5-0981B2AE",
+    "RenderData": null
+  }
+]

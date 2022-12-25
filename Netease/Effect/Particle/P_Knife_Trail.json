@@ -1,0 +1,593 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatParticleParameter",
+    "Name": "DistributionFloatParticleParameter_0",
+    "Outer": "ParticleModuleLifetime_0",
+    "Properties": {
+      "ParameterName": "Lifetime",
+      "Constant": 0.5
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired P_Knife_Trail:ParticleModuleRequired_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.7"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime P_Knife_Trail:ParticleModuleLifetime_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize P_Knife_Trail:ParticleModuleSize_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.8"
+        },
+        {
+          "ObjectName": "ParticleModuleColor P_Knife_Trail:ParticleModuleColor_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSpawnPerUnit P_Knife_Trail:ParticleModuleSpawnPerUnit_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.11"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife P_Knife_Trail:ParticleModuleColorScaleOverLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife P_Knife_Trail:ParticleModuleSizeMultiplyLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.9"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataRibbon P_Knife_Trail:ParticleModuleTypeDataRibbon_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.12"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn P_Knife_Trail:ParticleModuleSpawn_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.10"
+      },
+      "PeakActiveParticles": 523
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_0",
+    "Outer": "P_Knife_Trail",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 0.54817,
+        "MaxValue": 5.0,
+        "MinValueVec": {
+          "X": 5.0,
+          "Y": 2.674953,
+          "Z": 0.54817
+        },
+        "MaxValueVec": {
+          "X": 5.0,
+          "Y": 2.674953,
+          "Z": 0.54817
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            5.0,
+            2.674953,
+            0.54817
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 2.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_0",
+    "Outer": "P_Knife_Trail",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "MaxValue": 15.0,
+        "MinValueVec": {
+          "X": 0.609375,
+          "Y": 0.0,
+          "Z": 0.040069
+        },
+        "MaxValueVec": {
+          "X": 15.0,
+          "Y": 9.386635,
+          "Z": 0.593617
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 70.0,
+          "Values": [
+            15.0,
+            9.386635,
+            0.593617,
+            14.714286,
+            9.190363,
+            0.5910711,
+            14.428572,
+            8.994092,
+            0.58852524,
+            14.142858,
+            8.79782,
+            0.58597934,
+            13.857143,
+            8.601549,
+            0.5834335,
+            13.571428,
+            8.405277,
+            0.58088756,
+            13.285714,
+            8.209006,
+            0.5783417,
+            13.0,
+            8.012734,
+            0.5757958,
+            12.714286,
+            7.816463,
+            0.5732499,
+            12.428572,
+            7.6201916,
+            0.57070404,
+            12.142858,
+            7.42392,
+            0.56815815,
+            11.857142,
+            7.2276487,
+            0.56561226,
+            11.571428,
+            7.0313773,
+            0.56306636,
+            11.285714,
+            6.835106,
+            0.5605205,
+            11.0,
+            6.638834,
+            0.55797464,
+            10.714286,
+            6.4425626,
+            0.55542874,
+            10.428571,
+            6.246291,
+            0.55288285,
+            10.142857,
+            6.0500197,
+            0.55033696,
+            9.857142,
+            5.853749,
+            0.54779106,
+            9.571428,
+            5.657477,
+            0.5452452,
+            9.285714,
+            5.461206,
+            0.5426993,
+            9.0,
+            5.264934,
+            0.5401534,
+            8.714286,
+            5.0686626,
+            0.53760755,
+            8.428572,
+            4.872391,
+            0.53506166,
+            8.142857,
+            4.67612,
+            0.53251576,
+            7.8571424,
+            4.479848,
+            0.5299699,
+            7.5714283,
+            4.2835765,
+            0.527424,
+            7.2857137,
+            4.087305,
+            0.5248781,
+            6.9999995,
+            3.8910334,
+            0.5223322,
+            6.7142854,
+            3.6947625,
+            0.5197863,
+            6.428571,
+            3.4984906,
+            0.5172404,
+            6.1428566,
+            3.3022194,
+            0.5146946,
+            5.8571424,
+            3.1059477,
+            0.5121487,
+            5.571428,
+            2.9096763,
+            0.5096027,
+            5.285713,
+            2.7134047,
+            0.5070569,
+            5.0157886,
+            2.5301628,
+            0.5027911,
+            4.8431916,
+            2.427236,
+            0.48792374,
+            4.6863837,
+            2.3373384,
+            0.47133657,
+            4.5295753,
+            2.2474406,
+            0.4547493,
+            4.372768,
+            2.1575434,
+            0.43816212,
+            4.2159595,
+            2.0676455,
+            0.4215749,
+            4.0591516,
+            1.977748,
+            0.40498772,
+            3.9023433,
+            1.8878502,
+            0.38840044,
+            3.7455356,
+            1.7979528,
+            0.37181327,
+            3.5887275,
+            1.708055,
+            0.355226,
+            3.4319193,
+            1.6181574,
+            0.3386388,
+            3.275111,
+            1.5282596,
+            0.3220516,
+            3.1183035,
+            1.4383622,
+            0.30546442,
+            2.961495,
+            1.3484643,
+            0.28887713,
+            2.8046873,
+            1.2585669,
+            0.27228996,
+            2.6478791,
+            1.1686691,
+            0.25570273,
+            2.491071,
+            1.0787715,
+            0.23911552,
+            2.3342628,
+            0.98887366,
+            0.22252828,
+            2.1774552,
+            0.8989764,
+            0.20594113,
+            2.0206466,
+            0.80907834,
+            0.18935382,
+            1.8638389,
+            0.719181,
+            0.17276667,
+            1.7070309,
+            0.62928325,
+            0.15617946,
+            1.5502231,
+            0.53938586,
+            0.13959228,
+            1.3934146,
+            0.44948772,
+            0.12300498,
+            1.2366071,
+            0.3595905,
+            0.106417835,
+            1.0797989,
+            0.2696927,
+            0.089830585,
+            0.9229907,
+            0.179795,
+            0.07324338,
+            0.7661828,
+            0.089897454,
+            0.056656167,
+            0.609375,
+            0.0,
+            0.040069
+          ],
+          "Op": 1,
+          "EntryCount": 64,
+          "EntryStride": 3
+        }
+      },
+      "AlphaScaleOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_Knife_Trail",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": {
+          "ObjectName": "DistributionFloatParticleParameter P_Knife_Trail:ParticleModuleLifetime_0.DistributionFloatParticleParameter_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.2"
+        },
+        "Table": {
+          "Values": [
+            1.0
+          ]
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_Knife_Trail",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant MI_EFF_ya_Light_DD_04",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Material/MI_EFF_ya_Light_DD_04.0"
+      },
+      "bKillOnCompleted": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_Knife_Trail:ParticleModuleRequired_0.RequiredDistributionSpawnRate",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_Knife_Trail",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 8.0,
+        "MaxValue": 8.0,
+        "MinValueVec": {
+          "X": 8.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 8.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            8.0,
+            8.0,
+            8.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_Knife_Trail",
+    "Properties": {
+      "LifeMultiplier": {
+        "MaxValue": 0.7,
+        "MaxValueVec": {
+          "X": 0.7,
+          "Y": 0.7,
+          "Z": 0.7
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 11.666666,
+          "Values": [
+            0.7,
+            0.7,
+            0.7,
+            0.6206843,
+            0.6206843,
+            0.6206843,
+            0.45744336,
+            0.45744336,
+            0.45744336,
+            0.32220957,
+            0.32220957,
+            0.32220957,
+            0.2833428,
+            0.2833428,
+            0.2833428,
+            0.18191752,
+            0.18191752,
+            0.18191752,
+            0.059486654,
+            0.059486654,
+            0.059486654,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_Knife_Trail",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_Knife_Trail:ParticleModuleSpawn_0.BurstScaleDistribution",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawnPerUnit",
+    "Name": "ParticleModuleSpawnPerUnit_0",
+    "Outer": "P_Knife_Trail",
+    "Properties": {
+      "UnitScalar": 30.0,
+      "SpawnPerUnit": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataRibbon",
+    "Name": "ParticleModuleTypeDataRibbon_0",
+    "Outer": "P_Knife_Trail",
+    "Properties": {
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_Knife_Trail",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel P_Knife_Trail:ParticleSpriteEmitter_0.ParticleLODLevel_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.3"
+        }
+      ],
+      "DetailModeBitmask": 63
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Knife_Trail",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter P_Knife_Trail:ParticleSpriteEmitter_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Effect/Particle/P_Knife_Trail.13"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true,
+      "OcclusionBoundsMethod": "EPSOBM_None",
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

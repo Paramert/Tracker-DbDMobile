@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_RockRoof",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "C81E431747580AB062F919BC01ED7742",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 56968,
+        "SizeOnDisk": 56968,
+        "OffsetInFile": "0x3F610"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_RockRoof",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4D4E0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_RockRoof",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Rock",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Rock/Instance/MI_Rock.0"
+          },
+          "MaterialSlotName": "rock_default",
+          "ImportedMaterialSlotName": "rock_default",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 5301.904,
+            "LocalUVDensities": 4220.691,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 4220.691,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 110.39734,
+          "Y": 450.93677,
+          "Z": 874.52264
+        },
+        "BoxExtent": {
+          "X": 1766.7649,
+          "Y": 1507.9226,
+          "Z": 1078.8264
+        },
+        "SphereRadius": 2015.7212
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_RockRoof:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Rock/SM_RockRoof.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_RockRoof:NavCollision_2",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Rock/SM_RockRoof.1"
+    },
+    "LightingGuid": "33582CEC-4AE22A04-B16A6B9D-910AECBE",
+    "RenderData": null
+  }
+]

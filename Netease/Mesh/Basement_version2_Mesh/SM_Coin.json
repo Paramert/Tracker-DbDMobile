@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Coin",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "49E5489C428FC0DF7DE77A8201854D6F",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 9577,
+        "SizeOnDisk": 9577,
+        "OffsetInFile": "0xB82C"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_Coin",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xDDDD"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Coin",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant M_Coin_Inst",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Coin_Inst.0"
+          },
+          "MaterialSlotName": "M_Coin_Inst",
+          "ImportedMaterialSlotName": "M_Coin_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 13.907919,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 13.907919,
+      "LightMapResolution": 8,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.005142212,
+          "Y": -0.0014190674,
+          "Z": 0.5097275
+        },
+        "BoxExtent": {
+          "X": 3.646225,
+          "Y": 3.7738953,
+          "Z": 0.50629425
+        },
+        "SphereRadius": 3.8793101
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Coin:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Coin.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Coin:NavCollision_2",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Coin.1"
+    },
+    "LightingGuid": "5112DE7A-40215A21-F28EE2A1-FFE19A37",
+    "RenderData": null
+  }
+]

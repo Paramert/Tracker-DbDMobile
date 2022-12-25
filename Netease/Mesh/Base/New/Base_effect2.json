@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Base_effect2",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "B514BC6046A180BB879DC6B9D149CDB9",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 585,
+        "SizeOnDisk": 585,
+        "OffsetInFile": "0x2453"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "Base_effect2",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x26E4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Base_effect2",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant M_FollowLine_Inst1",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Base/New/M_FollowLine_Inst1.0"
+          },
+          "MaterialSlotName": "Material #26",
+          "ImportedMaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 322.6396,
+            "LocalUVDensities": 100.326126,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 100.326126,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 9.779292,
+          "Y": -38.225655,
+          "Z": 7.4577246
+        },
+        "BoxExtent": {
+          "X": 24.048855,
+          "Y": 64.84208,
+          "Z": 0.0
+        },
+        "SphereRadius": 65.74049
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Base_effect2:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Base/New/Base_effect2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision Base_effect2:NavCollision_1",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Base/New/Base_effect2.1"
+    },
+    "LightingGuid": "3AA94D33-40E736A7-34379C8D-FEF9423C",
+    "RenderData": null
+  }
+]

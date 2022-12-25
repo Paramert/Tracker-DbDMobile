@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Mud_Footprints_01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "6BD0A18248DDEC663F37F09B9B5F23AA",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 8841,
+        "SizeOnDisk": 8841,
+        "OffsetInFile": "0x69B5"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_Mud_Footprints_01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x8C86"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Mud_Footprints_01",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant M_Mud_Footprints_Inst",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Mud_Footprints_Inst.0"
+          },
+          "MaterialSlotName": "M_Mud_Footprints_Inst",
+          "ImportedMaterialSlotName": "M_Mud_Footprints_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 153.80193,
+            "LocalUVDensities": 59.76853,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 59.76853,
+      "LightMapResolution": 16,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 17.091892,
+          "Y": -8.545982,
+          "Z": 0.76286805
+        },
+        "BoxExtent": {
+          "X": 32.28469,
+          "Y": 23.73877,
+          "Z": 1.865809
+        },
+        "SphereRadius": 36.99113
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Mud_Footprints_01:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Mud_Footprints_01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Mud_Footprints_01:NavCollision_2",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Mud_Footprints_01.1"
+    },
+    "LightingGuid": "E785CAC4-4CBFC9DD-68A5D5AD-28DC08A1",
+    "RenderData": null
+  }
+]

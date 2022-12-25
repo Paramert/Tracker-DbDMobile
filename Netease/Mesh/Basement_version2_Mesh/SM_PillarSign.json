@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_PillarSign",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "F54977F648247E3FA4DF36A8B360E734",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 365,
+        "SizeOnDisk": 365,
+        "OffsetInFile": "0x21A9"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_PillarSign",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x235E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_PillarSign",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material M_PillarSign",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_PillarSign.0"
+          },
+          "MaterialSlotName": "M_PillarSign",
+          "ImportedMaterialSlotName": "M_PillarSign",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 147.70966,
+            "LocalUVDensities": 52.307293,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 52.307293,
+      "LightMapResolution": 32,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.1255951,
+          "Y": 8.981623E-06,
+          "Z": 0.3989029
+        },
+        "BoxExtent": {
+          "X": 8.942314,
+          "Y": 3.814697E-06,
+          "Z": 71.74953
+        },
+        "SphereRadius": 72.304634
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_PillarSign:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_PillarSign.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_PillarSign:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_PillarSign.1"
+    },
+    "LightingGuid": "5D7837F1-4C8F0EBB-4D386A8E-4193B7CA",
+    "RenderData": null
+  }
+]

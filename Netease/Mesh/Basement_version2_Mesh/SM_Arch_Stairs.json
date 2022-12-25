@@ -1,0 +1,207 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Arch_Stairs",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 200.4329,
+                "Y": -12.551221,
+                "Z": -39.949345
+              },
+              {
+                "X": 200.4329,
+                "Y": -12.551221,
+                "Z": 0.125
+              },
+              {
+                "X": 200.40625,
+                "Y": 0.1,
+                "Z": 0.125
+              },
+              {
+                "X": 200.40625,
+                "Y": 0.1,
+                "Z": -39.949345
+              },
+              {
+                "X": -0.112502575,
+                "Y": 0.1,
+                "Z": -39.9375
+              },
+              {
+                "X": -0.11250305,
+                "Y": 0.1,
+                "Z": 0.125
+              },
+              {
+                "X": -0.1,
+                "Y": -12.551221,
+                "Z": 0.125
+              },
+              {
+                "X": -0.1,
+                "Y": -12.551221,
+                "Z": -39.9375
+              }
+            ],
+            "IndexData": [],
+            "ElemBox": {
+              "Min": {
+                "X": -0.11250305,
+                "Y": -12.551221,
+                "Z": -39.949345
+              },
+              "Max": {
+                "X": 200.4329,
+                "Y": 0.1,
+                "Z": 0.125
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "01190898414993A80C2730B63F839EE3",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5043,
+        "SizeOnDisk": 5043,
+        "OffsetInFile": "0x5AA2"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Arch_Stairs",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 457,
+        "SizeOnDisk": 457,
+        "OffsetInFile": "0x6E9D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Arch_Stairs",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material M_Stairs_Arch",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Basement_version2_Material/M_Stairs_Arch.0"
+          },
+          "MaterialSlotName": "M_Stairs_Arch",
+          "ImportedMaterialSlotName": "M_Stairs_Arch",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 202.00258,
+            "LocalUVDensities": 183.85542,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 202.00258,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 100.16645,
+          "Y": -6.2199707,
+          "Z": -19.924673
+        },
+        "BoxExtent": {
+          "X": 100.16645,
+          "Y": 6.2199707,
+          "Z": 19.924673
+        },
+        "SphereRadius": 102.31812
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Arch_Stairs:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Arch_Stairs.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Arch_Stairs:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Basement_version2_Mesh/SM_Arch_Stairs.1"
+    },
+    "LightingGuid": "DD1D3B2E-4AE18814-5ED369A0-FCAA31BE",
+    "RenderData": null
+  }
+]

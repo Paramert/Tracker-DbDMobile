@@ -1,0 +1,144 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_BunkerDoor01",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -79.999985,
+              "Y": 0.05187416,
+              "Z": 120.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 160.00003,
+            "Y": 17.902723,
+            "Z": 240.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "34AF7AC240A0D9835284A19FE90CCFD0",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 49771,
+        "SizeOnDisk": 49771,
+        "OffsetInFile": "0x21F0F"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_140",
+    "Outer": "SM_BunkerDoor01",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x2E1C2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_BunkerDoor01",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material Mat_BunkerDoor01",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/Mat_BunkerDoor01.0"
+          },
+          "MaterialSlotName": "Standardmaterial",
+          "ImportedMaterialSlotName": "Standardmaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 364.42847,
+            "LocalUVDensities": 388.77817,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 388.77817,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -80.0,
+          "Y": 10.80629,
+          "Z": 120.0
+        },
+        "BoxExtent": {
+          "X": 80.000015,
+          "Y": 17.766953,
+          "Z": 120.0
+        },
+        "SphereRadius": 145.3123
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_BunkerDoor01:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_BunkerDoor01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_BunkerDoor01:NavCollision_140",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_BunkerDoor01.1"
+    },
+    "LightingGuid": "A82E8432-4352E74A-50F1309A-9D864898",
+    "RenderData": null
+  }
+]

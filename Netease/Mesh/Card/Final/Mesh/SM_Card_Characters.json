@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Card_Characters",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "8CE306DB42C6F282D13130A6560925E4",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 365,
+        "SizeOnDisk": 365,
+        "OffsetInFile": "0x219F"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Card_Characters",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2354"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Card_Characters",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 100.0413,
+            "LocalUVDensities": 100.51637,
+            "LocalUVDensities": 75.04777,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 75.04777,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 4.1187602E-07
+        },
+        "BoxExtent": {
+          "X": 30.5,
+          "Y": 44.66667,
+          "Z": 2.984206E-07
+        },
+        "SphereRadius": 54.086613
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Card_Characters:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Card/Final/Mesh/SM_Card_Characters.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Card_Characters:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/Card/Final/Mesh/SM_Card_Characters.1"
+    },
+    "LightingGuid": "B1696487-4D24FA17-619E43B2-7FA54A05",
+    "RenderData": null
+  }
+]

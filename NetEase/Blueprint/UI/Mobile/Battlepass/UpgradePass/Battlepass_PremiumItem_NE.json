@@ -5,7 +5,7 @@
     "Properties": {
       "WidgetTree": {
         "ObjectName": "WidgetTree Battlepass_PremiumItem_NE_C:WidgetTree",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.29"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.31"
       },
       "bAllowTemplate": true,
       "bValidTemplate": true,
@@ -33,12 +33,23 @@
       },
       {
         "Type": "ObjectProperty",
-        "Name": "ScrollBox_64",
+        "Name": "ScrollBox_63",
         "Flags": 2097153,
         "ElementSize": 8,
         "PropertyFlags": 562952101429260,
         "PropertyClass": {
           "ObjectName": "Class ScrollBox",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ScrollBox_64",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class WrapBox",
           "ObjectPath": "/Script/UMG"
         }
       },
@@ -83,17 +94,21 @@
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Image_26",
         "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.16"
       },
-      "ScrollBox_64": {
-        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_64",
+      "ScrollBox_63": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_63",
         "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.18"
+      },
+      "ScrollBox_64": {
+        "ObjectName": "WrapBox WidgetArchetype:WidgetTree_0.ScrollBox_64",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.34"
       },
       "Text_RewmiumItem": {
         "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_RewmiumItem",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.28"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.30"
       },
       "WidgetTree": {
         "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.30"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.32"
       },
       "bCookedWidgetTree": true
     }
@@ -183,7 +198,7 @@
         "Offsets": {
           "Left": 11.4,
           "Top": 24.0,
-          "Right": 0.0,
+          "Right": 0.666667,
           "Bottom": -26.142857
         },
         "Anchors": {
@@ -199,7 +214,7 @@
       },
       "Content": {
         "ObjectName": "SizeBox Battlepass_PremiumItem_NE_C:WidgetTree.SizeBox_70",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.20"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.22"
       }
     }
   },
@@ -232,7 +247,7 @@
       },
       "Content": {
         "ObjectName": "SizeBox Battlepass_PremiumItem_NE_C:WidgetTree.SizeBox_267",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.19"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.21"
       }
     }
   },
@@ -310,7 +325,7 @@
         "Offsets": {
           "Left": 11.4,
           "Top": 24.0,
-          "Right": 0.0,
+          "Right": 0.666667,
           "Bottom": -26.142857
         },
         "Anchors": {
@@ -326,7 +341,7 @@
       },
       "Content": {
         "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_70",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.22"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.24"
       }
     }
   },
@@ -359,7 +374,7 @@
       },
       "Content": {
         "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_267",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.21"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.23"
       }
     }
   },
@@ -472,14 +487,20 @@
   },
   {
     "Type": "ScrollBox",
-    "Name": "ScrollBox_64",
+    "Name": "ScrollBox_63",
     "Outer": "WidgetTree",
     "Properties": {
       "Orientation": "Orient_Horizontal",
       "ScrollBarVisibility": "ESlateVisibility::Collapsed",
+      "Slots": [
+        {
+          "ObjectName": "ScrollBoxSlot Battlepass_PremiumItem_NE_C:WidgetTree.ScrollBox_63.ScrollBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.19"
+        }
+      ],
       "Slot": {
         "ObjectName": "SizeBoxSlot Battlepass_PremiumItem_NE_C:WidgetTree.SizeBox_70.SizeBoxSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.24"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.26"
       },
       "bIsVariable": true,
       "Clipping": "EWidgetClipping::Inherit"
@@ -487,17 +508,53 @@
   },
   {
     "Type": "ScrollBox",
-    "Name": "ScrollBox_64",
+    "Name": "ScrollBox_63",
     "Outer": "WidgetTree_0",
     "Properties": {
       "Orientation": "Orient_Horizontal",
       "ScrollBarVisibility": "ESlateVisibility::Collapsed",
+      "Slots": [
+        {
+          "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.ScrollBox_63.ScrollBoxSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.20"
+        }
+      ],
       "Slot": {
         "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_70.SizeBoxSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.26"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.28"
       },
       "bIsVariable": true,
       "Clipping": "EWidgetClipping::Inherit"
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_5",
+    "Outer": "ScrollBox_63",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScrollBox Battlepass_PremiumItem_NE_C:WidgetTree.ScrollBox_63",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.17"
+      },
+      "Content": {
+        "ObjectName": "WrapBox Battlepass_PremiumItem_NE_C:WidgetTree.ScrollBox_64",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.33"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_5",
+    "Outer": "ScrollBox_63",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_63",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.18"
+      },
+      "Content": {
+        "ObjectName": "WrapBox WidgetArchetype:WidgetTree_0.ScrollBox_64",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.34"
+      }
     }
   },
   {
@@ -508,7 +565,7 @@
       "Slots": [
         {
           "ObjectName": "SizeBoxSlot Battlepass_PremiumItem_NE_C:WidgetTree.SizeBox_267.SizeBoxSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.23"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.25"
         }
       ],
       "Slot": {
@@ -533,7 +590,7 @@
       "Slots": [
         {
           "ObjectName": "SizeBoxSlot Battlepass_PremiumItem_NE_C:WidgetTree.SizeBox_70.SizeBoxSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.24"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.26"
         }
       ],
       "Slot": {
@@ -551,7 +608,7 @@
       "Slots": [
         {
           "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_267.SizeBoxSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.25"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.27"
         }
       ],
       "Slot": {
@@ -576,7 +633,7 @@
       "Slots": [
         {
           "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_70.SizeBoxSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.26"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.28"
         }
       ],
       "Slot": {
@@ -595,11 +652,11 @@
       "VerticalAlignment": "VAlign_Center",
       "Parent": {
         "ObjectName": "SizeBox Battlepass_PremiumItem_NE_C:WidgetTree.SizeBox_267",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.19"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.21"
       },
       "Content": {
         "ObjectName": "TextBlock Battlepass_PremiumItem_NE_C:WidgetTree.Text_RewmiumItem",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.27"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.29"
       }
     }
   },
@@ -614,10 +671,10 @@
       "VerticalAlignment": "VAlign_Center",
       "Parent": {
         "ObjectName": "SizeBox Battlepass_PremiumItem_NE_C:WidgetTree.SizeBox_70",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.20"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.22"
       },
       "Content": {
-        "ObjectName": "ScrollBox Battlepass_PremiumItem_NE_C:WidgetTree.ScrollBox_64",
+        "ObjectName": "ScrollBox Battlepass_PremiumItem_NE_C:WidgetTree.ScrollBox_63",
         "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.17"
       }
     }
@@ -631,11 +688,11 @@
       "VerticalAlignment": "VAlign_Center",
       "Parent": {
         "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_267",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.21"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.23"
       },
       "Content": {
         "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Text_RewmiumItem",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.28"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.30"
       }
     }
   },
@@ -650,10 +707,10 @@
       "VerticalAlignment": "VAlign_Center",
       "Parent": {
         "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_70",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.22"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.24"
       },
       "Content": {
-        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_64",
+        "ObjectName": "ScrollBox WidgetArchetype:WidgetTree_0.ScrollBox_63",
         "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.18"
       }
     }
@@ -684,7 +741,7 @@
       "WrapTextAt": 380.0,
       "Slot": {
         "ObjectName": "SizeBoxSlot Battlepass_PremiumItem_NE_C:WidgetTree.SizeBox_267.SizeBoxSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.23"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.25"
       },
       "bIsVariable": true
     }
@@ -715,7 +772,7 @@
       "WrapTextAt": 380.0,
       "Slot": {
         "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_267.SizeBoxSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.25"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.27"
       },
       "bIsVariable": true
     }
@@ -740,6 +797,42 @@
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_88",
         "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.6"
       }
+    }
+  },
+  {
+    "Type": "WrapBox",
+    "Name": "ScrollBox_64",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "InnerSlotPadding": {
+        "X": 8.0,
+        "Y": 0.0
+      },
+      "WrapWidth": 9000000.0,
+      "bExplicitWrapWidth": true,
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot Battlepass_PremiumItem_NE_C:WidgetTree.ScrollBox_63.ScrollBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.19"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WrapBox",
+    "Name": "ScrollBox_64",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "InnerSlotPadding": {
+        "X": 8.0,
+        "Y": 0.0
+      },
+      "WrapWidth": 9000000.0,
+      "bExplicitWrapWidth": true,
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot WidgetArchetype:WidgetTree_0.ScrollBox_63.ScrollBoxSlot_5",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Battlepass/UpgradePass/Battlepass_PremiumItem_NE.20"
+      },
+      "bIsVariable": true
     }
   }
 ]

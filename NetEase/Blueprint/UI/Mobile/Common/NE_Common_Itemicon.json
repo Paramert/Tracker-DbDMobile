@@ -32,11 +32,17 @@
     "Properties": {
       "WidgetTree": {
         "ObjectName": "WidgetTree NE_Common_Itemicon_C:WidgetTree",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.177"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.223"
       },
       "bAllowTemplate": true,
       "bValidTemplate": true,
       "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation NE_Common_Itemicon_C:Animation_Cycle_INST",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.198"
+        }
+      ],
       "TemplateAsset": {
         "AssetPathName": "/Game/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.WidgetArchetype",
         "SubPathString": ""
@@ -44,7 +50,7 @@
       "DynamicBindingObjects": [
         {
           "ObjectName": "ComponentDelegateBinding NE_Common_Itemicon_C:ComponentDelegateBinding_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.73"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.89"
         }
       ],
       "UberGraphFunction": {
@@ -80,6 +86,17 @@
         "Struct": {
           "ObjectName": "ScriptStruct PointerToUberGraphFrame",
           "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Animation_Cycle",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 2147491860,
+        "PropertyClass": {
+          "ObjectName": "Class WidgetAnimation",
+          "ObjectPath": "/Script/UMG"
         }
       },
       {
@@ -455,6 +472,17 @@
           "ObjectName": "Class Image",
           "ObjectPath": "/Script/UMG"
         }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "vx",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 562952101429260,
+        "PropertyClass": {
+          "ObjectName": "Class CanvasPanel",
+          "ObjectPath": "/Script/UMG"
+        }
       }
     ],
     "FuncMap": {
@@ -552,7 +580,7 @@
       "IsFocusable": false,
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.21"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.25"
       }
     }
   },
@@ -616,7 +644,7 @@
       "IsFocusable": false,
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_10",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.48"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.58"
       }
     }
   },
@@ -628,56 +656,60 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_11",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.22"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.24"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.25"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.19"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.27"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.20"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
           "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.26"
         },
         {
-          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.30"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.23"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.29"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6",
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
           "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.28"
         },
         {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.32"
+        },
+        {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.21"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.25"
         }
       ],
       "Slot": {
         "ObjectName": "SizeBoxSlot NE_Common_Itemicon_C:WidgetTree.SizeBox_3.SizeBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.146"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.191"
       }
     }
   },
@@ -689,11 +721,11 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_4",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.32"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.37"
         },
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.31"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.36"
         }
       ],
       "bIsVariable": true
@@ -707,12 +739,12 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CharacterContainer.CanvasPanelSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.33"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.38"
         }
       ],
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.IconWidgetSwitcher.WidgetSwitcherSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.161"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.207"
       },
       "bIsVariable": true,
       "Clipping": "EWidgetClipping::ClipToBounds",
@@ -727,28 +759,28 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG1.CanvasPanelSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.38"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.43"
         },
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG1.CanvasPanelSlot_11",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.34"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.39"
         },
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG1.CanvasPanelSlot_12",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.35"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.40"
         },
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG1.CanvasPanelSlot_13",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.36"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.41"
         },
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG1.CanvasPanelSlot_15",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.37"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.42"
         }
       ],
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG1Switcher.WidgetSwitcherSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.163"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.209"
       },
       "bIsVariable": true
     }
@@ -761,20 +793,20 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG2.CanvasPanelSlot_4",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.39"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.44"
         },
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG2.CanvasPanelSlot_5",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.40"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.45"
         },
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG2.CanvasPanelSlot_6",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.41"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.46"
         }
       ],
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG1Switcher.WidgetSwitcherSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.162"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.208"
       },
       "bIsVariable": true
     }
@@ -787,27 +819,76 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.42"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.47"
         },
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.43"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.48"
         },
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.44"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.49"
         },
         {
           "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_3",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.45"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.50"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.23"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.27"
       },
       "bIsVariable": true,
       "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "vx",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.vx.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.51"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.33"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "VX_Glow",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.VX_Glow.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.52"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.VX_Glow.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.53"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.VX_Glow.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.54"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.VX_Glow.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.55"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.vx.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.51"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
     }
   },
   {
@@ -818,56 +899,60 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_11",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.49"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.59"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.51"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.61"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.52"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.62"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.46"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_5",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.54"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.47"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.53"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_9",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.57"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.50"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_8",
           "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.56"
         },
         {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.66"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_5",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.64"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.57"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.63"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_9",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.68"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.60"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_8",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.67"
+        },
+        {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.55"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.65"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_10",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.48"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.58"
         }
       ],
       "Slot": {
         "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_3.SizeBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.148"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.193"
       }
     }
   },
@@ -879,11 +964,11 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_4",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.59"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.70"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.58"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.69"
         }
       ],
       "bIsVariable": true
@@ -897,12 +982,12 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CharacterContainer.CanvasPanelSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.60"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.71"
         }
       ],
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.IconWidgetSwitcher.WidgetSwitcherSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.170"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.216"
       },
       "bIsVariable": true,
       "Clipping": "EWidgetClipping::ClipToBounds",
@@ -917,28 +1002,28 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.65"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.76"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_11",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.61"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.72"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_12",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.62"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.73"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_13",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.63"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.74"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_15",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.64"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.75"
         }
       ],
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG1Switcher.WidgetSwitcherSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.172"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.218"
       },
       "bIsVariable": true
     }
@@ -951,20 +1036,20 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG2.CanvasPanelSlot_4",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.66"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.77"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG2.CanvasPanelSlot_5",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.67"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.78"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG2.CanvasPanelSlot_6",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.68"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.79"
         }
       ],
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG1Switcher.WidgetSwitcherSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.171"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.217"
       },
       "bIsVariable": true
     }
@@ -977,27 +1062,76 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.69"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.80"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.70"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.81"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.71"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.82"
         },
         {
           "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_3",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.72"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.83"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_12",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.50"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.60"
       },
       "bIsVariable": true,
       "Visibility": "ESlateVisibility::Hidden"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "vx",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.vx.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.84"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_7",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.66"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "VX_Glow",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.VX_Glow.CanvasPanelSlot_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.85"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.VX_Glow.CanvasPanelSlot_1",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.86"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.VX_Glow.CanvasPanelSlot_3",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.87"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.VX_Glow.CanvasPanelSlot_6",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.88"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.vx.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.84"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
     }
   },
   {
@@ -1027,7 +1161,7 @@
       },
       "Content": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.itemBG1Switcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.154"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.200"
       }
     }
   },
@@ -1060,7 +1194,7 @@
       },
       "Content": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.IconWidgetSwitcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.153"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.199"
       }
     }
   },
@@ -1124,7 +1258,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.ImageShadow",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.86"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.102"
       }
     }
   },
@@ -1184,7 +1318,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.Light",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.91"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.107"
       }
     }
   },
@@ -1213,7 +1347,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.MysteryBoxBackground3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.92"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.108"
       }
     }
   },
@@ -1244,7 +1378,7 @@
       },
       "Content": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.itemBG2Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.155"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.201"
       }
     }
   },
@@ -1277,7 +1411,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.FlashIMG",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.79"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.95"
       }
     }
   },
@@ -1314,7 +1448,34 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.RedPoint",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.94"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.110"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.vx",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
       }
     }
   },
@@ -1341,7 +1502,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.SelectedIcon",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.95"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.111"
       }
     }
   },
@@ -1378,7 +1539,7 @@
       },
       "Content": {
         "ObjectName": "ScaleBox NE_Common_Itemicon_C:WidgetTree.ScaleBox_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.128"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.173"
       }
     }
   },
@@ -1415,7 +1576,7 @@
       },
       "Content": {
         "ObjectName": "SizeBox NE_Common_Itemicon_C:WidgetTree.ItemNameBox",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.141"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.186"
       }
     }
   },
@@ -1442,7 +1603,7 @@
       },
       "Content": {
         "ObjectName": "ScaleBox NE_Common_Itemicon_C:WidgetTree.ScaleBox_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.127"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.172"
       }
     }
   },
@@ -1478,7 +1639,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.CharacterImage",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.77"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.93"
       }
     }
   },
@@ -1507,7 +1668,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.ImagePaint",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.83"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.99"
       }
     }
   },
@@ -1534,7 +1695,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.ImagePaintBottom",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.84"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.100"
       }
     }
   },
@@ -1561,7 +1722,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.ImagePaintTop",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.85"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.101"
       }
     }
   },
@@ -1588,7 +1749,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.Gradient",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.82"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.98"
       }
     }
   },
@@ -1615,7 +1776,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.MysteryBoxRarityBackground",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.93"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.109"
       }
     }
   },
@@ -1644,7 +1805,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.itemBG2_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.87"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.103"
       }
     }
   },
@@ -1673,7 +1834,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.itemBG2_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.88"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.104"
       }
     }
   },
@@ -1702,7 +1863,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.itemBG2_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.89"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.105"
       }
     }
   },
@@ -1725,7 +1886,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.TopLeftSelection",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.97"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.113"
       }
     }
   },
@@ -1762,7 +1923,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.TopRightSelection",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.98"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.114"
       }
     }
   },
@@ -1799,7 +1960,7 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.BottomLeftSelection",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.75"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.91"
       }
     }
   },
@@ -1836,7 +1997,164 @@
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.BottomRightSelection",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.76"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.92"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "vx",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.vx",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.VX_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "VX_Glow",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -50.0,
+          "Top": -50.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.VX_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.14"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.VX_lmage_M_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.115"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "VX_Glow",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -50.010635,
+          "Top": -49.019215,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.VX_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.14"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.VX_lmage_M_Glow_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.116"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "VX_Glow",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -49.35714,
+          "Top": -46.92857,
+          "Right": 91.37555,
+          "Bottom": 94.77381
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.VX_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.14"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.VX_lmage_M_Glow_03",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.117"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "VX_Glow",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -49.252747,
+          "Top": -49.076923,
+          "Right": 98.285706,
+          "Bottom": 97.34066
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.VX_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.14"
+      },
+      "Content": {
+        "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.VX_lmage_M_Glow_04",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.118"
       }
     }
   },
@@ -1863,11 +2181,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG1Switcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.157"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.203"
       }
     }
   },
@@ -1896,11 +2214,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.IconWidgetSwitcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.156"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.202"
       }
     }
   },
@@ -1927,7 +2245,7 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button",
@@ -1960,11 +2278,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageShadow",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.111"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.131"
       }
     }
   },
@@ -1991,11 +2309,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectedSquareCanvas",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.20"
       }
     }
   },
@@ -2020,11 +2338,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Light",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.116"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.136"
       }
     }
   },
@@ -2049,11 +2367,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.MysteryBoxBackground3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.117"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.137"
       }
     }
   },
@@ -2080,11 +2398,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.158"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.204"
       }
     }
   },
@@ -2113,11 +2431,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.FlashIMG",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.104"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.124"
       }
     }
   },
@@ -2150,11 +2468,38 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.RedPoint",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.119"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.139"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.vx",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.21"
       }
     }
   },
@@ -2177,11 +2522,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.SelectedIcon",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.120"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.140"
       }
     }
   },
@@ -2214,11 +2559,11 @@
       "ZOrder": 5,
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       },
       "Content": {
         "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.132"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.177"
       }
     }
   },
@@ -2251,11 +2596,11 @@
       "bAutoSize": true,
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.14"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.16"
       },
       "Content": {
         "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.ItemNameBox",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.143"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.188"
       }
     }
   },
@@ -2278,11 +2623,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.14"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.16"
       },
       "Content": {
         "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.131"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.176"
       }
     }
   },
@@ -2314,11 +2659,11 @@
       "bAutoSize": true,
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CharacterContainer",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.17"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.CharacterImage",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.102"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.122"
       }
     }
   },
@@ -2343,11 +2688,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.16"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePaint",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.108"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.128"
       }
     }
   },
@@ -2370,11 +2715,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.16"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePaintBottom",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.109"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.129"
       }
     }
   },
@@ -2397,11 +2742,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.16"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePaintTop",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.110"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.130"
       }
     }
   },
@@ -2424,11 +2769,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.16"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Gradient",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.107"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.127"
       }
     }
   },
@@ -2451,11 +2796,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.16"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.MysteryBoxRarityBackground",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.118"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.138"
       }
     }
   },
@@ -2480,11 +2825,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.17"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.19"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.itemBG2_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.112"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.132"
       }
     }
   },
@@ -2509,11 +2854,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.17"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.19"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.itemBG2_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.113"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.133"
       }
     }
   },
@@ -2538,11 +2883,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.17"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.19"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.itemBG2_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.114"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.134"
       }
     }
   },
@@ -2561,11 +2906,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectedSquareCanvas",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.20"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.TopLeftSelection",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.122"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.142"
       }
     }
   },
@@ -2598,11 +2943,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectedSquareCanvas",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.20"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.TopRightSelection",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.123"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.143"
       }
     }
   },
@@ -2635,11 +2980,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectedSquareCanvas",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.20"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.BottomLeftSelection",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.100"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.120"
       }
     }
   },
@@ -2672,11 +3017,168 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectedSquareCanvas",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.20"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.BottomRightSelection",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.101"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.121"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "vx",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.vx",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.21"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.VX_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "VX_Glow",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -50.0,
+          "Top": -50.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.VX_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.22"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.VX_lmage_M_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.144"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "VX_Glow",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -50.010635,
+          "Top": -49.019215,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.VX_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.22"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.VX_lmage_M_Glow_02",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.145"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "VX_Glow",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -49.35714,
+          "Top": -46.92857,
+          "Right": 91.37555,
+          "Bottom": 94.77381
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.VX_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.22"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.VX_lmage_M_Glow_03",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.146"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "VX_Glow",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -49.252747,
+          "Top": -49.076923,
+          "Right": 98.285706,
+          "Bottom": 97.34066
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.VX_Glow",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.22"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.VX_lmage_M_Glow_04",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.147"
       }
     }
   },
@@ -2716,7 +3218,7 @@
       },
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.164"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.210"
       }
     }
   },
@@ -2737,7 +3239,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.44"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.49"
       },
       "RenderTransform": {
         "Angle": -90.0
@@ -2763,7 +3265,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.45"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.50"
       },
       "RenderTransform": {
         "Angle": 180.0
@@ -2789,7 +3291,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CharacterContainer.CanvasPanelSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.33"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.38"
       },
       "RenderTransform": {
         "Scale": {
@@ -2817,7 +3319,7 @@
       },
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.165"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.211"
       }
     }
   },
@@ -2838,7 +3340,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.27"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.31"
       },
       "Visibility": "ESlateVisibility::Collapsed"
     }
@@ -2860,7 +3362,7 @@
       },
       "Slot": {
         "ObjectName": "ScaleBoxSlot NE_Common_Itemicon_C:WidgetTree.PortraitFrame.ScaleBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.134"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.179"
       },
       "Visibility": "ESlateVisibility::SelfHitTestInvisible"
     }
@@ -2882,7 +3384,7 @@
       },
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_5",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.167"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.213"
       }
     }
   },
@@ -2903,7 +3405,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG1.CanvasPanelSlot_15",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.37"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.42"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -2934,7 +3436,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG1.CanvasPanelSlot_11",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.34"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.39"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -2965,7 +3467,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG1.CanvasPanelSlot_12",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.35"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.40"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -2996,7 +3498,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG1.CanvasPanelSlot_13",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.36"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.41"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3018,7 +3520,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_11",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.22"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.26"
       },
       "RenderTransform": {
         "Translation": {
@@ -3051,7 +3553,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG2.CanvasPanelSlot_4",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.39"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.44"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3078,7 +3580,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG2.CanvasPanelSlot_5",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.40"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.45"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3109,7 +3611,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG2.CanvasPanelSlot_6",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.41"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.46"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3127,7 +3629,7 @@
       },
       "Slot": {
         "ObjectName": "ScaleBoxSlot NE_Common_Itemicon_C:WidgetTree.itemiconBox.ScaleBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.133"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.178"
       },
       "Visibility": "ESlateVisibility::SelfHitTestInvisible"
     }
@@ -3149,7 +3651,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.24"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.28"
       },
       "Visibility": "ESlateVisibility::Collapsed"
     }
@@ -3171,7 +3673,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.25"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.29"
       },
       "bIsVariable": false,
       "Visibility": "ESlateVisibility::SelfHitTestInvisible"
@@ -3203,7 +3705,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.itemBG1.CanvasPanelSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.38"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.43"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3225,7 +3727,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.28"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.32"
       },
       "Visibility": "ESlateVisibility::Collapsed"
     }
@@ -3247,7 +3749,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.29"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.34"
       }
     }
   },
@@ -3268,7 +3770,7 @@
       },
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.166"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.212"
       }
     }
   },
@@ -3289,7 +3791,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.42"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.47"
       },
       "bIsVariable": false,
       "Visibility": "ESlateVisibility::SelfHitTestInvisible"
@@ -3312,13 +3814,120 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.SelectedSquareCanvas.CanvasPanelSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.43"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.48"
       },
       "RenderTransform": {
         "Angle": 90.0
       },
       "bIsVariable": false,
       "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VX_lmage_M_Glow",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 133.0,
+          "Y": 132.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Rarities_SB_1",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/RaritiesExclusives/Atl_Rarities_SB_1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.VX_Glow.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.52"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VX_lmage_M_Glow_02",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 133.0,
+          "Y": 132.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.5,
+            "Hex": "7FFFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant Ml_NE_Common_Itemicon",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Material/Ml_NE_Common_Itemicon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.VX_Glow.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.53"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VX_lmage_M_Glow_03",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 0.208814,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFF7E00"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant Ml_Battlepass_UpgradePass_NE_S6_Smoke_02",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Material/Ml_Battlepass_UpgradePass_NE_S6_Smoke_02.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.VX_Glow.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.54"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VX_lmage_M_Glow_04",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.8,
+            "Hex": "CCFFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant Ml_NE_Common_Itemicon_02",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Material/Ml_NE_Common_Itemicon_02.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.VX_Glow.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.55"
+      },
+      "bIsVariable": false
     }
   },
   {
@@ -3338,7 +3947,7 @@
       },
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.173"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.219"
       }
     }
   },
@@ -3359,7 +3968,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.71"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.82"
       },
       "RenderTransform": {
         "Angle": -90.0
@@ -3385,7 +3994,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.72"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.83"
       },
       "RenderTransform": {
         "Angle": 180.0
@@ -3411,7 +4020,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CharacterContainer.CanvasPanelSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.60"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.71"
       },
       "RenderTransform": {
         "Scale": {
@@ -3439,7 +4048,7 @@
       },
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.174"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.220"
       }
     }
   },
@@ -3460,7 +4069,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_5",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.54"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.64"
       },
       "Visibility": "ESlateVisibility::Collapsed"
     }
@@ -3482,7 +4091,7 @@
       },
       "Slot": {
         "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.PortraitFrame.ScaleBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.138"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.183"
       },
       "Visibility": "ESlateVisibility::SelfHitTestInvisible"
     }
@@ -3504,7 +4113,7 @@
       },
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_5",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.176"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.222"
       }
     }
   },
@@ -3525,7 +4134,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_15",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.64"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.75"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3556,7 +4165,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_11",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.61"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.72"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3587,7 +4196,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_12",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.62"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.73"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3618,7 +4227,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_13",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.63"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.74"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3640,7 +4249,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_11",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.49"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.59"
       },
       "RenderTransform": {
         "Translation": {
@@ -3673,7 +4282,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG2.CanvasPanelSlot_4",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.66"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.77"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3700,7 +4309,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG2.CanvasPanelSlot_5",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.67"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.78"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3731,7 +4340,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG2.CanvasPanelSlot_6",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.68"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.79"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3749,7 +4358,7 @@
       },
       "Slot": {
         "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.itemiconBox.ScaleBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.137"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.182"
       },
       "Visibility": "ESlateVisibility::SelfHitTestInvisible"
     }
@@ -3771,7 +4380,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.51"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.61"
       },
       "Visibility": "ESlateVisibility::Collapsed"
     }
@@ -3793,7 +4402,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.52"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.62"
       },
       "bIsVariable": false,
       "Visibility": "ESlateVisibility::SelfHitTestInvisible"
@@ -3825,7 +4434,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.itemBG1.CanvasPanelSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.65"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.76"
       },
       "Visibility": "ESlateVisibility::HitTestInvisible"
     }
@@ -3847,7 +4456,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_6",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.55"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.65"
       },
       "Visibility": "ESlateVisibility::Collapsed"
     }
@@ -3869,7 +4478,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_8",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.56"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.67"
       }
     }
   },
@@ -3890,7 +4499,7 @@
       },
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.175"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.221"
       }
     }
   },
@@ -3911,7 +4520,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.69"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.80"
       },
       "bIsVariable": false,
       "Visibility": "ESlateVisibility::SelfHitTestInvisible"
@@ -3934,7 +4543,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.SelectedSquareCanvas.CanvasPanelSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.70"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.81"
       },
       "RenderTransform": {
         "Angle": 90.0
@@ -3944,13 +4553,546 @@
     }
   },
   {
+    "Type": "Image",
+    "Name": "VX_lmage_M_Glow",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 133.0,
+          "Y": 132.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Atl_Rarities_SB_1",
+          "ObjectPath": "DeadByDaylight/Content/UI/UMGAssets/Icons/RaritiesExclusives/Atl_Rarities_SB_1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.VX_Glow.CanvasPanelSlot_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.85"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VX_lmage_M_Glow_02",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 133.0,
+          "Y": 132.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.5,
+            "Hex": "7FFFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant Ml_NE_Common_Itemicon",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Material/Ml_NE_Common_Itemicon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.VX_Glow.CanvasPanelSlot_1",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.86"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VX_lmage_M_Glow_03",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 0.208814,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFF7E00"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant Ml_Battlepass_UpgradePass_NE_S6_Smoke_02",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Material/Ml_Battlepass_UpgradePass_NE_S6_Smoke_02.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.VX_Glow.CanvasPanelSlot_3",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.87"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "VX_lmage_M_Glow_04",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.8,
+            "Hex": "CCFFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant Ml_NE_Common_Itemicon_02",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Material/Ml_NE_Common_Itemicon_02.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.VX_Glow.CanvasPanelSlot_6",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.88"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Animation_Cycle",
+    "Outer": "Animation_Cycle_INST",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "B1909987-4FF7F049-3CD68E9D-8AE98A61",
+          "Name": "VX_lmage_M_Glow",
+          "PossessedObjectClass": {
+            "ObjectName": "Class Image",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "Tags": [],
+          "Guid": "A0B64B81-4B2931E0-AC43F0A2-97DFEAB5",
+          "Name": "VX_lmage_M_Glow_02",
+          "PossessedObjectClass": {
+            "ObjectName": "Class Image",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "Tags": [],
+          "Guid": "1A15E19F-4FD2D0F3-F110A9A5-28D2EB5A",
+          "Name": "VX_lmage_M_Glow_03",
+          "PossessedObjectClass": {
+            "ObjectName": "Class Image",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "Tags": [],
+          "Guid": "257BC72E-42DAA2EF-796A2982-36EE1A0F",
+          "Name": "VX_lmage_M_Glow_04",
+          "PossessedObjectClass": {
+            "ObjectName": "Class Image",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "B1909987-4FF7F049-3CD68E9D-8AE98A61",
+          "BindingName": "Image_114",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.165"
+            },
+            {
+              "ObjectName": "MovieScene2DTransformTrack NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieScene2DTransformTrack_0",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.150"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "A0B64B81-4B2931E0-AC43F0A2-97DFEAB5",
+          "BindingName": "Image",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_1",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.166"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "1A15E19F-4FD2D0F3-F110A9A5-28D2EB5A",
+          "BindingName": "Image_443",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_2",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.167"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "257BC72E-42DAA2EF-796A2982-36EE1A0F",
+          "BindingName": "Image_559",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_3",
+              "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.168"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 26001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 30
+      },
+      "Signature": "969B402A-47A56DEA-AD662481-5C99BE75"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Properties": {
+      "Translation": null,
+      "Translation": null,
+      "Rotation": null,
+      "Scale": null,
+      "Scale": null,
+      "Shear": null,
+      "Shear": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.151"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.152"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 26000
+            }
+          }
+        }
+      },
+      "Signature": "A28EA468-48CC7FB2-CDAD98BB-5F747289"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "Animation_Cycle",
+    "Properties": {
+      "PropertyName": "RenderTransform",
+      "PropertyPath": "RenderTransform",
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.149"
+        }
+      ],
+      "Signature": "93A8958F-4C3F0A64-4009A581-053C3A31"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0"
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Properties": {
+      "FloatCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.153"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.154"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 26000
+            }
+          }
+        }
+      },
+      "Signature": "2EABB24D-4D047114-2B81A689-7DEB812A"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_1",
+    "Properties": {
+      "FloatCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.155"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.156"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 26000
+            }
+          }
+        }
+      },
+      "Signature": "B8D679A7-4E4ADB87-6A7B57AC-2A2F73F1"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_2",
+    "Properties": {
+      "FloatCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.157"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.158"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 26001
+            }
+          }
+        }
+      },
+      "Signature": "7764F92B-4852E001-4C64ADB6-D4B32A2C"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_3",
+    "Properties": {
+      "FloatCurve": null,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_3.MovieSceneFloatSection_0.EaseInFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.159"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_3.MovieSceneFloatSection_0.EaseOutFunction",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.160"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 26000
+            }
+          }
+        }
+      },
+      "Signature": "47DC26EE-401DB20E-69E47AB7-ECD7357F"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Animation_Cycle",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_0.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.161"
+        }
+      ],
+      "Signature": "2E537435-45B039D5-3CA73591-3B7DE5B9"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_1",
+    "Outer": "Animation_Cycle",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_1.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.162"
+        }
+      ],
+      "Signature": "16659C60-46449F9F-0ADBABA7-C5A58FA4"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_2",
+    "Outer": "Animation_Cycle",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_2.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.163"
+        }
+      ],
+      "Signature": "95DD86B9-4B9037AD-4BAAC284-70818CB3"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_3",
+    "Outer": "Animation_Cycle",
+    "Properties": {
+      "PropertyName": "RenderOpacity",
+      "PropertyPath": "RenderOpacity",
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle.MovieSceneFloatTrack_3.MovieSceneFloatSection_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.164"
+        }
+      ],
+      "Signature": "0FDEB70B-474EE7E2-01565EBC-5B8820DA"
+    }
+  },
+  {
     "Type": "NE_Common_Itemicon_C",
     "Name": "WidgetArchetype",
     "Template": "Default__NE_Common_Itemicon_C",
     "Properties": {
       "Blood": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Blood",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.99"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.119"
       },
       "Button": {
         "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button",
@@ -3958,135 +5100,139 @@
       },
       "CanvasPanel_1": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.14"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.16"
       },
       "CharacterContainer": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CharacterContainer",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.17"
       },
       "CharacterImage": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.CharacterImage",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.102"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.122"
       },
       "Copper": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Copper",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.103"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.123"
       },
       "FlashIMG": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.FlashIMG",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.104"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.124"
       },
       "Frame": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.105"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.125"
       },
       "Gold": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Gold",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.106"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.126"
       },
       "Gradient": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Gradient",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.107"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.127"
       },
       "IconWidgetSwitcher": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.IconWidgetSwitcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.156"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.202"
       },
       "ImagePaint": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePaint",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.108"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.128"
       },
       "ImagePaintBottom": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePaintBottom",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.109"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.129"
       },
       "ImagePaintTop": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImagePaintTop",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.110"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.130"
       },
       "ImageShadow": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.ImageShadow",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.111"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.131"
       },
       "itemBG1": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.16"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
       },
       "itemBG1Switcher": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG1Switcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.157"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.203"
       },
       "itemBG2": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.17"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.19"
       },
       "itemBG2_1": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.itemBG2_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.112"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.132"
       },
       "itemBG2_2": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.itemBG2_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.113"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.133"
       },
       "itemBG2_3": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.itemBG2_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.114"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.134"
       },
       "itemBG2Frame": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.158"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.204"
       },
       "itemicon": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.itemicon",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.115"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.135"
       },
       "itemiconBox": {
         "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.itemiconBox",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.129"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.174"
       },
       "ItemName": {
         "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ItemName",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.151"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.196"
       },
       "ItemNameBox": {
         "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.ItemNameBox",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.143"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.188"
       },
       "itemNum": {
         "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.itemNum",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.152"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.197"
       },
       "Light": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Light",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.116"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.136"
       },
       "MysteryBoxRarityBackground": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.MysteryBoxRarityBackground",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.118"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.138"
       },
       "PortraitFrame": {
         "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.PortraitFrame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.130"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.175"
       },
       "RedPoint": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.RedPoint",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.119"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.139"
       },
       "SelectedIcon": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.SelectedIcon",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.120"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.140"
       },
       "SelectedSquareCanvas": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.SelectedSquareCanvas",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.20"
       },
       "Silver": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Silver",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.121"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.141"
+      },
+      "vx": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.vx",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.21"
       },
       "WidgetTree": {
         "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.178"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.224"
       },
       "bCookedWidgetTree": true
     }
@@ -4099,12 +5245,12 @@
       "Slots": [
         {
           "ObjectName": "ScaleBoxSlot NE_Common_Itemicon_C:WidgetTree.itemiconBox.ScaleBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.133"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.178"
         }
       ],
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.IconWidgetSwitcher.WidgetSwitcherSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.159"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.205"
       },
       "bIsVariable": true
     }
@@ -4118,12 +5264,12 @@
       "Slots": [
         {
           "ObjectName": "ScaleBoxSlot NE_Common_Itemicon_C:WidgetTree.PortraitFrame.ScaleBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.134"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.179"
         }
       ],
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.IconWidgetSwitcher.WidgetSwitcherSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.160"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.206"
       },
       "bIsVariable": true
     }
@@ -4136,12 +5282,12 @@
       "Slots": [
         {
           "ObjectName": "ScaleBoxSlot NE_Common_Itemicon_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.135"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.180"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_4",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.32"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.37"
       }
     }
   },
@@ -4154,12 +5300,12 @@
       "Slots": [
         {
           "ObjectName": "ScaleBoxSlot NE_Common_Itemicon_C:WidgetTree.ScaleBox_2.ScaleBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.136"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.181"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.30"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.35"
       }
     }
   },
@@ -4171,12 +5317,12 @@
       "Slots": [
         {
           "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.itemiconBox.ScaleBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.137"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.182"
         }
       ],
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.IconWidgetSwitcher.WidgetSwitcherSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.168"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.214"
       },
       "bIsVariable": true
     }
@@ -4190,12 +5336,12 @@
       "Slots": [
         {
           "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.PortraitFrame.ScaleBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.138"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.183"
         }
       ],
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.IconWidgetSwitcher.WidgetSwitcherSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.169"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.215"
       },
       "bIsVariable": true
     }
@@ -4208,12 +5354,12 @@
       "Slots": [
         {
           "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_1.ScaleBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.139"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.184"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_4",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.59"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.70"
       }
     }
   },
@@ -4226,12 +5372,12 @@
       "Slots": [
         {
           "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_2.ScaleBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.140"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.185"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_9",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.57"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.68"
       }
     }
   },
@@ -4242,11 +5388,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "ScaleBox NE_Common_Itemicon_C:WidgetTree.itemiconBox",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.125"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.170"
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.itemicon",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.90"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.106"
       }
     }
   },
@@ -4259,11 +5405,11 @@
       "VerticalAlignment": "VAlign_Fill",
       "Parent": {
         "ObjectName": "ScaleBox NE_Common_Itemicon_C:WidgetTree.PortraitFrame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.126"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.171"
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.80"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.96"
       }
     }
   },
@@ -4276,11 +5422,11 @@
       "VerticalAlignment": "VAlign_Fill",
       "Parent": {
         "ObjectName": "ScaleBox NE_Common_Itemicon_C:WidgetTree.ScaleBox_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.127"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.172"
       },
       "Content": {
         "ObjectName": "SizeBox NE_Common_Itemicon_C:WidgetTree.SizeBox_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.142"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.187"
       }
     }
   },
@@ -4291,11 +5437,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "ScaleBox NE_Common_Itemicon_C:WidgetTree.ScaleBox_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.128"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.173"
       },
       "Content": {
         "ObjectName": "TextBlock NE_Common_Itemicon_C:WidgetTree.itemNum",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.150"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.195"
       }
     }
   },
@@ -4306,11 +5452,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.itemiconBox",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.129"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.174"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.itemicon",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.115"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.135"
       }
     }
   },
@@ -4323,11 +5469,11 @@
       "VerticalAlignment": "VAlign_Fill",
       "Parent": {
         "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.PortraitFrame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.130"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.175"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.105"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.125"
       }
     }
   },
@@ -4340,11 +5486,11 @@
       "VerticalAlignment": "VAlign_Fill",
       "Parent": {
         "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.131"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.176"
       },
       "Content": {
         "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.144"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.189"
       }
     }
   },
@@ -4355,11 +5501,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.ScaleBox_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.132"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.177"
       },
       "Content": {
         "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.itemNum",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.152"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.197"
       }
     }
   },
@@ -4371,12 +5517,12 @@
       "Slots": [
         {
           "ObjectName": "SizeBoxSlot NE_Common_Itemicon_C:WidgetTree.ItemNameBox.SizeBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.145"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.190"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.31"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.36"
       },
       "bIsVariable": true,
       "Visibility": "ESlateVisibility::Collapsed"
@@ -4394,12 +5540,12 @@
       "Slots": [
         {
           "ObjectName": "SizeBoxSlot NE_Common_Itemicon_C:WidgetTree.SizeBox_3.SizeBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.146"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.191"
         }
       ],
       "Slot": {
         "ObjectName": "ScaleBoxSlot NE_Common_Itemicon_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.135"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.180"
       }
     }
   },
@@ -4411,12 +5557,12 @@
       "Slots": [
         {
           "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.ItemNameBox.SizeBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.147"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.192"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_1.CanvasPanelSlot_2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.58"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.69"
       },
       "bIsVariable": true,
       "Visibility": "ESlateVisibility::Collapsed"
@@ -4434,12 +5580,12 @@
       "Slots": [
         {
           "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_3.SizeBoxSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.148"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.193"
         }
       ],
       "Slot": {
         "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_1.ScaleBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.139"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.184"
       }
     }
   },
@@ -4452,11 +5598,11 @@
       "VerticalAlignment": "VAlign_Center",
       "Parent": {
         "ObjectName": "SizeBox NE_Common_Itemicon_C:WidgetTree.ItemNameBox",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.141"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.186"
       },
       "Content": {
         "ObjectName": "TextBlock NE_Common_Itemicon_C:WidgetTree.ItemName",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.149"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.194"
       }
     }
   },
@@ -4467,7 +5613,7 @@
     "Properties": {
       "Parent": {
         "ObjectName": "SizeBox NE_Common_Itemicon_C:WidgetTree.SizeBox_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.142"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.187"
       },
       "Content": {
         "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0",
@@ -4484,11 +5630,11 @@
       "VerticalAlignment": "VAlign_Center",
       "Parent": {
         "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.ItemNameBox",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.143"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.188"
       },
       "Content": {
         "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ItemName",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.151"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.196"
       }
     }
   },
@@ -4499,11 +5645,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_3",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.144"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.189"
       },
       "Content": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.13"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
       }
     }
   },
@@ -4520,7 +5666,7 @@
       "LineHeightPercentage": 0.8,
       "Slot": {
         "ObjectName": "SizeBoxSlot NE_Common_Itemicon_C:WidgetTree.ItemNameBox.SizeBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.145"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.190"
       },
       "bIsVariable": true
     }
@@ -4542,7 +5688,7 @@
       "Justification": "ETextJustify::Right",
       "Slot": {
         "ObjectName": "ScaleBoxSlot NE_Common_Itemicon_C:WidgetTree.ScaleBox_2.ScaleBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.136"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.181"
       },
       "bIsVariable": true,
       "Visibility": "ESlateVisibility::SelfHitTestInvisible"
@@ -4561,7 +5707,7 @@
       "LineHeightPercentage": 0.8,
       "Slot": {
         "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.ItemNameBox.SizeBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.147"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.192"
       },
       "bIsVariable": true
     }
@@ -4583,10 +5729,536 @@
       "Justification": "ETextJustify::Right",
       "Slot": {
         "ObjectName": "ScaleBoxSlot WidgetArchetype:WidgetTree_0.ScaleBox_2.ScaleBoxSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.140"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.185"
       },
       "bIsVariable": true,
       "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Animation_Cycle_INST",
+    "Outer": "NE_Common_Itemicon_C",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene NE_Common_Itemicon_C:Animation_Cycle_INST.Animation_Cycle",
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.148"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "VX_lmage_M_Glow",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "B1909987-4FF7F049-3CD68E9D-8AE98A61",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "VX_lmage_M_Glow_02",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "A0B64B81-4B2931E0-AC43F0A2-97DFEAB5",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "VX_lmage_M_Glow_03",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "1A15E19F-4FD2D0F3-F110A9A5-28D2EB5A",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "VX_lmage_M_Glow_04",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "257BC72E-42DAA2EF-796A2982-36EE1A0F",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Animation_Cycle",
+      "PrecompiledEvaluationTemplate": {
+        "Tracks": null,
+        "EvaluationField": {
+          "Ranges": [
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 26000
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 26000
+                  }
+                },
+                "UpperBound": {
+                  "Type": 0,
+                  "Value": {
+                    "Value": 26001
+                  }
+                }
+              }
+            },
+            {
+              "Value": {
+                "LowerBound": {
+                  "Type": 1,
+                  "Value": {
+                    "Value": 26001
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              }
+            }
+          ],
+          "Groups": [
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 5
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 0
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 2
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 3
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 4
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [
+                {
+                  "LUTOffset": 0,
+                  "NumInitPtrs": 0,
+                  "NumEvalPtrs": 4
+                }
+              ],
+              "SegmentPtrLUT": [
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 1
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 2
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 3
+                  }
+                },
+                {
+                  "SegmentID": {
+                    "IdentifierIndex": 0
+                  },
+                  "SequenceID": {
+                    "Value": 0
+                  },
+                  "TrackIdentifier": {
+                    "Value": 4
+                  }
+                }
+              ]
+            },
+            {
+              "LUTIndices": [],
+              "SegmentPtrLUT": []
+            }
+          ],
+          "MetaData": [
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 0
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 2
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 5,
+                  "TearDownIndex": 65530
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 2
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 4,
+                  "TearDownIndex": 65531
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 7,
+                  "TearDownIndex": 65528
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 6,
+                  "TearDownIndex": 65529
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 4
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 9,
+                  "TearDownIndex": 65526
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 4
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 8,
+                  "TearDownIndex": 65527
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 1,
+                  "TearDownIndex": 65534
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 1
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 0,
+                  "TearDownIndex": 65535
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 2
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 3,
+                  "TearDownIndex": 65532
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 2
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 2,
+                  "TearDownIndex": 65533
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 5,
+                  "TearDownIndex": 65530
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 3
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 4,
+                  "TearDownIndex": 65531
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 4
+                    },
+                    "SectionIndex": 0
+                  },
+                  "SetupIndex": 7,
+                  "TearDownIndex": 65528
+                },
+                {
+                  "Key": {
+                    "SequenceID": {
+                      "Value": 0
+                    },
+                    "TrackIdentifier": {
+                      "Value": 4
+                    },
+                    "SectionIndex": 4294967295
+                  },
+                  "SetupIndex": 6,
+                  "TearDownIndex": 65529
+                }
+              ],
+              "SubTemplateSerialNumbers": {}
+            },
+            {
+              "ActiveSequences": [
+                {
+                  "Value": 0
+                }
+              ],
+              "ActiveEntities": [],
+              "SubTemplateSerialNumbers": {}
+            }
+          ]
+        },
+        "SequenceSignature": "84E42D9A-4592A094-2CF7B689-7BEF396F",
+        "TemplateSerialNumber": {
+          "Value": 1
+        },
+        "TemplateLedger": {
+          "LastTrackIdentifier": {
+            "Value": 4
+          },
+          "TrackSignatureToTrackIdentifier": null
+        },
+        "TrackFieldData": null
+      },
+      "Signature": "84E42D9A-4592A094-2CF7B689-7BEF396F"
     }
   },
   {
@@ -4597,20 +6269,20 @@
       "Slots": [
         {
           "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.IconWidgetSwitcher.WidgetSwitcherSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.159"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.205"
         },
         {
           "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.IconWidgetSwitcher.WidgetSwitcherSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.160"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.206"
         },
         {
           "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.IconWidgetSwitcher.WidgetSwitcherSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.161"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.207"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.20"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.24"
       }
     }
   },
@@ -4622,16 +6294,16 @@
       "Slots": [
         {
           "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG1Switcher.WidgetSwitcherSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.163"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.209"
         },
         {
           "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG1Switcher.WidgetSwitcherSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.162"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.208"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.19"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.23"
       }
     }
   },
@@ -4643,24 +6315,24 @@
       "Slots": [
         {
           "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.164"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.210"
         },
         {
           "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.165"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.211"
         },
         {
           "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_5",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.167"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.213"
         },
         {
           "ObjectName": "WidgetSwitcherSlot NE_Common_Itemicon_C:WidgetTree.itemBG2Frame.WidgetSwitcherSlot_3",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.166"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.212"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot NE_Common_Itemicon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.26"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.30"
       },
       "Visibility": "ESlateVisibility::Collapsed"
     }
@@ -4673,20 +6345,20 @@
       "Slots": [
         {
           "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.IconWidgetSwitcher.WidgetSwitcherSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.168"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.214"
         },
         {
           "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.IconWidgetSwitcher.WidgetSwitcherSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.169"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.215"
         },
         {
           "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.IconWidgetSwitcher.WidgetSwitcherSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.170"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.216"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.47"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.57"
       }
     }
   },
@@ -4698,16 +6370,16 @@
       "Slots": [
         {
           "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG1Switcher.WidgetSwitcherSlot_2",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.172"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.218"
         },
         {
           "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG1Switcher.WidgetSwitcherSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.171"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.217"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_0",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.46"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.56"
       }
     }
   },
@@ -4719,24 +6391,24 @@
       "Slots": [
         {
           "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_0",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.173"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.219"
         },
         {
           "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_1",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.174"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.220"
         },
         {
           "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_5",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.176"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.222"
         },
         {
           "ObjectName": "WidgetSwitcherSlot WidgetArchetype:WidgetTree_0.itemBG2Frame.WidgetSwitcherSlot_3",
-          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.175"
+          "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.221"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.53"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.63"
       },
       "Visibility": "ESlateVisibility::Collapsed"
     }
@@ -4750,11 +6422,11 @@
       "VerticalAlignment": "VAlign_Center",
       "Parent": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.IconWidgetSwitcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.153"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.199"
       },
       "Content": {
         "ObjectName": "ScaleBox NE_Common_Itemicon_C:WidgetTree.itemiconBox",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.125"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.170"
       }
     }
   },
@@ -4771,11 +6443,11 @@
       },
       "Parent": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.IconWidgetSwitcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.153"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.199"
       },
       "Content": {
         "ObjectName": "ScaleBox NE_Common_Itemicon_C:WidgetTree.PortraitFrame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.126"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.171"
       }
     }
   },
@@ -4786,7 +6458,7 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.IconWidgetSwitcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.153"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.199"
       },
       "Content": {
         "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.CharacterContainer",
@@ -4801,7 +6473,7 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.itemBG1Switcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.154"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.200"
       },
       "Content": {
         "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.itemBG2",
@@ -4816,7 +6488,7 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.itemBG1Switcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.154"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.200"
       },
       "Content": {
         "ObjectName": "CanvasPanel NE_Common_Itemicon_C:WidgetTree.itemBG1",
@@ -4831,11 +6503,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.itemBG2Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.155"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.201"
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.Blood",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.74"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.90"
       }
     }
   },
@@ -4846,11 +6518,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.itemBG2Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.155"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.201"
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.Copper",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.78"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.94"
       }
     }
   },
@@ -4861,11 +6533,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.itemBG2Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.155"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.201"
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.Silver",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.96"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.112"
       }
     }
   },
@@ -4876,11 +6548,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher NE_Common_Itemicon_C:WidgetTree.itemBG2Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.155"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.201"
       },
       "Content": {
         "ObjectName": "Image NE_Common_Itemicon_C:WidgetTree.Gold",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.81"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.97"
       }
     }
   },
@@ -4893,11 +6565,11 @@
       "VerticalAlignment": "VAlign_Center",
       "Parent": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.IconWidgetSwitcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.156"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.202"
       },
       "Content": {
         "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.itemiconBox",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.129"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.174"
       }
     }
   },
@@ -4914,11 +6586,11 @@
       },
       "Parent": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.IconWidgetSwitcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.156"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.202"
       },
       "Content": {
         "ObjectName": "ScaleBox WidgetArchetype:WidgetTree_0.PortraitFrame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.130"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.175"
       }
     }
   },
@@ -4929,11 +6601,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.IconWidgetSwitcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.156"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.202"
       },
       "Content": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CharacterContainer",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.15"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.17"
       }
     }
   },
@@ -4944,11 +6616,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG1Switcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.157"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.203"
       },
       "Content": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG2",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.17"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.19"
       }
     }
   },
@@ -4959,11 +6631,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG1Switcher",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.157"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.203"
       },
       "Content": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.itemBG1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.16"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.18"
       }
     }
   },
@@ -4974,11 +6646,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.158"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.204"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Blood",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.99"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.119"
       }
     }
   },
@@ -4989,11 +6661,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.158"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.204"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Copper",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.103"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.123"
       }
     }
   },
@@ -5004,11 +6676,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.158"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.204"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Silver",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.121"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.141"
       }
     }
   },
@@ -5019,11 +6691,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher WidgetArchetype:WidgetTree_0.itemBG2Frame",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.158"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.204"
       },
       "Content": {
         "ObjectName": "Image WidgetArchetype:WidgetTree_0.Gold",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.106"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.126"
       }
     }
   },
@@ -5045,7 +6717,7 @@
     "Properties": {
       "RootWidget": {
         "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_1",
-        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.14"
+        "ObjectPath": "DeadByDaylight/Content/Netease/Blueprint/UI/Mobile/Common/NE_Common_Itemicon.16"
       }
     }
   }

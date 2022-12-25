@@ -1,0 +1,122 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_StoneJoint",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Interactable",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Slasher",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Blood",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractionDetector",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BlinkBlocker",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Ground",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Walkable",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "5A7C0C9448BF506DB8220BBBC747643F",
+    "CookedFormatData": {
+      "PhysXGeneric": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 7827,
+        "SizeOnDisk": 7827,
+        "OffsetInFile": "0x7F71"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_StoneJoint",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x9E4C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_StoneJoint",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_StoneJoint",
+            "ObjectPath": "DeadByDaylight/Content/Netease/Material/SM_StoneJoint/MI_StoneJoint.0"
+          },
+          "MaterialSlotName": "04 - Default",
+          "ImportedMaterialSlotName": "04 - Default",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 555.6442,
+            "LocalUVDensities": 749.68933,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 749.68933,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 189.05609,
+          "Y": -3.8146973E-06,
+          "Z": 280.63004
+        },
+        "BoxExtent": {
+          "X": 91.10588,
+          "Y": 62.950855,
+          "Z": 282.96976
+        },
+        "SphereRadius": 303.776
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_StoneJoint:BodySetup_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_StoneJoint/SM_StoneJoint.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_StoneJoint:NavCollision_0",
+      "ObjectPath": "DeadByDaylight/Content/Netease/Mesh/SM_StoneJoint/SM_StoneJoint.1"
+    },
+    "LightingGuid": "F90C61B9-4CA198BC-D8539694-2DA96BCC",
+    "RenderData": null
+  }
+]

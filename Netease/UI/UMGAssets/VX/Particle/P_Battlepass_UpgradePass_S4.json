@@ -1,0 +1,433 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionVelocityScale",
+    "Outer": "ParticleModuleLocationPrimitiveSphere_0",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired P_Battlepass_UpgradePass_S4:ParticleModuleRequired_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.7"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime P_Battlepass_UpgradePass_S4:ParticleModuleLifetime_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSize P_Battlepass_UpgradePass_S4:ParticleModuleSize_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.8"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity P_Battlepass_UpgradePass_S4:ParticleModuleVelocity_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.12"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife P_Battlepass_UpgradePass_S4:ParticleModuleColorOverLife_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.4"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere P_Battlepass_UpgradePass_S4:ParticleModuleLocationPrimitiveSphere_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife P_Battlepass_UpgradePass_S4:ParticleModuleSizeMultiplyLife_2",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.9"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUV P_Battlepass_UpgradePass_S4:ParticleModuleSubUV_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.11"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn P_Battlepass_UpgradePass_S4:ParticleModuleSpawn_0",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.10"
+      },
+      "PeakActiveParticles": 5
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_Battlepass_UpgradePass_S4",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.06,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 3.0,
+          "Values": [
+            0.0,
+            0.04,
+            0.039999995,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 4,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_Battlepass_UpgradePass_S4",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 3.0,
+        "MaxValue": 3.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveSphere",
+    "Name": "ParticleModuleLocationPrimitiveSphere_0",
+    "Outer": "P_Battlepass_UpgradePass_S4",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 50.0,
+        "MaxValue": 50.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            50.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Positive_Z": false,
+      "Negative_Z": false,
+      "VelocityScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_Battlepass_UpgradePass_S4:ParticleModuleLocationPrimitiveSphere_0.DistributionVelocityScale",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.0"
+        }
+      },
+      "StartLocation": {
+        "MaxValue": 50.0,
+        "MinValueVec": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            50.0,
+            50.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_Battlepass_UpgradePass_S4",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant Ml_Battlepass_UpgradePass_S4_01",
+        "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Material/Ml_Battlepass_UpgradePass_S4_01.0"
+      },
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_Battlepass_UpgradePass_S4:ParticleModuleRequired_0.RequiredDistributionSpawnRate",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.1"
+        }
+      },
+      "InterpolationMethod": "PSUVIM_Random",
+      "RandomImageTime": 1.0,
+      "MaxDrawCount": 2,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_Battlepass_UpgradePass_S4",
+    "Properties": {
+      "StartSize": {
+        "MaxValue": 10.0,
+        "MinValueVec": {
+          "X": 10.0,
+          "Y": 10.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 10.0,
+          "Y": 10.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            10.0,
+            10.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_2",
+    "Outer": "P_Battlepass_UpgradePass_S4",
+    "Properties": {
+      "LifeMultiplier": {
+        "MaxValue": 5.0,
+        "MaxValueVec": {
+          "X": 5.0,
+          "Y": 5.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_Battlepass_UpgradePass_S4",
+    "Properties": {
+      "Rate": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant P_Battlepass_UpgradePass_S4:ParticleModuleSpawn_0.BurstScaleDistribution",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSubUV",
+    "Name": "ParticleModuleSubUV_0",
+    "Outer": "P_Battlepass_UpgradePass_S4",
+    "Properties": {
+      "SubImageIndex": {
+        "MaxValue": 3.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.0,
+            3.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_Battlepass_UpgradePass_S4",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -40.0,
+        "MaxValue": 100.0,
+        "MinValueVec": {
+          "X": -40.0,
+          "Y": -40.0,
+          "Z": 50.0
+        },
+        "MaxValueVec": {
+          "X": 10.0,
+          "Y": 10.0,
+          "Z": 100.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -40.0,
+            -40.0,
+            50.0,
+            10.0,
+            10.0,
+            100.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_Battlepass_UpgradePass_S4",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel P_Battlepass_UpgradePass_S4:ParticleSpriteEmitter_0.ParticleLODLevel_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.3"
+        }
+      ],
+      "DetailModeBitmask": 63
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Battlepass_UpgradePass_S4",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter P_Battlepass_UpgradePass_S4:ParticleSpriteEmitter_0",
+          "ObjectPath": "DeadByDaylight/Content/Netease/UI/UMGAssets/VX/Particle/P_Battlepass_UpgradePass_S4.13"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]
